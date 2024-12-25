@@ -5,10 +5,59 @@
   .header .content .right .h_navbar .nav .li .link {
     padding: 0 12px;
   }
+  .product .list .product_box .link {
+    min-height: auto;
+  }
+  .product .list .product_box .link .cover_box .cover {
+    height: 220px;
+  }
+  .product .list .product_box .link .content {
+    height: 202px;
+    flex-wrap: wrap;
+  }
+  .product .list .product_box .link .content .left {
+    padding-right: 0;
+  }
+  .product .list .product_box .link .content .right {
+    margin-top: 10px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .header .content .left .search {
     display: none;
+  }
+  .product_category .content .product_category_banner .slide .box .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .product_category .content .product_category_banner .slide .box .lead {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .product_category .content .product_category_banner .slide .box .cover_box {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .product_category .content .product_category_banner .slide .box .cover_box .cover {
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .product_category .content .product_category_banner .slide .box:hover {
+    border-radius: 12px;
+  }
+  .product_category .content .product_category_banner .slide .box:hover .cover_box {
+    border-radius: 12px;
+  }
+  .product_box {
+    padding: 10px 0;
+  }
+  .advantages .list .box {
+    min-height: 350px;
+    padding: 40px 20px 0;
   }
 }
 @media screen and (max-width: 992px) {
@@ -25,7 +74,7 @@
     padding: 0 10px;
   }
   .title {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 30px;
   }
   .lead {
@@ -54,16 +103,117 @@
   .footer .content .box {
     margin-bottom: 20px;
   }
+  .head {
+    flex-wrap: wrap;
+  }
+  .head .arrow {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .head .arrow .icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .product_category .content {
+    width: 100%;
+  }
+  .product_category .product_category_banner {
+    margin-top: 20px;
+  }
+  .advantages .list .box {
+    margin-bottom: 20px;
+  }
+  .details .main .swiper_box .swiper_left {
+    margin-bottom: 30px;
+  }
+  .details .main .swiper_box .explain {
+    padding-left: 0;
+  }
+  .details .main .product_details {
+    flex-wrap: wrap;
+  }
+  .details .main .product_details .details_left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .details .main .product_details .details_right {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
     padding: 30px 0;
   }
-  .title {
+  .footer .copyright .link {
+    padding: 10px;
+  }
+  .new .list {
+    margin-top: 20px;
+  }
+  .product_box .link {
+    min-height: 420px;
+  }
+  .product_box .link .cover_box .cover {
+    height: 220px;
+  }
+  .product_box .link .content {
+    flex-wrap: wrap;
+  }
+  .product_box .link .content .left {
+    padding-right: 0;
+  }
+  .product_box .link .content .left .title {
     font-size: 18px;
     line-height: 28px;
   }
-  .footer .copyright .link {
-    padding: 10px;
+  .product_box .link .content .right {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .advantages .list {
+    margin-top: 30px;
+  }
+  .advantages .list .box {
+    min-height: 260px;
+    padding: 30px 6px;
+  }
+  .advantages .list .box .icon {
+    padding-bottom: 14px;
+  }
+  .advantages .list .box .icon .iconfont {
+    font-size: 36px;
+  }
+  .advantages .list .box .title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .advantages .list .box .lead {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .product {
+    padding: 30px 0;
+  }
+  .product .main {
+    flex-wrap: wrap;
+  }
+  .product .main .menu {
+    width: 100%;
+  }
+  .product .main .menu .category {
+    margin-bottom: 20px;
+  }
+  .product .main .list {
+    width: 100%;
+    padding-left: 0;
+  }
+  .details .main .swiper_left .menu .menu_banner {
+    height: 460px;
+  }
+  .details .main .swiper_left .product_box .product_swiper {
+    height: 460px;
   }
 }
