@@ -14,3 +14,8 @@ $('.header .menu').click(function () {
 $('.h5_nav .c_nav .li').click(function () {
   $(this).children('.child_down').stop().slideToggle('.active')
 })
+
+
+$('.menu .category_list .li .lead').click(function () {
+  $(this).next().stop().slideToggle()
+})

@@ -6,6 +6,55 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "17904482",
+      "name": "竖",
+      "font_class": "shu",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "9820829",
+      "name": "质量控制",
+      "font_class": "zhiliangkongzhi",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "12331685",
+      "name": "维护",
+      "font_class": "weihu",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "34324498",
+      "name": "个性化定制",
+      "font_class": "gexinghuadingzhi",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "34564340",
+      "name": "产品1",
+      "font_class": "chanpin1",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "7571327",
+      "name": "右右",
+      "font_class": "youyou",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "11855561",
+      "name": "加",
+      "font_class": "jia1",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
       "icon_id": "816471",
       "name": "电话",
       "font_class": "dianhua",
