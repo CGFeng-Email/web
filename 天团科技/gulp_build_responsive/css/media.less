@@ -5,6 +5,28 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
 @media screen and (max-width: 1300px) {
+    .about {
+        .environment {
+            .environment_banner {
+                .content {
+                    max-width: 100%;
+                    width: 90%;
+                }
+            }
+
+            .env_arrow {
+                width: 100%;
+
+                .wrap {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
     .header {
         .content {
             .right {
@@ -254,6 +276,101 @@
             }
         }
     }
+
+    .tabs {
+        justify-content: start;
+
+        .li {
+            margin: 0 10px 20px;
+
+            .link {
+                height: 44px;
+                line-height: 44px;
+                padding: 0 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .about {
+        .environment {
+            .environment_banner {
+                .slide {
+                    .cover_box {
+                        .cover {
+                            height: 500px;
+                        }
+                    }
+                }
+            }
+
+            .env_arrow {
+                bottom: 50px;
+            }
+        }
+    }
+
+    .service {
+        .main {
+            margin: 0;
+            padding: 0;
+
+            .list {
+                .item {
+                    padding: 0;
+                    margin-bottom: 0;
+
+                    .col_md {
+                        .content {
+                            padding: 0;
+
+                            .lead {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+
+                .item:nth-child(odd) {
+                    .row {
+                        flex-direction: column-reverse;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact_us {
+        .main {
+            padding: 0 10px;
+
+            .message_box {
+                .right {
+                    margin-bottom: 20px;
+                }
+
+                .form {
+                    .item {
+                        .input_box {
+                            padding-left: 0;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            margin-top: 100px;
+            .modal-body {
+                .pad_bottom {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -373,6 +490,156 @@
             }
 
             .explain {}
+        }
+    }
+
+    .about {
+        .main {
+            .explain {
+                padding: 20px 0;
+
+                .center_head {
+                    padding-bottom: 20px;
+
+                }
+            }
+        }
+
+        .environment {
+            .environment_banner {
+                width: 100%;
+
+                .content {
+
+                    .box {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .certificate {
+        .list {
+            margin-top: 30px;
+
+            .box {
+                .link {
+                    .title {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact_us {
+        .main {
+            .information {
+                .title {
+                    font-size: 24px;
+                }
+
+                .subhead {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+
+                .mobile {
+                    font-size: 20px;
+                }
+
+                .list {
+                    padding: 20px 0 0;
+
+                    .item {
+                        padding: 14px;
+                        margin-bottom: 20px;
+                        min-height: auto;
+
+                        .icon {
+                            .iconfont {
+                                font-size: 32px;
+                            }
+                        }
+
+                        .content {
+                            .name {
+                                font-size: 16px;
+                            }
+
+                            .text {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .map {
+                    height: 450px;
+                }
+            }
+
+            .message_box {
+                padding: 10px;
+                margin-bottom: 20px;
+
+                .left_cover,
+                .right_content {
+                    padding: 0;
+                }
+
+                .title {
+                    font-size: 24px;
+                }
+
+                .lead {
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+
+                .form {
+                    margin-top: 20px;
+
+                    .item {
+                        margin-bottom: 10px;
+
+                        .input {
+                            height: 46px;
+                            font-size: 12px;
+                            padding: 0 10px;
+                        }
+
+                        .input_box {
+                            margin-top: 10px;
+                        }
+
+                        .textarea {
+                            padding: 10px;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .btn_box {
+                        margin-top: 10px;
+
+                        .btn {
+                            min-width: auto;
+                            width: 100%;
+                            height: 46px;
+                            line-height: 46px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .right {
+                    .cover_box {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
         }
     }
 }
