@@ -1,0 +1,106 @@
+<div class="modal fade myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title uppercase">Product consultation</h4>
+                <p class="sub_head">Pursuing excellence and constantly innovating</p>
+            </div>
+            <div class="modal-body">
+                <form class="layui-form" action="">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box pad_bottom">
+                                    <input type="text" name="name" autocomplete="off" lay-verify="required"
+                                        lay-vertype="tips" placeholder="*Your Name" lay-reqtext="Your Name"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <input type="text" name="email" autocomplete="off" lay-verify="required"
+                                        lay-vertype="tips" placeholder="*E-mail" lay-reqtext="E-mail"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box pad_bottom">
+                                    <input type="text" name="mobile" autocomplete="off"
+                                        placeholder="Your Contact Number" class="layui-input input">
+                                </div>
+                            </div>
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <input type="text" name="WeChat" autocomplete="off" placeholder="WeChat"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-12 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <input type="text" name="company" autocomplete="off" lay-verify="required"
+                                        lay-vertype="tips" lay-reqtext="Company Name" placeholder="*Company Name"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-12 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <textarea name="message" placeholder="Message content"
+                                        class="layui-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item upload_item">
+                        <div class="upload" id="upload_demo">
+                            <i class="iconfont icon-shangchuantupian"></i>
+                        </div>
+                    </div>
+
+                    <div class="btn_item">
+                        <button type="submit" class="layui-btn submit_btn box_radius" lay-submit
+                            lay-filter="submit">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var upload = layui.upload;
+        var $ = layui.$;
+
+        // 渲染
+        upload.render({
+            elem: '#upload_demo',
+        });
+
+        form.on('submit(submit)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    });
+</script>

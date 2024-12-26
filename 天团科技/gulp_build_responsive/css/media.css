@@ -1,4 +1,17 @@
 @media screen and (max-width: 1300px) {
+  .about .environment .environment_banner .content {
+    max-width: 100%;
+    width: 90%;
+  }
+  .about .environment .env_arrow {
+    width: 100%;
+  }
+  .about .environment .env_arrow .wrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 1300px) {
   .header .content .right .h_navbar .nav {
     padding-right: 10px;
   }
@@ -142,6 +155,57 @@
   .details .main .product_details .details_right {
     width: 100%;
   }
+  .tabs {
+    justify-content: start;
+  }
+  .tabs .li {
+    margin: 0 10px 20px;
+  }
+  .tabs .li .link {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .about .environment .environment_banner .slide .cover_box .cover {
+    height: 500px;
+  }
+  .about .environment .env_arrow {
+    bottom: 50px;
+  }
+  .service .main {
+    margin: 0;
+    padding: 0;
+  }
+  .service .main .list .item {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .service .main .list .item .col_md .content {
+    padding: 0;
+  }
+  .service .main .list .item .col_md .content .lead {
+    margin-bottom: 0;
+  }
+  .service .main .list .item:nth-child(odd) .row {
+    flex-direction: column-reverse;
+  }
+  .contact_us .main {
+    padding: 0 10px;
+  }
+  .contact_us .main .message_box .right {
+    margin-bottom: 20px;
+  }
+  .contact_us .main .message_box .form .item .input_box {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .modal .modal-dialog {
+    margin-top: 100px;
+  }
+  .modal .modal-dialog .modal-body .pad_bottom {
+    padding-bottom: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -215,5 +279,100 @@
   }
   .details .main .swiper_left .product_box .product_swiper {
     height: 460px;
+  }
+  .about .main .explain {
+    padding: 20px 0;
+  }
+  .about .main .explain .center_head {
+    padding-bottom: 20px;
+  }
+  .about .environment .environment_banner {
+    width: 100%;
+  }
+  .about .environment .environment_banner .content .box {
+    width: 80%;
+  }
+  .certificate .list {
+    margin-top: 30px;
+  }
+  .certificate .list .box .link .title {
+    font-size: 14px;
+  }
+  .contact_us .main .information .title {
+    font-size: 24px;
+  }
+  .contact_us .main .information .subhead {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .contact_us .main .information .mobile {
+    font-size: 20px;
+  }
+  .contact_us .main .information .list {
+    padding: 20px 0 0;
+  }
+  .contact_us .main .information .list .item {
+    padding: 14px;
+    margin-bottom: 20px;
+    min-height: auto;
+  }
+  .contact_us .main .information .list .item .icon .iconfont {
+    font-size: 32px;
+  }
+  .contact_us .main .information .list .item .content .name {
+    font-size: 16px;
+  }
+  .contact_us .main .information .list .item .content .text {
+    font-size: 14px;
+  }
+  .contact_us .main .information .map {
+    height: 450px;
+  }
+  .contact_us .main .message_box {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .contact_us .main .message_box .left_cover,
+  .contact_us .main .message_box .right_content {
+    padding: 0;
+  }
+  .contact_us .main .message_box .title {
+    font-size: 24px;
+  }
+  .contact_us .main .message_box .lead {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .contact_us .main .message_box .form {
+    margin-top: 20px;
+  }
+  .contact_us .main .message_box .form .item {
+    margin-bottom: 10px;
+  }
+  .contact_us .main .message_box .form .item .input {
+    height: 46px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .contact_us .main .message_box .form .item .input_box {
+    margin-top: 10px;
+  }
+  .contact_us .main .message_box .form .item .textarea {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .contact_us .main .message_box .form .btn_box {
+    margin-top: 10px;
+  }
+  .contact_us .main .message_box .form .btn_box .btn {
+    min-width: auto;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 12px;
+  }
+  .contact_us .main .message_box .right .cover_box {
+    width: 100%;
+    height: auto;
   }
 }
