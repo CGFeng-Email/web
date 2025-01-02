@@ -6,7 +6,59 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+@media screen and (max-width: 1300px) {
+    .header {
+        .content {
+            .right {
+                .h_navbar {
+                    .nav {
+                        padding-right: 10px;
+
+                        .li {
+                            .link {
+                                padding: 0 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        .content {
+
+            .left {
+                .search {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .advantage {
+        .main {
+            .list {
+                .li {
+                    padding: 14px 20px;
+
+                    .name {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
+    body {
+        padding-top: 64px;
+    }
+
     .container_padding {
         padding: 60px 0;
     }
@@ -28,6 +80,112 @@
         font-size: 14px;
         line-height: 24px;
     }
+
+    .header {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+        .content {
+            .left {
+                .logo {
+                    .cover {
+                        width: 64px;
+                    }
+                }
+            }
+
+            .right {
+
+                .h_navbar {
+                    display: none;
+                }
+
+                .language {
+                    .box {
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+
+                .menu {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .content {
+            .box {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .head {
+        flex-wrap: wrap;
+
+        .arrow {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            margin-top: 100px;
+
+            .modal-body {
+                .pad_bottom {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .tabs {
+        justify-content: start;
+
+        .li {
+            margin: 0 10px 20px;
+
+            .link {
+                height: 44px;
+                line-height: 44px;
+                padding: 0 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .main_top {
+        margin-top: 30px;
+    }
+
+    .product_show {
+        .list {
+            margin-top: 20px;
+
+            .box {
+                padding: 20px;
+            }
+        }
+    }
+
+    .advantage {
+        .main {
+            .list {
+                padding-left: 0;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -39,5 +197,82 @@
     .title {
         font-size: 18px;
         line-height: 28px;
+    }
+
+    .primaryBtn {
+        height: 44px;
+        line-height: 44px;
+        margin-top: 20px;
+        min-width: 140px;
+
+        .link {
+            font-size: 14px;
+        }
+    }
+
+    .main_top {
+        margin-top: 20px;
+    }
+
+    .footer {
+        .content {
+            .center {
+                padding-left: 0;
+            }
+        }
+
+        .copyright {
+            .link {
+                padding: 10px;
+            }
+        }
+    }
+
+    .serve {
+        .content {
+            min-height: 380px;
+            padding: 80px 20px 0;
+
+            .lead {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .about {
+        .main {
+            margin-top: 30px;
+
+            .content {
+                margin-bottom: 30px;
+                padding-right: 0;
+
+                .title {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+
+                .lead {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    .advantage {
+        .main {
+            .list {
+                .li {
+                    padding: 12px 0;
+
+                    .name {
+                        margin-bottom: 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
 }
