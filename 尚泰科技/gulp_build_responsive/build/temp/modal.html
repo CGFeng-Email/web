@@ -1,0 +1,106 @@
+<div class="modal fade myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title uppercase">获取解决方案</h4>
+                <p class="sub_head">面向企业用户提供研发、设计、管理过程中使用的各种工具，并致力于和客户一同提高研发、设计效率，缩短设计周期</p>
+            </div>
+            <div class="modal-body">
+                <form class="layui-form" action="">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box pad_bottom">
+                                    <input type="text" name="name" autocomplete="off" lay-verify="required"
+                                        lay-vertype="tips" placeholder="*您的姓名" lay-reqtext="*您的姓名"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <input type="text" name="email" autocomplete="off" lay-verify="required"
+                                        lay-vertype="tips" placeholder="*E-mail" lay-reqtext="E-mail"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box pad_bottom">
+                                    <input type="text" name="mobile" autocomplete="off" placeholder="您的电话号码"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <input type="text" name="WeChat" autocomplete="off" placeholder="微信"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-12 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <input type="text" name="company" autocomplete="off" lay-verify="required"
+                                        lay-vertype="tips" lay-reqtext="公司名称" placeholder="公司名称"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-12 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <textarea name="message" placeholder="留言内容"
+                                        class="layui-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item upload_item">
+                        <div class="upload" id="upload_demo">
+                            <i class="iconfont icon-shangchuantupian"></i>
+                        </div>
+                    </div>
+
+                    <div class="btn_item">
+                        <button type="submit" class="layui-btn submit_btn box_radius gradiend" lay-submit
+                            lay-filter="submit">立即发送</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var upload = layui.upload;
+        var $ = layui.$;
+
+        // 渲染
+        upload.render({
+            elem: '#upload_demo',
+        });
+
+        form.on('submit(submit)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    });
+</script>
