@@ -17,6 +17,13 @@
     font-size: 18px;
     line-height: 28px;
   }
+  .message_box .right {
+    margin-bottom: 20px;
+  }
+  .message_box .form .item .input_box {
+    padding-left: 0;
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 992px) {
   body {
@@ -102,6 +109,88 @@
   .advantage .main .list {
     padding-left: 0;
   }
+  .information {
+    padding-bottom: 0;
+  }
+  .information .information_banner {
+    margin-top: 30px;
+  }
+  .information .information_banner .item .wrap .content .name {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .information .information_banner .item .wrap .content .lead {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .message_box {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .message_box .left_cover,
+  .message_box .right_content {
+    padding: 0;
+  }
+  .message_box .title {
+    font-size: 24px;
+  }
+  .message_box .lead {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .message_box .form {
+    margin-top: 20px;
+  }
+  .message_box .form .item {
+    margin-bottom: 10px;
+  }
+  .message_box .form .item .input {
+    height: 46px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .message_box .form .item .input_box {
+    margin-top: 10px;
+  }
+  .message_box .form .item .textarea {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .message_box .form .btn_box {
+    margin-top: 10px;
+  }
+  .message_box .form .btn_box .btn {
+    min-width: auto;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 12px;
+  }
+  .message_box .right .cover_box {
+    width: 100%;
+    height: auto;
+  }
+  .contact_us .main .content .map {
+    height: 360px;
+  }
+  .news .menu {
+    margin-bottom: 30px;
+  }
+  .introduction .introduction_swiper .cover_box {
+    margin-bottom: 20px;
+  }
+  .introduction .introduction_swiper .content .title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .introduction .introduction_swiper .content .date {
+    font-size: 14px;
+    padding: 7px 0;
+  }
+  .introduction .introduction_swiper .content .lead {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -122,6 +211,24 @@
   }
   .main_top {
     margin-top: 20px;
+  }
+  .article {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .article .up {
+    width: 100%;
+    flex: none;
+  }
+  .article .return {
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+  }
+  .article .return .link {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
   }
   .footer .content .center {
     padding-left: 0;
@@ -158,5 +265,60 @@
   .advantage .main .list .li .name {
     margin-bottom: 0;
     font-size: 16px;
+  }
+  .partner .list .cover_box {
+    margin-bottom: 20px;
+  }
+  .about_banner {
+    padding: 30px 0;
+  }
+  .about_banner .main .content .desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .about_banner .main .content .child {
+    padding: 20px;
+  }
+  .development_history .main .swiper_development_history {
+    height: 600px;
+  }
+  .development_history .main .swiper_development_history .item {
+    margin-bottom: 10px;
+  }
+  .development_history .main .swiper_development_history .item .date {
+    width: 70px;
+  }
+  .development_history .main .swiper_development_history .item .content {
+    padding-left: 30px;
+  }
+  .development_history .main .swiper_development_history .item .content .lead {
+    margin-top: 4px;
+  }
+  .development_history .main .swiper_development_history .dev_line {
+    left: 70px;
+  }
+  .news .menu {
+    margin-bottom: 20px;
+  }
+  .news .menu .ul {
+    flex-wrap: wrap;
+  }
+  .news .menu .ul .li {
+    margin-right: 0;
+  }
+  .news .menu .ul .li .link {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 14px;
+  }
+  .introduction {
+    padding: 0;
+  }
+  .information_list {
+    padding: 15px 0;
+  }
+  .information_list .item {
+    margin-bottom: 15px;
   }
 }

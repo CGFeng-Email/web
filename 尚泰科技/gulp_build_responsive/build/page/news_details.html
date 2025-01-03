@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新闻详情</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="news img_bg container_padding" style="background-image: url(../../img/page_bg.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col_md col-md-8 col-sm-12 col-xs-12">
+                    <div class="menu">
+                        <ul class="ul">
+                            <li class="li active">
+                                <a href="javascript:;" class="link">产品资讯</a>
+                            </li>
+                            <li class="li">
+                                <a href="javascript:;" class="link">行业新闻</a>
+                            </li>
+                            <li class="li">
+                                <a href="javascript:;" class="link">公司新闻</a>
+                            </li>
+                            <li class="li">
+                                <a href="javascript:;" class="link">媒体资讯</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_md col-md-4 col-sm-12 col-xs-12">
+                    <form class="layui-form form_box box_shadow box_radius" action="">
+                        <button type="submit" class="layui-btn search_btn" lay-submit lay-filter="search_submit">
+                            <i class="iconfont icon-sousuo"></i>
+                        </button>
+                        <input type="text" name="keyword" lay-verify="required" placeholder="搜索关键词" lay-vertype="tips"
+                            lay-reqtext="请输入搜索关键词" autocomplete="off" class="layui-input input">
+                    </form>
+                </div>
+            </div>
+            <div class="news_details">
+                <div class="head">
+                    <h3 class="title">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                    <div class="author">
+                        <span class="text">时间：2024-11-28 15:06</span>
+                        <span class="text">来源：尚秦科技</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="lead">
+                        尚秦科技（深圳）有限公司（简称：尚秦科技）是国内EDA、机械开发工具提供商之一。面向企业用户提供研发、设计、管理过程中使用的各种工具，并致力于和客户一同提高研发、设计效率，缩短设计周期。先后与ARM，Cadence，达索，Altair等多家全球知名公司建立战略合作伙伴关系，并作为他们在中国区的分销合作伙伴。
+                    </p>
+                    <p class="lead">
+                        尚秦科技专注开发、设计、管理工具，为客户提供从芯片级开发工具、EDA设计工具、软件编译以及测试工具、机械设计工具等。能更好的协助合作伙伴快速的掌握开发工具的使用，并让合作伙伴把精力集中在自身产品的设计过程中，以提高开发设计效率。
+                    </p>
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/news_details.png" alt="">
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="up">
+                        <p class="lead">
+                            <a href="" class="link">
+                                上一篇：没有了！
+                            </a>
+                        </p>
+                        <p class="lead">
+                            <a href="" class="link">
+                                下一篇：汇聚了众多技术大师的心血，在众多的竞争产品中脱颖而出。
+                            </a>
+                        </p>
+                    </div>
+                    <div class="return">
+                        <a href="javascript:history.back()" class="link">返回列表</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('modal.html')
+    @@include('serve.html')
+    @@include('footer.html')
+</body>
+
+</html>

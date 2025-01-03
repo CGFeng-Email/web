@@ -3,14 +3,288 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>新闻资讯</title>
     @@include('head.html')
 </head>
 
 <body>
     @@include('header.html')
-
+    <div class="news img_bg container_padding" style="background-image: url(../../img/page_bg.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col_md col-md-8 col-sm-12 col-xs-12">
+                    <div class="menu">
+                        <ul class="ul">
+                            <li class="li active">
+                                <a href="javascript:;" class="link">产品资讯</a>
+                            </li>
+                            <li class="li">
+                                <a href="javascript:;" class="link">行业新闻</a>
+                            </li>
+                            <li class="li">
+                                <a href="javascript:;" class="link">公司新闻</a>
+                            </li>
+                            <li class="li">
+                                <a href="javascript:;" class="link">媒体资讯</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_md col-md-4 col-sm-12 col-xs-12">
+                    <form class="layui-form form_box box_shadow box_radius" action="">
+                        <button type="submit" class="layui-btn search_btn" lay-submit lay-filter="search_submit">
+                            <i class="iconfont icon-sousuo"></i>
+                        </button>
+                        <input type="text" name="keyword" lay-verify="required" placeholder="搜索关键词" lay-vertype="tips"
+                            lay-reqtext="请输入搜索关键词" autocomplete="off" class="layui-input input">
+                    </form>
+                </div>
+            </div>
+            <div class="introduction main_top">
+                <div class="swiper-container introduction_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/services_cover1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="content">
+                                        <h3 class="title over2">
+                                            我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。
+                                        </h3>
+                                        <p class="date">2024-11-28</p>
+                                        <p class="lead over3">
+                                            专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/services_cover1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                    <div class="content">
+                                        <h3 class="title over2">
+                                            我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。
+                                        </h3>
+                                        <p class="date">2024-11-28</p>
+                                        <p class="lead over3">
+                                            专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper_page"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="information_list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <a href="../../news_details.html" class="link">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/information_li1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="name over3">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                                <p class="lead over3">专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。</p>
+                                <div class="date">
+                                    <span class="text">2024-11-28</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <a href="../../news_details.html" class="link">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/information_li2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="name over3">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                                <p class="lead over3">专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。</p>
+                                <div class="date">
+                                    <span class="text">2024-11-28</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <a href="../../news_details.html" class="link">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/information_li3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="name over3">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                                <p class="lead over3">专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。</p>
+                                <div class="date">
+                                    <span class="text">2024-11-28</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <a href="../../news_details.html" class="link">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/information_li4.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="name over3">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                                <p class="lead over3">专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。</p>
+                                <div class="date">
+                                    <span class="text">2024-11-28</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <a href="../../news_details.html" class="link">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/information_li5.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="name over3">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                                <p class="lead over3">专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。</p>
+                                <div class="date">
+                                    <span class="text">2024-11-28</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <a href="../../news_details.html" class="link">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/information_li6.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="name over3">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                                <p class="lead over3">专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。</p>
+                                <div class="date">
+                                    <span class="text">2024-11-28</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <a href="../../news_details.html" class="link">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/information_li7.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="name over3">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                                <p class="lead over3">专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。</p>
+                                <div class="date">
+                                    <span class="text">2024-11-28</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <a href="../../news_details.html" class="link">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/information_li8.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="name over3">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                                <p class="lead over3">专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。</p>
+                                <div class="date">
+                                    <span class="text">2024-11-28</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="item">
+                        <a href="../../news_details.html" class="link">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/information_li9.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3 class="name over3">我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。</h3>
+                                <p class="lead over3">专注开发、设计、管理工具，为客户提供芯片级开发工具、EDA设计工具、软件编译及测试工具、机械设计工具等。</p>
+                                <div class="date">
+                                    <span class="text">2024-11-28</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="paging">
+                <nav class="nav_box" aria-label="Page navigation">
+                    <ul class="pagination pagination-lg">
+                        <li class="disabled">
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="disabled">
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    @@include('modal.html')
+    @@include('serve.html')
     @@include('footer.html')
 </body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(search_submit)', function (data) {
+            console.log('keyword', data);
+            return false;
+        });
+    });
+
+    let introduction_swiper = new Swiper('.introduction_swiper', {
+        autoplay: {
+            delay: 8000000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1200,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    })
+</script>
 
 </html>
