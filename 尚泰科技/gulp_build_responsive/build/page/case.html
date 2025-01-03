@@ -9,8 +9,33 @@
 
 <body>
     @@include('header.html')
-
+    <div class="case_banner img_bg" style="background-image: url(../../img/case_banner.png);">
+        <div class="container">
+            <div class="content">
+                <div class="title">500强与领先企业的选择</div>
+                <form class="layui-form form_box box_shadow box_radius" action="">
+                    <button type="submit" class="layui-btn search_btn" lay-submit lay-filter="search_submit">
+                        <i class="iconfont icon-sousuo"></i>
+                    </button>
+                    <input type="text" name="keyword" lay-verify="required" placeholder="搜索关键词" lay-vertype="tips"
+                        lay-reqtext="请输入搜索关键词" autocomplete="off" class="layui-input input">
+                </form>
+            </div>
+        </div>
+    </div>
     @@include('footer.html')
 </body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(contact_us_btn)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    });
+</script>
 
 </html>

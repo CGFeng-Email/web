@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>首页</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -251,6 +251,115 @@
             </div>
         </div>
     </div>
+    <div class="information container_padding"
+        style="background: linear-gradient(180.00deg, #fff 0%, #f7f9ff 46.86%, #fff 100%);">
+        <div class="container">
+            <div class="head">
+                <h3 class="title">尚秦产品资讯</h3>
+                <p class="lead">致力于和客户一同提高研发、设计效率，缩短设计周期</p>
+            </div>
+            <div class="swiper-container information_banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item curson">
+                        <div class="cover_box">
+                            <img class="cover" src="img/information1.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="content">
+                                <div class="name">基于Arm Cortex-M微控制器的完整软件开发解决方案</div>
+                                <p class="lead">Arm Keil MDK 包括领先的基于 Windows®的 IDE，调试器，市场领先的编译器，软件包管理和 CMSIS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item curson">
+                        <div class="cover_box">
+                            <img class="cover" src="img/information2.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="content">
+                                <div class="name">您能够构建适用于裸机嵌入式系统的应用程序和库</div>
+                                <p class="lead">此工具链推荐用于针对ARMv8-A 的软件开发，具有高性能计算（HPC）的 SVE 架构扩展。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item curson">
+                        <div class="cover_box">
+                            <img class="cover" src="img/information3.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <div class="content">
+                                <div class="name">ARM 编译器，用于编译嵌入式和裸机应用程序</div>
+                                <p class="lead">此工具链推荐用于针对ARMv8-A 的软件开发，具有高性能计算（HPC）的 SVE 架构扩展。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="partner container_padding img_bg" style="background-image: url(img/partner_banner.png);">
+        <div class="container">
+            <div class="head">
+                <h3 class="title">尚秦知名企业合作伙伴</h3>
+                <p class="lead">致力于和客户一同提高研发、设计效率，缩短设计周期</p>
+            </div>
+            <div class="list main_top">
+                <div class="row">
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner7.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner9.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col_md col-md-2 col-sm-4 col-xs-6">
+                        <div class="cover_box">
+                            <img class="cover" src="img/partner10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -468,6 +577,29 @@
             },
             slideChangeTransitionEnd: function () {
                 swiperAnimate(this);
+            }
+        }
+    })
+
+    let information_banner = new Swiper('.information_banner', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1200,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
             }
         }
     })
