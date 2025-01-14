@@ -3,13 +3,105 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>产品中心</title>
     @@include('head.html')
 </head>
 
 <body>
     @@include('header.html')
-
+    <div class="product_list img_bg container_padding" style="background-image: url(../../img/about_bg.png);">
+        <div class="container">
+            <div class="head">
+                <h3 class="title">Arm系列开发工具</h3>
+                <p class="lead">是国内EDA、机械开发工具提供商之一</p>
+            </div>
+            <div class="main main_top">
+                <div class="row">
+                    <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <a href="../../product_details.html" class="link">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li1.png" alt="">
+                                </div>
+                                <div class="name">Arm® Keil® MDK系列开发工具</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <a href="../../product_details.html" class="link">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li2.png" alt="">
+                                </div>
+                                <div class="name">DS-5 Development Studio</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <a href="../../product_details.html" class="link">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li3.png" alt="">
+                                </div>
+                                <div class="name">DS-5 Debugger</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <a href="../../product_details.html" class="link">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li4.png" alt="">
+                                </div>
+                                <div class="name">Fixed Virtual Platform (FVP)</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <a href="../../product_details.html" class="link">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li5.png" alt="">
+                                </div>
+                                <div class="name">ARM® Compiler tools</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <a href="../../product_details.html" class="link">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li6.png" alt="">
+                                </div>
+                                <div class="name">DS-5 Debugger</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="paging">
+            <nav class="nav_box" aria-label="Page navigation">
+                <ul class="pagination pagination-lg">
+                    <li class="disabled">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li class="disabled">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    @@include('modal.html')
+    @@include('serve.html')
     @@include('footer.html')
 </body>
 

@@ -11,6 +11,14 @@ $('.header .menu').click(function () {
   $('.h5_nav').stop().toggleClass('h5_nav_active');
 })
 
+$('.header .h_navbar .nav .li').hover(function () {
+  $(this).children('.child').stop().slideToggle()
+})
+
+$('.h5_nav .nav .li').click(function () {
+  $(this).children('.child_menu').stop().slideToggle();
+})
+
 $('.h5_nav .c_nav .li').click(function () {
   $(this).children('.child_down').stop().slideToggle('.active')
 })
