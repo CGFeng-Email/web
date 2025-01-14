@@ -3,26 +3,188 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>客户案例</title>
     @@include('head.html')
 </head>
 
 <body>
     @@include('header.html')
     <div class="case_banner img_bg" style="background-image: url(../../img/case_banner.png);">
-        <div class="container">
-            <div class="content">
-                <div class="title">500强与领先企业的选择</div>
-                <form class="layui-form form_box box_shadow box_radius" action="">
-                    <button type="submit" class="layui-btn search_btn" lay-submit lay-filter="search_submit">
-                        <i class="iconfont icon-sousuo"></i>
-                    </button>
-                    <input type="text" name="keyword" lay-verify="required" placeholder="搜索关键词" lay-vertype="tips"
-                        lay-reqtext="请输入搜索关键词" autocomplete="off" class="layui-input input">
-                </form>
+        <div class="content">
+            <div class="title">
+                <span class="name">500强</span>
+                <span class="text">与领先企业的选择</span>
+            </div>
+            <form class="layui-form form_box" action="">
+                <input type="text" name="email" lay-verify="required" placeholder="请输入您的电子邮箱" lay-vertype="tips"
+                    lay-reqtext="请输入您的电子邮箱" autocomplete="off" class="layui-input input">
+                <button type="submit" class="layui-btn _btn box_shadow" lay-submit lay-filter="get_email">
+                    获取方案
+                </button>
+            </form>
+        </div>
+        <div class="swiper-container advantage_banner">
+            <div class="swiper-wrapper banner_wrap">
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner1.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner2.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner3.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner4.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner5.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner6.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner7.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner8.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner9.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="../../img/partner10.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="case_category container_padding">
+        <div class="container">
+            <div class="head">
+                <h3 class="title">各行业领军企业成功案例</h3>
+                <p class="lead">致力于和客户一同提高研发、设计效率，缩短设计周期</p>
+            </div>
+            <div class="main main_top">
+                <div class="row">
+                    <div class="col_md col-md-2 col-sm-12 col-xs-12">
+                        <div class="menu">
+                            <div class="li active">
+                                <span class="text">友华汽配</span>
+                            </div>
+                            <div class="li">
+                                <span class="text">深圳技术大学</span>
+                            </div>
+                            <div class="li">
+                                <span class="text">资福医疗</span>
+                            </div>
+                            <div class="li">
+                                <span class="text">涂鸦智能</span>
+                            </div>
+                            <div class="li">
+                                <span class="text">导远电子</span>
+                            </div>
+                            <div class="li">
+                                <span class="text">航天龙梦</span>
+                            </div>
+                            <div class="li">
+                                <span class="text">seeekway</span>
+                            </div>
+                            <div class="li">
+                                <span class="text">福莱思电子</span>
+                            </div>
+                            <div class="li">
+                                <span class="text">哈尔滨工业大学</span>
+                            </div>
+                            <div class="li">
+                                <span class="text">GDKPHJ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-10 col-sm-12 col-xs-12">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col_md col-md-5 col-sm-6 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/breviary6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-7 col-sm-6 col-xs-12">
+                                    <div class="details">
+                                        <img class="cover" src="../../img/tag.png" alt="">
+                                        <div class="name">基于Arm Cortex-M微控制器的完整软件开发解决方案</div>
+                                        <p class="lead">Arm Keil MDK 包括领先的基于 Windows®的 IDE，调试器，市场领先的编译器，软件包管理和
+                                            CMSIS；这些软件工具允许您加速嵌入式软件项目的开发。</p>
+                                        <p class="url">官方网址：</p>
+                                        <a href="" class="link">www.promotion.tuya.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product_information container_padding img_bg" style="background-image: url(../../img/about_bg.png);">
+        <div class="container">
+            <div class="head">
+                <h3 class="title">产品资讯</h3>
+                <p class="lead">面向企业用户提供研发、设计、管理过程中使用的各种工具，并致力于和客户一同提高研发、设计效率，缩短设计周期</p>
+            </div>
+            <div class="main main_top">
+                <div class="swiper-container product_information_banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/product_information1.png" alt="">
+                            </div>
+                            <div class="name">
+                                我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/product_information2.png" alt="">
+                            </div>
+                            <div class="name">
+                                我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/product_information3.png" alt="">
+                            </div>
+                            <div class="name">
+                                我们始终致力于成为客户最值得信赖的合作伙伴，追求卓越，不断创新。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('modal.html')
+    @@include('serve.html')
     @@include('footer.html')
 </body>
 <script>
@@ -36,6 +198,76 @@
             return false;
         });
     });
+
+    let advantage_banner = new Swiper('.advantage_banner', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1200,
+        slidesPerView: 7,
+        spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+            1400: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            }
+        },
+        on: {
+            init: function () {
+                swiperAnimateCache(this);
+                swiperAnimate(this);
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this);
+            }
+        }
+    })
+
+    let product_information_banner = new Swiper('.product_information_banner', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1200,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        },
+        on: {
+            init: function () {
+                swiperAnimateCache(this);
+                swiperAnimate(this);
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this);
+            }
+        }
+    })
 </script>
 
 </html>

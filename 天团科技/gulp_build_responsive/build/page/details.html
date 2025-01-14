@@ -17,6 +17,9 @@
                         <div class="col_md col-md-7 col-sm-12 col-xs-12">
                             <div class="swiper_left">
                                 <div class="menu">
+                                    <div class="prev">
+                                        <i class="layui-icon layui-icon-up"></i>
+                                    </div>
                                     <div class="swiper-container menu_banner">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide item box_radius box_shadow active">
@@ -47,19 +50,6 @@
                                                     <img class="cover" src="../../img/product5.png" alt="">
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product_box">
-                                    <div class="swiper-container product_swiper box_shadow">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide item box_radius box_shadow active">
-                                                <div class="cover_box">
-                                                    <video class="video" src="../../video/2024-12-26 10_16_59.mp4"
-                                                        poster autoplay controls muted>
-                                                    </video>
-                                                </div>
-                                            </div>
                                             <div class="swiper-slide item box_radius box_shadow">
                                                 <div class="cover_box">
                                                     <img class="cover" src="../../img/product2.png" alt="">
@@ -81,6 +71,42 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="next">
+                                        <i class="layui-icon layui-icon-down"></i>
+                                    </div>
+                                </div>
+                                <div class="product_box">
+                                    <!-- 视频 -->
+                                    <div class="item_box box_radius box_shadow">
+                                        <video class="video" src="../../video/2024-12-26 10_16_59.mp4" preload="auto"
+                                            controls>
+                                        </video>
+                                    </div>
+                                    <!-- 图片 -->
+                                    <div class="item_box box_radius box_shadow active_box">
+                                        <img class="cover" src="../../img/product1.png" alt="">
+                                        <div class="mask"></div>
+                                    </div>
+                                    <!-- 图片 -->
+                                    <div class="item_box box_radius box_shadow">
+                                        <img class="cover" src="../../img/product2.png" alt="">
+                                        <div class="mask"></div>
+                                    </div>
+                                    <!-- 图片 -->
+                                    <div class="item_box box_radius box_shadow">
+                                        <img class="cover" src="../../img/product3.png" alt="">
+                                        <div class="mask"></div>
+                                    </div>
+                                    <!-- 图片 -->
+                                    <div class="item_box box_radius box_shadow">
+                                        <img class="cover" src="../../img/product4.png" alt="">
+                                        <div class="mask"></div>
+                                    </div>
+
+                                    <!-- 当active_box选中值是视频时，隐藏 -->
+                                    <div class="big-img-box">
+                                        <img class="cover big-img" src="../../img/product1.png" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -309,30 +335,82 @@
     @@include('footer.html')
 </body>
 <script>
-    let product_swiper = new Swiper('.product_swiper', {
-        speed: 1200,
-        effect: 'fade',
-        on: {
-            slideChangeTransitionStart: function () {
-                $('.menu_banner .item').eq(this.activeIndex).addClass('active').siblings().removeClass('active')
-            },
-        },
-    })
-
     let menu_banner = new Swiper('.menu_banner', {
         speed: 1200,
         direction: 'vertical',
+        slidesPerView: 'auto',
         spaceBetween: 10,
-        slidesPerView: 5,
+        slidesPerGroupAuto: true,
     })
 
     $('.menu_banner .item').click(function () {
         let index = $(this).index();
-        menu_banner.slideTo(index, 1200, false);
-        product_swiper.slideTo(index, 1200, false);
         $(this).addClass('active').siblings().removeClass('active');
-
+        // 切换右侧商品显示...
     })
+
+    $('.prev').click(function () {
+        menu_banner.slidePrev();
+    })
+
+    $('.next').click(function () {
+        menu_banner.slideNext();
+    })
+
+    // 获取原图的盒子
+    var oneImgBox = document.querySelector('.active_box');
+    // 获取遮罩层
+    var mask = document.querySelector('.active_box .mask');
+    // 获取大图盒子
+    var bigImgBox = document.querySelector('.big-img-box');
+    // 获取大图
+    var bigImg = document.querySelector('.big-img');
+    
+    // 元素相对于视口的位置，返回一个对象
+    var rect = oneImgBox.getBoundingClientRect();
+
+    // 2、控制显示与隐藏
+    // 2.1 鼠标经过 oneImgBox，显示 mask遮挡层 和 bigImgBox大盒子；
+    oneImgBox.addEventListener('mouseover', function () {
+        mask.style.display = 'inline-block';
+        bigImgBox.style.display = 'inline-block';
+    })
+    // 2.2 鼠标移出 oneImgBox，隐藏 mask遮挡层 和 bigImgBox大盒子；
+    oneImgBox.addEventListener('mouseout', function () {
+        mask.style.display = 'none';
+        bigImgBox.style.display = 'none';
+    })
+
+    // 3、遮罩层跟随鼠标移动
+    oneImgBox.addEventListener('mousemove', function (e) {
+        // 3.1 计算鼠标在盒子内的坐标
+        var mouseX = e.pageX - rect.left;
+        var mouseY = e.pageY - rect.top;
+
+        // 3.2 计算遮罩层的移动位置
+        // 移动位置 = 鼠标的移动距离 - 遮罩层自己宽度\高度的一半(鼠标会在遮罩层中心位置,否则在左上角)
+        var maskX = mouseX - mask.offsetWidth / 2;
+        var maskY = mouseY - mask.offsetWidth / 2;
+
+        // 4、控制遮罩层的移动范围
+        // 4.1 计算遮罩层最大移动宽度\高度 = 原图盒子的宽度\高度 - 遮罩层的宽度\高度
+        var maskMaxX = rect.width - mask.offsetWidth;
+        var maskMaxY = rect.height - mask.offsetHeight
+
+        // 如果移动距离 大于 最大移动距离，则取最大的移动距离
+        // 如果移动距离 小于 0，则取0;
+        maskX = maskX > maskMaxX ? maskMaxX : maskX < 0 ? 0 : maskX;
+        maskY = maskY > maskMaxY ? maskMaxY : maskY < 0 ? 0 : maskY;
+
+        // 计算结果赋给遮罩层
+        mask.style.left = maskX + 'px';
+        mask.style.top = maskY + 'px';
+
+        // 5 大图的移动距离 = 遮罩层的移动距离 * 放大比例 (注意大图的移动方向与遮罩层相反)
+        bigImg.style.left = -maskX * 2 + 'px';
+        bigImg.style.top = -maskY * 2 + 'px';
+    })
+
 
 </script>
 

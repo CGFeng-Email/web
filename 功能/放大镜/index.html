@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放大镜效果</title>
+    <style>
+        body {
+            min-height: 4000px;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .one-img-box,
+        .big-img-box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            cursor: move;
+        }
+
+        .one-img-box img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .big-img-box {
+            display: none;
+        }
+
+        .big-img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 300%;
+            height: 300%;
+        }
+
+        .mask {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            opacity: .4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one-img-box">
+        <img src="./img/384207e27c564fd38d6db7f266cabd51.jpg" alt="">
+        <div class="mask"></div>
+    </div>
+    <div class="big-img-box">
+        <img class="big-img" src="./img/384207e27c564fd38d6db7f266cabd51.jpg" alt="">
+    </div>
+</body>
+<script>
+    // 1、获取元素
+    // 获取原图的盒子
+    var oneImgBox = document.querySelector('.one-img-box');
+    // 获取遮罩层
+    var mask = document.querySelector('.mask');
+    // 获取大图盒子
+    var bigImgBox = document.querySelector('.big-img-box');
+    // 获取大图
+    var bigImg = document.querySelector('.big-img');
+
+
+    // 2、控制显示与隐藏
+    // 2.1 鼠标经过 oneImgBox，显示 mask遮挡层 和 bigImgBox大盒子；
+    oneImgBox.addEventListener('mouseover', function () {
+        mask.style.display = 'inline-block';
+        bigImgBox.style.display = 'inline-block';
+    })
+    // 2.2 鼠标移出 oneImgBox，隐藏 mask遮挡层 和 bigImgBox大盒子；
+    oneImgBox.addEventListener('mouseout', function () {
+        mask.style.display = 'none';
+        bigImgBox.style.display = 'none';
+    })
+
+    // 3、遮罩层跟随鼠标移动
+    oneImgBox.addEventListener('mousemove', function (e) {
+        // 3.1 计算鼠标在盒子内的坐标
+        var mouseX = e.pageX - oneImgBox.offsetLeft;
+        var mouseY = e.pageY - oneImgBox.offsetTop;
+
+        // 3.2 计算遮罩层的移动位置
+        // 移动位置 = 鼠标的移动距离 - 遮罩层自己宽度\高度的一半(鼠标会在遮罩层中心位置,否则在左上角)
+        var maskX = mouseX - mask.offsetWidth / 2;
+        var maskY = mouseY - mask.offsetHeight / 2;
+
+        // 计算结果赋给遮罩层;
+        // mask.style.left = maskX + 'px';
+        // mask.style.top = maskY + 'px';
+
+        // 4、控制遮罩层的移动范围
+        // 4.1 计算遮罩层最大移动宽度\高度 = 原图盒子的宽度\高度 - 遮罩层的宽度\高度
+        var maskMaxX = oneImgBox.offsetWidth - mask.offsetWidth;
+        var maskMaxY = oneImgBox.offsetHeight - mask.offsetHeight
+
+        // 如果移动距离 大于 最大移动距离，则取最大的移动距离
+        // 如果移动距离 小于 0，则取0;
+        maskX = maskX > maskMaxX ? maskMaxX : maskX < 0 ? 0 : maskX;
+        maskY = maskY > maskMaxY ? maskMaxY : maskY < 0 ? 0 : maskY;
+
+        // 计算结果赋给遮罩层
+        mask.style.left = maskX + 'px';
+        mask.style.top = maskY + 'px';
+
+        // 5、按比例显示大图
+        // 5.1 放大比例 = 原图的宽度 / 大图的宽度 = 1 / 3
+        // var rate = oneImgBox.offsetLeft / bigImg.offsetWidth;
+
+        // 5.2 大图的移动距离 = 遮罩层的移动距离 * 放大比例 (注意大图的移动方向与遮罩层相反)
+        bigImg.style.left = -maskX * 3 + 'px';
+        bigImg.style.top = -maskY * 3 + 'px';
+    })
+</script>
+
+</html>

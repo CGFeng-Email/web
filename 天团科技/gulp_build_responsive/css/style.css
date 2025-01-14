@@ -810,14 +810,33 @@ body::-webkit-scrollbar-thumb:hover {
 .details .main .swiper_left .menu {
   width: 20%;
 }
+.details .main .swiper_left .menu .prev,
+.details .main .swiper_left .menu .next {
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background: #F5F5F5;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.details .main .swiper_left .menu .prev:hover,
+.details .main .swiper_left .menu .next:hover {
+  background: #3438A8;
+  color: #fff;
+}
 .details .main .swiper_left .menu .menu_banner {
   padding: 2px;
-  height: 620px;
+  height: 552px;
+  margin: 10px 0;
 }
 .details .main .swiper_left .menu .item {
   border: 2px solid #fff;
   cursor: pointer;
   position: relative;
+  height: 100px;
 }
 .details .main .swiper_left .menu .item .cover_box {
   padding: 10px;
@@ -836,16 +855,18 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 26px;
   color: #fff;
   text-align: center;
-  line-height: 114px;
+  line-height: 100px;
   background: rgba(0, 0, 0, 0.4);
 }
 .details .main .swiper_left .menu .active {
   border-color: #3438A8;
   background: #FBFBFB;
+  opacity: 0.9;
 }
 .details .main .swiper_left .product_box {
   width: 80%;
   padding: 0 0 0 15px;
+  position: relative;
 }
 .details .main .swiper_left .product_box .product_swiper {
   height: 620px;
@@ -858,6 +879,54 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   height: 620px;
   border-radius: 4px;
+  object-fit: contain;
+}
+.details .main .swiper_left .product_box .item_box {
+  position: relative;
+  cursor: move;
+  height: 620px;
+  overflow: hidden;
+  display: none;
+}
+.details .main .swiper_left .product_box .item_box .cover,
+.details .main .swiper_left .product_box .item_box .video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.details .main .swiper_left .product_box .item_box .mask {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
+  z-index: 2;
+}
+.details .main .swiper_left .product_box .active_box {
+  display: block;
+}
+.details .main .swiper_left .product_box .big-img-box {
+  position: absolute;
+  top: 0;
+  right: -515px;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 4px;
+  display: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.details .main .swiper_left .product_box .big-img-box .cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
   object-fit: contain;
 }
 .details .main .explain {

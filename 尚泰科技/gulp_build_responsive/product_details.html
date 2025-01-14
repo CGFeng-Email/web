@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>产品详情</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<link rel="stylesheet" href="nprogress/nprogress.css">
+<link rel="stylesheet" href="font/iconfont.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="aos/aos.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
+<link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="nprogress/nprogress.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="aos/aos.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="roll_number/jquery.counterup.js"></script>
+<script src="roll_number/jquery.waypoints.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="swiper/js/swiper.animate1.0.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="layui/layui.min.js"></script>
+<script src="js/comment.js"></script>
+</head>
+
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <h1 class="logo">
+                    <a href="index.html" class="link">
+                        <img class="cover" src="img/logo.png" alt="logo" />
+                    </a>
+                </h1>
+            </div>
+            <div class="right">
+                <div class="h_navbar">
+                    <ul class="nav">
+                        <li class="li active">
+                            <a href="index.html" class="link uppercase">首页</a>
+                        </li>
+                        <li class="li">
+                            <a href="about.html" class="link uppercase">关于我们</a>
+                        </li>
+                        <li class="li">
+                            <a href="product.html" class="link uppercase">产品中心</a>
+                            <div class="child">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="category">
+                                                <div class="name">产品分类</div>
+                                                <ul class="category_ul">
+                                                    <li class="child_li active">
+                                                        <a href="" class="child_link">
+                                                            <img class="cover" src="img/category1.png" alt="">
+                                                            <span class="text">ARM系列开发工具</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="child_li">
+                                                        <a href="" class="child_link">
+                                                            <img class="cover" src="img/category2.png" alt="">
+                                                            <span class="text">ALTAIR系列</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="child_li">
+                                                        <a href="" class="child_link">
+                                                            <img class="cover" src="img/category3.png" alt="">
+                                                            <span class="text">达索DS系列产品</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="child_li">
+                                                        <a href="" class="child_link">
+                                                            <img class="cover" src="img/category4.png" alt="">
+                                                            <span class="text">ALTIUM系列</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-9 col-sm-6 col-xs-12">
+                                            <div class="cover_box">
+                                                <img class="cover" src="img/category_cover.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <a href="case.html" class="link uppercase">客户案例</a>
+                        </li>
+                        <li class="li">
+                            <a href="news.html" class="link uppercase">新闻资讯</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="language">
+                    <div class="box">
+                        <i class="iconfont icon-duoyuyan"></i>
+                        <span class="text">English</span>
+                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="lis"></div>
+                    <div class="lis"></div>
+                    <div class="lis"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="h5_nav">
+    <ul class="nav">
+        <li class="li">
+            <a href="index.html" class="link uppercase">home</a>
+        </li>
+        <li class="li">
+            <a href="about.html" class="link uppercase">关于我们</a>
+        </li>
+        <li class="li">
+            <div class="link uppercase">
+                <span>产品中心</span>
+                <i class="iconfont icon-right-1-copy"></i>
+            </div>
+            <ul class="child_menu">
+                <li class="child_li active">
+                    <a href="product.html" class="child_link">
+                        <span class="text">ARM系列开发工具</span>
+                        <img class="cover" src="img/category1.png" alt="">
+                    </a>
+                </li>
+                <li class="child_li">
+                    <a href="product.html" class="child_link">
+                        <span class="text">ALTAIR系列</span>
+                        <img class="cover" src="img/category2.png" alt="">
+                    </a>
+                </li>
+                <li class="child_li">
+                    <a href="product.html" class="child_link">
+                        <span class="text">达索DS系列产品</span>
+                        <img class="cover" src="img/category3.png" alt="">
+                    </a>
+                </li>
+                <li class="child_li">
+                    <a href="product.html" class="child_link">
+                        <span class="text">ALTIUM系列</span>
+                        <img class="cover" src="img/category4.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="li">
+            <a href="case.html" class="link uppercase">客户案例</a>
+        </li>
+        <li class="li">
+            <a href="news.html" class="link uppercase">新闻资讯</a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    NProgress.start();
+</script>
+    <div class="product_details">
+        <div class="details img_bg container_padding" style="background-image: url(img/page_details.png);">
+            <div class="container">
+                <div class="tabs">
+                    <div class="li active">
+                        <a href="" class="link">机械设计包</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">混合设计包</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">建筑工程</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">系统工程</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">工程样机</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">设计和造型</a>
+                    </div>
+                </div>
+                <div class="content main_top img_bg" style="background-image: url(img/video-bg.png);">
+                    <div class="row">
+                        <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                            <div class="explain">
+                                <div class="name">Arm® Keil® MDK系列开发工具</div>
+                                <p class="lead">基于Arm Cortex-M微控制器的完整软件开发解决方案</p>
+                                <p class="lead">Arm Keil MDK 包括领先的基于 Windows®的 IDE，调试器，市场领先的编译器，软件包管理和
+                                    CMSIS；这些软件工具允许您加速嵌入式软件项目的开发。
+                                </p>
+                                <ul>
+                                    <li>
+                                        <i class="iconfont icon-caidan"></i>
+                                        <span>最广泛支持基于 Arm 的微控制器（MCU），数据库中有 5,000 多个设备</span>
+                                    </li>
+                                    <li>
+                                        <i class="iconfont icon-caidan"></i>
+                                        <span>免版税软件构建模块和实时操作系统（RTOS）集成</span>
+                                    </li>
+                                    <li>
+                                        <i class="iconfont icon-caidan"></i>
+                                        <span>由 Arm 开发的行业领先的 C / C ++编译工具</span>
+                                    </li>
+                                    <li>
+                                        <i class="iconfont icon-caidan"></i>
+                                        <span>ArmCPU 的精确仿真模型（仅限 Cortex-M）</span>
+                                    </li>
+                                    <li>
+                                        <i class="iconfont icon-caidan"></i>
+                                        <span>调试探针</span>
+                                    </li>
+                                    <li>
+                                        <i class="iconfont icon-caidan"></i>
+                                        <span>Arm 专家以及活动中的技术支持</span>
+                                    </li>
+                                    <li>
+                                        <i class="iconfont icon-caidan"></i>
+                                        <span>开发者社区</span>
+                                    </li>
+                                    <li>
+                                        <i class="iconfont icon-caidan"></i>
+                                        <span>易于使用的界面</span>
+                                    </li>
+                                </ul>
+                                <div class="download">
+                                    <a href="" class="link">
+                                        <span>产品文档下载</span>
+                                        <i class="iconfont icon-xiazai"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                            <div class="cover_box">
+                                <img class="cover" src="img/details_cover.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details_main">
+                    <div class="cover_box">
+                        <img class="cover" src="img/details_content1.png" alt="">
+                    </div>
+                    <p class="_name">快速开发完全优化的微控制器</p>
+                    <p class="_lead">MDK支持超过5,000种基于Cortex-M的设备，包括新的Cortex-M23/M33内核。基于</p>
+                    <p class="_lead">Windows的μVision
+                        IDE包括一个事件记录器和组件查看器，用于显示软件组件的运行时行为。它与ULINKpro调试和跟踪适配器一起提供完整的指令跟踪功能和完整的代码覆盖率信息。</p>
+                    <p class="_name">我们已经处理了软件块，因此您可以专注于您的应用程序</p>
+                    <p class="_lead">可以随时向MDK添加软件包，使新设备支持和中间件更新独立于工具链。 它们包含设备支持，CMSIS库，软件组件，中间件，板支持，代码模板和示例项目。
+                        MDK-Middleware提供免版税，紧密耦合的软件组件，专为微控制器中的通信外设而设计。</p>
+                    <p class="_name">标准化软件接口，实现高效的可移植性和重复使用</p>
+                    <p class="_lead">Cortex 微控制器软件接口标准（CMSIS）为处理器提供了一致且简单的软件接口，用于外围设备，实时操作系统和中间件。
+                        它简化了软件的重复使用，减少了新微控制器开发人员的学习曲线，缩短了设备的上市时间。</p>
+                    <p class="_name">业界领先的C / C ++编译工具</p>
+                    <p class="_lead">具有汇编程序，链接程序和高度优化的运行时库的 Arm C / C ++编译器专为实现最佳代码大小和性能而量身定制。所有 Arm
+                        编译器均经过功能安全应用认证，可提供长期维护和支持。
+                        Arm Compiler 6 提供目前市场上最好的代码大小。它提供各种优化级别，包括链接时间优化。</p>
+                    <p class="_name">功能安全的软件构建块</p>
+                    <p class="_lead">MDK 提供了一个用于嵌入式功能安全应用程序的即用型软件框架。这些模块完全符合 ISO 26262，IEC 61508，IEC 62304 和 EN 50128
+                        标准，包含 Keil RTX RTOS，优化的 C库，CMSIS-Core 和事件记录器，可帮助确定应用程序的时序特性。此外，MDK
+                        加速了与安全相关的应用程序开发的重要功能，例如静态代码分析，MISRA 检查和代码覆盖，否则这些功能非常耗时。 MDK
+                        提供与第三方单元测试框架集成的接口，可以轻松自动化，以便在持续集成环境中使用。</p>
+                    <p class="_name">可根据您的需求选择调试探针</p>
+                    <p class="_lead">ULINK 系列调试和跟踪适配器的所有成员使您能够将程序下载到目标，逐步执行程序， 插入断点并在运行中调试基于 Arm Cortex-M 的设备。
+                        先进的 ULINKpro 调试探针提供高速数据和指令跟踪，使您可以分析程序行为并生成安全认证所需的必要代码覆盖率信息。</p>
+
+                    <div class="cover_box">
+                        <img class="cover" src="img/details_content2.png" alt="">
+                    </div>
+                    <p class="_lead">我们最新的探头 ULINKplus 非常适合优化物联网应用中的电池寿命。它可以为超低功耗应用，测试自动化和隔离提供软件优化，以实现高速调试和敏感硬件系统的跟</p>
+                    <div class="cover_box">
+                        <img class="cover" src="img/details_content3.png" alt="">
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="up">
+                        <p class="lead">
+                            <a href="" class="link">
+                                上一篇：没有了！
+                            </a>
+                        </p>
+                        <p class="lead">
+                            <a href="" class="link">
+                                下一篇：DS-5 Development Studio
+                            </a>
+                        </p>
+                    </div>
+                    <div class="return">
+                        <a href="javascript:history.back()" class="link">返回列表</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title uppercase">获取解决方案</h4>
+                <p class="sub_head">面向企业用户提供研发、设计、管理过程中使用的各种工具，并致力于和客户一同提高研发、设计效率，缩短设计周期</p>
+            </div>
+            <div class="modal-body">
+                <form class="layui-form" action="">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box pad_bottom">
+                                    <input type="text" name="name" autocomplete="off" lay-verify="required"
+                                        lay-vertype="tips" placeholder="*您的姓名" lay-reqtext="*您的姓名"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <input type="text" name="email" autocomplete="off" lay-verify="required"
+                                        lay-vertype="tips" placeholder="*E-mail" lay-reqtext="E-mail"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box pad_bottom">
+                                    <input type="text" name="mobile" autocomplete="off" placeholder="您的电话号码"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <input type="text" name="WeChat" autocomplete="off" placeholder="微信"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-12 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <input type="text" name="company" autocomplete="off" lay-verify="required"
+                                        lay-vertype="tips" lay-reqtext="公司名称" placeholder="公司名称"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col_md col-md-12 col-sm-12 col-xs-12">
+                                <div class="input_box">
+                                    <textarea name="message" placeholder="留言内容"
+                                        class="layui-textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item upload_item">
+                        <div class="upload" id="upload_demo">
+                            <i class="iconfont icon-shangchuantupian"></i>
+                        </div>
+                    </div>
+
+                    <div class="btn_item">
+                        <button type="submit" class="layui-btn submit_btn box_radius gradiend" lay-submit
+                            lay-filter="submit">立即发送</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var upload = layui.upload;
+        var $ = layui.$;
+
+        // 渲染
+        upload.render({
+            elem: '#upload_demo',
+        });
+
+        form.on('submit(submit)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    });
+</script>
+        <div class="serve img_bg" style="background-image: url(img/serve.png);">
+    <div class="content">
+        <h3 class="title">研发、设计、管理过程中使用的各种工具</h3>
+        <p class="lead">能更好的协助合作伙伴快速的掌握开发工具的使用，并让合作伙伴把精力集中在自身产品的设计过程中，以提高开发设计效率。</p>
+        <div class="btn_box">
+            <button class="case_btn btn" data-toggle="modal" data-target=".myModal">获取方案</button>
+            <button class="btn">
+                <a href="about.html" class="link">联系我们</a>
+            </button>
+        </div>
+    </div>
+</div>
+        <div class="footer">
+    <div class="container">
+        <div class="content container_padding">
+            <div class="row">
+                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                    <div class="box">
+                        <div class="logo">
+                            <a href="index.html" class="link">
+                                <img class="cover" src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <p class="lead">
+                            我司本着“专业、诚信、合作、共赢”的原则，愿与新老客户一路同行，共建美好未来！
+                        </p>
+                    </div>
+                </div>
+                <div class="col_md col-md-2 col-sm-3 col-xs-6">
+                    <div class="box center">
+                        <div class="title uppercase">导航栏目</div>
+                        <ul class="ul">
+                            <li class="li">
+                                <a href="about.html" class="link">关于我们</a>
+                            </li>
+                            <li class="li">
+                                <a href="product.html" class="link">产品中心</a>
+                            </li>
+                            <li class="li">
+                                <a href="case.html" class="link">客户案例</a>
+                            </li>
+                            <li class="li">
+                                <a href="news.html" class="link">新闻资讯</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_md col-md-2 col-sm-3 col-xs-6">
+                    <div class="box center">
+                        <div class="title uppercase">产品中心</div>
+                        <ul class="ul">
+                            <li class="li">
+                                <a href="product.html" class="link">Altair产品体系</a>
+                            </li>
+                            <li class="li">
+                                <a href="product.html" class="link">ARM产品</a>
+                            </li>
+                            <li class="li">
+                                <a href="product.html" class="link">达索DS产品</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                    <div class="box">
+                        <div class="title uppercase">联系我们</div>
+                        <ul class="ul info_ul">
+                            <li class="li">
+                                <i class="iconfont icon-dianhua"></i>
+                                <span class="text">0755-36520388</span>
+                            </li>
+                            <li class="li">
+                                <i class="iconfont icon-dianhua"></i>
+                                <span class="text">0755-36520388</span>
+                            </li>
+                            <li class="li">
+                                <i class="iconfont icon-dizhi"></i>
+                                <span class="text">
+                                    深圳市龙岗区坂田街道吉华路472号坂田大厦801
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery" class="link">
+            Copyright©2024版权所有 尚秦科技(深圳)有限公司       粤ICP备20029977号-6
+        </a>
+    </div>
+</div>
+
+<script src="js/comment.js"></script>
+</body>
+
+</html>

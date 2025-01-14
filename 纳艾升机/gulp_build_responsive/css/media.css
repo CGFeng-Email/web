@@ -1,0 +1,76 @@
+@media screen and (max-width: 1050px) {
+  .header .main .content .nav .li .link {
+    padding: 0 14px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header {
+    height: 78px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .container_padding {
+    padding: 60px 0;
+  }
+  .col-xs-12 {
+    padding: 0 10px;
+  }
+  .col-xs-6 {
+    padding: 0 10px;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .lead {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .header .main {
+    padding: 10px 0;
+  }
+  .header .main .logo {
+    width: 80px;
+  }
+  .header .main .content .nav {
+    display: none;
+  }
+  .header .main .content .search {
+    padding: 0 10px;
+  }
+  .header .main .content .search .iconfont {
+    font-size: 22px;
+  }
+  .header .main .content .language {
+    position: relative;
+  }
+  .header .main .content .language .current {
+    width: 120px;
+  }
+  .header .main .content .language .current .cover {
+    width: 30px;
+  }
+  .header .main .content .language .current .text {
+    font-size: 16px;
+  }
+  .header .main .content .language .current .iconfont {
+    font-size: 20px;
+  }
+  .header .main .content .language .language_list {
+    width: 120px;
+    top: 38px;
+  }
+  .header .main .content .menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container_padding {
+    padding: 30px 0;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

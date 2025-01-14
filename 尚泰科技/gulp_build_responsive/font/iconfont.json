@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "12856632",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1311618",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "6536738",
+      "name": "菜单",
+      "font_class": "caidan1",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
       "icon_id": "6834861",
       "name": "文件-文件下发",
       "font_class": "wj-wjxf",
