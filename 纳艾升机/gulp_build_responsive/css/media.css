@@ -1,9 +1,22 @@
+@media screen and (max-width: 1400px) {
+  .banner .content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .case .main .case_swiper .slide .cover {
+    height: 560px;
+  }
+}
 @media screen and (max-width: 1050px) {
   .header .main .content .nav .li .link {
     padding: 0 14px;
   }
 }
 @media screen and (max-width: 992px) {
+  body {
+    padding-top: 78px;
+  }
   .header {
     height: 78px;
   }
@@ -26,6 +39,17 @@
   .lead {
     font-size: 14px;
     line-height: 24px;
+  }
+  .banner .content .title {
+    font-size: 18px;
+  }
+  .banner .content .lead {
+    display: none;
+  }
+  .common_tabs .list .box {
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
   }
   .header .main {
     padding: 10px 0;
@@ -64,6 +88,56 @@
   .header .main .content .menu {
     display: block;
   }
+  .footer .content .code_box .code {
+    margin: 0 40px 0 0;
+  }
+  .commom_menu .content {
+    padding: 40px 0 30px;
+    flex-wrap: wrap;
+  }
+  .commom_menu .content .item {
+    width: 33.33%;
+    margin-bottom: 20px;
+  }
+  .case .main .case_swiper .slide .content {
+    width: 320px;
+    padding: 20px;
+    right: 20px;
+  }
+  .case .main .case_swiper .slide .content .name {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .cooperative .main .cover_box {
+    margin-bottom: 20px;
+  }
+  .blogroll .box {
+    margin-bottom: 30px;
+  }
+  .blogroll .box .list {
+    padding-top: 10px;
+  }
+  .advantage .list {
+    flex-wrap: wrap;
+  }
+  .advantage .list .item {
+    width: 46%;
+    flex: none;
+    margin: 2%;
+  }
+  .advantage .list .item .box {
+    padding: 20px 0;
+  }
+  .advantage .list .item:hover {
+    flex: none;
+  }
+  .development_history .content .information_swiper .item .wrap {
+    margin-top: 20px;
+    height: auto;
+  }
+  .company .content {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -72,5 +146,125 @@
   .title {
     font-size: 18px;
     line-height: 28px;
+  }
+  .crumbs .list {
+    padding: 14px 0 0;
+  }
+  .search .head .title {
+    font-size: 38px;
+  }
+  .search .search_form {
+    margin-top: 20px;
+  }
+  .search .search_form .content {
+    width: 84%;
+  }
+  .footer .content {
+    padding: 0 0 10px;
+  }
+  .footer .content .copyright {
+    padding: 14px 0;
+    height: auto;
+    line-height: 2;
+    text-align: center;
+  }
+  .commom_menu .content {
+    padding: 20px 20px 0;
+  }
+  .commom_menu .content .item {
+    width: 50%;
+  }
+  .head {
+    flex-wrap: wrap;
+  }
+  .head .box {
+    margin-bottom: 14px;
+  }
+  .head .title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .head .sub_title {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 4px 0;
+  }
+  .head .tabs {
+    width: 100%;
+  }
+  .head .tabs .li {
+    width: 120px;
+  }
+  .child_padding {
+    padding-top: 20px;
+  }
+  .product .main {
+    padding: 0 10px;
+  }
+  .product .main .product_swiper {
+    padding-right: 100px;
+  }
+  .case .main .case_swiper {
+    padding: 0 10px;
+  }
+  .news .main .news_swiper .explain {
+    height: 180px;
+  }
+  .news .main .news_swiper .content {
+    height: 240px;
+  }
+  .news .main .news_swiper .content .box {
+    padding: 20px;
+  }
+  .news .main .news_swiper .content .box .lead {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .news .main .news_list {
+    display: none;
+  }
+  .blogroll .box .list {
+    padding: 14px 0;
+  }
+  .about_explain .cover_box {
+    margin-bottom: 20px;
+  }
+  .about_explain .content .name {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .development_history .content {
+    padding: 20px;
+  }
+  .development_history .content .date_swiper {
+    margin-top: 20px;
+  }
+  .development_history .content .information_swiper .item .cover_box {
+    margin-bottom: 10px;
+  }
+  .development_history .content .information_swiper .item .wrap {
+    margin-top: 0;
+  }
+  .company .content .name {
+    font-size: 20px;
+  }
+  .company .content .sub_name {
+    font-size: 16px;
+  }
+  .product {
+    padding: 30px 0;
+  }
+  .product .main {
+    flex-wrap: wrap;
+  }
+  .product .main .menu {
+    width: 100%;
+  }
+  .product .main .menu .category {
+    margin-bottom: 20px;
+  }
+  .product .main .list {
+    width: 100%;
+    padding-left: 0;
   }
 }

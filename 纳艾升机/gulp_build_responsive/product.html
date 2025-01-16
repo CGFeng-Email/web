@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<link rel="stylesheet" href="nprogress/nprogress.css">
+<link rel="stylesheet" href="font/iconfont.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="aos/aos.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
+<link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="nprogress/nprogress.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="aos/aos.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="roll_number/jquery.counterup.js"></script>
+<script src="roll_number/jquery.waypoints.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="swiper/js/swiper.animate1.0.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="layui/layui.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="main">
+            <h1 class="logo">
+                <a href="index.html" class="link">
+                    <img class="cover" src="img/nice logo.png" alt="">
+                </a>
+            </h1>
+            <div class="content">
+                <div class="nav">
+                    <div class="li">
+                        <a href="index.html" class="link">首页</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">科创教育</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">个性化定制</a>
+                    </div>
+                    <div class="li">
+                        <a href="product.html" class="link">产品中心</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">案例展示</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">新闻中心</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">人才招聘</a>
+                    </div>
+                    <div class="li">
+                        <a href="about.html" class="link">关于我们</a>
+                    </div>
+                    <div class="li">
+                        <a href="" class="link">联系我们</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <a href="search.html" class="link">
+                        <i class="iconfont icon-sousuo"></i>
+                    </a>
+                </div>
+                <div class="language">
+                    <div class="current">
+                        <img class="cover" src="img/yingguoguoqi.png" alt="">
+                        <span class="text">English</span>
+                        <i class="iconfont icon-xiala"></i>
+                    </div>
+                    <ul class="language_list">
+                        <li class="li">
+                            <a href="" class="link">
+                                <img class="cover" src="img/yingguoguoqi.png" alt="">
+                                <span class="text">English</span>
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a href="" class="link">
+                                <img class="cover" src="img/zhongguoguoqi.png" alt="">
+                                <span class="text">中文</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner_mid">
+        <ul class="child">
+            <li class="li">
+                <a href="index.html" class="link">首页</a>
+            </li>
+            <li class="li">
+                <a href="" class="link">科创教育</a>
+            </li>
+            <li class="li">
+                <a href="" class="link">个性化定制</a>
+            </li>
+            <li class="li">
+                <a href="product.html" class="link">产品中心</a>
+            </li>
+            <li class="li">
+                <a href="" class="link">案例展示</a>
+            </li>
+            <li class="li">
+                <a href="" class="link">新闻中心</a>
+            </li>
+            <li class="li">
+                <a href="" class="link">人才招聘</a>
+            </li>
+            <li class="li">
+                <a href="about.html" class="link">关于我们</a>
+            </li>
+            <li class="li">
+                <a href="" class="link">联系我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    NProgress.start();
+</script>
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="img/product_banner.png" alt="">
+        </div>
+    </div>
+    <div class="crumbs">
+        <div class="container">
+            <div class="list">
+                <div class="box">
+                    <a href="index.html" class="link">
+                        <i class="iconfont icon-shouye-zhihui"></i>
+                        <span>首页</span>
+                    </a>
+                </div>
+                <div class="arrow">
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+                <div class="box">
+                    产品中心
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="container">
+            <div class="main">
+                <div class="menu">
+                    <div class="category box_shadow">
+                        <div class="title">产品分类</div>
+                        <ul class="category_list">
+                            <li class="li">
+                                <p class="lead">
+                                    <i class="iconfont icon-arrow-right-double-line"></i>
+                                    <span class="text">打印机</span>
+                                </p>
+                                <ul class="child">
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">环保弱溶剂打印/切割</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">桌面级打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">纹理工业打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 平板打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">经典款环保弱溶剂打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">宽幅树脂打印机</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li">
+                                <p class="lead">
+                                    <i class="iconfont icon-arrow-right-double-line"></i>
+                                    <span class="text">刻字机</span>
+                                </p>
+                                <ul class="child">
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">环保弱溶剂打印/切割</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">桌面级打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">纹理工业打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 平板打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">经典款环保弱溶剂打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">宽幅树脂打印机</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li">
+                                <p class="lead">
+                                    <i class="iconfont icon-arrow-right-double-line"></i>
+                                    <span class="text">雕刻机 +烫印机</span>
+                                </p>
+                                <ul class="child">
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">环保弱溶剂打印/切割</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">桌面级打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">纹理工业打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 平板打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">经典款环保弱溶剂打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">宽幅树脂打印机</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li">
+                                <p class="lead">
+                                    <i class="iconfont icon-arrow-right-double-line"></i>
+                                    <span class="text">3D+数控机床</span>
+                                </p>
+                                <ul class="child">
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">环保弱溶剂打印/切割</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">桌面级打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">纹理工业打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 平板打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">经典款环保弱溶剂打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">宽幅树脂打印机</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li">
+                                <p class="lead">
+                                    <i class="iconfont icon-arrow-right-double-line"></i>
+                                    <span class="text">墨水</span>
+                                </p>
+                                <ul class="child">
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">环保弱溶剂打印/切割</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">桌面级打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">纹理工业打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 平板打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">经典款环保弱溶剂打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">宽幅树脂打印机</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li">
+                                <p class="lead">
+                                    <i class="iconfont icon-arrow-right-double-line"></i>
+                                    <span class="text">雕刻机 +烫印机</span>
+                                </p>
+                                <ul class="child">
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">环保弱溶剂打印/切割</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">桌面级打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">纹理工业打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 平板打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">经典款环保弱溶剂打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">宽幅树脂打印机</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="li">
+                                <p class="lead">
+                                    <i class="iconfont icon-arrow-right-double-line"></i>
+                                    <span class="text">软件</span>
+                                </p>
+                                <ul class="child">
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">环保弱溶剂打印/切割</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">桌面级打印/切割一体机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">纹理工业打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">UV 平板打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">经典款环保弱溶剂打印机</span>
+                                        </a>
+                                    </li>
+                                    <li class="lis">
+                                        <a href="" class="link">
+                                            <i class="iconfont icon-dian"></i>
+                                            <span class="text over1">宽幅树脂打印机</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="row">
+                        <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                            <div class="product_box">
+                                <div class="item">
+                                    <a href="details.html" class="link box_shadow box_radius">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/GS-24.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="name over2">
+                                                GS-24
+                                            </h3>
+                                            <p class="lead over2">
+                                                打印/切割一体机有两种尺寸可供用户选择，以适应您的业务和预算需求
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                            <div class="product_box">
+                                <div class="item">
+                                    <a href="" class="link box_shadow box_radius">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/LD-80.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="name over2">
+                                                LD-80
+                                            </h3>
+                                            <p class="lead over2">
+                                                打印/切割一体机有两种尺寸可供用户选择，以适应您的业务和预算需求
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                            <div class="product_box">
+                                <div class="item">
+                                    <a href="" class="link box_shadow box_radius">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/bd-8.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="name over2">
+                                                BD-8
+                                            </h3>
+                                            <p class="lead over2">
+                                                打印/切割一体机有两种尺寸可供用户选择，以适应您的业务和预算需求
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                            <div class="product_box">
+                                <div class="item">
+                                    <a href="" class="link box_shadow box_radius">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/MDX-540.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="name over2">
+                                                MDX-540
+                                            </h3>
+                                            <p class="lead over2">
+                                                打印/切割一体机有两种尺寸可供用户选择，以适应您的业务和预算需求
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                            <div class="product_box">
+                                <div class="item">
+                                    <a href="" class="link box_shadow box_radius">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/MPX-95.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="name over2">
+                                                MPX-95
+                                            </h3>
+                                            <p class="lead over2">
+                                                打印/切割一体机有两种尺寸可供用户选择，以适应您的业务和预算需求
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                            <div class="product_box">
+                                <div class="item">
+                                    <a href="" class="link box_shadow box_radius">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/SRM-20.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="name over2">
+                                                SRM-20
+                                            </h3>
+                                            <p class="lead over2">
+                                                打印/切割一体机有两种尺寸可供用户选择，以适应您的业务和预算需求
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                            <div class="product_box">
+                                <div class="item">
+                                    <a href="" class="link box_shadow box_radius">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/MDX-50.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="name over2">
+                                                MXD-50
+                                            </h3>
+                                            <p class="lead over2">
+                                                打印/切割一体机有两种尺寸可供用户选择，以适应您的业务和预算需求
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paging">
+                        <nav class="nav_box" aria-label="Page navigation">
+                            <ul class="pagination pagination-lg">
+                                <li class="disabled">
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li class="disabled">
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="suspend">
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-weixin"></i>
+        </div>
+        <div class="slide">
+            <img class="cover" src="img/code.png" alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-qq"></i>
+        </div>
+        <div class="slide">
+            <img class="cover" src="img/code.png" alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-youxiang"></i>
+        </div>
+        <div class="slide email_item">
+            <p class="lead">katherine.wang@shnice.com.cn</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-dianhua2"></i>
+        </div>
+        <div class="slide mobile_item">
+            <p class="lead">021-64113787</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="top" id="top">
+            <i class="iconfont icon-shang"></i>
+            <p class="tips">TOP</p>
+        </div>
+    </div>
+</div>
+    <div class="commom_menu">
+    <div class="container">
+        <div class="content">
+            <div class="item">
+                <div class="name">打印</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">喷墨打印机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">喷切一体机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">介质</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">墨水</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">切割机</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">宽幅刻字机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">桌面式切割机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">STIKA Mini型切割机</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">雕刻</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">桌面雕刻机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">激光刻饰机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">照片针式打印机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">激光刻饰机</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">台式切削机/3D打印机</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">切削机床</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">软件</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">VersaWorks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col_md col-md-9 col-sm-12 col-xs-12">
+                    <div class="info">
+                        <div class="lis">
+                            <i class="iconfont icon-dianhua"></i>
+                            <span class="text">021-64113787</span>
+                        </div>
+                        <div class="lis">
+                            <i class="iconfont icon-youjian1"></i>
+                            <span class="text">katherine.wang@shnice.com.cn</span>
+                        </div>
+                        <div class="lis">
+                            <i class="iconfont icon-dizhi"></i>
+                            <span class="text">上海市闵行区浦锦路2049弄（万科VMO）39号310</span>
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+                        <span class="text">©上海纳艾升电器设备有限公司版权所有</span>
+                        <a href="" class="link">粤ICP备20029977号-6</a>
+                    </div>
+                </div>
+                <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                    <div class="code_box">
+                        <div class="code">
+                            <img class="cover" src="img/code.png" alt="">
+                            <p class="lead">扫码关注</p>
+                        </div>
+                        <div class="code">
+                            <img class="cover" src="img/code.png" alt="">
+                            <p class="lead">扫码关注</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/comment.js"></script>
+</body>
+
+</html>

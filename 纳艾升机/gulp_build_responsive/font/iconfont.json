@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "41751543",
+      "name": "中国国旗",
+      "font_class": "zhongguoguoqi",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "3072480",
+      "name": "英国国旗",
+      "font_class": "yingguoguoqi",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "4933869",
+      "name": "点",
+      "font_class": "dian",
+      "unicode": "ec1e",
+      "unicode_decimal": 60446
+    },
+    {
       "icon_id": "90509",
       "name": "价格保护",
       "font_class": "jiagebaohu",
