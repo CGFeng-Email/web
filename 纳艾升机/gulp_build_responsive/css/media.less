@@ -6,6 +6,28 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+@media screen and (max-width: 1400px) {
+    .banner {
+        .content {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .case {
+        .main {
+            .case_swiper {
+                .slide {
+                    .cover {
+                        height: 560px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .header {
         .main {
@@ -23,6 +45,10 @@
 }
 
 @media screen and (max-width: 992px) {
+    body {
+        padding-top: 78px;
+    }
+
     .header {
         height: 78px;
     }
@@ -51,6 +77,28 @@
     .lead {
         font-size: 14px;
         line-height: 24px;
+    }
+
+    .banner {
+        .content {
+            .title {
+                font-size: 18px;
+            }
+
+            .lead {
+                display: none;
+            }
+        }
+    }
+
+    .common_tabs {
+        .list {
+            .box {
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+            }
+        }
     }
 
     .header {
@@ -105,6 +153,107 @@
             }
         }
     }
+
+    .footer {
+        .content {
+            .code_box {
+                .code {
+                    margin: 0 40px 0 0;
+                }
+            }
+        }
+    }
+
+    .commom_menu {
+
+        .content {
+            padding: 40px 0 30px;
+            flex-wrap: wrap;
+
+            .item {
+                width: 33.33%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .case {
+        .main {
+            .case_swiper {
+                .slide {
+                    .content {
+                        width: 320px;
+                        padding: 20px;
+                        right: 20px;
+
+                        .name {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cooperative {
+        .main {
+            .cover_box {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .blogroll {
+        .box {
+            margin-bottom: 30px;
+
+            .list {
+                padding-top: 10px;
+            }
+        }
+
+    }
+
+    .advantage {
+        .list {
+            flex-wrap: wrap;
+
+            .item {
+                width: 46%;
+                flex: none;
+                margin: 2%;
+
+                .box {
+                    padding: 20px 0;
+                }
+
+                &:hover {
+                    flex: none;
+                }
+            }
+        }
+    }
+
+    .development_history {
+        .content {
+
+            .information_swiper {
+                .item {
+                    .wrap {
+                        margin-top: 20px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .company {
+        .content {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -116,5 +265,203 @@
     .title {
         font-size: 18px;
         line-height: 28px;
+    }
+
+    .crumbs {
+        .list {
+            padding: 14px 0 0;
+        }
+    }
+
+    .search {
+        .head {
+            .title {
+                font-size: 38px;
+            }
+        }
+
+        .search_form {
+            margin-top: 20px;
+
+            .content {
+                width: 84%;
+            }
+        }
+    }
+
+    .footer {
+        .content {
+            padding: 0 0 10px;
+
+            .copyright {
+                padding: 14px 0;
+                height: auto;
+                line-height: 2;
+                text-align: center;
+            }
+
+        }
+    }
+
+    .commom_menu {
+        .content {
+            padding: 20px 20px 0;
+
+            .item {
+                width: 50%;
+            }
+        }
+    }
+
+    .head {
+        flex-wrap: wrap;
+
+        .box {
+            margin-bottom: 14px;
+        }
+
+        .title {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        .sub_title {
+            font-size: 18px;
+            line-height: 28px;
+            padding: 4px 0;
+        }
+
+        .tabs {
+            width: 100%;
+
+            .li {
+                width: 120px;
+            }
+        }
+    }
+
+    .child_padding {
+        padding-top: 20px;
+    }
+
+    .product {
+        .main {
+            padding: 0 10px;
+
+            .product_swiper {
+                padding-right: 100px;
+            }
+        }
+    }
+
+    .case {
+        .main {
+            .case_swiper {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .news {
+        .main {
+            .news_swiper {
+                .explain {
+                    height: 180px;
+                }
+
+                .content {
+                    height: 240px;
+
+                    .box {
+                        padding: 20px;
+
+                        .lead {
+                            font-size: 16px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+
+            .news_list {
+                display: none;
+            }
+        }
+    }
+
+    .blogroll {
+        .box {
+            .list {
+                padding: 14px 0;
+            }
+        }
+    }
+
+    .about_explain {
+        .cover_box {
+            margin-bottom: 20px;
+        }
+
+        .content {
+            .name {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .development_history {
+        .content {
+            padding: 20px;
+
+            .date_swiper {
+                margin-top: 20px;
+            }
+
+            .information_swiper {
+                .item {
+                    .cover_box {
+                        margin-bottom: 10px;
+                    }
+
+                    .wrap {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .company {
+        .content {
+            .name {
+                font-size: 20px;
+            }
+
+            .sub_name {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .product {
+        padding: 30px 0;
+
+        .main {
+            flex-wrap: wrap;
+
+            .menu {
+                width: 100%;
+
+                .category {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .list {
+                width: 100%;
+                padding-left: 0;
+            }
+        }
     }
 }

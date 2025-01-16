@@ -14,20 +14,34 @@
             <div class="head center_head">
                 <h2 class="title">Search</h2>
             </div>
-
             <div class="search_form">
                 <form class="layui-form" action="">
                     <div class="content">
-                        <input type="text" name="search" lay-verify="required" placeholder="请输入关键词" lay-reqtext="请输入关键词" lay-vertype="tips"  autocomplete="off"
-                            class="layui-input">
-                        <button type="submit" class="layui-btn" lay-submit lay-filter="submit">
-                            <i class="iconfont icon-sousuo"></i>
-                        </button>
+                        <div class="box">
+                            <input type="text" name="search" lay-verify="required" placeholder="请输入关键词"
+                                lay-reqtext="请输入关键词" lay-vertype="tips" autocomplete="off" class="layui-input input">
+                            <button type="submit" class="layui-btn submit_btn" lay-submit lay-filter="submit">
+                                <i class="iconfont icon-sousuo"></i>
+                            </button>
+                        </div>
+                        <div class="note">
+                            <a href="" class="link">GS-24</a>
+                            <a href="" class="link">LD-80</a>
+                            <a href="" class="link">MDX-540</a>
+                            <a href="" class="link">MPX-95</a>
+                            <a href="" class="link">SRM-20</a>
+                            <a href="" class="link">MXD-50</a>
+                            <a href="" class="link">GS-24</a>
+                            <a href="" class="link">LD-80</a>
+                            <a href="" class="link">MDX-540</a>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
+        <div style="height: 240px;"></div>
     </div>
+    @@include('menu.html')
     @@include('footer.html')
 </body>
 <script>
