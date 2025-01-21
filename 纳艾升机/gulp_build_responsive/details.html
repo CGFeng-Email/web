@@ -60,7 +60,7 @@
                         <a href="product.html" class="link">产品中心</a>
                     </div>
                     <div class="li">
-                        <a href="" class="link">案例展示</a>
+                        <a href="case.html" class="link">案例展示</a>
                     </div>
                     <div class="li">
                         <a href="" class="link">新闻中心</a>
@@ -175,7 +175,6 @@
             </div>
         </div>
     </div>
-
     <div class="details container_padding">
         <div class="container">
             <p class="lead">您的产品定制从这里开始，新型 VersaSTUDIO BD-8 使几乎任何人（即使是没有任何经验的人）都能快速、轻松地在多种物体上打印出生动、细致的图案。</p>
@@ -342,5 +341,11 @@
 </div>
 <script src="js/comment.js"></script>
 </body>
+<script>
+    $('.common_tabs .list .box').click(function () {
+        const index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+</script>
 
 </html>
