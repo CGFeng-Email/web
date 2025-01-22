@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>人才招聘</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<link rel="stylesheet" href="nprogress/nprogress.css">
+<link rel="stylesheet" href="font/iconfont.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="aos/aos.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
+<link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="nprogress/nprogress.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="aos/aos.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="roll_number/jquery.counterup.js"></script>
+<script src="roll_number/jquery.waypoints.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="swiper/js/swiper.animate1.0.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="layui/layui.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="main">
+            <h1 class="logo">
+                <a href="index.html" class="link">
+                    <img class="cover" src="img/nice logo.png" alt="">
+                </a>
+            </h1>
+            <div class="content">
+                <div class="nav">
+                    <div class="li">
+                        <a href="index.html" class="link">首页</a>
+                    </div>
+                    <div class="li">
+                        <a href="technology.html" class="link">科创教育</a>
+                    </div>
+                    <div class="li">
+                        <a href="custom.html" class="link">个性化定制</a>
+                    </div>
+                    <div class="li">
+                        <a href="product.html" class="link">产品中心</a>
+                    </div>
+                    <div class="li">
+                        <a href="case.html" class="link">案例展示</a>
+                    </div>
+                    <div class="li">
+                        <a href="news.html" class="link">新闻中心</a>
+                    </div>
+                    <div class="li">
+                        <a href="invite.html" class="link">人才招聘</a>
+                    </div>
+                    <div class="li">
+                        <a href="about.html" class="link">关于我们</a>
+                    </div>
+                    <div class="li">
+                        <a href="contact.html" class="link">联系我们</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <a href="search.html" class="link">
+                        <i class="iconfont icon-sousuo"></i>
+                    </a>
+                </div>
+                <div class="language">
+                    <div class="current">
+                        <img class="cover" src="img/yingguoguoqi.png" alt="">
+                        <span class="text">English</span>
+                        <i class="iconfont icon-xiala"></i>
+                    </div>
+                    <ul class="language_list">
+                        <li class="li">
+                            <a href="" class="link">
+                                <img class="cover" src="img/yingguoguoqi.png" alt="">
+                                <span class="text">English</span>
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a href="" class="link">
+                                <img class="cover" src="img/zhongguoguoqi.png" alt="">
+                                <span class="text">中文</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner_mid">
+        <ul class="child">
+            <li class="li">
+                <a href="index.html" class="link">首页</a>
+            </li>
+            <li class="li">
+                <a href="technology.html" class="link">科创教育</a>
+            </li>
+            <li class="li">
+                <a href="custom.html" class="link">个性化定制</a>
+            </li>
+            <li class="li">
+                <a href="product.html" class="link">产品中心</a>
+            </li>
+            <li class="li">
+                <a href="case.html" class="link">案例展示</a>
+            </li>
+            <li class="li">
+                <a href="news.html" class="link">新闻中心</a>
+            </li>
+            <li class="li">
+                <a href="invite.html" class="link">人才招聘</a>
+            </li>
+            <li class="li">
+                <a href="about.html" class="link">关于我们</a>
+            </li>
+            <li class="li">
+                <a href="contact.html" class="link">联系我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    NProgress.start();
+</script>
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="img/invite_banner.png" alt="">
+        </div>
+    </div>
+    <div class="crumbs">
+        <div class="container">
+            <div class="list">
+                <div class="box">
+                    <a href="index.html" class="link">
+                        <i class="iconfont icon-shouye-zhihui"></i>
+                        <span>首页</span>
+                    </a>
+                </div>
+                <div class="arrow">
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+                <div class="box">
+                    人才招聘
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="invite container_padding">
+        <div class="container">
+            <div class="head center_head">
+                <div class="box">
+                    <h3 class="title">招聘岗位</h3>
+                </div>
+            </div>
+            <div class="child_padding">
+                <div class="invite_menu">
+                    <div class="swiper-container invite_banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide active">
+                                <p class="serial">01</p>
+                                <div class="content">
+                                    <div class="explain">
+                                        <div class="name">售后客服</div>
+                                        <p class="lead over1">customer service</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="iconfont icon-kefu"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <p class="serial">02</p>
+                                <div class="content">
+                                    <div class="explain">
+                                        <div class="name">检测专员</div>
+                                        <p class="lead over1">Testing Specialist</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="iconfont icon-kaoqinzhuanyuan"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <p class="serial">03</p>
+                                <div class="content">
+                                    <div class="explain">
+                                        <div class="name">售后客服</div>
+                                        <p class="lead over1">customer service</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="iconfont icon-kefu"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <p class="serial">04</p>
+                                <div class="content">
+                                    <div class="explain">
+                                        <div class="name">检测专员</div>
+                                        <p class="lead over1">Testing Specialist</p>
+                                    </div>
+                                    <div class="icon">
+                                        <i class="iconfont icon-kaoqinzhuanyuan"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="invite_details">
+                    <div class=".swiper-container invite_details_banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide">
+                                <div class="name">岗位要求</div>
+                                <div class="content">
+                                    <div class="explain">
+                                        <p class="lead">1.无需销售，公司提供精准的资源，电话筛选精准用户，解决客户疑问，添加微信即可。</p>
+                                        <p class="lead">2.轻松好上手，能接受打电话，小白也欢迎来撩。</p>
+                                        <p class="lead">3.工作积极主动，有强烈的进取心，性格外向。</p>
+                                        <p class="lead">职位要求：</p>
+                                        <p class="lead">1.有良好的沟通能力和技巧，逻辑思维清晰，目标明确。</p>
+                                        <p class="lead">2.能够承受工作压力，有一定的耐心。</p>
+                                        <p class="lead">3.年龄20-38岁，学历不限，应届生也可。</p>
+                                        <p class="lead">薪资福利</p>
+                                        <p class="lead">1.无责底薪4000+补贴300+全勤200+提成+绩效奖金（月综7k-10k）</p>
+                                        <p class="lead">2.上班时间：9:00-18:30 休息1个半小时；法定节假日正常休。</p>
+                                        <p class="lead">3.购买五险。</p>
+                                        <p class="lead">4.不定期发放奖励。</p>
+                                        <div class="more">
+                                            <a href="" class="link">立即咨询</a>
+                                        </div>
+                                    </div>
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/service.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="name">岗位要求</div>
+                                <div class="content">
+                                    <div class="explain">
+                                        <p class="lead">1.无需销售，公司提供精准的资源，电话筛选精准用户，解决客户疑问，添加微信即可。</p>
+                                        <p class="lead">2.轻松好上手，能接受打电话，小白也欢迎来撩。</p>
+                                        <p class="lead">3.工作积极主动，有强烈的进取心，性格外向。</p>
+                                        <p class="lead">职位要求：</p>
+                                        <p class="lead">1.有良好的沟通能力和技巧，逻辑思维清晰，目标明确。</p>
+                                        <p class="lead">2.能够承受工作压力，有一定的耐心。</p>
+                                        <p class="lead">3.年龄20-38岁，学历不限，应届生也可。</p>
+                                        <p class="lead">薪资福利</p>
+                                        <p class="lead">1.无责底薪4000+补贴300+全勤200+提成+绩效奖金（月综7k-10k）</p>
+                                        <p class="lead">2.上班时间：9:00-18:30 休息1个半小时；法定节假日正常休。</p>
+                                        <p class="lead">3.购买五险。</p>
+                                        <p class="lead">4.不定期发放奖励。</p>
+                                        <div class="more">
+                                            <a href="" class="link">立即咨询</a>
+                                        </div>
+                                    </div>
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/service.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="name">岗位要求</div>
+                                <div class="content">
+                                    <div class="explain">
+                                        <p class="lead">1.无需销售，公司提供精准的资源，电话筛选精准用户，解决客户疑问，添加微信即可。</p>
+                                        <p class="lead">2.轻松好上手，能接受打电话，小白也欢迎来撩。</p>
+                                        <p class="lead">3.工作积极主动，有强烈的进取心，性格外向。</p>
+                                        <p class="lead">职位要求：</p>
+                                        <p class="lead">1.有良好的沟通能力和技巧，逻辑思维清晰，目标明确。</p>
+                                        <p class="lead">2.能够承受工作压力，有一定的耐心。</p>
+                                        <p class="lead">3.年龄20-38岁，学历不限，应届生也可。</p>
+                                        <p class="lead">薪资福利</p>
+                                        <p class="lead">1.无责底薪4000+补贴300+全勤200+提成+绩效奖金（月综7k-10k）</p>
+                                        <p class="lead">2.上班时间：9:00-18:30 休息1个半小时；法定节假日正常休。</p>
+                                        <p class="lead">3.购买五险。</p>
+                                        <p class="lead">4.不定期发放奖励。</p>
+                                        <div class="more">
+                                            <a href="" class="link">立即咨询</a>
+                                        </div>
+                                    </div>
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/service.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="name">岗位要求</div>
+                                <div class="content">
+                                    <div class="explain">
+                                        <p class="lead">1.无需销售，公司提供精准的资源，电话筛选精准用户，解决客户疑问，添加微信即可。</p>
+                                        <p class="lead">2.轻松好上手，能接受打电话，小白也欢迎来撩。</p>
+                                        <p class="lead">3.工作积极主动，有强烈的进取心，性格外向。</p>
+                                        <p class="lead">职位要求：</p>
+                                        <p class="lead">1.有良好的沟通能力和技巧，逻辑思维清晰，目标明确。</p>
+                                        <p class="lead">2.能够承受工作压力，有一定的耐心。</p>
+                                        <p class="lead">3.年龄20-38岁，学历不限，应届生也可。</p>
+                                        <p class="lead">薪资福利</p>
+                                        <p class="lead">1.无责底薪4000+补贴300+全勤200+提成+绩效奖金（月综7k-10k）</p>
+                                        <p class="lead">2.上班时间：9:00-18:30 休息1个半小时；法定节假日正常休。</p>
+                                        <p class="lead">3.购买五险。</p>
+                                        <p class="lead">4.不定期发放奖励。</p>
+                                        <div class="more">
+                                            <a href="" class="link">立即咨询</a>
+                                        </div>
+                                    </div>
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/service.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="suspend">
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-weixin"></i>
+        </div>
+        <div class="slide">
+            <img class="cover" src="img/code.png" alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-qq"></i>
+        </div>
+        <div class="slide">
+            <img class="cover" src="img/code.png" alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-youxiang"></i>
+        </div>
+        <div class="slide email_item">
+            <p class="lead">katherine.wang@shnice.com.cn</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-dianhua2"></i>
+        </div>
+        <div class="slide mobile_item">
+            <p class="lead">021-64113787</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="top" id="top">
+            <i class="iconfont icon-shang"></i>
+            <p class="tips">TOP</p>
+        </div>
+    </div>
+</div>
+    <div class="commom_menu">
+    <div class="container">
+        <div class="content">
+            <div class="item">
+                <div class="name">打印</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">喷墨打印机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">喷切一体机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">介质</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">墨水</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">切割机</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">宽幅刻字机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">桌面式切割机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">STIKA Mini型切割机</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">雕刻</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">桌面雕刻机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">激光刻饰机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">照片针式打印机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">激光刻饰机</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">台式切削机/3D打印机</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">切削机床</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">软件</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">VersaWorks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col_md col-md-9 col-sm-12 col-xs-12">
+                    <div class="info">
+                        <div class="lis">
+                            <i class="iconfont icon-dianhua"></i>
+                            <span class="text">021-64113787</span>
+                        </div>
+                        <div class="lis">
+                            <i class="iconfont icon-youjian1"></i>
+                            <span class="text">katherine.wang@shnice.com.cn</span>
+                        </div>
+                        <div class="lis">
+                            <i class="iconfont icon-dizhi"></i>
+                            <span class="text">上海市闵行区浦锦路2049弄（万科VMO）39号310</span>
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+                        <span class="text">©上海纳艾升电器设备有限公司版权所有</span>
+                        <a href="" class="link">粤ICP备20029977号-6</a>
+                    </div>
+                </div>
+                <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                    <div class="code_box">
+                        <div class="code">
+                            <img class="cover" src="img/code.png" alt="">
+                            <p class="lead">扫码关注</p>
+                        </div>
+                        <div class="code">
+                            <img class="cover" src="img/code.png" alt="">
+                            <p class="lead">扫码关注</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/comment.js"></script>
+</body>
+<script>
+    let invite_banner = new Swiper('.invite_banner', {
+        speed: 1400,
+        slidesPerView: 4,
+        spaceBetween: 20,
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            968: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+        }
+    })
+
+    let invite_details_banner = new Swiper('.invite_details_banner', {
+        autoplay: {
+            delay: 8000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        spaceBetween: 10,
+        on: {
+            slideChangeTransitionStart: function () {
+                $('.invite_banner .slide').eq(this.realIndex).addClass('active').siblings().removeClass('active');
+            }
+        }
+    })
+
+    $('.invite_banner .slide').click(function () {
+        let index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        invite_details_banner.slideTo(index);
+    })
+</script>
+
+</html>

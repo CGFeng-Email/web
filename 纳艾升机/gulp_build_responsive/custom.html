@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>案例展示</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<link rel="stylesheet" href="nprogress/nprogress.css">
+<link rel="stylesheet" href="font/iconfont.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="aos/aos.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
+<link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="nprogress/nprogress.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="aos/aos.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="roll_number/jquery.counterup.js"></script>
+<script src="roll_number/jquery.waypoints.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="swiper/js/swiper.animate1.0.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="layui/layui.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="main">
+            <h1 class="logo">
+                <a href="index.html" class="link">
+                    <img class="cover" src="img/nice logo.png" alt="">
+                </a>
+            </h1>
+            <div class="content">
+                <div class="nav">
+                    <div class="li">
+                        <a href="index.html" class="link">首页</a>
+                    </div>
+                    <div class="li">
+                        <a href="technology.html" class="link">科创教育</a>
+                    </div>
+                    <div class="li">
+                        <a href="custom.html" class="link">个性化定制</a>
+                    </div>
+                    <div class="li">
+                        <a href="product.html" class="link">产品中心</a>
+                    </div>
+                    <div class="li">
+                        <a href="case.html" class="link">案例展示</a>
+                    </div>
+                    <div class="li">
+                        <a href="news.html" class="link">新闻中心</a>
+                    </div>
+                    <div class="li">
+                        <a href="invite.html" class="link">人才招聘</a>
+                    </div>
+                    <div class="li">
+                        <a href="about.html" class="link">关于我们</a>
+                    </div>
+                    <div class="li">
+                        <a href="contact.html" class="link">联系我们</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <a href="search.html" class="link">
+                        <i class="iconfont icon-sousuo"></i>
+                    </a>
+                </div>
+                <div class="language">
+                    <div class="current">
+                        <img class="cover" src="img/yingguoguoqi.png" alt="">
+                        <span class="text">English</span>
+                        <i class="iconfont icon-xiala"></i>
+                    </div>
+                    <ul class="language_list">
+                        <li class="li">
+                            <a href="" class="link">
+                                <img class="cover" src="img/yingguoguoqi.png" alt="">
+                                <span class="text">English</span>
+                            </a>
+                        </li>
+                        <li class="li">
+                            <a href="" class="link">
+                                <img class="cover" src="img/zhongguoguoqi.png" alt="">
+                                <span class="text">中文</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inner_mid">
+        <ul class="child">
+            <li class="li">
+                <a href="index.html" class="link">首页</a>
+            </li>
+            <li class="li">
+                <a href="technology.html" class="link">科创教育</a>
+            </li>
+            <li class="li">
+                <a href="custom.html" class="link">个性化定制</a>
+            </li>
+            <li class="li">
+                <a href="product.html" class="link">产品中心</a>
+            </li>
+            <li class="li">
+                <a href="case.html" class="link">案例展示</a>
+            </li>
+            <li class="li">
+                <a href="news.html" class="link">新闻中心</a>
+            </li>
+            <li class="li">
+                <a href="invite.html" class="link">人才招聘</a>
+            </li>
+            <li class="li">
+                <a href="about.html" class="link">关于我们</a>
+            </li>
+            <li class="li">
+                <a href="contact.html" class="link">联系我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    NProgress.start();
+</script>
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="img/custom_banner.png" alt="">
+        </div>
+    </div>
+    <div class="crumbs">
+        <div class="container">
+            <div class="list">
+                <div class="box">
+                    <a href="index.html" class="link">
+                        <i class="iconfont icon-shouye-zhihui"></i>
+                        <span>首页</span>
+                    </a>
+                </div>
+                <div class="arrow">
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+                <div class="box">
+                    个性化定制
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bd_8 custom_main">
+        <div class="main">
+            <div class="demo_main">
+                <div class="demo_company">
+                    <div class="list">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/custom_li_cover1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="content">
+                                        <div class="name">热转印喷切技术</div>
+                                        <p class="lead">
+                                            专为使用获奖产品ECOSOLMAX墨水而开发，HeatSoft@热转印解决方案是我们定制服装装饰产品系列的一部分。您可利用HeatSoft将您的喷墨打印机设备即刻转换成为可制作彩色T恤、针织衫、运动衫、帽子和手包的完整解决方案
+                                        </p>
+                                        <div class="custom_logo">
+                                            <img class="cover" src="img/custom_logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/custom_li_cover2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="content">
+                                        <div class="name">礼品和配件UV平板打印</div>
+                                        <p class="lead">
+                                            平板打印可制作独一无二的礼品和配件，让您的业务脱颖而出。VersaUVLEF系类台式平板打印机可让定制物品制作变得无比简单。搭配使用高灵活ECO-UV墨水，LEF打印机可在几乎任何厚度不超过100mm的基底或3D物品上打印效果逼真的图片、字体和图像。
+                                            将白墨作为透明材料专色使用或作为CMYK图像底色使用，丰富颜色层次。清漆涂层则可通过精致触感和质感提升图片效果。有了LEF
+                                            您可在U盘、钢笔、智能手机壳、高尔夫球、木材、亚克力吊坠板，甚至笔记本电脑上进行直接打印。
+                                        </p>
+                                        <div class="custom_logo">
+                                            <img class="cover" src="img/custom_logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/custom_li_cover3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="content">
+                                        <div class="name">定制乙烯基图案</div>
+                                        <p class="lead">
+                                            STIKA便携式乙烯基切割机是适用于办公室、学校、餐厅、商店和相关爱好者的理想之选，该设备可轻松制作贴纸、贴花纸、标识、POP展架和T恤烫印图案。
+                                            将白墨作为透明材料专色使用或作为CMYK图像底色使用，丰富颜色层次。清涂层则可通过精致触感和质感提升图片效果。有了LEF
+                                            您可在U盘、钢笔、智能手机壳、高尔夫球、木材、亚克力吊坠板，甚至笔记本电脑上进行直接打印。
+                                        </p>
+                                        <div class="custom_logo">
+                                            <img class="cover" src="img/custom_logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo env">
+                    <div class="head center_head">
+                        <div class="box">
+                            <h3 class="title">室内外横幅</h3>
+                            <p class="sub_title uppercase">
+                                DG弱溶剂喷墨打印机技术适用于多种横幅材料，为您的室内外横幅打印提供更多的选择。Roland的EcO-SoI MAX®、MAX
+                                2、EJ和TrueVIS油墨几乎无臭无味，在未经压膜处理的情况下可保持长达3年的打印效果。综合使用墨水和宽幅打印机，可制作出效果出众的横幅，适用于销售活动、街道集市、店铺开业、POP展架、展会装饰等场合。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="child_padding">
+                        <div class="list">
+                            <div class="row">
+                                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/env1.png" alt="">
+                                        </div>
+                                        <div class="name">室内横幅</div>
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/env2.png" alt="">
+                                        </div>
+                                        <div class="name">楼宇横幅</div>
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/env3.png" alt="">
+                                        </div>
+                                        <div class="name">带支架的室内横幅</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo env" style="background: #F8F8F8;">
+                    <div class="head center_head">
+                        <div class="box">
+                            <h3 class="title">帆布艺术</h3>
+                            <p class="sub_title uppercase">
+                                将您的艺术和数字艺术转变为具有喷墨打印机的画廊质量的复制品，并确保它对原始艺术品看起来清晰，明亮和真实。将设计直接打印到特制的美术画布上，并配有先进的Roland喷墨设备，包括新的TrueVIS
+                                VG系列打印机/切割机。对于桌面解决方案，Roland还提供VersaStudio BN-20台式打印机/刀具，非常适合小型艺术品和海报打印。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="child_padding">
+                        <div class="list">
+                            <div class="row">
+                                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/env4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/env5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/env6.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo_company">
+                    <div class="list">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/custom_li_cover4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="content">
+                                        <div class="name">标识贴纸，品牌商标</div>
+                                        <p class="lead">
+                                            贴纸是乐队、时装、艺术、媒体和零售宣传的理想方式，您可随心所愿地将您的品牌带到任何地点，并将其粘贴在产品和包装上或将其作为促销产品发放。您可使用罗兰设备，制作令人印象深刻且过目难忘的标识贴纸，并利用透明和白色乙烯基和薄膜材料展现鲜活色彩。
+                                        </p>
+                                        <div class="custom_logo">
+                                            <img class="cover" src="img/custom_logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/custom_li_cover5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="content">
+                                        <div class="name">车身和保险杠贴纸，表达自己的态度</div>
+                                        <p class="lead">
+                                            我们打印机可打印数千个车身和保险杠贴纸。将个性标语、球队标识和其他定制设计“搬到”贴纸上，即可作为自制产品销售，也可利用这些产品成功宣传您的非盈利组织或个人倡议。
+                                        </p>
+                                        <div class="custom_logo">
+                                            <img class="cover" src="img/custom_logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo env">
+                    <div class="head center_head">
+                        <div class="box">
+                            <h3 class="title">持久的压印效果</h3>
+                            <p class="sub_title uppercase">
+                                对于工业标记应用而言，MPX-95桌面型照片金属打印机可提供精准的打印效果，且与传统系统相比，成本低。该设备选择了耐用型钻石头车针，可在硬质材料表面上进行刻印，包括金、银、铜、白金、黄铜、铝、贴、不锈钢、钛金、镍和亚克力材料。该创新型系统可制作像素529dpi的完美图像、图片和字体。设备运行快速、操作简单--且不会产生残留。MPX-95是珠宝、礼品和纪念品定制制作的理想之选，亦可作为医疗和工业设备直接零件标记设备使用。除了MPX-95，DG还具有EGX系列专业桌面型雕刻设备，可为您提供丰富的标记和雕刻解决方案选择。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="child_padding">
+                        <div class="list">
+                            <div class="row">
+                                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/env7.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/env8.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                                    <div class="item">
+                                        <div class="cover_box">
+                                            <img class="cover" src="img/env9.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo_company">
+                    <div class="list">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/custom_li_cover6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="content">
+                                        <div class="name">在奖杯表面直接打印全彩图案</div>
+                                        <p class="lead">
+                                            VersaUV LEF台式平板打印机允许用户在奖杯和其他厚度不超过100mm的物品上直接打印各种炫彩夺目的图案。该系列打印机综合使用了CMYK、白墨和透明清漆，实现完美视觉冲击和独特立体效果，如立体品牌标识和纹理层次质感。
+                                        </p>
+                                        <div class="custom_logo">
+                                            <img class="cover" src="img/custom_logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/custom_li_cover7.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="content">
+                                        <div class="name">定制服装和T恤打印</div>
+                                        <p class="lead">
+                                            可提供的多种解决方案包括宽幅定制服装打印机和适合桌面生产使用的T恤打印机。从多种热升华打印机中挑选适合批量生产运动装和时尚服饰的产品，并为帽子、团队运动服、手包和其他产品快速个性化加工选择入门级设备。无论您在寻找体型小巧且价格适中的打印设备，还是计划经营自己的定制服饰店，均能提供符合您需求的解决方案。
+                                        </p>
+                                        <div class="custom_logo">
+                                            <img class="cover" src="img/custom_logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/custom_li_cover8.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-6 col-sm-6 col-xs-12">
+                                    <div class="content">
+                                        <div class="name">特殊喷墨效果的独特标识</div>
+                                        <p class="lead">
+                                            VersaUV LEF-300和VersaUVLEJ平板打印机可利用UV清漆制作出仿压纹和3D纹理效果--为木材、亚克力和其他材料增添独特时尚外观。而用宽幅喷墨打印机搭配金属墨则可展现数百种荧光和金属色彩。
+                                        </p>
+                                        <div class="custom_logo">
+                                            <img class="cover" src="img/custom_logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="suspend">
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-weixin"></i>
+        </div>
+        <div class="slide">
+            <img class="cover" src="img/code.png" alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-qq"></i>
+        </div>
+        <div class="slide">
+            <img class="cover" src="img/code.png" alt="">
+        </div>
+    </div>
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-youxiang"></i>
+        </div>
+        <div class="slide email_item">
+            <p class="lead">katherine.wang@shnice.com.cn</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="icon">
+            <i class="iconfont icon-dianhua2"></i>
+        </div>
+        <div class="slide mobile_item">
+            <p class="lead">021-64113787</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="top" id="top">
+            <i class="iconfont icon-shang"></i>
+            <p class="tips">TOP</p>
+        </div>
+    </div>
+</div>
+    <div class="commom_menu">
+    <div class="container">
+        <div class="content">
+            <div class="item">
+                <div class="name">打印</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">喷墨打印机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">喷切一体机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">介质</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">墨水</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">切割机</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">宽幅刻字机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">桌面式切割机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">STIKA Mini型切割机</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">雕刻</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">桌面雕刻机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">激光刻饰机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">照片针式打印机</a>
+                    </div>
+                    <div class="link_box">
+                        <a href="" class="link">激光刻饰机</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">台式切削机/3D打印机</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">切削机床</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="name">软件</div>
+                <div class="note">
+                    <div class="link_box">
+                        <a href="" class="link">VersaWorks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col_md col-md-9 col-sm-12 col-xs-12">
+                    <div class="info">
+                        <div class="lis">
+                            <i class="iconfont icon-dianhua"></i>
+                            <span class="text">021-64113787</span>
+                        </div>
+                        <div class="lis">
+                            <i class="iconfont icon-youjian1"></i>
+                            <span class="text">katherine.wang@shnice.com.cn</span>
+                        </div>
+                        <div class="lis">
+                            <i class="iconfont icon-dizhi"></i>
+                            <span class="text">上海市闵行区浦锦路2049弄（万科VMO）39号310</span>
+                        </div>
+                    </div>
+
+                    <div class="copyright">
+                        <span class="text">©上海纳艾升电器设备有限公司版权所有</span>
+                        <a href="" class="link">粤ICP备20029977号-6</a>
+                    </div>
+                </div>
+                <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                    <div class="code_box">
+                        <div class="code">
+                            <img class="cover" src="img/code.png" alt="">
+                            <p class="lead">扫码关注</p>
+                        </div>
+                        <div class="code">
+                            <img class="cover" src="img/code.png" alt="">
+                            <p class="lead">扫码关注</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/comment.js"></script>
+</body>
+
+</html>
