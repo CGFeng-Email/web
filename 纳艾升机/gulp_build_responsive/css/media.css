@@ -176,6 +176,48 @@
   .bd_8 .demo_company .list .item .cover_box {
     height: 360px;
   }
+  .introduction .introduction_swiper .cover_box {
+    margin-bottom: 20px;
+  }
+  .introduction .introduction_swiper .content .title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .introduction .introduction_swiper .content .date {
+    font-size: 14px;
+    padding: 7px 0;
+  }
+  .introduction .introduction_swiper .content .lead {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .invite .invite_details .invite_details_banner .slide {
+    position: relative;
+  }
+  .invite .invite_details .invite_details_banner .slide .cover_box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+  }
+  .contact_us .main {
+    padding: 0 10px;
+  }
+  .contact_us .main .message_box .right {
+    margin-bottom: 20px;
+  }
+  .contact_us .main .message_box .form .item .input_box {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .custom_main .main .demo_main .env .head {
+    width: 88%;
+  }
+  .custom_main .main .demo_main .env .item .name {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -199,6 +241,24 @@
   }
   .search .search_form .content {
     width: 84%;
+  }
+  .article {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .article .up {
+    width: 100%;
+    flex: none;
+  }
+  .article .return {
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+  }
+  .article .return .link {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
   }
   .footer .content {
     padding: 0 0 10px;
@@ -376,5 +436,101 @@
   .bd_8 .demo_company .list .item .content {
     padding: 30px 20px;
     height: auto;
+  }
+  .introduction {
+    padding: 0;
+  }
+  .information_list .item {
+    margin-bottom: 15px;
+  }
+  .contact_us .main .information .title {
+    font-size: 24px;
+  }
+  .contact_us .main .information .subhead {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .contact_us .main .information .mobile {
+    font-size: 20px;
+  }
+  .contact_us .main .information .list {
+    padding: 20px 0 0;
+  }
+  .contact_us .main .information .list .item {
+    padding: 14px;
+    margin-bottom: 20px;
+    min-height: auto;
+  }
+  .contact_us .main .information .list .item .icon .iconfont {
+    font-size: 32px;
+  }
+  .contact_us .main .information .list .item .content .name {
+    font-size: 16px;
+  }
+  .contact_us .main .information .list .item .content .text {
+    font-size: 14px;
+  }
+  .contact_us .main .information .map {
+    height: 450px;
+  }
+  .contact_us .main .message_box {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .contact_us .main .message_box .left_cover,
+  .contact_us .main .message_box .right_content {
+    padding: 0;
+  }
+  .contact_us .main .message_box .title {
+    font-size: 24px;
+  }
+  .contact_us .main .message_box .lead {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .contact_us .main .message_box .form {
+    margin-top: 20px;
+  }
+  .contact_us .main .message_box .form .item {
+    margin-bottom: 10px;
+  }
+  .contact_us .main .message_box .form .item .input {
+    height: 46px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .contact_us .main .message_box .form .item .input_box {
+    margin-top: 10px;
+  }
+  .contact_us .main .message_box .form .item .textarea {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .contact_us .main .message_box .form .btn_box {
+    margin-top: 10px;
+  }
+  .contact_us .main .message_box .form .btn_box .btn {
+    min-width: auto;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 12px;
+  }
+  .contact_us .main .message_box .right .cover_box {
+    width: 100%;
+    height: auto;
+  }
+  .technology_main {
+    margin-top: 30px;
+  }
+  .technology_main .content {
+    padding: 10px;
+  }
+  .custom_main .main .demo_main .demo_company {
+    padding: 10px 0 30px;
+  }
+  .custom_main .main .demo_main .env .head {
+    width: 100%;
+    padding: 0 20px;
   }
 }

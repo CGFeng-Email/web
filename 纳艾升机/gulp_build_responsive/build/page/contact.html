@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>人才招聘</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="../../img/contact_banner.png" alt="">
+        </div>
+    </div>
+    <div class="crumbs">
+        <div class="container">
+            <div class="list">
+                <div class="box">
+                    <a href="../../index.html" class="link">
+                        <i class="iconfont icon-shouye-zhihui"></i>
+                        <span>首页</span>
+                    </a>
+                </div>
+                <div class="arrow">
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+                <div class="box">
+                    联系我们
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_us">
+        <div class="main">
+            <div class="information container_padding">
+                <div class="container">
+                    <h2 class="title" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
+                        联系方式
+                    </h2>
+                    <p class="subhead" data-aos="fade-up" data-aos-duration="2000">
+                        如果有任何问题请联系我们，我们7*24小时竭诚为您服务
+                    </p>
+                    <p class="mobile" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150">
+                        021-64113787
+                    </p>
+                    <div class="list" data-aos="fade" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
+                                    <div class="icon">
+                                        <i class="iconfont icon-dianhua1"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p class="name">联系电话:</p>
+                                        <p class="text">021-64113787</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="item" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="icon">
+                                        <i class="iconfont icon-youjian"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p class="name">电子邮箱: </p>
+                                        <p class="text">katherine.wang@shnice.com.cn</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150">
+                                    <div class="icon">
+                                        <i class="iconfont icon-dizhi1"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p class="name">公司地址：</p>
+                                        <p class="text">
+                                            上海市闵行区浦锦路2049弄（万科VMO）39号310
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="item" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                                    <div class="icon">
+                                        <i class="iconfont icon-guanwang"></i>
+                                    </div>
+                                    <div class="content">
+                                        <p class="name">公司官网：</p>
+                                        <p class="text">www.shnice.com.cn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map" id="map" data-aos="fade" data-aos-duration="1000"></div>
+                </div>
+            </div>
+
+            <div class="message_box img_bg container_padding" data-aos="fade" data-aos-duration="1000"
+                style="background-image: url(../../img/contact_us_form_bg.png);">
+                <div class="container">
+                    <div class="row">
+                        <div class="left_cover col-md-5 col-sm-12 col-xs-12" data-aos="fade-right"
+                            data-aos-duration="1200">
+                            <div class="right">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/code.png" alt="code">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_content col-md-7 col-sm-12 col-xs-12">
+                            <h2 class="title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">在线留言</h2>
+                            <p class="lead" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                                您可以在这里向我们发送询问，我们会在12小时内给您专业的回复
+                            </p>
+                            <form class="layui-form form">
+                                <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                    <div class="row">
+                                        <div class="box col-md-6 col-sm-12 col-xs-12">
+                                            <input type="text" name="name" lay-verify="required" lay-vertype="tips"
+                                                placeholder="请输入您的名字"
+                                                lay-reqtext="请输入您的名字" autocomplete="off"
+                                                class="layui-input input" lay-affix="clear">
+                                        </div>
+                                        <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                            <input type="tel" name="mobile" lay-verify="required | phone"
+                                                lay-vertype="tips" placeholder="请输入您的电话号码"
+                                                lay-reqtext="请输入您的电话号码" autocomplete="off"
+                                                class="layui-input input" lay-affix="clear">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                    <div class="row">
+                                        <div class="box col-md-12 col-sm-12 col-xs-12">
+                                            <input type="email" name="email" lay-verify="required | email"
+                                                lay-vertype="tips" placeholder="请输入您的邮箱"
+                                                lay-reqtext="请输入您的邮箱" autocomplete="off"
+                                                class="layui-input input" lay-affix="clear">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="fade-up" data-aos-duration="1200">
+                                    <div class="row">
+                                        <div class="box col-md-12 col-sm-12 col-xs-12">
+                                            <textarea name="message" placeholder="请输入您的留言内容"
+                                                class="layui-textarea textarea" style="resize: none;"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_box" data-aos="fade-up" data-aos-duration="1200">
+                                    <button class="layui-btn btn uppercase" lay-submit
+                                        lay-filter="contact_us_btn">确认发送</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('suspend.html')
+    @@include('menu.html')
+    @@include('footer.html')
+</body>
+
+</html>
