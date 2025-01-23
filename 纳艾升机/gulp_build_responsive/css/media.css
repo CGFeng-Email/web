@@ -112,6 +112,9 @@
     width: 33.33%;
     margin-bottom: 20px;
   }
+  .case .main .case_swiper {
+    padding: 0 60px;
+  }
   .case .main .case_swiper .slide .content {
     width: 320px;
     padding: 20px;
@@ -153,6 +156,12 @@
   }
   .mdx_50 .function_main .function_list .list .box {
     margin-bottom: 20px;
+  }
+  .mdx_50 .function_main .materials .cover_box {
+    text-align: left;
+  }
+  .mdx_50 .function_main .materials .cover_box .cover {
+    width: 100%;
   }
   .mdx_50 .contact_main .content .form_box .item .col_md:first-child {
     margin-bottom: 10px;

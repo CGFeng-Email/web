@@ -715,7 +715,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
 }
 .case .main .case_swiper {
-  padding: 0 120px;
+  padding: 0 240px;
 }
 .case .main .case_swiper .slide {
   border-radius: 12px;
@@ -723,9 +723,12 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
   z-index: 3;
 }
+.case .main .case_swiper .slide .cover_box .cover {
+  height: 560px;
+}
 .case .main .case_swiper .slide .content {
   position: absolute;
-  width: 410px;
+  width: 400px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.9);
   top: 25%;
@@ -1249,9 +1252,6 @@ body::-webkit-scrollbar-thumb:hover {
 .mdx_50 .function_main .materials {
   padding-bottom: 30px;
 }
-.mdx_50 .function_main .materials .list {
-  padding: 30px 0;
-}
 .mdx_50 .function_main .materials .list .col-md-4 {
   padding: 0 10px;
 }
@@ -1263,6 +1263,14 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
   margin-bottom: 20px;
   font-weight: 600;
+}
+.mdx_50 .function_main .materials .cover_box {
+  text-align: right;
+}
+.mdx_50 .function_main .materials .cover_box .cover {
+  width: 90%;
+  height: 236px;
+  border-radius: 4px;
 }
 .mdx_50 .function_main .in_details .content {
   padding: 40px 0;
