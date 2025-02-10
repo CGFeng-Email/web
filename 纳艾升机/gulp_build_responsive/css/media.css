@@ -242,6 +242,15 @@
   .common_tabs {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
+  .tabs_box .page_tabs {
+    padding: 20px 0;
+  }
+  .tabs_box .page_tabs .li {
+    margin-bottom: 10px;
+  }
+  .tabs_box .page_tabs .li .link {
+    font-size: 14px;
+  }
   .search .head .title {
     font-size: 38px;
   }
@@ -448,6 +457,12 @@
   }
   .introduction {
     padding: 0;
+  }
+  .introduction .introduction_swiper .swiper_page {
+    padding-left: 80%;
+  }
+  .information_list {
+    padding: 10px 0;
   }
   .information_list .item {
     margin-bottom: 15px;
