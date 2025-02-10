@@ -412,6 +412,106 @@ body::-webkit-scrollbar-thumb:hover {
                         font-weight: 500;
                         padding: 0 20px;
                     }
+
+                    .child_head {
+                        position: fixed;
+                        top: 80px;
+                        left: 0;
+                        width: 100%;
+                        background: #fff;
+                        display: none;
+
+                        .min_h {
+                            height: 500px;
+                            overflow-y: auto;
+                        }
+
+                        .col_md {
+                            padding: 0;
+                        }
+
+                        .li {
+                            height: auto;
+                            line-height: 1.5;
+                        }
+
+                        .h4 {
+                            font-size: 14px;
+                            color: #000;
+                        }
+
+                        .type_list {
+                            box-shadow: 0 0 1px rgba(0, 0, 0, .1);
+
+                            .li {
+                                padding: 10px;
+                                display: flex;
+                                justify-content: space-between;
+                                cursor: pointer;
+                            }
+
+                            .active {
+                                background: #f7f7f7;
+                                color: @minor;
+                            }
+                        }
+
+                        .type_child_list {
+                            background: #f7f7f7;
+
+                            .active {
+                                background: rgba(0, 0, 0, .1);
+                            }
+                        }
+
+                        .type_child_content {
+                            padding: 30px 20px;
+
+                            .content_list {
+                                display: flex;
+                                flex-wrap: wrap;
+
+                                .item {
+                                    padding: 0 20px;
+
+                                    .box {
+                                        padding: 4px 0 0;
+
+                                        .link {
+                                            display: flex;
+                                            padding: 0;
+                                        }
+
+                                        .cover_box {
+                                            width: 50px;
+                                            height: 60px;
+                                        }
+
+                                        .explain {
+                                            padding: 14px 0 0 10px;
+                                            font-size: 12px;
+                                            line-height: 22px;
+
+                                            .name {
+                                                color: #4D4D4D;
+                                            }
+
+                                            .lead {
+                                                font-size: 12px;
+                                                line-height: 22px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .child_head {
+                            display: block;
+                        }
+                    }
                 }
             }
 
@@ -920,7 +1020,7 @@ body::-webkit-scrollbar-thumb:hover {
     .main {
         .case_swiper {
             padding: 0 240px;
-            
+
 
             .slide {
                 border-radius: 12px;
@@ -1646,6 +1746,7 @@ body::-webkit-scrollbar-thumb:hover {
 
             .cover_box {
                 text-align: right;
+
                 .cover {
                     width: 90%;
                     height: 236px;
@@ -2036,6 +2137,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 .introduction {
     padding: 30px 0;
+
+    .introduction_swiper {
+        .swiper_page {
+            text-align: initial;
+            padding-left: 23%;
+        }
+    }
 
     .cover_box {
         height: 400px;
