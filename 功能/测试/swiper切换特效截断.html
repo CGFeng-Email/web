@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .slide-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+    </style>
+    <link rel="stylesheet" href="./swiper/css/swiper-bundle.css">
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-inner"
+                    style="background-image: url(./img/07be119d880511ebb6edd017c2d2eca2.jpg); transition: all;">
+                    nature-1</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner"
+                    style="background-image: url(./img/0baef6d9880511ebb6edd017c2d2eca2.png); transition: all;">
+                    nature-1</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner"
+                    style="background-image: url(./img/2ae41a1d880511ebb6edd017c2d2eca2.png); transition: all;">
+                    nature-1</div>
+            </div>
+            <div class="swiper-slide swiper-slide-next">
+                <div class="slide-inner"
+                    style="background-image: url(./img/2f060cfa9a944ce2a58d3d9589097fe9.jpg); transition: all;">
+                    nature-1
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner"
+                    style="background-image: url(./img/33347b75b9894c52ad8113c2d61ba0ab.jpg); transition: all;">
+                    nature-1</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-inner"
+                    style="background-image: url(./img/9ccda74f880d11ebb6edd017c2d2eca2.jpg); transition: all;">
+                    nature-1</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./swiper/js/swiper-bundle.js"></script>
+<script>
+
+    var interleaveOffset = 0.5; //视差比值
+
+    var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        on: {
+            progress: function (swiper) {
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    var slideProgress = swiper.slides[i].progress;
+                    var innerOffset = swiper.width * interleaveOffset;
+                    var innerTranslate = slideProgress * innerOffset;
+                    swiper.slides[i].querySelector(".slide-inner").style.transform =
+                        "translate3d(" + innerTranslate + "px, 0, 0)";
+                }
+            },
+            touchStart: function (swiper) {
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = "";
+                }
+            },
+            setTransition: function (swiper, speed) {
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = speed + "ms";
+                    swiper.slides[i].querySelector(".slide-inner").style.transition =
+                        speed + "ms";
+                }
+            }
+        }
+    };
+
+    var swiper = new Swiper(".swiper-container", swiperOptions);
+</script>
+
+
+</html>
