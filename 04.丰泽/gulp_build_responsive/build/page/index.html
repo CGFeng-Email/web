@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="swiper index_swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/index_banner_li1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="title">专业物流服务</h3>
+                    <div class="c_line">
+                        <span class="x"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="sub_head">为客户提供量身定做科学合理的物流解决方案</div>
+                    <div class="get_scheme">
+                        <a href="" class="link">
+                            <span class="text">获取方案</span>
+                            <i class="iconfont icon-you"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/index_banner_li1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    const index_swiper = new Swiper('.index_swiper', {
+        autoplay: {
+            delay: 5000000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1000,
+        on: {
+            init: function () {
+                swiperAnimateCache(this); // 隐藏动画元素 
+                swiperAnimate(this); // 初始化完成开始动画
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this); // 每个slide切换结束时也运行当前slide动画
+            }
+        }
+    })
+</script>
+
+</html>
