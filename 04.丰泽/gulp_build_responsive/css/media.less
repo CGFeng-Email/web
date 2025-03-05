@@ -6,6 +6,17 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+@media screen and (max-width: 1200px) {
+    .serve_project {
+        .list {
+            .col_md {
+                padding: 0 8px;
+            }
+
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .container_padding {
         padding: 60px 0;
@@ -57,6 +68,20 @@
             }
         }
     }
+
+    .about_us {
+        .content {
+            margin-bottom: 20px;
+        }
+    }
+
+    .serve_project {
+        .list {
+            .item {
+                margin-bottom: 40px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -67,5 +92,102 @@
 
     .title {
         font-size: 18px;
+    }
+
+    .col-xs-12 {
+        padding: 0;
+    }
+
+    .head {
+        padding-bottom: 30px;
+
+        .title {
+            font-size: 28px;
+        }
+
+        .sub_title {
+            font-size: 14px;
+        }
+    }
+
+    .index_swiper {
+        .item {
+            .content {
+                width: 80%;
+
+                .title {
+                    font-size: 28px;
+                }
+
+                .sub_head {
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                }
+
+                .get_scheme {
+                    width: 160px;
+                    height: 40px;
+                    line-height: 40px;
+
+                    .link {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about_us {
+        .content {
+            padding-right: 0;
+
+            .more {
+                margin-top: 20px;
+            }
+        }
+
+        .company {
+            .cover_box {
+                padding: 0;
+            }
+
+            .list {
+                position: initial;
+                background: #020F6B;
+                transform: translateY(-1px);
+
+                .box {
+                    .name {
+                        .text {
+                            font-size: 32px;
+                        }
+
+                        .ide {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .lead {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .serve_project {
+        .list {
+            .col_md {
+                padding: 0;
+            }
+
+            .item {
+                margin-bottom: 20px;
+
+                &:hover {
+                    transform: translateY(0);
+                }
+            }
+        }
     }
 }
