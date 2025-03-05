@@ -1,3 +1,8 @@
+@media screen and (max-width: 1200px) {
+  .serve_project .list .col_md {
+    padding: 0 8px;
+  }
+}
 @media screen and (max-width: 992px) {
   .container_padding {
     padding: 60px 0;
@@ -30,6 +35,12 @@
   .bottom_nav .nav .menu {
     display: block;
   }
+  .about_us .content {
+    margin-bottom: 20px;
+  }
+  .serve_project .list .item {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -37,5 +48,67 @@
   }
   .title {
     font-size: 18px;
+  }
+  .col-xs-12 {
+    padding: 0;
+  }
+  .head {
+    padding-bottom: 30px;
+  }
+  .head .title {
+    font-size: 28px;
+  }
+  .head .sub_title {
+    font-size: 14px;
+  }
+  .index_swiper .item .content {
+    width: 80%;
+  }
+  .index_swiper .item .content .title {
+    font-size: 28px;
+  }
+  .index_swiper .item .content .sub_head {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .index_swiper .item .content .get_scheme {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .index_swiper .item .content .get_scheme .link {
+    font-size: 14px;
+  }
+  .about_us .content {
+    padding-right: 0;
+  }
+  .about_us .content .more {
+    margin-top: 20px;
+  }
+  .about_us .company .cover_box {
+    padding: 0;
+  }
+  .about_us .company .list {
+    position: initial;
+    background: #020F6B;
+    transform: translateY(-1px);
+  }
+  .about_us .company .list .box .name .text {
+    font-size: 32px;
+  }
+  .about_us .company .list .box .name .ide {
+    font-size: 16px;
+  }
+  .about_us .company .list .box .lead {
+    font-size: 12px;
+  }
+  .serve_project .list .col_md {
+    padding: 0;
+  }
+  .serve_project .list .item {
+    margin-bottom: 20px;
+  }
+  .serve_project .list .item:hover {
+    transform: translateY(0);
   }
 }
