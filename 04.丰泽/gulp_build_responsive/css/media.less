@@ -6,6 +6,26 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .footer {
+        .content {
+            .list {
+                margin-top: 20px;
+            }
+
+            .right {
+                margin-top: 20px;
+
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .serve_project {
         .list {
@@ -80,6 +100,12 @@
             .item {
                 margin-bottom: 40px;
             }
+        }
+    }
+
+    .footer {
+        .content {
+            padding: 40px 0;
         }
     }
 }
@@ -182,11 +208,60 @@
             }
 
             .item {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
 
                 &:hover {
                     transform: translateY(0);
                 }
+            }
+        }
+    }
+
+    .partner {
+        .list {
+            .cover_box {
+                width: 25%;
+            }
+        }
+    }
+
+    .footer {
+        .content {
+            padding: 30px 0 0;
+
+            .list {
+                margin-top: 10px;
+
+                .title {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+
+                .ul {
+                    margin-top: 10px;
+
+                    .li {
+                        .link {
+                            padding: 4px 0 4px 4px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                margin-top: 20px;
+                padding-top: 20px;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .copyright {
+            padding: 10px 0;
+            span,
+            .link {
+                font-size: 12px;
+                padding: 0;
             }
         }
     }
