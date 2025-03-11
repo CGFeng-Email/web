@@ -21,3 +21,11 @@ $('.h5_nav .return_icon').click(function () {
     'overflow': 'initial'
   })
 })
+
+layui.use(function () {
+  var util = layui.util;
+  util.fixbar({
+    bars: [],
+    on: {},
+  })
+});

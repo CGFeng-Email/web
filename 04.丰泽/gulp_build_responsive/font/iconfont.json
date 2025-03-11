@@ -6,6 +6,125 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2678608",
+      "name": "核心",
+      "font_class": "hexin",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "3020038",
+      "name": "二级-大数据平台",
+      "font_class": "erji-dashujupingtai",
+      "unicode": "eaae",
+      "unicode_decimal": 60078
+    },
+    {
+      "icon_id": "7171142",
+      "name": "科技项目管理",
+      "font_class": "keji",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "30790734",
+      "name": "ai-cpu",
+      "font_class": "ai-cpu",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "40074286",
+      "name": "SYS-低代码开发",
+      "font_class": "SYS-didaimakaifa",
+      "unicode": "e741",
+      "unicode_decimal": 59201
+    },
+    {
+      "icon_id": "22580453",
+      "name": "环渤海港口群",
+      "font_class": "huanbohaigangkouqun",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "4444706",
+      "name": "轮船",
+      "font_class": "lunchuan",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "12753449",
+      "name": "用户管理",
+      "font_class": "yonghuguanli_huaban",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "16562597",
+      "name": "占地面积",
+      "font_class": "zhandimianji",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "553251",
+      "name": "组织架构",
+      "font_class": "zuzhijiagou",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "577380",
+      "name": "物流",
+      "font_class": "wuliu",
+      "unicode": "e75f",
+      "unicode_decimal": 59231
+    },
+    {
+      "icon_id": "6582366",
+      "name": "网络",
+      "font_class": "wangluo",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "7429922",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "7548886",
+      "name": "24gl-newspaper4",
+      "font_class": "24gl-newspaper4",
+      "unicode": "e8ae",
+      "unicode_decimal": 59566
+    },
+    {
+      "icon_id": "8073254",
+      "name": "公司简介",
+      "font_class": "gongsijianjie",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "32473139",
+      "name": "荣誉资质-01",
+      "font_class": "rongyuzizhi-01",
+      "unicode": "e700",
+      "unicode_decimal": 59136
+    },
+    {
+      "icon_id": "39916088",
+      "name": "发展历程",
+      "font_class": "fazhanlicheng",
+      "unicode": "e7b8",
+      "unicode_decimal": 59320
+    },
+    {
       "icon_id": "11882936",
       "name": "bg-right",
       "font_class": "bg-right",
