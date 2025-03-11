@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    @@include('head.html')
+    <script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=e2k1gJjCTRS3IkaixZNgogQt9MehhPhO"></script>
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="../../img/contact_banner.png" alt="">
+        </div>
+        <div class="content">
+            <div class="h3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50">联系我们</div>
+            <div class="sub uppercase" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="80">
+                <span class="text">Contact Us</span>
+            </div>
+            <div class="c_line ani" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="90">
+                <span class="x"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+    <div class="contact container_padding">
+        <div class="container">
+            <div class="head">
+                <h2 class="title">如果需要物流货运请联系我们，我们将为您提供最专业的物流解决方案</h2>
+                <div class="sub_title">丰泽立足于广东，服务全球，聚焦于小家电行业， 家居建材行业，陶瓷卫浴行业，机器设备，外贸跨境电商等行业。业务遍布全国各大沿海港口、码头，和全球各个国家的基本港口。
+                </div>
+            </div>
+            <div class="list">
+                <div class="row">
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item">
+                            <div class="icon">
+                                <img class="cover" src="../../img/contact-icon-1.png" alt="">
+                            </div>
+                            <div class="name">联系电话</div>
+                            <div class="lead">400-830-6878</div>
+                            <div class="lead">0757-28336981/28336982</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item">
+                            <div class="icon">
+                                <img class="cover" src="../../img/contact-icon-2.png" alt="">
+                            </div>
+                            <div class="name">营业时间</div>
+                            <div class="lead">周一至周五9:00 至 18:00</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item">
+                            <div class="icon">
+                                <img class="cover" src="../../img/contact-icon-3.png" alt="">
+                            </div>
+                            <div class="name">电子邮箱</div>
+                            <div class="lead">admin@fineglobal.com</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item">
+                            <div class="icon">
+                                <img class="cover" src="../../img/contact-icon-4.png" alt="">
+                            </div>
+                            <div class="name">联系地址</div>
+                            <div class="lead">广东省佛山市顺德区乐从兴华路领航国际307</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map_wrap">
+        <div class="container">
+            <div class="map" id="map"></div>
+        </div>
+    </div>
+
+    <div class="message_box img_bg container_padding" style="background-image: url(../../img/contact_us_form_bg.png);">
+        <div class="container">
+            <div class="row">
+                <div class="left_cover col-md-5 col-sm-12 col-xs-8">
+                    <div class="right">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/code.png" alt="code">
+                        </div>
+                    </div>
+                </div>
+                <div class="right_content col-md-7 col-sm-12 col-xs-12">
+                    <h2 class="title">在线留言</h2>
+                    <p class="lead">
+                        您可以在这里向我们发送询问，我们会在12小时内给您专业的回复
+                    </p>
+                    <form class="layui-form form">
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" name="name" lay-verify="required" lay-vertype="tips"
+                                        placeholder="请输入您的名字" lay-reqtext="请输入您的名字" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                                <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="tel" name="mobile" lay-verify="required | phone" lay-vertype="tips"
+                                        placeholder="请输入您的电话号码" lay-reqtext="请输入您的电话号码" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-12 col-sm-12 col-xs-12">
+                                    <input type="email" name="email" lay-verify="required | email" lay-vertype="tips"
+                                        placeholder="请输入您的邮箱" lay-reqtext="请输入您的邮箱" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-12 col-sm-12 col-xs-12">
+                                    <textarea name="message" placeholder="请输入您的留言内容"
+                                        class="layui-textarea textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_box">
+                            <button class="layui-btn btn uppercase" lay-submit lay-filter="contact_us_btn">确认发送</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(contact_us_btn)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    });
+
+    var map = new BMapGL.Map("map");
+    var point = new BMapGL.Point(113.09839,22.964596);
+    map.enableScrollWheelZoom(true);
+    var marker = new BMapGL.Marker(point);  // 创建标注
+    map.addOverlay(marker);              // 将标注添加到地图中
+    map.centerAndZoom(point, 18);
+    map.enableKeyboard(); //启用键盘上下左右键移动地图
+    map.enableScrollWheelZoom(); //启用滚轮放大缩小
+    var opts = {
+        width: 200,     // 信息窗口宽度
+        height: 60,     // 信息窗口高度
+        title: "丰泽国际货运代理（佛山）有限公司", // 信息窗口标题
+        enableMessage: true,//设置允许信息窗发送短息
+    }
+    var infoWindow = new BMapGL.InfoWindow("地址：佛山市顺德区乐从镇领航国际大厦307", opts);  // 创建信息窗口对象
+    map.openInfoWindow(infoWindow, point); //开启信息窗口
+    marker.addEventListener("click", function () {
+        map.openInfoWindow(infoWindow, point); //开启信息窗口
+    });
+</script>
+
+</html>
