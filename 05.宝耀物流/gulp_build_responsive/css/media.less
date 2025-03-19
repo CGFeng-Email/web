@@ -6,6 +6,82 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+@media screen and (max-width: 1510px) {
+    .index_swiper {
+        .item {
+            .content {
+                width: 94%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .header {
+        .content {
+            .right {
+                .nav {
+                    .li {
+                        .head_title {
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        .content {
+            .logo {
+                width: 200px;
+            }
+
+            .right {
+                .nav {
+                    .li {
+                        .head_title {
+                            padding: 0 10px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .service_list {
+        .serve_wrap {
+            flex-wrap: wrap;
+
+            .item {
+                width: 33.33%;
+                max-width: none;
+                overflow: hidden;
+
+                &::before {
+                    background: rgba(0, 0, 0, .3);
+                }
+
+                .content {
+                    padding-top: 60%;
+                    bottom: 0;
+                }
+
+                &:hover {
+                    width: 33.33%;
+                }
+            }
+
+            .item:last-child {
+                width: 33.33% !important;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .container_padding {
         padding: 60px 0;
@@ -21,12 +97,72 @@
 
     .title {
         font-size: 20px;
-        line-height: 30px;
     }
 
     .lead {
         font-size: 14px;
-        line-height: 24px;
+    }
+
+    .header {
+        height: 70px;
+
+        .content {
+            padding: 10px 0;
+
+            .right {
+                padding: 7px 16px;
+                background: #fff;
+                border-radius: 45px;
+                box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+
+                .nav {
+                    display: none;
+                }
+
+                .function {
+                    .language {
+                        display: none;
+                    }
+
+                    .item {
+                        margin: 0;
+                        padding: 0 10px;
+                        width: auto;
+
+                        .cover {
+                            width: 20px;
+                        }
+                    }
+
+                    .menu {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .placeholder {
+        height: 70px;
+    }
+
+    .index_swiper {
+        .item {
+            .content {
+                .wrap {
+                    width: 100%;
+
+                    .title {
+                        font-size: 26px;
+                    }
+
+                    .sub_head {
+                        font-size: 18px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -38,6 +174,74 @@
 
     .title {
         font-size: 18px;
-        line-height: 28px;
+    }
+
+    .header {
+        .content {
+            .logo {
+                width: 170px;
+            }
+        }
+    }
+
+    .search {
+        .head {
+            .title {
+                font-size: 38px;
+            }
+        }
+
+        .search_form {
+            margin-top: 20px;
+
+            .content {
+                width: 84%;
+
+                .box {
+                    .input {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .index_swiper {
+        .item {
+            .cover_box {
+                .cover {
+                    object-position: center;
+                }
+            }
+        }
+    }
+
+    .service_list {
+        .wrap {
+            .serve_wrap {
+                .item {
+                    width: 100% !important;
+
+                    .cover_box {
+                        .cover {
+                            height: 400px;
+                        }
+                    }
+
+                    .service_content {
+                        height: 320px;
+                        padding: 40px 20px;
+                    }
+
+                    .title {
+                        font-weight: 600;
+                    }
+
+                    .content {
+                        padding-top: 40%;
+                    }
+                }
+            }
+        }
     }
 }
