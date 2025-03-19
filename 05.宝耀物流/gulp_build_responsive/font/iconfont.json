@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "3858852",
+      "name": "火箭",
+      "font_class": "huojian",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "7577443",
+      "name": "24gf-shieldCheck",
+      "font_class": "24gf-shieldCheck",
+      "unicode": "e9d9",
+      "unicode_decimal": 59865
+    },
+    {
+      "icon_id": "15411507",
+      "name": "专业",
+      "font_class": "zhuanye",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "28784600",
+      "name": "灯泡",
+      "font_class": "dengpao",
+      "unicode": "e94a",
+      "unicode_decimal": 59722
+    },
+    {
       "icon_id": "436015",
       "name": "邮件",
       "font_class": "youjian",
