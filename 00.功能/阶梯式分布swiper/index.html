@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper 阶梯式分布排列</title>
+    <link rel="stylesheet" href="../测试/swiper/css/swiper.min.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            /* 根据你的需求调整高度 */
+            overflow: hidden;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .swiper-slide {
+            width: 25%;
+            /* 一屏展示 4 个 slide */
+            height: 200px;
+            /* 每个 slide 的高度 */
+            margin-top: 0;
+            transition: margin-top 0.3s ease;
+        }
+
+        .swiper-slide:nth-child(2) {
+            margin-top: 200px;
+            /* 第二个 slide 向下移动一个 slide 的高度 */
+        }
+
+        .swiper-slide:nth-child(3) {
+            margin-top: 400px;
+            /* 第三个 slide 向下移动两个 slide 的高度 */
+        }
+
+        .swiper-slide:nth-child(4) {
+            margin-top: 600px;
+            /* 第四个 slide 向下移动三个 slide 的高度 */
+        }
+
+        .swiper-slide:nth-child(5) {
+            margin-top: 800px;
+            /* 第五个 slide 向下移动四个 slide 的高度 */
+        }
+
+        /* 以此类推，根据 slide 的数量调整 */
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <!-- 更多 slide -->
+        </div>
+    </div>
+
+    <script src="../测试/swiper/js/swiper.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4, // 一屏展示 4 个 slide
+            spaceBetween: 0, // slide 之间的间距
+            loop: true, // 是否循环
+            // 其他配置项
+        });
+
+        swiper.on('slideChange', function () {
+            const slides = document.querySelectorAll('.swiper-slide');
+            slides.forEach((slide, index) => {
+                slide.style.marginTop = `${index * 200}px`; // 根据 slide 的索引调整 margin-top
+            });
+        });
+    </script>
+</body>
+
+</html>

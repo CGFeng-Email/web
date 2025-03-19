@@ -1,0 +1,28 @@
+@media screen and (max-width: 992px) {
+  .container_padding {
+    padding: 60px 0;
+  }
+  .col-xs-12 {
+    padding: 0 10px;
+  }
+  .col-xs-6 {
+    padding: 0 10px;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .lead {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container_padding {
+    padding: 30px 0;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
