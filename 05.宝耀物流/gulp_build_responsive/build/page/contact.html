@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    @@include('head.html')
+    <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=12K2G1k8q87z3fU87kRbs80egQe0089t"></script>
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="../../img/contact_banner.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="h3" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50">Contact Us</div>
+            <div class="sub uppercase" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="80">
+                <span class="text">Home > Contact Us</span>
+            </div>
+            <div class="c_line ani" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="90">
+                <span class="x"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+    <div class="contact container_padding">
+        <div class="container">
+            <div class="head">
+                <h2 class="title">How to contact</h2>
+                <div class="sub_title">If you have any questions, please contact us, we are here to serve you 24/7</div>
+                <h3 class="title">0755 - 82242103</h3>
+            </div>
+            <div class="list">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="iconfont icon-dianhua1"></i>
+                            </div>
+                            <div class="content">
+                                <p class="name">Number:</p>
+                                <p class="text">+86 755-82242103</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="iconfont icon-youjian"></i>
+                            </div>
+                            <div class="content">
+                                <p class="name">Email: </p>
+                                <p class="text">airexport@bestlegendintl.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="iconfont icon-dizhi1"></i>
+                            </div>
+                            <div class="content">
+                                <p class="name">Address：</p>
+                                <p class="text">
+                                    Room 3510, Pengnian Square, NO.2002, Jiabin ROAD, Jiabei Community, Nanhu Street,
+                                    Luohu District, Shenzhen, Guangdong Province, CHINA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="iconfont icon-guanwang"></i>
+                            </div>
+                            <div class="content">
+                                <p class="name">company：</p>
+                                <p class="text">bestlegendintl.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map_wrap">
+        <div class="container">
+            <div class="map" id="map"></div>
+        </div>
+    </div>
+
+    <div class="message_box img_bg container_padding" style="background-image: url(../../img/contact_us_form_bg.png);">
+        <div class="container">
+            <div class="row">
+                <div class="left_cover col-md-5 col-sm-7 col-xs-8">
+                    <div class="right">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/code.jpg" alt="code">
+                        </div>
+                    </div>
+                </div>
+                <div class="right_content col-md-7 col-sm-12 col-xs-12">
+                    <h2 class="title">Leave a message online</h2>
+                    <p class="lead">
+                        You can send us an inquiry here and we will give you a professional reply within 12 hours
+                    </p>
+                    <form class="layui-form form">
+                        <div class="item">
+                            <select lay-search="" name="select" lay-verify="required" lay-vertype="tips"
+                                lay-reqtext="Query type: Air/Sea/Warehouse Services/E-commerce/Amazon FBA Forwarding/Other"
+                                class="input">
+                                <option value="">Query type: Air/Sea/Warehouse Services/E-commerce/Amazon FBA Forwarding/Other</option>
+                                <option value="1">AAA</option>
+                                <option value="2">aaa</option>
+                                <option value="3">BBB</option>
+                                <option value="4">bbb</option>
+                                <option value="5">ABC</option>
+                                <option value="6">abc</option>
+                                <option value="7">AbC</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" name="name" lay-verify="required" lay-vertype="tips"
+                                        placeholder="Please enter your name" lay-reqtext="Please enter your name"
+                                        autocomplete="off" class="layui-input input" lay-affix="clear">
+                                </div>
+                                <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="tel" name="mobile" lay-verify="required | phone" lay-vertype="tips"
+                                        placeholder="Please enter your phone number"
+                                        lay-reqtext="Please enter your phone number" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-12 col-sm-12 col-xs-12">
+                                    <input type="email" name="email" lay-verify="required | email" lay-vertype="tips"
+                                        placeholder="Please enter your email" lay-reqtext="Please enter your email"
+                                        autocomplete="off" class="layui-input input" lay-affix="clear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-12 col-sm-12 col-xs-12">
+                                    <textarea name="message" placeholder="Please enter your message content"
+                                        class="layui-textarea textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_box">
+                            <button class="layui-btn btn uppercase" lay-submit lay-filter="contact_us_btn">send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(contact_us_btn)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    });
+
+    var map = new BMapGL.Map("map");
+    var point = new BMapGL.Point(114.128649, 22.547402);
+    map.enableScrollWheelZoom(true);
+    var marker = new BMapGL.Marker(point);  // 创建标注
+    map.addOverlay(marker);              // 将标注添加到地图中
+    map.centerAndZoom(point, 18);
+    map.enableKeyboard(); //启用键盘上下左右键移动地图
+    map.enableScrollWheelZoom(); //启用滚轮放大缩小
+    var opts = {
+        width: 480,     // 信息窗口宽度
+        height: 80,     // 信息窗口高度
+        title: "Shenzhen Best Legend International Logistics Company Limited", // 信息窗口标题
+        enableMessage: true,//设置允许信息窗发送短息
+    }
+    var infoWindow = new BMapGL.InfoWindow("Room 3510, Pengnian Square, NO.2002, Jiabin ROAD, Jiabei Community, Nanhu Street, Luohu District, Shenzhen, Guangdong Province, CHINA", opts);  // 创建信息窗口对象
+    map.openInfoWindow(infoWindow, point); //开启信息窗口
+    marker.addEventListener("click", function () {
+        map.openInfoWindow(infoWindow, point); //开启信息窗口
+    });
+</script>
+
+</html>
