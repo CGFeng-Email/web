@@ -6,6 +6,62 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "9752800",
+      "name": "企业",
+      "font_class": "qiye",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "2836498",
+      "name": "IG",
+      "font_class": "IG",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "7612118",
+      "name": "youtobe",
+      "font_class": "youtobe",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "15559681",
+      "name": "in",
+      "font_class": "shejiaotubiao-14",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "27402571",
+      "name": "推特",
+      "font_class": "tuite",
+      "unicode": "ee49",
+      "unicode_decimal": 61001
+    },
+    {
+      "icon_id": "38053908",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e77a",
+      "unicode_decimal": 59258
+    },
+    {
+      "icon_id": "7596819",
+      "name": "24gl-user2",
+      "font_class": "24gl-user2",
+      "unicode": "eb24",
+      "unicode_decimal": 60196
+    },
+    {
+      "icon_id": "19818704",
+      "name": "咨询留言",
+      "font_class": "zixunliuyan",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
       "icon_id": "3858852",
       "name": "火箭",
       "font_class": "huojian",
@@ -123,13 +179,6 @@
       "font_class": "kefu",
       "unicode": "e88f",
       "unicode_decimal": 59535
-    },
-    {
-      "icon_id": "3072480",
-      "name": "英国国旗",
-      "font_class": "yingguoguoqi",
-      "unicode": "e63e",
-      "unicode_decimal": 58942
     },
     {
       "icon_id": "4933869",
@@ -298,13 +347,6 @@
       "font_class": "guanbi",
       "unicode": "e60e",
       "unicode_decimal": 58894
-    },
-    {
-      "icon_id": "41751543",
-      "name": "中国国旗",
-      "font_class": "zhongguoguoqi",
-      "unicode": "e632",
-      "unicode_decimal": 58930
     },
     {
       "icon_id": "42191247",
