@@ -308,7 +308,7 @@ body::-webkit-scrollbar-thumb:hover {
 .header .content .logo {
   position: relative;
   z-index: 20;
-  width: 240px;
+  width: 260px;
 }
 .header .content .right {
   display: flex;
@@ -512,7 +512,8 @@ body::-webkit-scrollbar-thumb:hover {
   background: #fff;
   padding: 80px 0;
   transition: 0.7s ease-out;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   z-index: 10;
 }
 .h5_nav .left_ {
@@ -538,6 +539,9 @@ body::-webkit-scrollbar-thumb:hover {
   color: #000;
   display: inline-block;
   text-transform: uppercase;
+}
+.h5_nav .li .child {
+  display: none;
 }
 .h5_nav .li .child .lis {
   text-align: right;
@@ -565,6 +569,7 @@ body::-webkit-scrollbar-thumb:hover {
 .h5_nav .child_li .childActive {
   height: auto;
   opacity: 1;
+  display: block;
 }
 .h5_nav .h5_language {
   display: flex;
@@ -910,6 +915,10 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 20px;
   margin-bottom: 10px;
 }
+.core .our_core_swiper .item .content .lead {
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
 .core .our_core_swiper .item:hover .cover {
   transform: scale(1.1);
 }
@@ -1176,24 +1185,24 @@ body::-webkit-scrollbar-thumb:hover {
 .footer .content {
   padding: 80px 0 30px;
 }
-.footer .content .list .title {
+.footer .content .footer_list .title {
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600;
 }
-.footer .content .list .ul {
+.footer .content .footer_list .ul {
   margin-top: 10px;
 }
-.footer .content .list .ul .li .link {
+.footer .content .footer_list .ul .li .link {
   font-size: 14px;
   font-weight: 500;
   padding: 6px 0;
   transition: 0.3s ease-out;
 }
-.footer .content .list .ul .li .link .iconfont {
+.footer .content .footer_list .ul .li .link .iconfont {
   padding-right: 4px;
 }
-.footer .content .list .ul .li .link:hover {
+.footer .content .footer_list .ul .li .link:hover {
   transform: skew(6deg) translateX(10px);
   color: #8AC0FB;
 }
@@ -1310,6 +1319,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .about_us .company {
   position: relative;
+}
+.about_us .company .cover {
+  object-fit: contain;
 }
 .about_us .company::after {
   content: '';
