@@ -6,6 +6,31 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+@media screen and (max-width: 1260px) {
+    .header {
+        .content {
+            .logo {
+                width: 129px;
+            }
+
+            .right {
+                .nav {
+                    .li {
+                        .box {
+                            .link {
+                                .head_title {
+                                    padding: 0 14px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .container_padding {
         padding: 60px 0;
@@ -21,12 +46,34 @@
 
     .title {
         font-size: 20px;
-        line-height: 30px;
     }
 
     .lead {
         font-size: 14px;
-        line-height: 24px;
+    }
+
+    .header {
+        .content {
+            .wrap {
+                height: 70px;
+            }
+
+            .right {
+                .nav {
+                    display: none;
+                }
+
+                .function {
+                    .language {
+                        display: none;
+                    }
+
+                    .menu {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -38,6 +85,13 @@
 
     .title {
         font-size: 18px;
-        line-height: 28px;
+    }
+
+    .header {
+        .content {
+            .logo {
+                width: 100px;
+            }
+        }
     }
 }

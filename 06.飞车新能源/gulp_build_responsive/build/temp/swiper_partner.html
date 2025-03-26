@@ -1,0 +1,136 @@
+<style>
+    .cooperative_partner {
+        padding: 20px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 100%;
+            opacity: .3;
+            background: rgba(255, 255, 255, .3);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10%;
+            height: 100%;
+            opacity: .3;
+            background: rgba(255, 255, 255, .3);
+        }
+    }
+
+    .cooperative_partner .swiper_list {
+        display: flex;
+        align-items: center;
+    }
+
+    .cooperative_partner .item {
+        filter: drop-shadow(0 0 25px #7e7e7e29);
+        overflow: hidden;
+    }
+
+    .cooperative_partner .item .cover {
+        object-fit: initial;
+    }
+
+    @media screen and (max-width: 992px) {
+        .cooperative_partner {
+            padding: 10px 20px 0;
+        }
+
+        .cooperative_partner .item .cover {
+            width: auto;
+            max-width: 80px;
+        }
+    }
+</style>
+
+<div class="cooperative_partner">
+    <div class="swiper-container partner_swiper">
+        <div class="swiper-wrapper swiper_list">
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/partner1.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/partner2.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/partner3.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/partner4.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/partner5.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/partner6.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/partner7.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const partner_swiper = new Swiper('.partner_swiper', {
+        autoplay: true,//可选选项，自动滑动
+        autoplay: {
+            delay: 100000000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 2000,
+        slidesPerView: 8,
+        spaceBetween: 30,
+        centeredSlides: true,
+        freeMode: true,
+        slidesPerGroup: 1,
+        grabCursor: true,
+        breakpoints: {
+            1200: {
+                slidesPerView: 6,
+                spaceBetween: 10,
+            },
+            968: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            }
+        }
+    })
+
+    /* 鼠标悬停 停止动画 */
+    $('.cooperative_partner .item').mouseenter(function () {
+        partner_swiper.autoplay.stop();
+    })
+    $('.cooperative_partner .item').mouseleave(function () {
+        partner_swiper.autoplay.start();
+    })
+
+</script>

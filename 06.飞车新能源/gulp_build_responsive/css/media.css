@@ -1,3 +1,12 @@
+@media screen and (max-width: 1260px) {
+  .header .content .logo {
+    width: 129px;
+  }
+  .header .content .right .nav .li .box .link .head_title {
+    padding: 0 14px;
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 992px) {
   .container_padding {
     padding: 60px 0;
@@ -10,11 +19,21 @@
   }
   .title {
     font-size: 20px;
-    line-height: 30px;
   }
   .lead {
     font-size: 14px;
-    line-height: 24px;
+  }
+  .header .content .wrap {
+    height: 70px;
+  }
+  .header .content .right .nav {
+    display: none;
+  }
+  .header .content .right .function .language {
+    display: none;
+  }
+  .header .content .right .function .menu {
+    display: block;
   }
 }
 @media screen and (max-width: 767px) {
@@ -23,6 +42,8 @@
   }
   .title {
     font-size: 18px;
-    line-height: 28px;
+  }
+  .header .content .logo {
+    width: 100px;
   }
 }

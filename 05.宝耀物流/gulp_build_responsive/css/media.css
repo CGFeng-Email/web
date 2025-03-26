@@ -180,7 +180,7 @@
   .footer .content .contact {
     width: 100%;
   }
-  .footer .content .list {
+  .footer .content .footer_list {
     margin-top: 20px;
   }
   .footer .content .right {
@@ -447,17 +447,17 @@
   .footer .content {
     padding: 30px 0 0;
   }
-  .footer .content .list {
+  .footer .content .footer_list {
     margin-top: 10px;
   }
-  .footer .content .list .title {
+  .footer .content .footer_list .title {
     font-size: 14px;
     line-height: 24px;
   }
-  .footer .content .list .ul {
+  .footer .content .footer_list .ul {
     margin-top: 10px;
   }
-  .footer .content .list .ul .li .link {
+  .footer .content .footer_list .ul .li .link {
     padding: 4px 0 4px 4px;
     font-weight: 400;
   }
