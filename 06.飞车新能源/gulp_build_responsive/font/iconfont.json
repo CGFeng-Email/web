@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "10715427",
+      "name": "客服-耳麦",
+      "font_class": "kefu-ermai",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "34068009",
+      "name": "kefu-copy",
+      "font_class": "kefu-goods",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
       "icon_id": "9752800",
       "name": "企业",
       "font_class": "qiye",

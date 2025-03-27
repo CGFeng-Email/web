@@ -45,11 +45,54 @@
     }
 
     .title {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .lead {
         font-size: 14px;
+    }
+
+    .more {
+        text-align: right;
+        padding-top: 14px;
+
+        .link {
+            height: 40px;
+            line-height: 40px;
+            padding: 0 20px;
+        }
+    }
+
+    .head {
+        padding: 10px 0 0;
+
+        .wrap {
+            width: 100%;
+            padding-bottom: 20px;
+
+            .title {
+                font-size: 24px;
+            }
+        }
+
+        .arrow {
+            .icon {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                margin-left: 14px;
+            }
+        }
+    }
+
+    .justift_apace {
+        flex-wrap: wrap;
+
+        .arrow {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 
     .header {
@@ -75,6 +118,90 @@
             }
         }
     }
+
+    .company {
+        .about_us {
+            .main_row {
+                display: flex;
+                flex-wrap: wrap;
+                flex-flow: column-reverse;
+            }
+
+            .content {
+                padding: 0;
+
+                .lead {
+                    padding: 5px 0;
+                }
+            }
+
+            .company_list {
+                padding-bottom: 20px;
+
+                .row,
+                .col-xs-6 {
+                    padding: 0;
+                }
+
+                .cover_box {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .like_you {
+        padding: 10px 0;
+
+        .wrap {
+            padding: 0 10px;
+
+            .cover_box {
+                .cover {
+                    height: 350px;
+                    object-position: left;
+                }
+            }
+
+            .main {
+                width: 100%;
+
+                .content {
+                    padding: 0 30px;
+                    width: 100%;
+                }
+            }
+        }
+
+
+        .more {
+            text-align: left;
+        }
+    }
+
+    .home_news {
+        padding: 30px 0 80px;
+
+        .news_list {
+            margin-top: 10px;
+
+            .news_swiper {
+                .item {
+                    .content {
+                        padding: 30px 0;
+
+                        .title {
+                            font-size: 20px;
+                        }
+
+                        .date {
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -91,6 +218,76 @@
         .content {
             .logo {
                 width: 100px;
+            }
+        }
+    }
+
+    .head {
+        .wrap {
+            padding-bottom: 0;
+            .sub_title {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .company {
+        background-position: center;
+    }
+
+    .recommend_list {
+        .recommend_swiper {
+            .item {
+                .link {
+                    padding: 10px;
+
+                    .cover_box {
+                        .cover {
+                            height: 170px;
+                        }
+                    }
+
+                    .content {
+                        padding-right: 40px;
+
+                        .title {
+                            font-size: 16px;
+                        }
+
+                        .service {
+                            width: 34px;
+                            height: 34px;
+                            line-height: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home_news {
+        .news_list {
+            .news_swiper {
+                .item {
+                    .content {
+                        padding: 0 0 10px;
+
+                        .title {
+                            font-size: 16px;
+                        }
+
+                        .date {
+                            font-size: 14px;
+                            padding: 4px 0;
+                        }
+                    }
+
+                    .cover_box {
+                        .cover {
+                            height: 340px;
+                        }
+                    }
+                }
             }
         }
     }
