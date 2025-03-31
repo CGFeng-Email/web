@@ -28,6 +28,7 @@
 <script src="aos/aos.js"></script>
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
+<script src="js/count.js"></script>
 <script src="roll_number/jquery.counterup.js"></script>
 <script src="roll_number/jquery.waypoints.js"></script>
 <script src="swiper/js/swiper.min.js"></script>
@@ -49,42 +50,42 @@
                 <div class="nav">
                     <div class="li animate">
                         <div class="box">
-                            <a href="about.html" class="link">
+                            <a href="index.html" class="link">
                                 <div class="head_title text-uppercase">home</div>
                             </a>
                         </div>
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <a href="serve.html" class="link">
+                            <a href="about.html" class="link">
                                 <div class="head_title text-uppercase">about us</div>
                             </a>
                         </div>
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <a href="news.html" class="link">
+                            <a href="product.html" class="link">
                                 <div class="head_title text-uppercase">product</div>
                             </a>
                         </div>
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <a href="contact.html" class="link">
+                            <a href="news.html" class="link">
                                 <div class="head_title animate text-uppercase">news</div>
                             </a>
                         </div>
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <a href="javascript:;" class="link">
+                            <a href="recruitment.html" class="link">
                                 <div class="head_title animate text-uppercase">Recruitment</div>
                             </a>
                         </div>
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <a href="resource.html" class="link">
+                            <a href="contact.html" class="link">
                                 <div class="head_title animate text-uppercase">contact us</div>
                             </a>
                         </div>
@@ -151,10 +152,12 @@
     </div>
     <div class="li child_li animate">
         <div class="box">
-            <div class="head_title">
-                <span class="title">product</span>
-                <i class="iconfont icon-right-1-copy animate"></i>
-            </div>
+            <a href="product.html" class="link">
+                <div class="head_title">
+                    <span class="title">product</span>
+                    <i class="iconfont icon-right-1-copy animate"></i>
+                </div>
+            </a>
         </div>
     </div>
     <div class="li animate">
@@ -169,7 +172,7 @@
     </div>
     <div class="li animate">
         <div class="box">
-            <a href="contact.html" class="link">
+            <a href="recruitment.html" class="link">
                 <div class="head_title">
                     <span class="title">recruitment</span>
                     <i class="iconfont icon-right-1-copy"></i>
@@ -179,10 +182,12 @@
     </div>
     <div class="li child_li animate">
         <div class="box">
-            <div class="head_title">
-                <span class="title">contact us</span>
-                <i class="iconfont icon-right-1-copy animate"></i>
-            </div>
+            <a href="contact.html" class="link">
+                <div class="head_title">
+                    <span class="title">contact us</span>
+                    <i class="iconfont icon-right-1-copy animate"></i>
+                </div>
+            </a>
         </div>
     </div>
     <div class="li animate">
@@ -269,7 +274,7 @@
 
     .index_swiper .item .cover_box {
         padding: 0 20px;
-        transition-delay: .1s;
+        overflow: hidden;
     }
 
     .index_swiper .item .cover_box .cover {
@@ -287,11 +292,10 @@
         loop: true,
         speed: 1400,
     })
-
 </script>
     <style>
     .cooperative_partner {
-        padding: 20px;
+        padding: 40px 20px 10px;
         position: relative;
 
         &::after {
@@ -329,6 +333,7 @@
 
     .cooperative_partner .item .cover {
         object-fit: initial;
+        max-width: 130px;
     }
 
     @media screen and (max-width: 992px) {
@@ -432,7 +437,7 @@
                     <div class="col_md col-md-6 col-sm-12 col-xs-12">
                         <div class="content">
                             <h2 class="title">What we do？</h2>
-                            <p class="lead">Guangzhou Fcar New Energy Automobile Co., LTD. is a leading professional
+                            <p class="lead" >Guangzhou Fcar New Energy Automobile Co., LTD. is a leading professional
                                 automobile trading import and export company with offices in China and Australia.</p>
                             <p class="lead">Rich industry experience: Our dynamic international team has a wealth of
                                 experience in automotive trading and exporting both at home and abroad, and has been
@@ -441,7 +446,7 @@
                                 international automotive market, and is able to accurately grasp the market dynamics and
                                 provide our clients with accurate market analysis and strategic advice.</p>
                             <div class="more">
-                                <a href="" class="link box_radius">
+                                <a href="about.html" class="link box_radius">
                                     <span class="text">Learn More</span>
                                     <i class="iconfont icon-you"></i>
                                 </a>
@@ -452,12 +457,12 @@
                         <div class="company_list">
                             <div class="row">
                                 <div class="col_md col-md-6 col-sm-5 col-xs-6">
-                                    <div class="cover_box">
+                                    <div class="cover_box" data-aos="fade-up">
                                         <img class="cover" src="img/company_cover1.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col_md col-md-6 col-sm-4 col-xs-6">
-                                    <div class="cover_box">
+                                    <div class="cover_box" data-aos="fade-up" data-aos-delay="400">
                                         <img class="cover" src="img/company_cover2.png" alt="">
                                     </div>
                                 </div>
@@ -472,10 +477,10 @@
                         <h2 class="title text-capitalize">recommend product</h2>
                     </div>
                     <div class="arrow justift_apace">
-                        <div class="icon box_shadow animate" id="prev">
+                        <div class="icon box_shadow animate" id="product_prev">
                             <i class="iconfont icon-left-1"></i>
                         </div>
-                        <div class="icon box_shadow animate" id="next">
+                        <div class="icon box_shadow animate" id="product_next">
                             <i class="iconfont icon-right-1-copy"></i>
                         </div>
                     </div>
@@ -485,7 +490,7 @@
                     <div class=".swiper-container recommend_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide item">
-                                <a href="" class="link box_shadow box_radius">
+                                <a href="details.html" class="link box_shadow box_radius">
                                     <div class="cover_box">
                                         <img class="cover" src="img/product_type1_li1.png" alt="">
                                     </div>
@@ -501,7 +506,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide item">
-                                <a href="" class="link box_shadow box_radius">
+                                <a href="details.html" class="link box_shadow box_radius">
                                     <div class="cover_box">
                                         <img class="cover" src="img/product_type1_li2.png" alt="">
                                     </div>
@@ -517,7 +522,7 @@
                                 </a>
                             </div>
                             <div class="swiper-slide item">
-                                <a href="" class="link box_shadow box_radius">
+                                <a href="details.html" class="link box_shadow box_radius">
                                     <div class="cover_box">
                                         <img class="cover" src="img/product_type1_li3.png" alt="">
                                     </div>
@@ -533,9 +538,9 @@
                                 </a>
                             </div>
                             <div class="swiper-slide item">
-                                <a href="" class="link box_shadow box_radius">
+                                <a href="details.html" class="link box_shadow box_radius">
                                     <div class="cover_box">
-                                        <img class="cover" src="img/product_type1_li3.png" alt="">
+                                        <img class="cover" src="img/product_type1_li4.jpg" alt="">
                                     </div>
                                     <div class="content">
                                         <h3 class="title over1">XIAOPENG G6</h3>
@@ -554,7 +559,6 @@
             </div>
         </div>
     </div>
-
     <div class="information" style="background-image: url(img/information_bg.png); background-position: center;">
         <div class="like_you container_padding">
             <div class="wrap">
@@ -567,7 +571,7 @@
                             <h3 class="title">There is always a car model <br> that you like</h3>
                             <p class="lead">We are committed to providing our customers with <br> exceptional service.</p>
                             <div class="more">
-                                <a href="" class="link box_radius">
+                                <a href="details.html" class="link box_radius">
                                     <span class="text">Learn More</span>
                                     <i class="iconfont icon-you"></i>
                                 </a>
@@ -586,10 +590,10 @@
                             cooperation, and win-win"</h3>
                     </div>
                     <div class="arrow justift_apace">
-                        <div class="icon box_shadow animate" id="prev">
+                        <div class="icon box_shadow animate" id="news_prev">
                             <i class="iconfont icon-left-1"></i>
                         </div>
-                        <div class="icon box_shadow animate" id="next">
+                        <div class="icon box_shadow animate" id="news_next">
                             <i class="iconfont icon-right-1-copy"></i>
                         </div>
                     </div>
@@ -612,7 +616,7 @@
                                                     factories and advanced equipment.
                                                 </div>
                                                 <div class="more">
-                                                    <a href="" class="link box_radius">
+                                                    <a href="news_details.html" class="link box_radius">
                                                         <span class="text">Learn More</span>
                                                         <i class="iconfont icon-you"></i>
                                                     </a>
@@ -641,7 +645,7 @@
                                                     factories and advanced equipment.
                                                 </div>
                                                 <div class="more">
-                                                    <a href="" class="link box_radius">
+                                                    <a href="news_details.html" class="link box_radius">
                                                         <span class="text">Learn More</span>
                                                         <i class="iconfont icon-you"></i>
                                                     </a>
@@ -650,7 +654,7 @@
                                         </div>
                                         <div class="col_md col-md-6 col-sm-12 col-xs-12">
                                             <div class="cover_box">
-                                                <img class="cover" src="img/news_cover.png" alt="">
+                                                <img class="cover" src="img/news_cover2.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -676,16 +680,16 @@
                                         <a href="about.html" class="link">About us</a>
                                     </li>
                                     <li class="li">
-                                        <a href="serve.html" class="link">Product</a>
+                                        <a href="product.html" class="link">Product</a>
                                     </li>
                                     <li class="li">
                                         <a href="news.html" class="link">News</a>
                                     </li>
                                     <li class="li">
-                                        <a href="contact.html" class="link">Recruitment</a>
+                                        <a href="recruitment.html" class="link">Recruitment</a>
                                     </li>
                                     <li class="li">
-                                        <a href="resource.html" class="link">Contact Us</a>
+                                        <a href="contact.html" class="link">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -695,38 +699,38 @@
                                 <h3 class="title text-uppercase">Product</h3>
                                 <ul class="ul">
                                     <li class="li">
-                                        <a href="serve.html" class="link">Ian</a>
+                                        <a href="details.html" class="link">Ian</a>
                                     </li>
                                     <li class="li">
-                                        <a href="serve.html" class="link">BYD</a>
+                                        <a href="details.html" class="link">BYD</a>
                                     </li>
                                     <li class="li">
-                                        <a href="serve.html" class="link">VOLVO</a>
+                                        <a href="details.html" class="link">VOLVO</a>
                                     </li>
                                     <li class="li">
-                                        <a href="serve.html" class="link">XPENG</a>
+                                        <a href="details.html" class="link">XPENG</a>
                                     </li>
                                     <li class="li">
-                                        <a href="serve.html" class="link">xiaomi</a>
+                                        <a href="details.html" class="link">xiaomi</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col_md service col-md-3 col-sm-6 col-xs-6">
+                        <div class="col_md service col-md-3 col-sm-6 col-xs-12">
                             <div class="footer_list">
                                 <h3 class="title text-uppercase">Friendship link</h3>
                                 <ul class="ul">
                                     <li class="li">
-                                        <a href="serve.html" class="link">Alibaba</a>
+                                        <a href="details.html" class="link">Alibaba</a>
                                     </li>
                                     <li class="li">
-                                        <a href="serve.html" class="link">Fcar</a>
+                                        <a href="details.html" class="link">Fcar</a>
                                     </li>
                                     <li class="li">
-                                        <a href="serve.html" class="link">Shenzhen Jucheng Online</a>
+                                        <a href="details.html" class="link">Shenzhen Jucheng Online</a>
                                     </li>
                                     <li class="li">
-                                        <a href="serve.html" class="link">Baidu</a>
+                                        <a href="details.html" class="link">Baidu</a>
                                     </li>
                                 </ul>
                             </div>
@@ -763,54 +767,135 @@
                 </div>
                 <div class="col_md col-md-3 col-sm-12 col-xs-12">
                     <div class="right">
-                        <div class="row">
-                            <div class="col_md col-md-6 col-sm-4 col-xs-5">
-                                <div class="code_box">
-                                    <div class="cover_box">
-                                        <img class="cover" src="img/code.jpg" alt="code">
-                                    </div>
-                                    <p class="lead">
-                                        Online Service
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col_md col-md-6 col-sm-4 col-xs-5">
-                                <div class="code_box">
-                                    <div class="cover_box">
-                                        <img class="cover" src="img/code.jpg" alt="code">
-                                    </div>
-                                    <p class="lead">
-                                        Scan to follow
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="spread">
-                            <div class="box">
-                                <a href="javascript:;" class="link animate">
-                                    <i class="iconfont icon-tuite"></i>
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="javascript:;" class="link animate">
-                                    <i class="iconfont icon-shejiaotubiao-14"></i>
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="javascript:;" class="link animate">
-                                    <i class="iconfont icon-youtobe"></i>
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="javascript:;" class="link animate">
-                                    <i class="iconfont icon-facebook"></i>
-                                </a>
-                            </div>
-                            <div class="box">
-                                <a href="javascript:;" class="link animate">
-                                    <i class="iconfont icon-IG"></i>
-                                </a>
-                            </div>
+                        <div class="footer_list">
+                            <h3 class="title text-uppercase">Subscribe to us</h3>
+                            <div class="lead">Get the latest product discounts and exclusive news</div>
+                            <style>
+    .contact_information {
+        padding: 10px 0;
+    }
+
+    .contact_information .item {
+        border-radius: 12px;
+        background: #fff;
+        overflow: hidden;
+        padding: 4px 6px;
+        max-width: 80%;
+    }
+
+    .contact_information .input {
+        background: none;
+        box-shadow: none;
+        border: none;
+        flex: 1;
+        padding-right: 10px;
+    }
+
+    .contact_information .btn {
+        background: #EBBC01;
+        box-shadow: none;
+        border-radius: 12px;
+    }
+
+    @media screen and (max-width: 992px) {
+        .contact_information .item {
+            max-width: 40%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .contact_information .item {
+            max-width: none;
+        }
+    }
+</style>
+
+<div class="contact_information">
+    <form class="layui-form" action="">
+        <div class="item justift_apace">
+            <input type="text" name="email" lay-verify="required|email" placeholder="Please enter your email"
+                lay-reqtext="Please enter your email" lay-vertype="tips" autocomplete="off" class="layui-input input">
+            <button type="submit" class="layui-btn btn" lay-submit lay-filter="contactSubmit">sending</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        form.on('submit(contactSubmit)', function (data) {
+            var field = data.field; 
+            return false; 
+        });
+    });
+</script>
+                            <div class="lead">E-MAIL: Ivy@cnglead.com.cn</div>
+                            <style>
+    .blogroll {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .blogroll .box {
+        padding: 0 7px;
+    }
+
+    .blogroll .box:first-child {
+        padding-left: 0;
+    }
+
+    .blogroll .link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        color: #2AAE89;
+        text-align: center;
+        line-height: 40px;
+
+        &:hover {
+            transform: translateY(-6px);
+            background: #EBBC01;
+        }
+
+        &:hover .iconfont {
+            color: #fff;
+        }
+    }
+
+    .blogroll .iconfont {
+        font-size: 18px;
+    }
+</style>
+
+<div class="blogroll">
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-tuite"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-shejiaotubiao-14"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-youtobe"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-facebook"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-IG"></i>
+        </a>
+    </div>
+</div>
                         </div>
                     </div>
                 </div>
@@ -829,8 +914,8 @@
 </body>
 <script>
 
-    const prevDom = document.getElementById('prev');
-    const nextDom = document.getElementById('next');
+    const productPrevDom = document.getElementById('product_prev');
+    const productNextDom = document.getElementById('product_next');
 
     const recommend_swiper = new Swiper('.recommend_swiper', {
         autoplay: true,
@@ -854,24 +939,35 @@
         }
     })
 
-    prevDom.addEventListener('click', function () {
+    productPrevDom.addEventListener('click', function () {
         recommend_swiper.slidePrev();
     })
 
-    nextDom.addEventListener('click', function () {
+    productNextDom.addEventListener('click', function () {
         recommend_swiper.slideNext();
     })
 
+    const newsPrevDom = document.getElementById('news_prev');
+    const newsNextDom = document.getElementById('news_next');
+
     const news_swiper = new Swiper('.news_swiper', {
-        autoplay: true,
         autoplay: {
             delay: 6000,
             disableOnInteraction: false,
         },
         loop: true,
-        speed: 2000,
+        speed: 1200,
         effect: 'fade'
     })
+
+    newsPrevDom.addEventListener('click', function () {
+        news_swiper.slidePrev();
+    })
+
+    newsNextDom.addEventListener('click', function () {
+        news_swiper.slideNext();
+    })
+
 </script>
 
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    @@include('product_banner.html')
+    <div class="search container_padding">
+        <div class="container">
+            <div class="main">
+                <div class="head head_center">
+                    <div class="wrap">
+                        <h2 class="title text-capitalize">search</h2>
+                    </div>
+                </div>
+                <div class="search_form">
+                    <form class="layui-form" action="">
+                        <div class="content">
+                            <div class="box">
+                                <input type="text" name="search" lay-verify="required"
+                                    placeholder="Please enter keyword" lay-reqtext="Please enter keyword"
+                                    lay-vertype="tips" autocomplete="off" class="layui-input input">
+                                <button type="submit" class="layui-btn submit_btn" lay-submit lay-filter="submit">
+                                    <i class="iconfont icon-sousuo"></i>
+                                </button>
+                            </div>
+                            <div class="note">
+                                <a href="" class="link">Xiaomi SU7</a>
+                                <a href="" class="link">BYD Han-L EV</a>
+                                <a href="" class="link">BYD Song-PLUS DM-i</a>
+                                <a href="" class="link">XIAOPENG G6</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="height: 240px;"></div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+    })
+</script>
+
+</html>

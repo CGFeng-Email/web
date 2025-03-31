@@ -1,0 +1,60 @@
+<style>
+    .contact_information {
+        padding: 10px 0;
+    }
+
+    .contact_information .item {
+        border-radius: 12px;
+        background: #fff;
+        overflow: hidden;
+        padding: 4px 6px;
+        max-width: 80%;
+    }
+
+    .contact_information .input {
+        background: none;
+        box-shadow: none;
+        border: none;
+        flex: 1;
+        padding-right: 10px;
+    }
+
+    .contact_information .btn {
+        background: #EBBC01;
+        box-shadow: none;
+        border-radius: 12px;
+    }
+
+    @media screen and (max-width: 992px) {
+        .contact_information .item {
+            max-width: 40%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .contact_information .item {
+            max-width: none;
+        }
+    }
+</style>
+
+<div class="contact_information">
+    <form class="layui-form" action="">
+        <div class="item justift_apace">
+            <input type="text" name="email" lay-verify="required|email" placeholder="Please enter your email"
+                lay-reqtext="Please enter your email" lay-vertype="tips" autocomplete="off" class="layui-input input">
+            <button type="submit" class="layui-btn btn" lay-submit lay-filter="contactSubmit">sending</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        form.on('submit(contactSubmit)', function (data) {
+            var field = data.field; 
+            return false; 
+        });
+    });
+</script>
