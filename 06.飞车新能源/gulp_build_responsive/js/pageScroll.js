@@ -24,6 +24,7 @@ function throttle(func, limit) {
 window.addEventListener('scroll', throttle(function () {
     // 获取垂直滚动位置
     const scrollY = Math.floor(window.scrollY || window.pageYOffset);
+    
     if (scrollY > 3) {
         $('.header').removeClass('header_bottom');
 
@@ -36,7 +37,7 @@ window.addEventListener('scroll', throttle(function () {
             'padding': '0',
         });
 
-        $('.index_swiper .cover_box').css({
+        $('.swiper_wrap .cover_box').css({
             'padding': '0'
         })
     } else {
@@ -50,8 +51,8 @@ window.addEventListener('scroll', throttle(function () {
         $('.swiper_wrap').css({
             'padding': '20px 0',
         });
-        
-        $('.index_swiper .cover_box').css({
+
+        $('.swiper_wrap .cover_box').css({
             'padding': '0 20px'
         })
     }

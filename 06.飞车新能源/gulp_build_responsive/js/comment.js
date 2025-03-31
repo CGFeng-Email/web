@@ -1,5 +1,10 @@
 $(function () {
-  AOS.init();
+  AOS.init({
+    disable: 'mobile',
+    duration: 1000,
+    easing: 'ease-in-out',
+    delay: 300,
+  });
   NProgress.done();
 });
 
