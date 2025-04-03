@@ -1,0 +1,72 @@
+{
+  "id": "4880441",
+  "name": "海畅食品",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "996913",
+      "name": "右右",
+      "font_class": "left-1",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1029274",
+      "name": "右右",
+      "font_class": "right-1-copy",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "630083",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "34918005",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "2836498",
+      "name": "IG",
+      "font_class": "IG",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "7612118",
+      "name": "youtobe",
+      "font_class": "youtobe",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "15559681",
+      "name": "in",
+      "font_class": "shejiaotubiao-14",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "27402571",
+      "name": "推特",
+      "font_class": "tuite",
+      "unicode": "ee49",
+      "unicode_decimal": 61001
+    },
+    {
+      "icon_id": "38053908",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e77a",
+      "unicode_decimal": 59258
+    }
+  ]
+}
