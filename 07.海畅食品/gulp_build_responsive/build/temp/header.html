@@ -1,0 +1,162 @@
+<div class="header">
+    <div class="container">
+        <div class="content">
+            <h1 class="cover_box logo">
+                <a href="../../index.html" class="link">
+                    <img class="cover" src="../../img/logo.png" alt="MAOMING HI-TASTE FOODS CO LTD">
+                </a>
+            </h1>
+            <div class="right">
+                <div class="nav">
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../index.html" class="link">
+                                <div class="head_title text-uppercase">HOME</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../about.html" class="link">
+                                <div class="head_title text-uppercase">ABOUT us</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <div class="head_title animate text-uppercase" id="toProduct">PRODUCTS</div>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <div class="head_title animate text-uppercase" id="toService">services</div>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../contact.html" class="link">
+                                <div class="head_title animate text-uppercase">CONTACT us </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="function">
+                    <div class="item circle animate">
+                        <a href="../../search.html" class="link">
+                            <i class="iconfont icon-sousuo"></i>
+                        </a>
+                    </div>
+                    <div class="language animate">
+                        <div class="language_head animate flex_center">
+                            <i class="iconfont icon-duoyuyan"></i>
+                            <span class="text">English</span>
+                            <i class="iconfont icon-xiala icon_bottom animate"></i>
+                        </div>
+                        <div class="language_list box_shadow">
+                            <div class="language_li">
+                                <a href="" class="link">
+                                    <img class="cover" src="../../img/la1.png" alt="">
+                                    <span class="text">简体中文</span>
+                                </a>
+                            </div>
+                            <div class="language_li">
+                                <a href="" class="link">
+                                    <img class="cover" src="../../img/la2.png" alt="">
+                                    <span class="text">English</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="lis"></div>
+                        <div class="lis"></div>
+                        <div class="lis"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="h5_nav">
+    <div class="li animate">
+        <div class="box">
+            <a href="../../index.html" class="link">
+                <div class="head_title">
+                    <span class="title">home</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <a href="../../about.html" class="link">
+                <div class="head_title">
+                    <span class="title">about us</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="li child_li animate">
+        <div class="box">
+            <div class="head_title" id="h5_toProduct">
+                <span class="title">PRODUCTS</span>
+                <i class="iconfont icon-right-1-copy animate"></i>
+            </div>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <div class="head_title" id="h5_toServe">
+                <span class="title">services</span>
+                <i class="iconfont icon-right-1-copy"></i>
+            </div>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <a href="../../contact.html" class="link">
+                <div class="head_title">
+                    <span class="title">Contact Us</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="h5_language">
+            <div class="box">
+                <a href="" class="link">
+                    <img class="cover" src="../../img/la1.png" alt="">
+                    <span class="text">简体中文</span>
+                </a>
+            </div>
+            <div class="box">
+                <a href="" class="link">
+                    <img class="cover" src="../../img/la2.png" alt="">
+                    <span class="text">English</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="placeholder"></div>
+
+<script>
+    NProgress.start();
+
+    // h5导航菜单栏
+    $('.header .menu').click(function () {
+        $(this).stop().toggleClass('active');
+        $('.h5_nav').stop().toggleClass('h5_nav_active');
+    })
+
+    // h5导航栏二级栏目
+    $('.h5_nav .child_li .head_title').click(function () {
+        $(this).children('.iconfont').toggleClass('rotateIcon');
+        $(this).parent().next().stop().toggleClass('childActive');
+    })
+</script>

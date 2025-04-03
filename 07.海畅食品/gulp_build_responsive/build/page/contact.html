@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="contact">
+        <div class="container">
+            <div class="main container_padding">
+                <div class="head center_head">
+                    <h2 class="title">Contact us</h2>
+                    <div class="sub_title">
+                        Leave us a message We will reply as soon as possible.
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="row">
+                        <div class="col_md col-md-8 col-sm-6 col-xs-12">
+                            <form class="layui-form form">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="box col-md-6 col-sm-12 col-xs-12">
+                                            <input type="text" name="Company" lay-verify="required" lay-vertype="tips"
+                                                placeholder="Company*" lay-reqtext="Please enter your name Company"
+                                                autocomplete="off" class="layui-input input" lay-affix="clear">
+                                        </div>
+                                        <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                            <input type="tel" name="mobile" lay-verify="required | phone"
+                                                lay-vertype="tips" placeholder="Phone number*"
+                                                lay-reqtext="Please enter your phone number" autocomplete="off"
+                                                class="layui-input input" lay-affix="clear">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="box col-md-6 col-sm-12 col-xs-12">
+                                            <input type="email" name="email" lay-verify="required | email"
+                                                lay-vertype="tips" placeholder="E-mail*"
+                                                lay-reqtext="Please enter your email" autocomplete="off"
+                                                class="layui-input input" lay-affix="clear">
+                                        </div>
+                                        <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                            <input type="text" name="Country" lay-verify="required" lay-vertype="tips"
+                                                placeholder="Country*" lay-reqtext="Please enter your Country"
+                                                autocomplete="off" class="layui-input input" lay-affix="clear">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="box col-md-12 col-sm-12 col-xs-12">
+                                            <textarea name="message" placeholder="Message content*"
+                                                class="layui-textarea textarea" style="resize: none;"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_box">
+                                    <button class="layui-btn btn uppercase" lay-submit
+                                        lay-filter="contact_us_btn">sned</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                            <div class="content">
+                                <h3 class="title">Contact information</h3>
+                                <div class="box">
+                                    <span class="name">Tel: </span>
+                                    <span class="text">86-0668-2855139</span>
+                                </div>
+                                <div class="box">
+                                    <span class="name">Mobil/WhatsApp/Wechalt</span>
+                                    <p class="mobile">+86-135-0007-1506</p>
+                                    <p class="mobile">+86-190-7547-3899</p>
+                                </div>
+                                <div class="box">
+                                    <span class="name">Email: </span>
+                                    <p class="email">nancy@hi-tasteaquatic.com</p>
+                                    <p class="email">lisa@hi-tasteaquatic.com</p>
+                                </div>
+                                <div class="box">
+                                    <span class="name">Skype lD: </span>
+                                    <span class="text">hi-taste</span>
+                                </div>
+                                <div class="box">
+                                    <span class="name">Website: </span>
+                                    <span class="text">www.hi-tasteaquatic.com</span>
+                                </div>
+                                <div class="box">
+                                    <span class="name">ADD: </span>
+                                    <span class="text">Courtyard 1 and 3, NO.183 Guanghua South Road, Maoming
+                                        City,Guangdong,CHINA</span>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="code_list">
+        <div class="container">
+            <div class="main container_padding">
+                <div class="head">
+                    <h3 class="title">Convinced? Contact Us Or Get a Price Quote.</h3>
+                </div>
+                <div class="list">
+                    <div class="row">
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="box">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/WhatsApp.png" alt="">
+                                </div>
+                                <p class="lead">WhatsApp <br> Sales managerNancy Liu</p>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="box">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/wxcode.png" alt="">
+                                </div>
+                                <p class="lead">Wechat <br> Nancy Liu</p>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="box">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/WhatsApp.png" alt="">
+                                </div>
+                                <p class="lead">WhatsApp <br> Sales Lisa</p>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="box">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/wxcode.png" alt="">
+                                </div>
+                                <p class="lead">Wechat <br> Lisa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/tolink.js"></script>
+    @@include('footer.html')
+</body>
+
+</html>
