@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="details container_padding">
+        <div class="container">
+            <div class="main">
+                <div class="wrap">
+                    <div class="presentation">
+                        <div class="row">
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/details_cover.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="content">
+                                    <div class="name">Red Pacu</div>
+                                    <ul>
+                                        <li>Packing – 10 kg cartons</li>
+                                        <li> Origin – China</li>
+                                    </ul>
+                                    <p class="lead">Inventory：20368</p>
+                                    <div class="price">$30.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="place_onOrder">
+                        <div class="title">Online ordering</div>
+                        <form class="layui-form form">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <select class="input" name="product" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Please select a product category*"
+                                            lay-reqtext="Please select a product category">
+                                            <option value="">Please select a product category</option>
+                                            <option value="Tilapia" selected>Tilapia</option>
+                                            <option value="Squid Tube">Squid Tube</option>
+                                            <option value="Red Pacu">Red Pacu</option>
+                                            <option value="Catfish">Catfish</option>
+                                            <option value="Pacific Mackerel">Pacific Mackerel</option>
+                                        </select>
+                                    </div>
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="number" name="Quantity" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Quantity*" lay-reqtext="Quantity" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="text" name="fullName" lay-verify="required" lay-vertype="tips"
+                                            placeholder="full name*" lay-reqtext="full name" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="tel" name="mobile" lay-verify="required | phone" lay-vertype="tips"
+                                            placeholder="Phone number*" lay-reqtext="Phone number" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="email" name="email" lay-verify="required | email"
+                                            lay-vertype="tips" placeholder="E-mail*"
+                                            lay-reqtext="Please enter your email" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="text" name="company" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Company*" lay-reqtext="Company" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="text" name="Port" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Port*" lay-reqtext="Port" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="text" name="Address" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Address*" lay-reqtext="Address" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-12 col-sm-12 col-xs-12">
+                                        <textarea name="message" placeholder="Message content*"
+                                            class="layui-textarea textarea" style="resize: none;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_box">
+                                <button class="layui-btn btn uppercase" lay-submit
+                                    lay-filter="contact_us_btn">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/tolink.js"></script>
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+    })
+</script>
+
+</html>

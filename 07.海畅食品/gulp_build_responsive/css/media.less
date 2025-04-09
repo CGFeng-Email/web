@@ -49,6 +49,10 @@
         font-size: 14px;
     }
 
+    .placeholder {
+        height: 70px;
+    }
+
     .header {
         height: 70px;
 
@@ -76,11 +80,17 @@
 
                     .item {
                         margin: 0;
-                        padding: 0 10px;
+                        padding: 0 6px;
                         width: auto;
 
                         .cover {
                             width: 20px;
+                        }
+
+                        .link {
+                            .iconfont {
+                                font-size: 26px;
+                            }
                         }
                     }
 
@@ -157,6 +167,16 @@
             }
         }
     }
+
+    .place_onOrder {
+        .form {
+            .item {
+                .box:nth-child(odd) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -202,6 +222,8 @@
     }
 
     .product {
+        padding: 30px 0;
+
         .main {
             .wrap {
                 .list {
@@ -233,6 +255,8 @@
     }
 
     .market {
+        padding: 30px 0;
+
         .main {
             .wrap {
                 margin-top: 10px;
@@ -256,6 +280,30 @@
                                 .lead {
                                     font-size: 14px;
                                 }
+                            }
+                        }
+                    }
+                }
+
+                .date_wrap {
+                    bottom: 0;
+
+                    .date {
+                        width: 100%;
+
+                        .day {
+                            font-size: 30px;
+                        }
+
+                        .content {
+                            padding-left: 8px;
+
+                            .title {
+                                font-size: 12px;
+                            }
+
+                            .lead {
+                                font-size: 12px;
                             }
                         }
                     }
@@ -289,12 +337,41 @@
     }
 
     .contact {
+
+        .head {
+            .mobile {
+                font-size: 16px;
+            }
+        }
+
         .main {
+            .list {
+                padding: 0;
+
+                .item {
+                    padding: 14px 10px;
+                    min-height: auto;
+
+                    .content {
+                        line-height: 1.7;
+
+                        .name {
+                            font-size: 16px;
+                        }
+
+                        .text {
+                            font-size: 14px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+
             .wrap {
                 padding-top: 10px;
 
                 .form {
-                    margin-bottom: 20px;
+                    padding: 10px 0 20px;
 
                     .item {
                         margin-bottom: 10px;
@@ -419,8 +496,13 @@
                         .item {
                             margin-bottom: 20px;
 
+                            .cover_box {
+                                height: 130px;
+                                padding: 6px;
+                            }
+
                             .content {
-                                padding: 10px;
+                                padding: 6px 6px 6px 14px;
 
                             }
 
@@ -457,6 +539,26 @@
                     .input {
                         font-size: 16px;
                     }
+                }
+            }
+        }
+    }
+
+    .place_onOrder {
+        .form {
+            .item {
+                margin-bottom: 10px;
+
+                .box:nth-child(odd) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .btn_box {
+                margin-top: 10px;
+
+                .btn {
+                    width: 100%;
                 }
             }
         }
