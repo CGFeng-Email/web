@@ -273,7 +273,8 @@
             <div class="head head_center">
                 <div class="wrap">
                     <h2 class="title">Contact Us</h2>
-                    <div class="sub_title">If you have any questions, please contact us and we will be at your service 24/7</div>
+                    <div class="sub_title">If you have any questions, please contact us and we will be at your service
+                        24/7</div>
                 </div>
             </div>
             <div class="list">
@@ -285,7 +286,9 @@
                             </div>
                             <div class="content">
                                 <p class="name">Number:</p>
-                                <p class="text">139-2876-0800 / 137-6077-3620</p>
+                                <p class="text">86+13928760800 / 86+13760773620</p>
+                                <p class="text">86+19927675668</p>
+                                <p class="text">86+18998832195</p>
                             </div>
                         </div>
                     </div>
@@ -296,7 +299,9 @@
                             </div>
                             <div class="content">
                                 <p class="name">Email: </p>
-                                <p class="text">Ivy@cnglead.com.cn</p>
+                                <p class="text">ivy@fcarev.com</p>
+                                <p class="text">may@fcarev.com</p>
+                                <p class="text">pason@fcarev.com</p>
                             </div>
                         </div>
                     </div>
@@ -307,7 +312,7 @@
                             </div>
                             <div class="content">
                                 <p class="name">Official website：</p>
-                                <p class="text">xxxx.com</p>
+                                <p class="text">feichecar.en.alibaba.com</p>
                             </div>
                         </div>
                     </div>
@@ -319,7 +324,8 @@
                             <div class="content">
                                 <p class="name">Company address：</p>
                                 <p class="text">
-                                    Building 201 No. 44 Fuxing Road Shawan Street, Guangzhou, Guangdong, China
+                                    Office Address:1203 room,12floor,no 233,guangmingnorth road,shiqiao street,panyu
+                                    guangzhou, China
                                 </p>
                             </div>
                         </div>
@@ -348,7 +354,8 @@
                 <div class="right_content col-md-7 col-sm-12 col-xs-12">
                     <h2 class="title">Message</h2>
                     <p class="lead">
-                        You can send us inquiries here, and we will provide you with a professional response within 12 hours
+                        You can send us inquiries here, and we will provide you with a professional response within 12
+                        hours
                     </p>
                     <form class="layui-form form">
                         <div class="item">
@@ -384,7 +391,8 @@
                             </div>
                         </div>
                         <div class="btn_box">
-                            <button class="layui-btn btn uppercase" lay-submit lay-filter="contact_us_btn">sending</button>
+                            <button class="layui-btn btn uppercase" lay-submit
+                                lay-filter="contact_us_btn">sending</button>
                         </div>
                     </form>
                 </div>
@@ -651,7 +659,7 @@
     });
 
     var map = new BMapGL.Map("map");
-    var point = new BMapGL.Point(113.844049,23.291828);
+    var point = new BMapGL.Point(113.36815, 22.955099);
     map.enableScrollWheelZoom(true);
     var marker = new BMapGL.Marker(point);  // 创建标注
     map.addOverlay(marker);              // 将标注添加到地图中
@@ -664,7 +672,7 @@
         title: "Guangzhou Fcar New Energy Automobile Co., LTD.", // 信息窗口标题
         enableMessage: true,//设置允许信息窗发送短息
     }
-    var infoWindow = new BMapGL.InfoWindow("Building 201 No. 44 Fuxing Road Shawan Street, Guangzhou, Guangdong, China", opts);  // 创建信息窗口对象
+    var infoWindow = new BMapGL.InfoWindow("Office Address:1203 room,12floor,no 233,guangmingnorth road,shiqiao street,panyu guangzhou, China", opts);  // 创建信息窗口对象
     map.openInfoWindow(infoWindow, point); //开启信息窗口
     marker.addEventListener("click", function () {
         map.openInfoWindow(infoWindow, point); //开启信息窗口

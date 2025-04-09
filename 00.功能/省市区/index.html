@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>省市区联动选择</title>
+    <link rel="stylesheet" href="./css/city-picker.css">
+
+</head>
+
+<body>
+    <!-- 单个输入框模式 -->
+    <div style="position:relative;">
+        <input type="text" class="city-picker" data-toggle="city-picker" readonly>
+    </div>
+</body>
+<script src="./js/jquery-1.11.3.min.js"></script>
+<script src="./js/city-picker.data.min.js"></script>
+<script src="./js/city-picker.min.js"></script>
+<script>
+
+    // 初始化
+    $('.city-picker').citypicker().on('cp:updated', function (e, city) {
+        console.log('选择结果：', city, e);
+        /* 输出格式：
+        {
+          province: {name: "广东省", zip: "440000"},
+          city: {name: "深圳市", zip: "440300"},
+          district: {name: "南山区", zip: "440305"}
+        }
+        */
+    });;
+
+</script>
+
+</html>
