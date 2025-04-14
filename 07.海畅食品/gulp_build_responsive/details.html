@@ -65,10 +65,12 @@
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <div class="head_title animate text-uppercase" id="toProduct">
-                                <span>PRODUCTS</span>
-                                <i class="iconfont icon-down-1-copy"></i>
-                            </div>
+                            <a href="index.html#product_module" class="link">
+                                <div class="head_title animate text-uppercase">
+                                    <span>PRODUCTS</span>
+                                    <i class="iconfont icon-down-1-copy"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="child box_shadow animate">
                             <div class="lis">
@@ -105,7 +107,9 @@
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <div class="head_title animate text-uppercase" id="toService">services</div>
+                            <a href="service.html" class="link">
+                                <div class="head_title animate text-uppercase">services</div>
+                            </a>
                         </div>
                     </div>
                     <div class="li animate">
@@ -235,10 +239,12 @@
     </div>
     <div class="li animate">
         <div class="box">
-            <div class="head_title" id="h5_toServe">
-                <span class="title">services</span>
-                <i class="iconfont icon-right-1-copy"></i>
-            </div>
+            <a href="service.html" class="link">
+                <div class="head_title">
+                    <span class="title">services</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
         </div>
     </div>
     <div class="li animate">
@@ -293,8 +299,26 @@
                     <div class="presentation">
                         <div class="row">
                             <div class="col_md col-md-6 col-sm-12 col-xs-12">
-                                <div class="cover_box">
-                                    <img class="cover" src="img/details_cover.png" alt="">
+                                <div class="product_wrap" style="overflow: hidden;">
+                                    <div class="swiper details_swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="img/details_cover.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="img/details_cover.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="img/details_cover.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col_md col-md-6 col-sm-12 col-xs-12">
@@ -304,8 +328,8 @@
                                         <li>Packing – 10 kg cartons</li>
                                         <li> Origin – China</li>
                                     </ul>
-                                    <p class="lead">Inventory：20368</p>
-                                    <div class="price">$30.00</div>
+                                    <!-- <p class="lead">Inventory：20368</p>
+                                    <div class="price">$30.00</div> -->
                                 </div>
                             </div>
                         </div>
@@ -320,12 +344,12 @@
                                         <select class="input" name="product" lay-verify="required" lay-vertype="tips"
                                             placeholder="Please select a product category*"
                                             lay-reqtext="Please select a product category">
-                                            <option value="">Please select a product category</option>
-                                            <option value="Tilapia" selected>Tilapia</option>
+                                            <!-- <option value="">Please select a product category</option> -->
+                                            <option value="Red Pacu" selected>Red Pacu</option>
+                                            <!-- <option value="Tilapia">Tilapia</option>
                                             <option value="Squid Tube">Squid Tube</option>
-                                            <option value="Red Pacu">Red Pacu</option>
                                             <option value="Catfish">Catfish</option>
-                                            <option value="Pacific Mackerel">Pacific Mackerel</option>
+                                            <option value="Pacific Mackerel">Pacific Mackerel</option> -->
                                         </select>
                                     </div>
                                     <div class="box col-md-6 col-sm-12 col-xs-12">
@@ -489,11 +513,39 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 检查URL中是否有hash
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                // 平滑滚动到目标位置
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center',
+                    inline: 'center'
+                });
+            }
+        }
+    });
+</script>
 </body>
 <script>
     layui.use(function () {
         var form = layui.form;
         var layer = layui.layer;
+    })
+
+    const details_swiper = new Swiper('.details_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        // effect: 'fade',
+        loop: true,
+        speed: 1400,
+        spaceBetween: 10,
     })
 </script>
 

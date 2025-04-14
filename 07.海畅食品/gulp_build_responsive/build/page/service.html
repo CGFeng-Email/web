@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Service</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="container">
+        <div class="product_banner">
+            <div class="swiper index_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item">
+                        <div class="cover_box animate">
+                            <img class="cover" src="../../img/service_banner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="cover_box animate">
+                            <img class="cover" src="../../img/service_banner2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our_service container_padding">
+            <div class="head">
+                <h3 class="title">Our Services</h3>
+            </div>
+            <div class="main">
+                <div class="row">
+                    <div class="col_md col-md-6 col-sm-6 col-xs-12" data-aos="fade-up">
+                        <div class="box display_flex box_radius box_shadow">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/our_service1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="name">Lead generation</div>
+                                <div class="lead">We generate qualified leads to fuel your sales team</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-6 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-duration="1100">
+                        <div class="box display_flex box_radius box_shadow">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/our_service2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="name">Shipments Data</div>
+                                <div class="lead">Track shipping activity search based on HS codes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    const index_swiper = new Swiper('.index_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+    })
+</script>
+
+</html>

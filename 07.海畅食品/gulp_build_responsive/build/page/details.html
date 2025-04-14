@@ -16,8 +16,26 @@
                     <div class="presentation">
                         <div class="row">
                             <div class="col_md col-md-6 col-sm-12 col-xs-12">
-                                <div class="cover_box">
-                                    <img class="cover" src="../../img/details_cover.png" alt="">
+                                <div class="product_wrap" style="overflow: hidden;">
+                                    <div class="swiper details_swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/details_cover.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/details_cover.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/details_cover.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col_md col-md-6 col-sm-12 col-xs-12">
@@ -27,8 +45,8 @@
                                         <li>Packing – 10 kg cartons</li>
                                         <li> Origin – China</li>
                                     </ul>
-                                    <p class="lead">Inventory：20368</p>
-                                    <div class="price">$30.00</div>
+                                    <!-- <p class="lead">Inventory：20368</p>
+                                    <div class="price">$30.00</div> -->
                                 </div>
                             </div>
                         </div>
@@ -43,12 +61,12 @@
                                         <select class="input" name="product" lay-verify="required" lay-vertype="tips"
                                             placeholder="Please select a product category*"
                                             lay-reqtext="Please select a product category">
-                                            <option value="">Please select a product category</option>
-                                            <option value="Tilapia" selected>Tilapia</option>
+                                            <!-- <option value="">Please select a product category</option> -->
+                                            <option value="Red Pacu" selected>Red Pacu</option>
+                                            <!-- <option value="Tilapia">Tilapia</option>
                                             <option value="Squid Tube">Squid Tube</option>
-                                            <option value="Red Pacu">Red Pacu</option>
                                             <option value="Catfish">Catfish</option>
-                                            <option value="Pacific Mackerel">Pacific Mackerel</option>
+                                            <option value="Pacific Mackerel">Pacific Mackerel</option> -->
                                         </select>
                                     </div>
                                     <div class="box col-md-6 col-sm-12 col-xs-12">
@@ -126,6 +144,17 @@
     layui.use(function () {
         var form = layui.form;
         var layer = layui.layer;
+    })
+
+    const details_swiper = new Swiper('.details_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        // effect: 'fade',
+        loop: true,
+        speed: 1400,
+        spaceBetween: 10,
     })
 </script>
 

@@ -12,86 +12,52 @@
     @@include('header.html')
     <div class="contact">
         <div class="container">
-            <div class="main container_padding">
-                <div class="head center_head">
-                    <h2 class="title text-uppercase">Contact us</h2>
-                    <div class="sub_title">
-                        Leave us a message We will reply as soon as possible.
-                    </div>
-                    <div class="mobile">+86-0668-2855139</div>
-                </div>
-                <div class="list">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="iconfont icon-dianhua1"></i>
-                                </div>
-                                <div class="content">
-                                    <p class="name">Tel:</p>
-                                    <p class="text">+86-0668-2855139</p>
-                                </div>
+            <div class="main">
+
+                <div class="contact_info container_padding">
+                    <div class="container">
+                        <div class="head center_head">
+                            <h2 class="title">Contact us</h2>
+                            <div class="sub_head">
+                                Leave us a message We will reply as soon as possible.
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="iconfont icon-youjian"></i>
-                                </div>
-                                <div class="content">
-                                    <p class="name">Email: </p>
-                                    <p class="text">nancy@hi-tasteaquatic.com</p>
-                                    <p class="text">lisa@hi-tasteaquatic.com</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="iconfont icon-dizhi1"></i>
-                                </div>
-                                <div class="content">
-                                    <p class="name">Address: </p>
-                                    <p class="text">Courtyard 1 and 3, NO.183 Guanghua South Road, Maoming
-                                        City,Guangdong,CHINA</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="iconfont icon-wewhat"></i>
-                                </div>
-                                <div class="content">
-                                    <p class="name">Mobil/WhatsApp/Wechalt</p>
-                                    <p class="text">+86-135-0007-1506</p>
-                                    <p class="text">+86-190-7547-3899</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="iconfont icon-skype"></i>
-                                </div>
-                                <div class="content">
-                                    <p class="name">Skype lD: </p>
-                                    <p class="text">
-                                        hi-taste
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <div class="item">
-                                <div class="icon">
-                                    <i class="iconfont icon-guanwang"></i>
-                                </div>
-                                <div class="content">
-                                    <p class="name">Website: </p>
-                                    <p class="text">
-                                        www.hi-tasteaquatic.com
-                                    </p>
+                        <div class="main">
+                            <div class="wrap" style="padding-top: 0;">
+                                <div class="row">
+                                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                                        <div class="item" data-aos="flip-right" data-aos-delay="100">
+                                            <div class="icon">
+                                                <img class="cover" src="../../img/icon1.png" alt="">
+                                            </div>
+                                            <div class="lead">Maoming,Guagndong,China</div>
+                                        </div>
+                                    </div>
+                                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                                        <div class="item" data-aos="flip-right" data-aos-delay="200">
+                                            <div class="icon">
+                                                <img class="cover" src="../../img/icon2.png" alt="">
+                                            </div>
+                                            <div class="lead">nancy@hi-tasteaquatic.com</div>
+                                            <div class="lead">lizzy@hi-tasteaquatic.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                                        <div class="item" data-aos="flip-right" data-aos-delay="300">
+                                            <div class="icon">
+                                                <img class="cover" src="../../img/icon3.png" alt="">
+                                            </div>
+                                            <div class="lead">+86-135-0007-1506</div>
+                                        </div>
+                                    </div>
+                                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                                        <div class="item" data-aos="flip-right" data-aos-delay="400">
+                                            <div class="icon">
+                                                <img class="cover" src="../../img/icon4.png" alt="">
+                                            </div>
+                                            <div class="lead">+86-0668-2855139</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +184,7 @@
     });
 
     var map = new BMapGL.Map("map");
-    var point = new BMapGL.Point(110.93129,21.656457);
+    var point = new BMapGL.Point(110.93129, 21.656457);
     map.enableScrollWheelZoom(true);
     var marker = new BMapGL.Marker(point);  // 创建标注
     map.addOverlay(marker);              // 将标注添加到地图中

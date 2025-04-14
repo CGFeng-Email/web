@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+
+    <div class="top_banner details_banner">
+        <div class="logo_bg">
+            <div class="cover_box">
+                <img class="cover banner_top_bg" src="../../img/banner_top_bg.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="details_wrap">
+            <h3 class="title">Their reputation for professionalism, combined with their global perspective</h3>
+            <div class="author">
+                <span class="text">Time：2024/08/24</span>
+                <span class="text">Source：Vitapharma</span>
+            </div>
+            <div class="content">
+                <p class="lead">Vitapharma is an outstanding company rooted in Italy, dedicated to providing a healthy
+                    quality of life for humanity, covering areas such as women's health, eye health, and comprehensive
+                    health. Their unwavering pursuit of excellence is evident in all aspects of their operations.</p>
+                <p class="lead">The company prides itself on its team of world-class experts, who possess an abundance
+                    of knowledge and years of specialized experience. These professionals work in harmony, leveraging
+                    their skills and insights to pioneer new and improved pharmaceutical solutions. Their commitment to
+                    innovation is unwavering, constantly exploring and embracing the latest technologies and scientific
+                    advancements.</p>
+                <p class="lead">Vitapharma's international reach is extensive, with its products and services being
+                    recognized and utilized across the globe. They adhere to the strictest international standards and
+                    regulations, ensuring that every offering is of the highest quality, safe, and effective. This
+                    attention to detail and quality control has earned them the trust and respect of clients and
+                    partners worldwide.</p>
+                <p class="lead">Through continuous research and development efforts, Vitapharma is not only keeping pace
+                    with but also leading the way in the ever-evolving health industry. They are committed to making a
+                    positive impact on global health and well-being, providing solutions that address the most pressing
+                    healthcare challenges. Their reputation for professionalism, combined with their global perspective,
+                    positions them as a true leader in the field, and their journey of growth and innovation is set to
+                    continue for many years to come.</p>
+
+                <img class="cover" src="../../img/details_banner.jpg" alt="">
+                <img class="cover" src="../../img/details_cover.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="recommment">
+        <div class="head">
+            <h3 class="title">You may also be interested in</h3>
+            <div class="arrow_wrap">
+                <div class="item recomment_prev">
+                    <i class="iconfont icon-zuo"></i>
+                </div>
+                <div class="item recomment_next">
+                    <i class="iconfont icon-you"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-container recomment_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide item">
+                    <a href="" class="link">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/news_li1.png" alt="news">
+                        </div>
+                        <div class="content">
+                            <div class="name over2">Their reputation for professionalism, combined with their global
+                                perspective</div>
+                            <div class="date">2024/08/24</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide item">
+                    <a href="" class="link">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/news_li2.png" alt="news">
+                        </div>
+                        <div class="content">
+                            <div class="name over2">Their reputation for professionalism, combined with their global
+                                perspective</div>
+                            <div class="date">2024/08/24</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide item">
+                    <a href="" class="link">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/news_li3.png" alt="news">
+                        </div>
+                        <div class="content">
+                            <div class="name over2">Their reputation for professionalism, combined with their global
+                                perspective</div>
+                            <div class="date">2024/08/24</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide item">
+                    <a href="" class="link">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/news_li1.png" alt="news">
+                        </div>
+                        <div class="content">
+                            <div class="name over2">Their reputation for professionalism, combined with their global
+                                perspective</div>
+                            <div class="date">2024/08/24</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    let recomment_swiper = new Swiper('.recomment_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        slidesPerView: 3,
+        breakpoints: {
+            968: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        }
+    })
+
+    $('.recomment_prev').click(function () {
+        recomment_swiper.slidePrev()
+    })
+
+    $('.recomment_next').click(function () {
+        recomment_swiper.slideNext()
+    })
+</script>
+
+</html>

@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2815702",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "24258554",
+      "name": "通用-方向-向左1",
+      "font_class": "tongyong-fangxiang-xiangzuo1",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "24258555",
+      "name": "通用-方向-向右1",
+      "font_class": "tongyong-fangxiang-xiangyou1",
+      "unicode": "e71a",
+      "unicode_decimal": 59162
+    },
+    {
       "icon_id": "436015",
       "name": "邮件",
       "font_class": "youjian",

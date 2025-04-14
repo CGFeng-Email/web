@@ -65,10 +65,12 @@
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <div class="head_title animate text-uppercase" id="toProduct">
-                                <span>PRODUCTS</span>
-                                <i class="iconfont icon-down-1-copy"></i>
-                            </div>
+                            <a href="index.html#product_module" class="link">
+                                <div class="head_title animate text-uppercase">
+                                    <span>PRODUCTS</span>
+                                    <i class="iconfont icon-down-1-copy"></i>
+                                </div>
+                            </a>
                         </div>
                         <div class="child box_shadow animate">
                             <div class="lis">
@@ -105,7 +107,9 @@
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <div class="head_title animate text-uppercase" id="toService">services</div>
+                            <a href="service.html" class="link">
+                                <div class="head_title animate text-uppercase">services</div>
+                            </a>
                         </div>
                     </div>
                     <div class="li animate">
@@ -235,10 +239,12 @@
     </div>
     <div class="li animate">
         <div class="box">
-            <div class="head_title" id="h5_toServe">
-                <span class="title">services</span>
-                <i class="iconfont icon-right-1-copy"></i>
-            </div>
+            <a href="service.html" class="link">
+                <div class="head_title">
+                    <span class="title">services</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
         </div>
     </div>
     <div class="li animate">
@@ -414,6 +420,23 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 检查URL中是否有hash
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                // 平滑滚动到目标位置
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center',
+                    inline: 'center'
+                });
+            }
+        }
+    });
+</script>
 </body>
 <script>
     layui.use(function () {

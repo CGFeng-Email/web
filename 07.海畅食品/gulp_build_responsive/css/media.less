@@ -24,7 +24,32 @@
     }
 
     .video_wrap {
-        height: 80vh;
+        height: 50vh;
+    }
+
+    .contact_info {
+        .main {
+            .wrap {
+                .item {
+                    height: 220px;
+                    margin-bottom: 20px;
+
+                    .icon {
+                        height: 50px;
+
+                        .cover {
+                            width: 46px;
+                            max-height: 46px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .lead {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -51,6 +76,16 @@
 
     .placeholder {
         height: 70px;
+    }
+
+    .swiper_wrap {
+        .index_swiper {
+            .item {
+                .cover {
+                    height: 60vh;
+                }
+            }
+        }
     }
 
     .header {
@@ -177,6 +212,32 @@
             }
         }
     }
+
+    .company {
+        padding: 40px 20px;
+
+        .head {
+            .title {
+                font-size: 24px;
+            }
+        }
+
+        .main {
+            padding-top: 20px;
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            margin-top: 100px;
+
+            .modal-body {
+                .pad_bottom {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -197,6 +258,45 @@
         .sub_head {
             font-size: 15px;
             padding: 0;
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            .modal-body {
+                padding: 6px;
+            }
+        }
+    }
+
+    .swiper_wrap {
+
+        .banner_arrow {
+            padding: 0 10px;
+
+            .iconfont {
+                font-size: 34px;
+            }
+        }
+
+        .index_swiper {
+            .item {
+                .cover {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .product_banner {
+        padding: 20px 0;
+
+        .index_swiper {
+            .item {
+                .cover {
+                    height: auto;
+                }
+            }
         }
     }
 
@@ -446,6 +546,16 @@
             .logo {
                 width: 190px;
             }
+
+            .play {
+                .open {
+                    width: auto;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 20px;
+                    padding: 0 20px;
+                }
+            }
         }
     }
 
@@ -559,6 +669,81 @@
 
                 .btn {
                     width: 100%;
+                }
+            }
+        }
+    }
+
+    .contact_info {
+        .main {
+            .wrap {
+                .col_md {
+                    padding: 0 5px;
+                }
+
+                .item {
+                    height: 194px;
+                    margin-bottom: 10px;
+                    padding: 20px 4px 6px;
+
+                    .icon {
+                        height: 50px;
+
+                        .cover {
+                            width: 46px;
+                            max-height: 46px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .lead {
+                        font-size: 14px;
+                        word-break: break-all;
+                    }
+                }
+            }
+        }
+    }
+
+    .company {
+        padding: 20px 10px;
+
+        .head {
+            .title {
+                font-size: 18px;
+            }
+        }
+
+        .main {
+            padding-top: 10px;
+        }
+    }
+
+    .our_service {
+        padding: 0 10px 30px;
+
+        .main {
+            padding-top: 10px;
+
+            .box {
+                margin-bottom: 20px;
+                padding: 10px;
+
+                .cover_box {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                .content {
+                    padding-left: 12px;
+
+                    .name {
+                        font-size: 16px;
+                    }
+
+                    .lead {
+                        font-size: 14px;
+                    }
                 }
             }
         }

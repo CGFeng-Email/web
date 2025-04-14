@@ -20,29 +20,126 @@
                 <div class="wrap">
                     <h3 class="title">MAOMING HI-TASTE FOODS CO..LTD</h3>
                     <p class="lead">
-                        At Hi-Taste We Are Specialized In Fish And Seafood Trade And Process.ing.We Offer a Wide Variety Of
-                        Frozen Fish And Seafood Products, Both Wild Catch and Farmed Raised In Fresh Water And Take Care Of
-                        The Export To All Regions In The World. With More Than 15 Years Experience In The Indus-try We Have
-                        Built Up a Reliable Network. Most Of Our Fish Trading Products Are EU, Haccp, And BRC Approved. We
+                        At Hi-Taste We Are Specialized In Fish And Seafood Trade And Process.ing.We Offer a Wide Variety
+                        Of
+                        Frozen Fish And Seafood Products, Both Wild Catch and Farmed Raised In Fresh Water And Take Care
+                        Of
+                        The Export To All Regions In The World. With More Than 15 Years Experience In The Indus-try We
+                        Have
+                        Built Up a Reliable Network. Most Of Our Fish Trading Products Are EU, Haccp, And BRC Approved.
+                        We
                         Deliver In Quantities That Suit YourBusiness.
                     </p>
                     <p class="lead">
                         The Main Products We Export Globally Are Fresh Frozen Tilapia,Tilapia Fillets,Red Pacu,
-                        Catfish,Milkfish,Pangasius,Red Tilapia,Golden Pom-fret,Horse Mackerel,Spanish Mackerel,Round Scad,
-                        Golden Pompano,Squid,Yellow Tail,Moonfish,Silver Pomfret,Squid Products Including Squid Tube,Squid
+                        Catfish,Milkfish,Pangasius,Red Tilapia,Golden Pom-fret,Horse Mackerel,Spanish Mackerel,Round
+                        Scad,
+                        Golden Pompano,Squid,Yellow Tail,Moonfish,Silver Pomfret,Squid Products Including Squid
+                        Tube,Squid
                         Tentacle,Squid Fillet,Squid Ring,French Fries,Vegetable Etc.
                     </p>
                     <p class="lead">
-                        We Deliver Our Fish & Seafood Products To Usa,Africa, Asia, Caribbean,Middle East, Russia,Mexico And
-                        Europe.In Short, Worldwide Shipping To Any Port.Our Main Customers Are Active In The Following Food
+                        We Deliver Our Fish & Seafood Products To Usa,Africa, Asia, Caribbean,Middle East, Russia,Mexico
+                        And
+                        Europe.In Short, Worldwide Shipping To Any Port.Our Main Customers Are Active In The Following
+                        Food
                         Sectors:In-dustry, Wholesale, Foodservice & Retail.
                     </p>
+                </div>
+                <div class="play">
+                    <div class="open" data-toggle="modal" data-target=".myModal">
+                        <span>Play promotional video</span>
+                        <i class="iconfont icon-bofang"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="../../js/tolink.js"></script>
+
+    <div class="company" style="background: #F8F8F8;">
+        <div class="head">
+            <h3 class="title">Company Display</h3>
+        </div>
+        <div class="main">
+            <div class="swiper-container category_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item">
+                        <div class="box animate">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/company_li1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="box animate">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/company_li2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="box animate">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/company_li3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item">
+                        <div class="box animate">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/company_li4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video class="video" src="../../video/WeChat_20250410140719.mp4" preload="auto" controls></video>
+                </div>
+            </div>
+        </div>
+    </div>
     @@include('footer.html')
 </body>
+
+<script>
+    const category_swiper = new Swiper('.category_swiper', {
+        autoplay: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 2000,
+        slidesPerView: 4,
+        spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable :true,
+        },
+        breakpoints: {
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        }
+    })
+</script>
 
 </html>
