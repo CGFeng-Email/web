@@ -4,7 +4,22 @@
     font-size: 14px;
   }
   .video_wrap {
-    height: 80vh;
+    height: 50vh;
+  }
+  .contact_info .main .wrap .item {
+    height: 220px;
+    margin-bottom: 20px;
+  }
+  .contact_info .main .wrap .item .icon {
+    height: 50px;
+  }
+  .contact_info .main .wrap .item .icon .cover {
+    width: 46px;
+    max-height: 46px;
+    object-fit: contain;
+  }
+  .contact_info .main .wrap .item .lead {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -25,6 +40,9 @@
   }
   .placeholder {
     height: 70px;
+  }
+  .swiper_wrap .index_swiper .item .cover {
+    height: 60vh;
   }
   .header {
     height: 70px;
@@ -95,6 +113,21 @@
   .place_onOrder .form .item .box:nth-child(odd) {
     margin-bottom: 16px;
   }
+  .company {
+    padding: 40px 20px;
+  }
+  .company .head .title {
+    font-size: 24px;
+  }
+  .company .main {
+    padding-top: 20px;
+  }
+  .modal .modal-dialog {
+    margin-top: 100px;
+  }
+  .modal .modal-dialog .modal-body .pad_bottom {
+    padding-bottom: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -109,6 +142,24 @@
   .head .sub_head {
     font-size: 15px;
     padding: 0;
+  }
+  .modal .modal-dialog .modal-body {
+    padding: 6px;
+  }
+  .swiper_wrap .banner_arrow {
+    padding: 0 10px;
+  }
+  .swiper_wrap .banner_arrow .iconfont {
+    font-size: 34px;
+  }
+  .swiper_wrap .index_swiper .item .cover {
+    height: auto;
+  }
+  .product_banner {
+    padding: 20px 0;
+  }
+  .product_banner .index_swiper .item .cover {
+    height: auto;
   }
   .service .wrap .item {
     height: 290px;
@@ -271,6 +322,13 @@
   .about .main .logo {
     width: 190px;
   }
+  .about .main .play .open {
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    padding: 0 20px;
+  }
   .code_list .main .list {
     padding-top: 10px;
   }
@@ -337,5 +395,57 @@
   }
   .place_onOrder .form .btn_box .btn {
     width: 100%;
+  }
+  .contact_info .main .wrap .col_md {
+    padding: 0 5px;
+  }
+  .contact_info .main .wrap .item {
+    height: 194px;
+    margin-bottom: 10px;
+    padding: 20px 4px 6px;
+  }
+  .contact_info .main .wrap .item .icon {
+    height: 50px;
+  }
+  .contact_info .main .wrap .item .icon .cover {
+    width: 46px;
+    max-height: 46px;
+    object-fit: contain;
+  }
+  .contact_info .main .wrap .item .lead {
+    font-size: 14px;
+    word-break: break-all;
+  }
+  .company {
+    padding: 20px 10px;
+  }
+  .company .head .title {
+    font-size: 18px;
+  }
+  .company .main {
+    padding-top: 10px;
+  }
+  .our_service {
+    padding: 0 10px 30px;
+  }
+  .our_service .main {
+    padding-top: 10px;
+  }
+  .our_service .main .box {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .our_service .main .box .cover_box {
+    width: 60px;
+    height: 60px;
+  }
+  .our_service .main .box .content {
+    padding-left: 12px;
+  }
+  .our_service .main .box .content .name {
+    font-size: 16px;
+  }
+  .our_service .main .box .content .lead {
+    font-size: 14px;
   }
 }

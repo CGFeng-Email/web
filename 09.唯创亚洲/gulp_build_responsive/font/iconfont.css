@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4888086 */
+  src: url('iconfont.woff2?t=1744274251411') format('woff2'),
+       url('iconfont.woff?t=1744274251411') format('woff'),
+       url('iconfont.ttf?t=1744274251411') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo1:before {
+  content: "\e600";
+}
+
+.icon-jianhao:before {
+  content: "\e729";
+}
+
+.icon-jia1:before {
+  content: "\e632";
+}
+
+.icon-dianhua:before {
+  content: "\e64c";
+}
+
+.icon-youxiang:before {
+  content: "\e610";
+}
+
+.icon-dizhi:before {
+  content: "\e622";
+}
+
+.icon-arrowLeft:before {
+  content: "\e65d";
+}
+
+.icon-arrowRight:before {
+  content: "\e65e";
+}
+
+.icon-tongyong-fangxiang-xiangzuo1:before {
+  content: "\e719";
+}
+
+.icon-tongyong-fangxiang-xiangyou1:before {
+  content: "\e71a";
+}
+
+.icon-xiala:before {
+  content: "\e65c";
+}
+
+.icon-duoyuyan:before {
+  content: "\e654";
+}
+
+.icon-left-1:before {
+  content: "\e603";
+}
+
+.icon-down-1-copy:before {
+  content: "\e604";
+}
+
+.icon-right-1-copy:before {
+  content: "\e61f";
+}
+
+.icon-IG:before {
+  content: "\e619";
+}
+
+.icon-youtobe:before {
+  content: "\e606";
+}
+
+.icon-shejiaotubiao-14:before {
+  content: "\e642";
+}
+
+.icon-tuite:before {
+  content: "\ee49";
+}
+
+.icon-sousuo:before {
+  content: "\e614";
+}
+
+.icon-facebook:before {
+  content: "\e77a";
+}
+
+.icon-vertical_line:before {
+  content: "\e63a";
+}
+
+.icon-24:before {
+  content: "\e6af";
+}
+
+.icon-practice:before {
+  content: "\e615";
+}
+
+.icon-you:before {
+  content: "\e607";
+}
+

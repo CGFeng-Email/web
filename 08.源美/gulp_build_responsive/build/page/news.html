@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+
+    <div class="top_banner">
+        <div class="logo_bg">
+            <div class="cover_box">
+                <img class="cover banner_top_bg" src="../../img/banner_top_bg.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="left_head">
+                    <h3 class="title banner_title">Information</h3>
+                    <p class="lead banner_lead">
+                        It is committed to providing new raw materials for the health industry that can ensure
+                        sustainable development in the future.
+                    </p>
+                </div>
+                <div class="right_box">
+                    <div class="wrap animate banner_wrap">
+                        <div class="view banner_view animate video_btn">
+                            <a href="javascript:;" class="link">
+                                <i class="iconfont icon-arrowRight"></i>
+                                <span class="text">Make an Online Enquiry</span>
+                            </a>
+                        </div>
+                        <div class="to_down animate banner_to">
+                            <i class="iconfont icon-xiayi"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_media">
+            <div class="media_box animate">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/news_banner.jpg" alt="contact us">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="animate_module module_box common_module">
+        <div class="wrap animate" style="background: #fff;">
+            <div class="container">
+                <div class="row">
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <div class="content">
+                            <h3 class="name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="20">
+                                Their reputation for professionalism, combined with their global perspective
+                            </h3>
+                            <p class="lead" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="40">
+                                Through continuous research and development efforts, Vitapharma is not only keeping pace
+                                with but also leading the way in the ever-evolving health industry.
+                            </p>
+                            <div class="date" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="60">
+                                <span class="day">22</span>
+                                <span class="year">2024/08</span>
+                            </div>
+                            <div class="more_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="80">
+                                <div class="more_btn animate">
+                                    <a href="./details.html" class="link">
+                                        <span class="text">Learn More</span>
+                                        <i class="iconfont icon-arrowRight"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <div class="common_cover" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="80">
+                            <div class="cover_box module_cover animate">
+                                <img class="cover" src="../../img/news_module_cover.jpg" alt="news">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news_list">
+        <div class="container">
+            <div class="row">
+                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                    <a href="./details.html" class="link">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/news_li1.png" alt="news">
+                        </div>
+                        <div class="content">
+                            <div class="name over2">Their reputation for professionalism, combined with their global
+                                perspective</div>
+                            <div class="date">2024/08/24</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                    <a href="./details.html" class="link">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/news_li2.png" alt="news">
+                        </div>
+                        <div class="content">
+                            <div class="name over2">Their reputation for professionalism, combined with their global
+                                perspective</div>
+                            <div class="date">2024/08/24</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                    <a href="./details.html" class="link">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/news_li3.png" alt="news">
+                        </div>
+                        <div class="content">
+                            <div class="name over2">Their reputation for professionalism, combined with their global
+                                perspective</div>
+                            <div class="date">2024/08/24</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col_md col-md-4 col-sm-6 col-xs-12">
+                    <a href="./details.html" class="link">
+                        <div class="cover_box">
+                            <img class="cover" src="../../img/news_li1.png" alt="news">
+                        </div>
+                        <div class="content">
+                            <div class="name over2">Their reputation for professionalism, combined with their global
+                                perspective</div>
+                            <div class="date">2024/08/24</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    let research_list_swiper = new Swiper('.research_list_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        slidesPerView: 4,
+        breakpoints: {
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        }
+    })
+</script>
+
+</html>

@@ -9,8 +9,34 @@
 
 <body>
     @@include('header.html')
-    <div class="video_wrap">
-        <video class="video" src="../../video/video.mp4" preload="auto" autoplay loop muted></video>
+    <div class="swiper_wrap">
+        <div class="swiper index_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide item">
+                    <div class="cover_box animate">
+                        <img class="cover" src="../../img/index_banner4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box animate">
+                        <img class="cover" src="../../img/index_banner5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide item">
+                    <div class="cover_box animate">
+                        <img class="cover" src="../../img/index_banner1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner_arrow justify_space">
+            <div class="prev" data-aos="slide-right" data-aos-duration="2000">
+                <i class="iconfont animate icon-tongyong-fangxiang-xiangzuo1"></i>
+            </div>
+            <div class="next" data-aos="slide-left" data-aos-duration="2000">
+                <i class="iconfont animate icon-tongyong-fangxiang-xiangyou1"></i>
+            </div>
+        </div>
     </div>
     <div class="service img_bg" id="serve_module" style="background-image: url(../../img/server_bg.png);">
         <div class="container">
@@ -93,7 +119,7 @@
                                 <div class="name">Fish</div>
                             </a>
                         </div>
-                        <div class="item animate" data-aos="zoom-in" data-aos-delay="110">
+                        <!-- <div class="item animate" data-aos="zoom-in" data-aos-delay="110">
                             <a href="./product.html" class="link">
                                 <div class="cover_box">
                                     <img class="cover" src="../../img/category_li2.png" alt="">
@@ -116,7 +142,7 @@
                                 </div>
                                 <div class="name">Beef</div>
                             </a>
-                        </div>
+                        </div> -->
                         <div class="item animate" data-aos="zoom-in" data-aos-delay="100">
                             <a href="./product.html" class="link">
                                 <div class="cover_box">
@@ -210,96 +236,110 @@
             </div>
         </div>
     </div>
-    <div class="contact index_contact">
+    <div class="contact_info container_padding">
         <div class="container">
-            <div class="main container_padding">
-                <div class="head center_head">
-                    <h2 class="title">Contact us</h2>
-                    <div class="sub_title">
-                        Leave us a message We will reply as soon as possible.
-                    </div>
+            <div class="head center_head">
+                <h2 class="title">Contact us</h2>
+                <div class="sub_head">
+                    Leave us a message We will reply as soon as possible.
                 </div>
+            </div>
+            <div class="main">
                 <div class="wrap">
                     <div class="row">
-                        <div class="col_md col-md-8 col-sm-6 col-xs-12">
-                            <form class="layui-form form">
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="box col-md-6 col-sm-12 col-xs-12">
-                                            <input type="text" name="Company" lay-verify="required" lay-vertype="tips"
-                                                placeholder="Company*" lay-reqtext="Please enter your name Company"
-                                                autocomplete="off" class="layui-input input" lay-affix="clear">
-                                        </div>
-                                        <div class="box input_box col-md-6 col-sm-12 col-xs-12">
-                                            <input type="tel" name="mobile" lay-verify="required | phone"
-                                                lay-vertype="tips" placeholder="Phone number*"
-                                                lay-reqtext="Please enter your phone number" autocomplete="off"
-                                                class="layui-input input" lay-affix="clear">
-                                        </div>
-                                    </div>
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="item" data-aos="flip-right" data-aos-delay="100">
+                                <div class="icon">
+                                    <img class="cover" src="../../img/icon1.png" alt="">
                                 </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="box col-md-6 col-sm-12 col-xs-12">
-                                            <input type="email" name="email" lay-verify="required | email"
-                                                lay-vertype="tips" placeholder="E-mail*"
-                                                lay-reqtext="Please enter your email" autocomplete="off"
-                                                class="layui-input input" lay-affix="clear">
-                                        </div>
-                                        <div class="box input_box col-md-6 col-sm-12 col-xs-12">
-                                            <input type="text" name="Country" lay-verify="required" lay-vertype="tips"
-                                                placeholder="Country*" lay-reqtext="Please enter your Country"
-                                                autocomplete="off" class="layui-input input" lay-affix="clear">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="box col-md-12 col-sm-12 col-xs-12">
-                                            <textarea name="message" placeholder="Message content*"
-                                                class="layui-textarea textarea" style="resize: none;"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="btn_box">
-                                    <button class="layui-btn btn uppercase" lay-submit
-                                        lay-filter="contact_us_btn">Send</button>
-                                </div>
-                            </form>
+                                <div class="lead">Maoming,Guagndong,China</div>
+                            </div>
                         </div>
-                        <div class="col_md col-md-4 col-sm-6 col-xs-12">
-                            <div class="content">
-                                <h3 class="title">Contact information</h3>
-                                <div class="box">
-                                    <span class="name">Tel: </span>
-                                    <span class="text">86-0668-2855139</span>
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="item" data-aos="flip-right" data-aos-delay="200">
+                                <div class="icon">
+                                    <img class="cover" src="../../img/icon2.png" alt="">
                                 </div>
-                                <div class="box">
-                                    <span class="name">Mobil/WhatsApp/Wechalt</span>
-                                    <p class="mobile">+86-135-0007-1506</p>
-                                    <p class="mobile">+86-190-7547-3899</p>
+                                <div class="lead">nancy@hi-tasteaquatic.com</div>
+                                <div class="lead">lizzy@hi-tasteaquatic.com</div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="item" data-aos="flip-right" data-aos-delay="300">
+                                <div class="icon">
+                                    <img class="cover" src="../../img/icon3.png" alt="">
                                 </div>
-                                <div class="box">
-                                    <span class="name">Email: </span>
-                                    <p class="email">nancy@hi-tasteaquatic.com</p>
-                                    <p class="email">lisa@hi-tasteaquatic.com</p>
+                                <div class="lead">+86-135-0007-1506</div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="item" data-aos="flip-right" data-aos-delay="400">
+                                <div class="icon">
+                                    <img class="cover" src="../../img/icon4.png" alt="">
                                 </div>
-                                <div class="box">
-                                    <span class="name">Skype lD: </span>
-                                    <span class="text">hi-taste</span>
-                                </div>
-                                <div class="box">
-                                    <span class="name">Website: </span>
-                                    <span class="text">www.hi-tasteaquatic.com</span>
-                                </div>
-                                <div class="box">
-                                    <span class="name">ADD: </span>
-                                    <span class="text">Courtyard 1 and 3, NO.183 Guanghua South Road, Maoming
-                                        City,Guangdong,CHINA</span>
-                                </div>
+                                <div class="lead">+86-0668-2855139</div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact index_contact" style="background: #F8F8F8;">
+        <div class="container">
+            <div class="main container_padding">
+                <div class="wrap">
+                    <div class="head center_head">
+                        <h2 class="title">Message</h2>
+                        <div class="sub_head">
+                            You can send us inquiries here and we will provide you with a professional response within
+                            12 hours
+                        </div>
+                    </div>
+                    <form class="layui-form form">
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" name="company" lay-verify="required" lay-vertype="tips"
+                                        placeholder="Please enter the company name"
+                                        lay-reqtext="Please enter the company name" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                                <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" name="name" lay-verify="required" lay-vertype="tips"
+                                        placeholder="Please enter your name" lay-reqtext="Please enter your name"
+                                        autocomplete="off" class="layui-input input" lay-affix="clear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="tel" name="mobile" lay-verify="required | phone" lay-vertype="tips"
+                                        placeholder="Please enter your phone number*"
+                                        lay-reqtext="Please enter your phone number" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                                <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" name="email" lay-verify="required" lay-vertype="tips"
+                                        placeholder="Please enter your email" lay-reqtext="Please enter your email"
+                                        autocomplete="off" class="layui-input input" lay-affix="clear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-12 col-sm-12 col-xs-12">
+                                    <textarea name="message" placeholder="Message content*"
+                                        class="layui-textarea textarea" style="resize: none;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_box">
+                            <button class="layui-btn btn uppercase text-uppercase" lay-submit
+                                lay-filter="contact_us_btn">sned</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -341,6 +381,24 @@
         })
     });
 
+    const index_swiper = new Swiper('.index_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        // effect: 'fade',
+        loop: true,
+        speed: 1400,
+    })
+
+    $('.banner_arrow .prev').click(function () {
+        index_swiper.slidePrev();
+    })
+
+    $('.banner_arrow .next').click(function () {
+        index_swiper.slideNext();
+    })
+
     const date_swiper = new Swiper('.date_swiper', {
         autoplay: {
             delay: 3000,
@@ -371,39 +429,6 @@
             var value = data.elem.value;
             console.log('value', value);
             return false;
-        });
-    });
-
-
-    const toProduct = document.getElementById('toProduct');
-    const toService = document.getElementById('toService');
-    const h5_toProduct = document.getElementById('h5_toProduct');
-    const h5_toServe = document.getElementById('h5_toServe');
-    const serve_module = document.getElementById('serve_module');
-    const product_module = document.getElementById('product_module');
-
-    toService.addEventListener('click', () => {
-        serve_module.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest'
-        });
-    });
-
-    h5_toServe.addEventListener('click', () => {
-        serve_module.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest'
-        });
-        $('.h5_nav').stop().removeClass('h5_nav_active');
-    });
-
-    toProduct.addEventListener('click', () => {
-        product_module.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest'
         });
     });
 </script>

@@ -26,3 +26,20 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 检查URL中是否有hash
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                // 平滑滚动到目标位置
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center',
+                    inline: 'center'
+                });
+            }
+        }
+    });
+</script>
