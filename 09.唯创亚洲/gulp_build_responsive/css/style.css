@@ -892,22 +892,22 @@ body::-webkit-scrollbar-thumb:hover {
   display: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.product .category .category_list .li .son label {
+.product .category .category_list .li .son .link {
   cursor: pointer;
   padding: 7px 0;
 }
-.product .category .category_list .li .son label input {
+.product .category .category_list .li .son .link input {
   width: 20px;
   height: 20px;
   margin: 0;
   background: #303030;
 }
-.product .category .category_list .li .son label .text {
-  padding-left: 4px;
+.product .category .category_list .li .son .link .text {
+  padding-left: 10px;
   user-select: none;
   font-weight: 500;
 }
-.product .category .category_list .li .son label input[type="checkbox"] {
+.product .category .category_list .li .son .link input[type="checkbox"] {
   accent-color: #303030;
   width: 18px;
   height: 18px;

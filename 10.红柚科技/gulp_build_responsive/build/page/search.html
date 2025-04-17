@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    @@include('head.html')
+</head>
+
+<body style="background: #303030;">
+    @@include('header.html')
+    <div class="search container_padding">
+        <div class="container">
+            <div class="main">
+                <div class="head center_head">
+                    <h2 class="title" data-aos="slide-up">Search</h2>
+                </div>
+                <div class="search_form">
+                    <form class="layui-form" action="">
+                        <div class="content">
+                            <div class="box">
+                                <input type="text" name="search" lay-verify="required"
+                                    placeholder="Please enter keyword" lay-reqtext="Please enter keyword"
+                                    lay-vertype="tips" autocomplete="off" class="layui-input input">
+                                <button type="submit" class="layui-btn submit_btn" lay-submit lay-filter="submit">
+                                    <i class="iconfont icon-sousuo"></i>
+                                </button>
+                            </div>
+                            <div class="note">
+                                <a href="../../details.html" class="link">The Summer Day</a>
+                                <a href="../../details.html" class="link">Leather Perfume Suit</a>
+                                <a href="../../details.html" class="link">Star</a>
+                                <a href="../../details.html" class="link">Roam</a>
+                                <a href="../../details.html" class="link">Amoretti</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="height: 100px;"></div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+    })
+</script>
+
+</html>
