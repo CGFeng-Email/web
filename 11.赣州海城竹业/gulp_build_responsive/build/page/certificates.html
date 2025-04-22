@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Certificates</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    @@include('header_height.html')
+    <div class="certificates container_padding img_bg" style="background-image: url(../../img/certificates_bg.jpg);">
+        <div class="container">
+            <div class="head">
+                <h3 class="title text-uppercase">Certificates</h3>
+            </div>
+            <div class="main container_main">
+                <div class="list">
+                    <div class="item pointer" lay-on="honor_popup">
+                        <div class="cover_pad">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li1.png" alt="FSC certificate">
+                            </div>
+                        </div>
+                        <div class="name">FSC certificate</div>
+                    </div>
+                    <div class="item pointer" lay-on="honor_popup">
+                        <div class="cover_pad">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li2.png" alt="ISO9001 certificate">
+                            </div>
+                        </div>
+                        <div class="name">ISO9001 certificate</div>
+                    </div>
+                    <div class="item pointer" lay-on="honor_popup">
+                        <div class="cover_pad">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li3.png" alt="SGS">
+                            </div>
+                        </div>
+                        <div class="name">SGS</div>
+                    </div>
+                    <div class="item pointer" lay-on="honor_popup">
+                        <div class="cover_pad">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li4.png" alt="Business license">
+                            </div>
+                        </div>
+                        <div class="name">Business license</div>
+                    </div>
+                    <div class="item pointer" lay-on="honor_popup">
+                        <div class="cover_pad">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li5.png" alt="Permit">
+                            </div>
+                        </div>
+                        <div class="name">Permit</div>
+                    </div>
+                    <div class="item pointer" lay-on="honor_popup">
+                        <div class="cover_pad">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li6.png" alt="Certificate of Honor">
+                            </div>
+                        </div>
+                        <div class="name">Certificate of Honor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var layer = layui.layer;
+        var util = layui.util;
+
+        // 事件
+        util.on('lay-on', {
+            'honor_popup': function () {
+                layer.photos({
+                    photos: {
+                        "start": 0,
+                        "data": [
+                            {
+                                "alt": "FSC certificate",
+                                "src": "../../img/honor_li1.png",
+                            },
+                            {
+                                "alt": "ISO9001 certificate",
+                                "src": "../../img/honor_li2.png",
+                            },
+                            {
+                                "alt": "SGS",
+                                "src": "../../img/honor_li3.png",
+                            },
+                            {
+                                "alt": "Business license",
+                                "src": "../../img/honor_li4.png",
+                            },
+                            {
+                                "alt": "Permit",
+                                "src": "../../img/honor_li5.png",
+                            },
+                            {
+                                "alt": "Certificate of Honor",
+                                "src": "../../img/honor_li6.png",
+                            }
+                        ]
+                    }
+                });
+            }
+        })
+    });
+</script>
+
+</html>

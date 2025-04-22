@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    @@include('header_height.html')
+    <div class="service container_padding img_bg" style="background-image: url(../../img/section5.jpg);">
+        <div class="container">
+            <div class="head">
+                <h3 class="title text-uppercase" style="color: #fff;">Services</h3>
+            </div>
+            <div class="main container_main">
+                <div class="swiper-container service_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/service_li1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Storage Warehousing
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/service_li2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Logistics Services
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/service_li3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Quality Inspection
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/service_li4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Sourcing
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/service_li5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Product Development
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact container_padding img_bg" style="background-image: url(../../img/section6.jpg);">
+        <div class="container">
+            <div class="head">
+                <h3 class="title text-uppercase" style="color: #fff;">Contact Us</h3>
+            </div>
+            <div class="main container_main">
+                <div class="row">
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <div class="content">
+                            <h3 class="title">Ganzhou Haicheng Bamboo Industry Co., Ltd.</h3>
+                            <div class="lead">
+                                <i class="iconfont icon-dizhi1"></i>
+                                <span class="text">Office No.1, Zone A, Tianxin Industrial Park, Ganzhou,
+                                    Jiangxi, China</span>
+                            </div>
+                            <div class="lead">
+                                <i class="iconfont icon-dianhua1"></i>
+                                <span class="text">Tel：+86 189-0707-4486 / +86 189-4236-2384</span>
+                            </div>
+                            <div class="lead">
+                                <i class="iconfont icon-youjian"></i>
+                                <span class="text">E-mail：sales02@gzhc-bamboo.com</span>
+                            </div>
+                            <div class="lead">
+                                <i class="iconfont icon-guanwang"></i>
+                                <span class="text">URL：www.gzhc-bamboo.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <form class="layui-form form">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <label for="Company">
+                                            <span class="name">Company Name*</span>
+                                        </label>
+                                        <input type="text" name="Company" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Please enter the company name"
+                                            lay-reqtext="Please enter the company name" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                    <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                        <label for="Company">
+                                            <span class="name">Contacts*</span>
+                                        </label>
+                                        <input type="text" name="contact" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Please enter the contact person"
+                                            lay-reqtext="Please enter the contact person" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <label for="">
+                                            <span class="name">Phone Number*</span>
+                                        </label>
+                                        <input type="number" name="mobile" lay-verify="required | phone"
+                                            lay-vertype="tips" placeholder="Please enter your phone number"
+                                            lay-reqtext="Please enter your phone number" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                    <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                        <label for="">
+                                            <span class="name">E-mail*</span>
+                                        </label>
+                                        <input type="email" name="email" lay-verify="required | email"
+                                            lay-vertype="tips" placeholder="Please enter your email"
+                                            lay-reqtext="Please enter your email" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-12 col-sm-12 col-xs-12">
+                                        <label for="">
+                                            <span class="name">Message Content</span>
+                                        </label>
+                                        <textarea name="message"
+                                            placeholder="Enter the desired numbers here,Customization is always possible in consultation"
+                                            class="layui-textarea textarea" style="resize: none;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_box">
+                                <button class="layui-btn btn uppercase" lay-submit
+                                    lay-filter="contact_us_btn">Confirm</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(contact_us_btn)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    })
+
+    const service_swiper = new Swiper('.service_swiper', {
+        autoplay: {
+            delay: 50000000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        breakpoints: {
+            1200: {
+                slidesPerView: 4,
+            },
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<link rel="stylesheet" href="nprogress/nprogress.css">
+<link rel="stylesheet" href="font/iconfont.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="aos/aos.css">
+<link rel="stylesheet" href="fullpage/fullpage.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
+<link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="nprogress/nprogress.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="aos/aos.js"></script>
+<script src="fullpage/fullpage.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="swiper/js/swiper.animate1.0.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="layui/layui.min.js"></script>
+<script src="js/comment.js"></script>
+</head>
+
+<body>
+    <div class="header header_bottom" id="header">
+    <div class="content">
+        <div class="top_head">
+            <div class="container">
+                <div class="wrap justify_space">
+                    <h1 class="logo">
+                        <a href="index.html" class="link">
+                            <img class="cover" src="img/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <div class="right justify_end">
+                        <div class="function">
+                            <div class="item search_item circle animate">
+                                <a href="search.html" class="link">
+                                    <i class="iconfont icon-sousuo1"></i>
+                                </a>
+                            </div>
+                            <div class="language box_shadow animate">
+                                <div class="language_head animate flex_center">
+                                    <i class="iconfont icon-duoyuyan"></i>
+                                    <span class="text">English</span>
+                                    <i class="iconfont icon-xiala icon_bottom animate"></i>
+                                </div>
+                                <div class="language_list box_shadow">
+                                    <div class="language_li">
+                                        <a href="" class="link">
+                                            <img class="cover" src="img/la1.png" alt="">
+                                            <span class="text">简体中文</span>
+                                        </a>
+                                    </div>
+                                    <div class="language_li">
+                                        <a href="" class="link">
+                                            <img class="cover" src="img/la2.png" alt="">
+                                            <span class="text">English</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu">
+                                <div class="lis"></div>
+                                <div class="lis"></div>
+                                <div class="lis"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_navs">
+            <div class="container">
+                <div class="wrap">
+                    <div class="nav display_flex">
+                        <div class="li animate">
+                            <div class="box">
+                                <a href="index.html" class="link">
+                                    <div class="head_title  text-capitalize">Home</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="li animate">
+                            <div class="box">
+                                <a href="about.html" class="link">
+                                    <div class="head_title text-capitalize">About Us</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="li animate">
+                            <div class="box">
+                                <a href="product.html" class="link">
+                                    <div class="head_title animate text-capitalize">Products</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="li animate">
+                            <div class="box">
+                                <a href="service.html" class="link">
+                                    <div class="head_title animate text-capitalize">Services</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="li animate">
+                            <div class="box">
+                                <a href="certificates.html" class="link">
+                                    <div class="head_title animate text-capitalize">Certificates</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="li animate">
+                            <div class="box">
+                                <a href="news.html" class="link">
+                                    <div class="head_title animate text-capitalize">News</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="li animate">
+                            <div class="box">
+                                <a href="contact.html" class="link">
+                                    <div class="head_title animate text-capitalize">Contact Us</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="h5_nav">
+    <div class="li animate">
+        <div class="box">
+            <a href="index.html" class="link">
+                <div class="head_title">
+                    <span class="title">Home</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <a href="about.html" class="link">
+                <div class="head_title">
+                    <span class="title">About us</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <a href="product.html" class="link">
+                <div class="head_title">
+                    <span class="title">Products</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <a href="service.html" class="link">
+                <div class="head_title">
+                    <span class="title">Services</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <a href="certificates.html" class="link">
+                <div class="head_title">
+                    <span class="title">Certificates</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <a href="contact.html" class="link">
+                <div class="head_title">
+                    <span class="title">Contact Us</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="h5_language">
+            <div class="box">
+                <a href="" class="link">
+                    <img class="cover" src="img/la2.png" alt="">
+                    <span class="text">English</span>
+                </a>
+            </div>
+            <div class="box">
+                <a href="" class="link">
+                    <img class="cover" src="img/la1.png" alt="">
+                    <span class="text">简体中文</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    NProgress.start();
+
+    let isScroll = true;
+
+    // 锁定滚动
+    function lockScroll() {
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+        isScroll = false;
+    }
+
+    // 解锁滚动
+    function unlockScroll() {
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+        isScroll = true;
+    }
+
+    // h5导航菜单栏
+    $('.header .menu').click(function () {
+        if (isScroll) {
+            lockScroll();
+        } else {
+            unlockScroll();
+        }
+        $(this).stop().toggleClass('active');
+        $('.h5_nav').stop().toggleClass('h5_nav_active');
+    })
+
+    // h5导航栏二级栏目
+    $('.h5_nav .child_li .spread').click(function () {
+        $(this).children().stop().toggleClass('rotateIcon');
+        $(this).parents('.box').siblings('.child').stop().slideToggle();
+    })
+
+</script>
+    <div class="header_height"></div>
+    <div class="service container_padding img_bg" style="background-image: url(img/section5.jpg);">
+        <div class="container">
+            <div class="head">
+                <h3 class="title text-uppercase" style="color: #fff;">Services</h3>
+            </div>
+            <div class="main container_main">
+                <div class="swiper-container service_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/service_li1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Storage Warehousing
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/service_li2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Logistics Services
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/service_li3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Quality Inspection
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/service_li4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Sourcing
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="./news_details.html" class="link animate">
+                                <div class="box_pad">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/service_li5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="name over2">Product Development
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact container_padding img_bg" style="background-image: url(img/section6.jpg);">
+        <div class="container">
+            <div class="head">
+                <h3 class="title text-uppercase" style="color: #fff;">Contact Us</h3>
+            </div>
+            <div class="main container_main">
+                <div class="row">
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <div class="content">
+                            <h3 class="title">Ganzhou Haicheng Bamboo Industry Co., Ltd.</h3>
+                            <div class="lead">
+                                <i class="iconfont icon-dizhi1"></i>
+                                <span class="text">Office No.1, Zone A, Tianxin Industrial Park, Ganzhou,
+                                    Jiangxi, China</span>
+                            </div>
+                            <div class="lead">
+                                <i class="iconfont icon-dianhua1"></i>
+                                <span class="text">Tel：+86 189-0707-4486 / +86 189-4236-2384</span>
+                            </div>
+                            <div class="lead">
+                                <i class="iconfont icon-youjian"></i>
+                                <span class="text">E-mail：sales02@gzhc-bamboo.com</span>
+                            </div>
+                            <div class="lead">
+                                <i class="iconfont icon-guanwang"></i>
+                                <span class="text">URL：www.gzhc-bamboo.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <form class="layui-form form">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <label for="Company">
+                                            <span class="name">Company Name*</span>
+                                        </label>
+                                        <input type="text" name="Company" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Please enter the company name"
+                                            lay-reqtext="Please enter the company name" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                    <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                        <label for="Company">
+                                            <span class="name">Contacts*</span>
+                                        </label>
+                                        <input type="text" name="contact" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Please enter the contact person"
+                                            lay-reqtext="Please enter the contact person" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <label for="">
+                                            <span class="name">Phone Number*</span>
+                                        </label>
+                                        <input type="number" name="mobile" lay-verify="required | phone"
+                                            lay-vertype="tips" placeholder="Please enter your phone number"
+                                            lay-reqtext="Please enter your phone number" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                    <div class="box input_box col-md-6 col-sm-12 col-xs-12">
+                                        <label for="">
+                                            <span class="name">E-mail*</span>
+                                        </label>
+                                        <input type="email" name="email" lay-verify="required | email"
+                                            lay-vertype="tips" placeholder="Please enter your email"
+                                            lay-reqtext="Please enter your email" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-12 col-sm-12 col-xs-12">
+                                        <label for="">
+                                            <span class="name">Message Content</span>
+                                        </label>
+                                        <textarea name="message"
+                                            placeholder="Enter the desired numbers here,Customization is always possible in consultation"
+                                            class="layui-textarea textarea" style="resize: none;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_box">
+                                <button class="layui-btn btn uppercase" lay-submit
+                                    lay-filter="contact_us_btn">Confirm</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <div class="container">
+        <style>
+    .blogroll {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 0;
+    }
+
+    .blogroll .box {
+        padding: 0 7px;
+    }
+
+    .blogroll .box:first-child {
+        padding-left: 0;
+    }
+
+    .blogroll .link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .3);
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+
+        &:hover {
+            transform: translateY(-6px);
+            background: #fff;
+        }
+
+        &:hover .iconfont {
+            color: #77A035;
+        }
+    }
+
+    .blogroll .iconfont {
+        font-size: 22px;
+    }
+</style>
+
+<div class="blogroll">
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-skype"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-shejiaotubiao-14"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-youtobe"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-facebook"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-instagram-fill"></i>
+        </a>
+    </div>
+</div>
+        <div class="copyright">
+            <span>Copyright &copy; 2025 All Rights Reserved Ganzhou Haicheng Bamboo Industry Co., Ltd.
+            </span>
+            <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery" class="link">Guangdong ICP No. 10083690</a>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(contact_us_btn)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    })
+
+    const service_swiper = new Swiper('.service_swiper', {
+        autoplay: {
+            delay: 50000000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        breakpoints: {
+            1200: {
+                slidesPerView: 4,
+            },
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        }
+    })
+</script>
+
+</html>

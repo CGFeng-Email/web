@@ -237,22 +237,22 @@
                             <div class="product_swiper">
                                 <div class="swiper-container product_demo box_shadow box_radius">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide item">
+                                        <div class="swiper-slide item pointer" lay-on="open_popup">
                                             <div class="cover_box">
                                                 <img class="cover" src="img/product_li1.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="swiper-slide item">
+                                        <div class="swiper-slide item pointer" lay-on="open_popup">
                                             <div class="cover_box">
                                                 <img class="cover" src="img/product_li2.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="swiper-slide item">
+                                        <div class="swiper-slide item pointer" lay-on="open_popup">
                                             <div class="cover_box">
                                                 <img class="cover" src="img/product_li3.png" alt="">
                                             </div>
                                         </div>
-                                        <div class="swiper-slide item">
+                                        <div class="swiper-slide item pointer" lay-on="open_popup">
                                             <div class="cover_box">
                                                 <img class="cover" src="img/product_li4.png" alt="">
                                             </div>
@@ -263,22 +263,26 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide item box_shadow box_radius active">
                                             <div class="cover_box">
-                                                <img class="cover" src="img/product_li1.png" alt="">
+                                                <img class="cover" src="img/product_li1.png"
+                                                    alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide item box_shadow box_radius">
                                             <div class="cover_box">
-                                                <img class="cover" src="img/product_li2.png" alt="">
+                                                <img class="cover" src="img/product_li2.png"
+                                                    alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide item box_shadow box_radius">
                                             <div class="cover_box">
-                                                <img class="cover" src="img/product_li3.png" alt="">
+                                                <img class="cover" src="img/product_li3.png"
+                                                    alt="">
                                             </div>
                                         </div>
                                         <div class="swiper-slide item box_shadow box_radius">
                                             <div class="cover_box">
-                                                <img class="cover" src="img/product_li4.png" alt="">
+                                                <img class="cover" src="img/product_li4.png"
+                                                    alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -647,6 +651,40 @@
             }
         }
     })
+
+    layui.use(function () {
+        var layer = layui.layer;
+        var util = layui.util;
+        // 事件
+        util.on('lay-on', {
+            'open_popup': function () {
+                layer.photos({
+                    photos: {
+                        "start": 0,
+                        "data": [
+                            {
+                                "alt": "Features",
+                                "src": "img/product_li1.png",
+                            },
+                            {
+                                "alt": "NS-QH1616T",
+                                "src": "img/product_li1.png",
+                            },
+                            {
+                                "alt": "FSC",
+                                "src": "img/product_li1.png",
+                            },
+                            {
+                                "alt": "SEDEX",
+                                "src": "img/product_li1.png",
+                            }
+                        ]
+                    }
+                });
+            }
+        })
+    });
+
 </script>
 
 </html>
