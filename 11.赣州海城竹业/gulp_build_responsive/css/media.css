@@ -371,6 +371,7 @@
   #fullpage .product_dom .common_swiper .item .link,
   #fullpage .service_dom .common_swiper .item .link {
     padding: 0;
+    height: auto;
   }
   #fullpage .product_dom .common_swiper .item .link .box_pad,
   #fullpage .service_dom .common_swiper .item .link .box_pad {
@@ -389,6 +390,12 @@
   #fullpage .product_dom .common_swiper .item .link .name,
   #fullpage .service_dom .common_swiper .item .link .name {
     font-size: 14px;
+  }
+  #fullpage .honor_section .center_box {
+    height: 56vh;
+  }
+  #fullpage .honor_dom .honor_swiper .item .cover_box {
+    height: 250px;
   }
   #fullpage .honor_dom .honor_swiper .item .name {
     font-size: 14px;
@@ -532,8 +539,10 @@
     font-size: 14px;
   }
   .certificates .list .item {
-    width: 50%;
     margin-bottom: 0;
+  }
+  .certificates .list .item .cover_pad .cover_box {
+    height: 240px;
   }
   .certificates .list .item .name {
     font-size: 14px;
