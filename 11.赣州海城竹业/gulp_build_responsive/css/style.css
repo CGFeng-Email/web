@@ -1166,7 +1166,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
   margin: 10px 0;
   font-size: 20px;
-  color: #fff;
+  color: #000;
 }
 .production .list .item:hover .cover {
   transform: scale(1.07);
@@ -1447,18 +1447,20 @@ body::-webkit-scrollbar-thumb:hover {
 .service .service_swiper .item .link:hover .name {
   color: #425D16;
 }
-.certificates .list {
-  display: flex;
-  flex-wrap: wrap;
-}
 .certificates .list .item {
-  padding: 10px;
   margin-bottom: 30px;
   text-align: center;
 }
 .certificates .list .item .cover_pad {
   padding: 6px;
   background: #fff;
+}
+.certificates .list .item .cover_pad .cover_box {
+  height: 340px;
+}
+.certificates .list .item .cover_pad .cover_box .cover {
+  height: 100%;
+  object-fit: contain;
 }
 .certificates .list .item .name {
   font-size: 16px;

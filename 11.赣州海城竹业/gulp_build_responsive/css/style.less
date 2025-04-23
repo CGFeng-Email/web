@@ -1501,7 +1501,7 @@ body::-webkit-scrollbar-thumb:hover {
                 text-align: center;
                 margin: 10px 0;
                 font-size: 20px;
-                color: #fff;
+                color: #000;
             }
 
             &:hover {
@@ -1888,17 +1888,22 @@ body::-webkit-scrollbar-thumb:hover {
 
 .certificates {
     .list {
-        display: flex;
-        flex-wrap: wrap;
-
         .item {
-            padding: 10px;
             margin-bottom: 30px;
             text-align: center;
 
             .cover_pad {
                 padding: 6px;
                 background: #fff;
+
+                .cover_box {
+                    height: 340px;
+
+                    .cover {
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
             }
 
             .name {
