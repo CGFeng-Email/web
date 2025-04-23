@@ -437,7 +437,8 @@ body::-webkit-scrollbar-thumb:hover {
         }
 
         &:hover {
-            color: @primaryColor;
+            color: #fff;
+            background: @minorColor;
         }
     }
 }
@@ -519,7 +520,7 @@ body::-webkit-scrollbar-thumb:hover {
             .box {
                 display: flex;
                 align-items: center;
-                
+
             }
 
             .input {
@@ -1012,15 +1013,14 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
     .section_height {
-        padding-top: 147px;
         width: 100%;
         height: 100%;
     }
 
     .common_section {
         .fp-overflow {
-            height: 100vh !important;
             overflow: hidden;
+            height: 100%;
         }
     }
 
@@ -1029,6 +1029,7 @@ body::-webkit-scrollbar-thumb:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 147px;
 
         .center_box {
             height: 60vh;
@@ -1110,11 +1111,17 @@ body::-webkit-scrollbar-thumb:hover {
                         }
 
                         .name {
-                            color: #000;
+                            color: @minorColor;
                         }
                     }
                 }
             }
+        }
+    }
+
+    .honor_section {
+        .center_box {
+            height: 64vh;
         }
     }
 
@@ -1124,10 +1131,11 @@ body::-webkit-scrollbar-thumb:hover {
 
                 .cover_box {
                     text-align: center;
+                    height: 340px;
 
                     .cover {
                         object-fit: contain;
-                        max-height: 370px;
+                        height: 100%;
                     }
                 }
 
@@ -1143,7 +1151,7 @@ body::-webkit-scrollbar-thumb:hover {
 
     .news_section {
         .center_box {
-            height: 66vh;
+            height: 72vh;
         }
     }
 
@@ -1249,9 +1257,10 @@ body::-webkit-scrollbar-thumb:hover {
 
             .btn {
                 width: 100%;
-                background: @primaryColor;
+                background: @minorColor;
                 border: none;
                 font-size: 18px;
+                color: #fff;
             }
         }
     }
@@ -1991,6 +2000,7 @@ body::-webkit-scrollbar-thumb:hover {
 
             .icon {
                 line-height: 1.2;
+
                 .iconfont {
                     font-size: 44px;
                     color: @primaryColor;

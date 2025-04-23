@@ -347,7 +347,8 @@ body::-webkit-scrollbar-thumb:hover {
   padding-left: 4px;
 }
 .more .link:hover {
-  color: #77A035;
+  color: #fff;
+  background: #425D16;
 }
 .author {
   padding: 20px 0;
@@ -806,19 +807,19 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0;
 }
 #fullpage .section_height {
-  padding-top: 147px;
   width: 100%;
   height: 100%;
 }
 #fullpage .common_section .fp-overflow {
-  height: 100vh !important;
   overflow: hidden;
+  height: 100%;
 }
 #fullpage .section_center {
   display: flex !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 147px;
 }
 #fullpage .section_center .center_box {
   height: 60vh;
@@ -894,14 +895,18 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #fullpage .product_dom .common_swiper .item .link:hover .name,
 #fullpage .service_dom .common_swiper .item .link:hover .name {
-  color: #000;
+  color: #425D16;
+}
+#fullpage .honor_section .center_box {
+  height: 64vh;
 }
 #fullpage .honor_dom .honor_swiper .item .cover_box {
   text-align: center;
+  height: 340px;
 }
 #fullpage .honor_dom .honor_swiper .item .cover_box .cover {
   object-fit: contain;
-  max-height: 370px;
+  height: 100%;
 }
 #fullpage .honor_dom .honor_swiper .item .name {
   font-size: 20px;
@@ -910,7 +915,7 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
 }
 #fullpage .news_section .center_box {
-  height: 66vh;
+  height: 72vh;
 }
 #fullpage .news_dom .information_list {
   padding: 40px 0 0;
@@ -988,9 +993,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #fullpage .contact_section .form .btn {
   width: 100%;
-  background: #77A035;
+  background: #425D16;
   border: none;
   font-size: 18px;
+  color: #fff;
 }
 .fp-watermark {
   display: none !important;
