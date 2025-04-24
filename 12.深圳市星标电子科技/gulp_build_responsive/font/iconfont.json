@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "7577443",
+      "name": "24gf-shieldCheck",
+      "font_class": "24gf-shieldCheck",
+      "unicode": "e9d9",
+      "unicode_decimal": 59865
+    },
+    {
+      "icon_id": "1876334",
+      "name": "客户群组",
+      "font_class": "kehuqunzu",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "21319044",
+      "name": "工人维护",
+      "font_class": "gongrenweihu",
+      "unicode": "e6f6",
+      "unicode_decimal": 59126
+    },
+    {
       "icon_id": "2198850",
       "name": "度量",
       "font_class": "duliang",

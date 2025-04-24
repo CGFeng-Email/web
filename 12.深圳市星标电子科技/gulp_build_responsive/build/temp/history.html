@@ -1,0 +1,221 @@
+<div class="history img_bg" style="background-image: url(../../img/history_bg.jpg);">
+    <div class="container">
+        <h3 class="title">Development History</h3>
+        <h4 class="sub_head">One-stop thoughtful service that eliminates all your worries！</h4>
+
+        <div class="swiper-container history_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide item animate">
+                    <div class="box">
+                        <div class="year">2017</div>
+                        <div class="name">July：</div>
+                        <div class="lead">business formation</div>
+                        <div class="name">December：</div>
+                        <div class="lead">Obtained ISO9001 quality management system ISO14001 Environmental Management
+                            System Certification</div>
+                        <div class="lead">Successfully imported into the customer's subsidiary of State Grid Corporation
+                            of China</div>
+                        <div class="lead">Shenzhen Guodian Technology Communication Co., Ltd</div>
+                    </div>
+                </div>
+                <div class="swiper-slide item animate">
+                    <div class="box">
+                        <div class="year">2020</div>
+                        <div class="name">July：</div>
+                        <div class="lead">Successfully expanded production to 10000 square meters through IATF16949
+                            certification during the same period</div>
+                        <div class="name">December：</div>
+                        <div class="lead">Obtained National High tech Enterprise Certification</div>
+                    </div>
+                </div>
+                <div class="swiper-slide item animate">
+                    <div class="box">
+                        <div class="year">2021</div>
+                        <div class="name">July：</div>
+                        <div class="lead">Successfully expanded production to 10000 square meters through IATF16949
+                            certification during the same period</div>
+                        <div class="name">December：</div>
+                        <div class="lead">Obtained National High tech Enterprise Certification</div>
+                    </div>
+                </div>
+                <div class="swiper-slide item animate">
+                    <div class="box">
+                        <div class="year">2022</div>
+                        <div class="name">July：</div>
+                        <div class="lead">Successfully expanded production to 10000 square meters through IATF16949
+                            certification during the same period</div>
+                        <div class="name">December：</div>
+                        <div class="lead">Obtained National High tech Enterprise Certification</div>
+                    </div>
+                </div>
+                <div class="swiper-slide item animate">
+                    <div class="box">
+                        <div class="year">2023</div>
+                        <div class="name">July：</div>
+                        <div class="lead">Successfully expanded production to 10000 square meters through IATF16949
+                            certification during the same period</div>
+                        <div class="name">December：</div>
+                        <div class="lead">Obtained National High tech Enterprise Certification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .history {
+        padding: 120px 0 40px;
+        background-position: bottom center;
+
+        .title {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .sub_head {
+            color: #fff;
+        }
+
+        .history_swiper {
+            margin: 0 40px;
+            overflow: hidden;
+            height: 700px;
+            padding: 10px 0;
+
+            .item {
+                padding: 0 10px;
+
+                .box {
+                    position: relative;
+                    height: 340px;
+                    border-left: 1px dashed #fff;
+                    padding-left: 24px;
+
+                    .name {
+                        font-size: 20px;
+                        color: #fff;
+                        padding: 4px 0;
+                    }
+
+                    .year {
+                        font-size: 34px;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+
+                    .lead {
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: #fff;
+                        margin-top: 10px;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: -4px;
+                        top: 0;
+                        width: 7px;
+                        height: 44px;
+                        border-radius: 3px;
+                        background: #fff;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: -12px;
+                        bottom: 0;
+                        width: 24px;
+                        height: 24px;
+                        background: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+                    }
+                }
+            }
+
+            .swiper-slide-active,
+            .swiper-slide-prev {
+                margin-top: 326px;
+            }
+
+            .swiper-slide-next {
+                margin-top: 184px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .history {
+            padding: 30px 0;
+
+            .title {
+                margin-bottom: 0;
+            }
+
+            .history_swiper {
+                height: auto;
+                margin: 0;
+                padding: 0 10px;
+
+                .item {
+                    .box {
+                        height: 240px;
+                        padding: 0 10px 0 20px;
+
+
+                        &::before {
+                            height: 20px;
+                        }
+
+                        &::after {
+                            width: 16px;
+                            height: 16px;
+                            left: -8px;
+                        }
+
+                        .year {
+                            font-size: 26px;
+                        }
+
+                        .lead {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+
+                .swiper-slide-active,
+                .swiper-slide-prev {
+                    margin-top: 100px;
+                }
+
+                .swiper-slide-next {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+</style>
+
+<script>
+    var history_swiper = new Swiper(".history_swiper", {
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        slidesPerView: 3,
+        spaceBetween: 10,
+        breakpoints: {
+            968: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+            },
+        },
+    });
+</script>

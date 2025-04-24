@@ -6,6 +6,14 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+@media screen and (max-width: 1600px) {
+    .get_quote {
+        .main {
+            width: 90%;
+        }
+    }
+}
+
 @media screen and (max-width: 1280px) {
     .header {
         .content {
@@ -222,6 +230,92 @@
             }
         }
     }
+
+    .product_positioning {
+        .common_box {
+            height: auto;
+        }
+
+        .content {
+            padding: 10% 5%;
+        }
+
+        .row:nth-child(odd) {
+            flex-flow: column-reverse;
+        }
+
+        .row:nth-child(even) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .get_quote {
+        .main {
+            .form {
+                .wrap {
+                    flex-wrap: wrap;
+
+                    .input_item,
+                    .input_message {
+                        width: 50%;
+                        margin-top: 10px;
+
+                        .box {
+                            height: 50px;
+                            line-height: 50px;
+
+                            .input {
+                                height: 46px;
+                                line-height: 46px;
+                            }
+                        }
+                    }
+
+                    .input_message {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+
+                    .input_submit {
+                        width: 100%;
+
+                        .btn {
+                            height: 46px;
+                            line-height: 46px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .global {
+        .main {
+            .wrap {
+                width: 100%;
+
+                .box {
+                    margin-bottom: 20px;
+
+                    .num {
+                        font-size: 42px;
+                    }
+
+                    .text {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .corporate_culture {
+        .list {
+            .box {
+                min-height: 300px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -422,6 +516,115 @@
 
                 .sub_head {
                     font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .product {
+        .main {
+            .product_swiper {
+                padding: 0;
+
+                .item {
+                    .link {
+                        .cover_box {
+                            .cover {
+                                height: 200px;
+                            }
+                        }
+
+                        .name {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .product_positioning {
+        .content {
+            padding: 8% 5%;
+
+            .sub_head {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .news_recommend {
+        .news_recommend_swiper {
+            .item {
+                .link {
+                    .cover_box {
+                        height: 230px;
+                    }
+
+                    .content {
+                        .name {
+                            font-size: 16px;
+                        }
+
+                        .lead {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .get_quote {
+        .main {
+            width: 100%;
+
+            .form {
+                margin-top: 10px;
+
+                .wrap {
+                    .item {
+                        width: 100%;
+                    }
+
+                    .input_submit {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .my_company {
+        .main {
+            width: 100%;
+        }
+    }
+
+    .corporate_culture {
+        .list {
+            padding: 0;
+
+            .box {
+                background: linear-gradient(90.00deg, #1da8ff 0%, #0372f9 100%);
+                margin-bottom: 10px;
+                min-height: auto;
+                padding: 30px 20px;
+
+                .lead {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .honor {
+        .main {
+            .box {
+                margin-bottom: 10px;
+
+                .cover_box {
+                    height: 240px;
                 }
             }
         }

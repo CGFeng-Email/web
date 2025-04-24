@@ -1,0 +1,63 @@
+<div class="get_quote">
+    <div class="cover_box">
+        <img class="cover" src="../../img/get_quote.jpg" alt="service">
+    </div>
+    <div class="service">
+        <img class="cover" src="../../img/service.png" alt="service">
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="head" style="width: 100%;">
+                <h2 class="title" style="text-align: left;">Get the latest industry news</h2>
+                <h3 class="sub_head" style="text-align: left; color: #fff;">With a very strong one in prototype manufacture field,we
+                    are sure that we can do a great job for you!</h2>
+            </div>
+            <div class="form">
+                <form class="layui-form" action="">
+                    <div class="wrap">
+                        <div class="item input_item">
+                            <div class="box box_radius">
+                                <i class="iconfont icon-yonghu"></i>
+                                <input type="text" name="name" lay-verify="required" placeholder="Your Name"
+                                    lay-reqtext="Your Name" lay-vertype="tips" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="item input_item">
+                            <div class="box box_radius">
+                                <i class="iconfont icon-youxiang"></i>
+                                <input type="text" name="email" lay-verify="required|email" placeholder="E-mail"
+                                    lay-reqtext="E-mail" lay-vertype="tips" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="item input_message">
+                            <div class="box box_radius">
+                                <i class="iconfont icon-zixunliuyan"></i>
+                                <input type="text" name="name" lay-verify="required" placeholder="Message Content"
+                                    lay-reqtext="Message Content" lay-vertype="tips" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="item submit input_submit">
+                            <button class="layui-btn btn text-uppercase box_radius" lay-submit
+                                lay-filter="quote_submit">sending</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        // 提交事件
+        form.on('submit(quote_submit)', function (data) {
+            var field = data.field;
+            return false; // 阻止默认 form 跳转
+        });
+    });
+</script>
