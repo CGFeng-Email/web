@@ -65,6 +65,10 @@
   .modal .modal-dialog .modal-body .pad_bottom {
     padding-bottom: 10px;
   }
+  .more .link {
+    height: 44px;
+    line-height: 44px;
+  }
   .search .head .title {
     font-size: 38px;
   }
@@ -128,6 +132,9 @@
     max-width: 240px;
     margin: 0;
   }
+  .about .main .content {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -144,6 +151,13 @@
   }
   .head .sub_title {
     padding: 0;
+  }
+  .more {
+    padding-top: 10px;
+  }
+  .more .link {
+    font-size: 14px;
+    padding: 0 20px;
   }
   .tabs {
     padding: 10px 0 0;
@@ -182,6 +196,12 @@
   }
   .header .content .wrap {
     padding: 0 10px;
+  }
+  .header .content .wrap .function .item .link {
+    min-width: 26px;
+  }
+  .header .content .wrap .function .item .link .iconfont {
+    font-size: 16px;
   }
   .index_swiper .item .content {
     width: 100%;
@@ -242,5 +262,11 @@
     width: 100%;
     justify-content: center;
     margin-bottom: 4px;
+  }
+  .about .main .content {
+    padding: 0;
+  }
+  .about .main .content .sub_head {
+    font-size: 14px;
   }
 }

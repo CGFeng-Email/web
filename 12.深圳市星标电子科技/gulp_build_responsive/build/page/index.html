@@ -45,6 +45,88 @@
             </div>
         </div>
     </div>
+    <div class="about container_padding img_bg" style="background-image: url(../../img/about_bg.jpg);">
+        <div class="container initpadding">
+            <div class="main">
+                <div class="row">
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <div class="content">
+                            <h2 class="title">About us</h2>
+                            <h3 class="sub_head">Shenzhen Xingbiao Electronic <br> Technology Co., Ltd.</h3>
+                            <p class="lead">
+                                was established in 2017 as a processing and service-oriented enterprise engaged in the
+                                research and development, production, and sales of various emerging high-tech consumer
+                                electronics products and robots. It has established a product supply system with
+                                Shenzhen as its headquarters, integrating research, production, and sales. It has two
+                                research and development centers, one marketing center, and five factories (two
+                                domestically and three overseas). Its products are exported to more than 20 countries
+                                and regions around the world, covering more than 400 cities worldwide. It is one of the
+                                excellent enterprises in Shenzhen's "Made in China" strategy for going global.
+                            </p>
+                            <div class="more">
+                                <a href="../../about.html" class="link box_radius">
+                                    <span class="text">Learn More</span>
+                                    <i class="iconfont icon-you"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <video class="box_radius box_shadow" src="../../video/65625165acc5c8013b0832c192237462.mp4"
+                            preload="auto" controls></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product container_padding">
+        <div class="container">
+            <div class="head">
+                <h2 class="title text-uppercase">Featured Products</h2>
+                <div class="sub_head">we are enjoying a good reputation in this Rapid Prototype area.</div>
+            </div>
+            <div class="swiper-container product_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item">
+                        <a href="./news_details.html" class="link box_radius box_shadow animate">
+                            <div class="date">2025-04-03</div>
+                            <div class="cover_box box_radius">
+                                <img class="cover" src="../../img/news_li1.png" alt="">
+                            </div>
+                            <div class="name">Leverage our expertise to create safer, reliable, and health-conscious...
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item">
+                        <a href="./news_details.html" class="link box_radius box_shadow animate">
+                            <div class="date">2025-04-03</div>
+                            <div class="cover_box box_radius">
+                                <img class="cover" src="../../img/news_li2.png" alt="">
+                            </div>
+                            <div class="name">Leverage our expertise to create safer, reliable, and health-conscious...
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide item">
+                        <a href="./news_details.html" class="link box_radius box_shadow animate">
+                            <div class="date">2025-04-03</div>
+                            <div class="cover_box box_radius">
+                                <img class="cover" src="../../img/news_li3.png" alt="">
+                            </div>
+                            <div class="name">Leverage our expertise to create safer, reliable, and health-conscious...
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="more" style="text-align: center;">
+                <a href="./news_details.html" class="link box_radius" style="width: auto;">
+                    <span class="text">Detail</span>
+                    <i class="iconfont icon-arrowRight"></i>
+                </a>
+            </div>
+        </div>
+    </div>
     @@include('footer.html')
 </body>
 <script>
@@ -67,6 +149,31 @@
         }
     })
 
+
+    const product_swiper = new Swiper('.product_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        breakpoints: {
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        }
+    })
 </script>
 
 </html>

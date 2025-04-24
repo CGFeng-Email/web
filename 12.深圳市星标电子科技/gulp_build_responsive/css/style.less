@@ -131,6 +131,10 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0 10px;
 }
 
+.initpadding {
+    padding: 0;
+}
+
 .row {
     margin: 0;
 }
@@ -396,7 +400,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .more {
-    padding-top: 30px;
+    padding-top: 20px;
 
     .link {
         height: 50px;
@@ -1020,6 +1024,78 @@ body::-webkit-scrollbar-thumb:hover {
                 font-size: 16px;
                 line-height: 1.5;
                 font-weight: normal;
+            }
+        }
+
+    }
+}
+
+.about {
+    .content {
+        padding-right: 40px;
+
+        .title {
+            color: @minorColor;
+            line-height: 1.5;
+            margin-bottom: 7px;
+        }
+
+        .sub_head {
+            line-height: 1.5;
+        }
+
+        .lead {
+            line-height: 1.8;
+            word-break: break-word;
+            padding: 10px 0;
+        }
+
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+.product {
+    .product_swiper {
+        padding: 10px;
+
+        .item {
+            .link {
+                padding: 20px;
+                background: #F6F6F6;
+
+                .date {
+                    color: @primaryColor;
+                    margin-bottom: 10px;
+                }
+
+                .cover {
+                    height: 240px;
+                }
+
+                .name {
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin-top: 10px;
+                }
+
+                &:hover {
+                    background: @primaryColor;
+
+                    .cover {
+                        transform: scale(1.05);
+                    }
+
+                    .date {
+                        color: #fff;
+                    }
+
+                    .name {
+                        color: #fff;
+                    }
+                }
             }
         }
 
