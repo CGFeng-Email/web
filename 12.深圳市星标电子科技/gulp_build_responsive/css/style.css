@@ -103,6 +103,9 @@ body::-webkit-scrollbar-thumb:hover {
   margin: auto;
   padding: 0 10px;
 }
+.initpadding {
+  padding: 0;
+}
 .row {
   margin: 0;
 }
@@ -310,7 +313,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
 }
 .more {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .more .link {
   height: 50px;
@@ -813,4 +816,54 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
+}
+.about .content {
+  padding-right: 40px;
+}
+.about .content .title {
+  color: #0A80FA;
+  line-height: 1.5;
+  margin-bottom: 7px;
+}
+.about .content .sub_head {
+  line-height: 1.5;
+}
+.about .content .lead {
+  line-height: 1.8;
+  word-break: break-word;
+  padding: 10px 0;
+}
+.about video {
+  width: 100%;
+}
+.product .product_swiper {
+  padding: 10px;
+}
+.product .product_swiper .item .link {
+  padding: 20px;
+  background: #F6F6F6;
+}
+.product .product_swiper .item .link .date {
+  color: linear-gradient(90deg, #1da8ff 0%, #0372f9 100%);
+  margin-bottom: 10px;
+}
+.product .product_swiper .item .link .cover {
+  height: 240px;
+}
+.product .product_swiper .item .link .name {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.product .product_swiper .item .link:hover {
+  background: linear-gradient(90deg, #1da8ff 0%, #0372f9 100%);
+}
+.product .product_swiper .item .link:hover .cover {
+  transform: scale(1.05);
+}
+.product .product_swiper .item .link:hover .date {
+  color: #fff;
+}
+.product .product_swiper .item .link:hover .name {
+  color: #fff;
 }
