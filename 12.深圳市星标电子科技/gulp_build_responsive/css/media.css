@@ -1,3 +1,8 @@
+@media screen and (max-width: 1600px) {
+  .get_quote .main {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 1280px) {
   .header .content {
     padding: 0;
@@ -135,6 +140,62 @@
   .about .main .content {
     margin-bottom: 20px;
   }
+  .product_positioning .common_box {
+    height: auto;
+  }
+  .product_positioning .content {
+    padding: 10% 5%;
+  }
+  .product_positioning .row:nth-child(odd) {
+    flex-flow: column-reverse;
+  }
+  .product_positioning .row:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .get_quote .main .form .wrap {
+    flex-wrap: wrap;
+  }
+  .get_quote .main .form .wrap .input_item,
+  .get_quote .main .form .wrap .input_message {
+    width: 50%;
+    margin-top: 10px;
+  }
+  .get_quote .main .form .wrap .input_item .box,
+  .get_quote .main .form .wrap .input_message .box {
+    height: 50px;
+    line-height: 50px;
+  }
+  .get_quote .main .form .wrap .input_item .box .input,
+  .get_quote .main .form .wrap .input_message .box .input {
+    height: 46px;
+    line-height: 46px;
+  }
+  .get_quote .main .form .wrap .input_message {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .get_quote .main .form .wrap .input_submit {
+    width: 100%;
+  }
+  .get_quote .main .form .wrap .input_submit .btn {
+    height: 46px;
+    line-height: 46px;
+  }
+  .global .main .wrap {
+    width: 100%;
+  }
+  .global .main .wrap .box {
+    margin-bottom: 20px;
+  }
+  .global .main .wrap .box .num {
+    font-size: 42px;
+  }
+  .global .main .wrap .box .text {
+    font-size: 14px;
+  }
+  .corporate_culture .list .box {
+    min-height: 300px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -268,5 +329,62 @@
   }
   .about .main .content .sub_head {
     font-size: 14px;
+  }
+  .product .main .product_swiper {
+    padding: 0;
+  }
+  .product .main .product_swiper .item .link .cover_box .cover {
+    height: 200px;
+  }
+  .product .main .product_swiper .item .link .name {
+    font-size: 14px;
+  }
+  .product_positioning .content {
+    padding: 8% 5%;
+  }
+  .product_positioning .content .sub_head {
+    font-size: 20px;
+  }
+  .news_recommend .news_recommend_swiper .item .link .cover_box {
+    height: 230px;
+  }
+  .news_recommend .news_recommend_swiper .item .link .content .name {
+    font-size: 16px;
+  }
+  .news_recommend .news_recommend_swiper .item .link .content .lead {
+    font-size: 14px;
+  }
+  .get_quote .main {
+    width: 100%;
+  }
+  .get_quote .main .form {
+    margin-top: 10px;
+  }
+  .get_quote .main .form .wrap .item {
+    width: 100%;
+  }
+  .get_quote .main .form .wrap .input_submit {
+    padding: 0;
+  }
+  .my_company .main {
+    width: 100%;
+  }
+  .corporate_culture .list {
+    padding: 0;
+  }
+  .corporate_culture .list .box {
+    background: linear-gradient(90deg, #1da8ff 0%, #0372f9 100%);
+    margin-bottom: 10px;
+    min-height: auto;
+    padding: 30px 20px;
+  }
+  .corporate_culture .list .box .lead {
+    color: #fff;
+  }
+  .honor .main .box {
+    margin-bottom: 10px;
+  }
+  .honor .main .box .cover_box {
+    height: 240px;
   }
 }
