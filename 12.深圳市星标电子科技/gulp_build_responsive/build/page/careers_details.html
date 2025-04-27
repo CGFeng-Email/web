@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Careers Details</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="../../img/news_banner.jpg" alt="">
+        </div>
+    </div>
+    <div class="details container_padding" style="background: #F4FBF9;">
+        <div class="container">
+            <div class="main">
+                <div class="product_explain">
+                    <div class="row">
+                        <div class="col_md col-md-5 col-sm-7 col-xs-12">
+                            <div class="swiper-container details_product_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide item">
+                                        <div class="cover_box box_radius box_shadow">
+                                            <img class="cover" src="../../img/news_details.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <div class="cover_box box_radius box_shadow">
+                                            <img class="cover" src="../../img/news_details.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <div class="icon box_shadow animate">
+                                        <i class="iconfont icon-left-1"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <div class="icon box_shadow animate">
+                                        <i class="iconfont icon-right-1-copy"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                            <div class="content">
+                                <h3 class="title text-capitalize">Engineering</h3>
+                                <div class="line">
+                                    <div class="t_l"></div>
+                                </div>
+                                <div class="lead">
+                                    We have career opportunities for applications, development, design, electrical,
+                                    manufacturing, mechanical, process, project, software, systems, chemical and
+                                    biomedical engineers and more.
+                                </div>
+                                <div class="contact_btn_wrap">
+                                    <a href="" class="btn link box_shadow">Contact Us</a>
+                                    <a href="javascript:history.back()" class="btn link box_shadow">Return</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="introduce container_padding">
+            <div class="container">
+                <div class="head">
+                    <h2 class="title">Job Introduction</h2>
+                </div>
+                <hr>
+                <div class="main">
+                    <div class="lead">
+                        Xingbiao moves the world by applying advanced electromechanical, hydraulic and pneumatic
+                        technologies, with a full complement of fluid control systems; software and electronic controls;
+                        filtration systems; and instrumentation and sealing technologies. Our engineers operate at the
+                        forefront of motion and control technologies, pioneering advancements in areas such as
+                        aerospace, hydraulics, automation and life sciences. They design premium components and systems
+                        that contribute to the success of our customers, protect the environment and improve quality of
+                        life.
+                        <br>
+                        Xingbiao employs engineers in many disciplines:
+                        <br>
+                        Applications
+                        <br>
+                        Biomedical
+                        <br>
+                        Chemical
+                        <br>
+                        Design
+                        <br>
+                        Development
+                        <br>
+                        Electrical
+                        <br>
+                        Integrity
+                        <br>
+                        Manufacturing
+                        <br>
+                        Mechanical
+                        <br>
+                        Process
+                        <br>
+                        Software
+                        <br>
+                        Systems
+                        <br>
+                        Our engineering career paths offers advancement opportunities along three tracks: engineering
+                        management, program or project management or technical expert. You can grow your career through
+                        leadership of others or through leadership in technology.
+                        <br>
+                        Positions include:
+                        <br>
+                        Engineering supervisor, manager or director
+                        <br>
+                        Engineer, principle engineer, senior research engineer, chief innovation and technology engineer
+                        <br>
+                        Project manager, program manager or program director
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    const details_product_swiper = new Swiper('.details_product_swiper', {
+        autoplay: {
+            delay: 60000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1200,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+</script>
+
+</html>

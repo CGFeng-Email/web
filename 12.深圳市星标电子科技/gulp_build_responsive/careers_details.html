@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Search</title>
+    <title>Careers Details</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -262,36 +262,120 @@
         $(this).parents('.box').siblings('.child').stop().slideToggle();
     })
 </script>
-    <div class="search container_padding">
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="img/news_banner.jpg" alt="">
+        </div>
+    </div>
+    <div class="details container_padding" style="background: #F4FBF9;">
         <div class="container">
             <div class="main">
-                <div class="head center_head">
-                    <h2 class="title" data-aos="slide-up">Search</h2>
-                </div>
-                <div class="search_form">
-                    <form class="layui-form" action="">
-                        <div class="content">
-                            <div class="box">
-                                <input type="text" name="search" lay-verify="required"
-                                    placeholder="Please enter keyword" lay-reqtext="Please enter keyword"
-                                    lay-vertype="tips" autocomplete="off" class="layui-input input">
-                                <button type="submit" class="layui-btn submit_btn" lay-submit lay-filter="submit">
-                                    <i class="iconfont icon-sousuo"></i>
-                                </button>
-                            </div>
-                            <div class="note">
-                                <a href="details.html" class="link">The Summer Day</a>
-                                <a href="details.html" class="link">Leather Perfume Suit</a>
-                                <a href="details.html" class="link">Star</a>
-                                <a href="details.html" class="link">Roam</a>
-                                <a href="details.html" class="link">Amoretti</a>
+                <div class="product_explain">
+                    <div class="row">
+                        <div class="col_md col-md-5 col-sm-7 col-xs-12">
+                            <div class="swiper-container details_product_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide item">
+                                        <div class="cover_box box_radius box_shadow">
+                                            <img class="cover" src="img/news_details.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide item">
+                                        <div class="cover_box box_radius box_shadow">
+                                            <img class="cover" src="img/news_details.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <div class="icon box_shadow animate">
+                                        <i class="iconfont icon-left-1"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <div class="icon box_shadow animate">
+                                        <i class="iconfont icon-right-1-copy"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                        <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                            <div class="content">
+                                <h3 class="title text-capitalize">Engineering</h3>
+                                <div class="line">
+                                    <div class="t_l"></div>
+                                </div>
+                                <div class="lead">
+                                    We have career opportunities for applications, development, design, electrical,
+                                    manufacturing, mechanical, process, project, software, systems, chemical and
+                                    biomedical engineers and more.
+                                </div>
+                                <div class="contact_btn_wrap">
+                                    <a href="" class="btn link box_shadow">Contact Us</a>
+                                    <a href="javascript:history.back()" class="btn link box_shadow">Return</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="height: 100px;"></div>
+        <div class="introduce container_padding">
+            <div class="container">
+                <div class="head">
+                    <h2 class="title">Job Introduction</h2>
+                </div>
+                <hr>
+                <div class="main">
+                    <div class="lead">
+                        Xingbiao moves the world by applying advanced electromechanical, hydraulic and pneumatic
+                        technologies, with a full complement of fluid control systems; software and electronic controls;
+                        filtration systems; and instrumentation and sealing technologies. Our engineers operate at the
+                        forefront of motion and control technologies, pioneering advancements in areas such as
+                        aerospace, hydraulics, automation and life sciences. They design premium components and systems
+                        that contribute to the success of our customers, protect the environment and improve quality of
+                        life.
+                        <br>
+                        Xingbiao employs engineers in many disciplines:
+                        <br>
+                        Applications
+                        <br>
+                        Biomedical
+                        <br>
+                        Chemical
+                        <br>
+                        Design
+                        <br>
+                        Development
+                        <br>
+                        Electrical
+                        <br>
+                        Integrity
+                        <br>
+                        Manufacturing
+                        <br>
+                        Mechanical
+                        <br>
+                        Process
+                        <br>
+                        Software
+                        <br>
+                        Systems
+                        <br>
+                        Our engineering career paths offers advancement opportunities along three tracks: engineering
+                        management, program or project management or technical expert. You can grow your career through
+                        leadership of others or through leadership in technology.
+                        <br>
+                        Positions include:
+                        <br>
+                        Engineering supervisor, manager or director
+                        <br>
+                        Engineer, principle engineer, senior research engineer, chief innovation and technology engineer
+                        <br>
+                        Project manager, program manager or program director
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
     <div class="container">
@@ -483,15 +567,18 @@
 <script src="js/comment.js"></script>
 </body>
 <script>
-    layui.use(function () {
-        var form = layui.form;
-        var layer = layui.layer;
-
-        form.on('submit(submit_btn)', function (data) {
-            var value = data.elem.value;
-            console.log('value', value);
-            return false;
-        });
+    const details_product_swiper = new Swiper('.details_product_swiper', {
+        autoplay: {
+            delay: 60000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1200,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     })
 </script>
 
