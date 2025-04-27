@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Search</title>
+    <title>About us</title>
     @@include('head.html')
 </head>
 
@@ -60,29 +60,41 @@
                     regions around the world, becoming one of the representative enterprises of China's "smart
                     manufacturing" going global.
                 </div>
-                <div class="wrap">
+                <div class="wrap scroll_count">
                     <div class="row">
                         <div class="col_md col-md-3 col-sm-3 col-xs-6">
                             <div class="box">
-                                <div class="num">2</div>
+                                <div class="name">
+                                    <span class="num" data-startVal="0" data-endVal="168" data-speed="1" data-decimals="0"
+                                        id="mumC1">0</span>
+                                </div>
                                 <div class="text">R&D Center</div>
                             </div>
                         </div>
                         <div class="col_md col-md-3 col-sm-3 col-xs-6">
                             <div class="box">
-                                <div class="num">2</div>
+                                <div class="name">
+                                    <span class="num" data-startVal="0" data-endVal="2025" data-speed="1" data-decimals="0"
+                                        id="mumC2">0</span>
+                                </div>
                                 <div class="text">Production base</div>
                             </div>
                         </div>
                         <div class="col_md col-md-3 col-sm-3 col-xs-6">
                             <div class="box">
-                                <div class="num">3</div>
+                                <div class="name">
+                                    <span class="num" data-startVal="0" data-endVal="118" data-speed="1" data-decimals="0"
+                                        id="mumC3">0</span>
+                                </div>
                                 <div class="text">Overseas factories</div>
                             </div>
                         </div>
                         <div class="col_md col-md-3 col-sm-3 col-xs-6">
                             <div class="box">
-                                <div class="num">1</div>
+                                <div class="name">
+                                    <span class="num" data-startVal="0" data-endVal="220" data-speed="1" data-decimals="0"
+                                        id="mumC4">0</span>
+                                </div>
                                 <div class="text">User Marketing Center</div>
                             </div>
                         </div>
@@ -161,7 +173,6 @@
                 <h3 class="sub_head">Our company has multiple internationally recognized professional certificates such
                     as FSC and SEDEX</h3>
             </div>
-
             <div class="main container_main">
                 <div class="row">
                     <div class="col_md col-md-2 col-sm-4 col-xs-6">
@@ -272,8 +283,6 @@
         var form = layui.form;
         var layer = layui.layer;
         var util = layui.util;
-
-
         util.on('lay-on', {
             'open-photos': function () {
                 layer.photos({
@@ -292,15 +301,47 @@
                 });
             },
         })
-
         form.on('submit(submit_btn)', function (data) {
             var value = data.elem.value;
             console.log('value', value);
             return false;
         });
-
-
     })
+
+    $(function () {
+        var countCXArr = [];
+        var countCX = function () {
+            $('.scroll_count').each(function (i, dom) {
+                if (countCXArr[i] && countCXArr[i] === true) {
+                    return;
+                }
+                var sT;
+                var ncTop;
+                sT = $(window).scrollTop();
+                ncTop = $(dom).offset().top;
+                var id, decimals, startVal, endVal, duration;
+                if (sT > ncTop - $(window).height() && sT < ncTop) {
+                    $(dom).find('.num').each(function () {
+                        id = $(this).attr('id');
+                        decimals = $(this).attr('data-decimals'),
+                            startVal = $(this).attr('data-startVal'),
+                            endVal = $(this).attr('data-endVal'),
+                            duration = $(this).attr('data-speed');
+                        new CountUp(id, startVal, endVal, decimals, duration, {
+                            useEasing: true,//效果
+                            separator: ''//数字分隔符
+                        }).start();// target：目标元素id, startVal：你想要开始的值, endVal：你想要到达的值, decimals：小数位数，默认值为0, duration：动画持续时间为秒，默认值为2, options：选项的可选对象
+                        countCXArr[i] = true;
+                    })
+                }
+            })
+        }
+        countCX();
+        $(window).on("scroll", function () {
+            countCX();
+        })
+    });
+
 </script>
 
 </html>

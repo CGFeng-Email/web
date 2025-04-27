@@ -3,55 +3,184 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Search</title>
+    <title>Careers</title>
     @@include('head.html')
 </head>
 
 <body>
     @@include('header.html')
-    <div class="search container_padding">
-        <div class="container">
-            <div class="main">
-                <div class="head center_head">
-                    <h2 class="title" data-aos="slide-up">Search</h2>
-                </div>
-                <div class="search_form">
-                    <form class="layui-form" action="">
-                        <div class="content">
-                            <div class="box">
-                                <input type="text" name="search" lay-verify="required"
-                                    placeholder="Please enter keyword" lay-reqtext="Please enter keyword"
-                                    lay-vertype="tips" autocomplete="off" class="layui-input input">
-                                <button type="submit" class="layui-btn submit_btn" lay-submit lay-filter="submit">
-                                    <i class="iconfont icon-sousuo"></i>
-                                </button>
-                            </div>
-                            <div class="note">
-                                <a href="../../details.html" class="link">The Summer Day</a>
-                                <a href="../../details.html" class="link">Leather Perfume Suit</a>
-                                <a href="../../details.html" class="link">Star</a>
-                                <a href="../../details.html" class="link">Roam</a>
-                                <a href="../../details.html" class="link">Amoretti</a>
-                            </div>
-                        </div>
-                    </form>
+    <div class="banner main_banner">
+        <div class="cover_box">
+            <img class="cover" src="../../img/careers_banner.jpg" alt="">
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="content box_radius box_shadow">
+                    <h2 class="title">Our Greatest Asset is Our People</h2>
+                    <div class="lead">
+                        The American Opportunity Index ranked TAIRUI ELECTRONICS GROUP #1 in the
+                        Manufacturing sector and a Top 50 Employer among large U.S. public companies. This reinforces
+                        our belief that a better tomorrow starts with our people.
+                    </div>
+                    <div class="lead">
+                        Join the TAIRUI ELECTRONICS GROUP team and realize your future in making a
+                        positive impact on the world. Were looking for inspired communicators, resourceful problem
+                        solvers, inquisitive thinkers and dedicated professionals who want to learn and grow with us.
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="height: 100px;"></div>
+    </div>
+    <div class="product_positioning">
+        <div class="row">
+            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                <div class="cover_box common_box">
+                    <img class="cover" src="../../img/careers_cover1.jpg" alt="product positioning">
+                </div>
+            </div>
+            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                <div class="content common_box" style="background: none; color: #000;">
+                    <h2 class="title">The Xingbiao Difference</h2>
+                    <div class="lead">
+                        TAIRUI ELECTRONICS GROUP is the global leader in motion and control technologies, and we
+                        recognize that the contributions of our employees serve as the foundation of our success. We’re
+                        a different kind of company with an approach to career development that’s as innovative as our
+                        engineering solutions. Our global success is based on a simple equation: an empowered workforce
+                        operating in a supportive environment fosters innovative ideas and solutions. We encourage our
+                        employees to pursue ideas, and more importantly, we listen to them. When we succeed, we
+                        recognize employees and team achievements and create exceptional opportunities for career growth
+                        with a global company.
+                    </div>
+                    <div class="lead">
+                        A career at TAIRUI ELECTRONICS GROUP offers boundless potential for professional and personal
+                        growth. You will work alongside the brightest minds in the world, help develop innovative
+                        technology and products, and contribute to our company’s goal of solving the world’s greatest
+                        engineering challenges. A TAIRUI ELECTRONICS GROUP employee makes a positive impact on the
+                        world, and in turn, we strive to make a positive impact on the lives of our employees.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                <div class="cover_box common_box">
+                    <img class="cover" src="../../img/careers_cover2.jpg" alt="product positioning">
+                </div>
+            </div>
+            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                <div class="content common_box" style="background: #EFF6FF; color: #000;">
+                    <h2 class="title">Working at Xingbiao</h2>
+                    <div class="lead">
+                        As the global leader in motion and control technologies, Xingbiao thrives when our products and
+                        solutions solve our customers' challenges. Our global success is based on a simple equation: an
+                        empowered workforce operating in a supportive environment fosters innovative ideas and
+                        solutions. We encourage our employees to pursue ideas, and more importantly, we listen to them.
+                        When we succeed, we recognize employees and team achievements and create exceptional
+                        opportunities for career growth with a global company.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news_recommend container_padding img_bg" style="background-image: url(../../img/recommend_bg.png);">
+        <div class="container">
+            <div class="head justify_space" style="width: 100%;">
+                <div class="wrap" style="text-align: left;">
+                    <h2 class="title">Career Paths</h2>
+                </div>
+                <div class="arrow justify_space">
+                    <div class="icon box_shadow animate" id="arrow_prev">
+                        <i class="iconfont icon-left-1"></i>
+                    </div>
+                    <div class="icon box_shadow animate" id="arrow_next">
+                        <i class="iconfont icon-right-1-copy"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main container_main">
+                <div class="swiper-container news_recommend_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item">
+                            <a href="../../careers_details.html" class="link">
+                                <div class="cover_box box_radius box_shadow">
+                                    <img class="cover" src="../../img/paths_li1.png" alt="Engineering">
+                                </div>
+                                <div class="content">
+                                    <h3 class="name over2" style="margin-bottom: 10px; text-align: center;">Engineering</h3>
+                                    <p class="lead over3">We have career opportunities for applications, development,
+                                        design, electrical, manufacturing, mechanical, process, project, software,
+                                        systems, chemical and biomedical engineers and more.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="../../careers_details.html" class="link">
+                                <div class="cover_box box_radius box_shadow">
+                                    <img class="cover" src="../../img/paths_li2.png" alt="Sales">
+                                </div>
+                                <div class="content">
+                                    <h3 class="name over2" style="margin-bottom: 10px; text-align: center;">Sales
+                                    </h3>
+                                    <p class="lead over3">We have career opportunities for business development
+                                        managers, territory managers, account managers, market specialists, technical
+                                        sales associates, and product sales managers.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item">
+                            <a href="../../careers_details.html" class="link">
+                                <div class="cover_box box_radius box_shadow">
+                                    <img class="cover" src="../../img/paths_li3.png" alt="Supply Chain Management">
+                                </div>
+                                <div class="content">
+                                    <h3 class="name over2" style="margin-bottom: 10px; text-align: center;">Supply Chain Management
+                                    </h3>
+                                    <p class="lead over3">We have career opportunities for buyers, planners, purchasing specialists, logistics specialists, sourcing managers, supplier quality engineers and supply chain managers.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     @@include('footer.html')
 </body>
 <script>
-    layui.use(function () {
-        var form = layui.form;
-        var layer = layui.layer;
+    const arrow_prev = document.getElementById('arrow_prev');
+    const arrow_next = document.getElementById('arrow_next');
 
-        form.on('submit(submit_btn)', function (data) {
-            var value = data.elem.value;
-            console.log('value', value);
-            return false;
-        });
+    const news_recommend_swiper = new Swiper('.news_recommend_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        freeMode: true,
+        breakpoints: {
+            968: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        }
+    })
+
+    arrow_prev.addEventListener('click', function () {
+        news_recommend_swiper.slidePrev();
+    })
+
+    arrow_next.addEventListener('click', function () {
+        news_recommend_swiper.slideNext();
     })
 </script>
 
