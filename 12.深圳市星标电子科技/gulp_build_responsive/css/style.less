@@ -125,7 +125,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1400px;
     width: 100%;
     margin: auto;
     padding: 0 10px;
@@ -527,6 +527,23 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+.crumbs {
+
+    .list {
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+
+        .icon-shouye-zhihui {
+            color: @minorColor;
+        }
+
+        .arrow {
+            padding: 2px 4px 0;
+        }
+    }
+}
+
 .search {
     .main {
         margin: auto;
@@ -557,7 +574,7 @@ body::-webkit-scrollbar-thumb:hover {
                 font-size: 20px;
                 height: 60px;
                 line-height: 60px;
-                
+
             }
 
             .input:focus {
@@ -730,6 +747,23 @@ body::-webkit-scrollbar-thumb:hover {
                         }
                     }
                 }
+
+                .active {
+                    background: rgba(0, 0, 0, .5);
+
+                    .head_title {
+                        color: #fff;
+
+                        .link {
+                            color: #fff;
+                        }
+
+                        &::before {
+                            opacity: 1;
+                            bottom: 18px;
+                        }
+                    }
+                }
             }
 
             .function {
@@ -788,6 +822,10 @@ body::-webkit-scrollbar-thumb:hover {
                     .language_li {
                         .link {
                             padding: 6px 0;
+
+                            .cover {
+                                width: 20px;
+                            }
 
                             .text {
                                 font-size: 14px;
@@ -1006,7 +1044,6 @@ body::-webkit-scrollbar-thumb:hover {
 
         .cover_box {
             .cover {
-                min-height: 600px;
                 height: calc(100vh - 80px);
             }
         }
@@ -1278,7 +1315,9 @@ body::-webkit-scrollbar-thumb:hover {
             }
         }
 
-        .list {
+        .list,
+
+        .details {
             flex: 1;
             padding-left: 30px;
 
@@ -1286,7 +1325,7 @@ body::-webkit-scrollbar-thumb:hover {
                 text-align: center;
 
                 .cover_box {
-                    height: 340px;
+                    height: 240px;
 
                     .cover {
                         height: 100%;
@@ -1322,6 +1361,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .product_positioning {
+    .main {
+        width: 1500px;
+        margin: auto;
+    }
+
     .col_md {
         padding: 0;
     }
@@ -1700,9 +1744,85 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+.details_main {
+    .category {
+        background: #fff;
+        margin-bottom: 40px;
+
+        .title {
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            background: @primaryColor;
+            font-size: 18px;
+        }
+
+        .contact_title {
+            background: #fff;
+            color: #000;
+        }
+
+        .category_list {
+            .li {
+                .li_head {
+                    padding: 14px 10px;
+                    cursor: pointer;
+                    border-bottom: 1px solid rgba(0, 0, 0, .1);
+                    user-select: none;
+
+                    .head_title {
+                        font-size: 18px;
+                        line-height: 1.5;
+                        font-weight: 600;
+                    }
+
+                    .iconfont {
+                        font-size: 22px;
+                    }
+                }
+
+                .son {
+                    padding: 10px;
+                    display: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+                    .link {
+                        cursor: pointer;
+                        padding: 7px 0;
+
+
+                        input {
+                            width: 20px;
+                            height: 20px;
+                            margin: 0;
+                            background: @primaryColor;
+                        }
+
+                        .text {
+                            padding-left: 10px;
+                            user-select: none;
+                            font-weight: 500;
+                        }
+
+                        input[type="checkbox"] {
+                            accent-color: @primaryColor;
+                            width: 18px;
+                            height: 18px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .details {
     .main {
         .details_product_swiper {
+            overflow: hidden;
+
             .cover_box {
                 &:hover {
                     .cover {
@@ -1712,7 +1832,7 @@ body::-webkit-scrollbar-thumb:hover {
             }
 
             .cover {
-                height: 600px;
+                height: 400px;
             }
 
             .icon,
@@ -1752,8 +1872,6 @@ body::-webkit-scrollbar-thumb:hover {
         }
 
         .content {
-            padding: 40px 0 0 60px;
-
             .lead {
                 line-height: 2;
             }
