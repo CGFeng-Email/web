@@ -300,6 +300,12 @@
   .title {
     font-size: 18px;
   }
+  .crumbs {
+    margin-bottom: 10px;
+  }
+  .crumbs .list {
+    padding: 14px 0 0;
+  }
   .head {
     padding: 10px 0;
   }
@@ -396,9 +402,13 @@
   .header .content .wrap .function .item .link .iconfont {
     font-size: 16px;
   }
+  .index_swiper .item .cover_box .cover {
+    height: auto;
+  }
   .index_swiper .item .content {
     width: 100%;
     padding: 0 10px;
+    display: none;
   }
   .index_swiper .item .content .title {
     font-size: 20px;

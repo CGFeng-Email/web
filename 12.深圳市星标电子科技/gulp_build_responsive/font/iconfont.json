@@ -6,6 +6,55 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2471362",
+      "name": "徽章",
+      "font_class": "huizhang",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "12038958",
+      "name": "旗帜",
+      "font_class": "qizhi",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "15815698",
+      "name": "电灯-灯泡-照明",
+      "font_class": "diandeng-dengpao-zhaoming",
+      "unicode": "e78e",
+      "unicode_decimal": 59278
+    },
+    {
+      "icon_id": "2076303",
+      "name": " 日历",
+      "font_class": "rili",
+      "unicode": "e89e",
+      "unicode_decimal": 59550
+    },
+    {
+      "icon_id": "6204097",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "77156",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "11372717",
+      "name": "微信",
+      "font_class": "weixin1",
+      "unicode": "e8bb",
+      "unicode_decimal": 59579
+    },
+    {
       "icon_id": "7577443",
       "name": "24gf-shieldCheck",
       "font_class": "24gf-shieldCheck",
