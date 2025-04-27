@@ -454,12 +454,12 @@ body::-webkit-scrollbar-thumb:hover {
 .search {
     .main {
         margin: auto;
-        padding: 120px 0 0;
+        padding: 100px 0 0;
     }
 
     .head {
         .title {
-            color: #fff;
+            color: #000;
         }
     }
 
@@ -474,18 +474,17 @@ body::-webkit-scrollbar-thumb:hover {
             .box {
                 display: flex;
                 align-items: center;
-                // border-bottom: 1px solid #cccccc;
+
             }
 
             .input {
-                border: none;
                 font-size: 20px;
                 height: 60px;
                 line-height: 60px;
+
             }
 
             .input:focus {
-                border: none;
                 box-shadow: none;
             }
 
@@ -514,7 +513,7 @@ body::-webkit-scrollbar-thumb:hover {
                     padding: 10px 0;
                     white-space: nowrap;
                     margin-right: 20px;
-                    color: #fff;
+                    color: @minorColor;
                 }
             }
         }
@@ -2083,6 +2082,116 @@ body::-webkit-scrollbar-thumb:hover {
             color: @minorColor;
             font-size: 16px;
             text-align: center;
+        }
+    }
+}
+
+.map_box {
+    background: #F8F8F8;
+
+    .map {
+        height: 450px;
+    }
+}
+
+.contact_info {
+    .main {
+        .wrap {
+            padding-top: 40px;
+
+            .item {
+                height: 240px;
+                text-align: center;
+                padding: 40px 20px 20px;
+
+                .icon {
+                    height: 70px;
+                    margin-bottom: 10px;
+
+                    .cover {
+                        width: auto;
+                        max-width: 46px;
+                    }
+                }
+
+                .name {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+
+                .lead {
+                    font-size: 14px;
+                    line-height: 2;
+                }
+
+                &:hover {
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+.message_box {
+    padding: 100px 0 60px;
+
+    .content {
+        .title {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .lead {
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+    }
+
+    .form {
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .box {
+            padding: 0;
+        }
+
+        .two_box {
+            padding-left: 10px;
+        }
+
+        .input_box {
+            padding-left: 10px;
+        }
+
+        .input {
+            height: 60px;
+            font-size: 16px;
+            padding: 0 20px;
+        }
+
+        .layui-form-select .layui-input {
+            padding: 0 20px;
+            height: 60px;
+            font-size: 16px;
+        }
+
+        .textarea {
+            padding: 20px 20px;
+            font-size: 16px;
+        }
+
+        .btn_box {
+            margin-top: 20px;
+            text-align: center;
+
+            .btn {
+                background: @primaryColor;
+                min-width: 180px;
+                height: 50px;
+                font-size: 18px;
+                padding: 0;
+            }
         }
     }
 }

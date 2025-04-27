@@ -359,10 +359,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .search .main {
   margin: auto;
-  padding: 120px 0 0;
+  padding: 100px 0 0;
 }
 .search .head .title {
-  color: #fff;
+  color: #000;
 }
 .search .search_form {
   margin-top: 60px;
@@ -376,13 +376,11 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
 }
 .search .search_form .content .input {
-  border: none;
   font-size: 20px;
   height: 60px;
   line-height: 60px;
 }
 .search .search_form .content .input:focus {
-  border: none;
   box-shadow: none;
 }
 .search .search_form .content .submit_btn {
@@ -408,7 +406,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 10px 0;
   white-space: nowrap;
   margin-right: 20px;
-  color: #fff;
+  color: #666666;
 }
 .header {
   position: fixed;
@@ -1603,4 +1601,85 @@ body::-webkit-scrollbar-thumb:hover {
   color: #666666;
   font-size: 16px;
   text-align: center;
+}
+.map_box {
+  background: #F8F8F8;
+}
+.map_box .map {
+  height: 450px;
+}
+.contact_info .main .wrap {
+  padding-top: 40px;
+}
+.contact_info .main .wrap .item {
+  height: 240px;
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+.contact_info .main .wrap .item .icon {
+  height: 70px;
+  margin-bottom: 10px;
+}
+.contact_info .main .wrap .item .icon .cover {
+  width: auto;
+  max-width: 46px;
+}
+.contact_info .main .wrap .item .name {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.contact_info .main .wrap .item .lead {
+  font-size: 14px;
+  line-height: 2;
+}
+.contact_info .main .wrap .item:hover {
+  background: #fff;
+}
+.message_box {
+  padding: 100px 0 60px;
+}
+.message_box .content .title {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+.message_box .content .lead {
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+.message_box .form .item {
+  margin-bottom: 10px;
+}
+.message_box .form .box {
+  padding: 0;
+}
+.message_box .form .two_box {
+  padding-left: 10px;
+}
+.message_box .form .input_box {
+  padding-left: 10px;
+}
+.message_box .form .input {
+  height: 60px;
+  font-size: 16px;
+  padding: 0 20px;
+}
+.message_box .form .layui-form-select .layui-input {
+  padding: 0 20px;
+  height: 60px;
+  font-size: 16px;
+}
+.message_box .form .textarea {
+  padding: 20px 20px;
+  font-size: 16px;
+}
+.message_box .form .btn_box {
+  margin-top: 20px;
+  text-align: center;
+}
+.message_box .form .btn_box .btn {
+  background: #FF8E16;
+  min-width: 180px;
+  height: 50px;
+  font-size: 18px;
+  padding: 0;
 }

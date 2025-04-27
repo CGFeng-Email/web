@@ -1049,10 +1049,6 @@
 <script>
     let history_content = null;
     const history_line = new Swiper('.history_line', {
-        autoplay: {
-            delay: 5000000000000,
-            disableOnInteraction: false,
-        },
         loop: true,
         speed: 1400,
         slidesPerView: 8,
@@ -1085,7 +1081,6 @@
     })
 
     history_content = new Swiper('.history_content', {
-        loop: true,
         speed: 1400,
         spaceBetween: 20,
         centeredSlides: true,
