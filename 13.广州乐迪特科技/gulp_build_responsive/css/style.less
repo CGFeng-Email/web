@@ -459,7 +459,7 @@ body::-webkit-scrollbar-thumb:hover {
 
     .head {
         .title {
-            color: #000;
+            color: #fff;
         }
     }
 
@@ -513,7 +513,7 @@ body::-webkit-scrollbar-thumb:hover {
                     padding: 10px 0;
                     white-space: nowrap;
                     margin-right: 20px;
-                    color: @minorColor;
+                    color: #fff;
                 }
             }
         }
@@ -2191,6 +2191,143 @@ body::-webkit-scrollbar-thumb:hover {
                 height: 50px;
                 font-size: 18px;
                 padding: 0;
+            }
+        }
+    }
+}
+
+.consult {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    background: #fff;
+    
+    .consult_head {
+        background: #fff;
+        height: 50px;
+        padding: 0 4px 0 10px; 
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+
+        .iconfont {
+            margin-right: 4px;
+        }
+
+        .clear {
+            display: none;
+
+        }
+    }
+
+    .form_main {
+        padding: 10px;
+        display: none;
+
+        .item {
+            margin-bottom: 7px;
+            font-size: 12px;
+
+            input {
+                padding: 0 10px;
+            }
+        }
+
+        .btn {
+            background: @primaryColor;
+            width: 100%;
+        }
+    }
+}
+
+.consult_active {
+    .consult_head {
+        justify-content: space-between;
+
+        .clear {
+            display: block;
+        }
+    }
+}
+
+.suspend {
+    position: fixed;
+    top: 40%;
+    right: 10px;
+    z-index: 20;
+    background-color: #fff;
+
+    .item {
+        margin-bottom: 2px;
+        cursor: pointer;
+        position: relative;
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+
+            .iconfont {
+                font-size: 28px;
+                color: #fff;
+            }
+
+            img {
+                width: 28px;
+            }
+        }
+
+        .top {
+            height: 44px;
+            background: #000;
+            text-align: center;
+            padding-top: 3px;
+
+            .iconfont {
+                font-size: 18px;
+                color: #fff;
+            }
+
+            .tips {
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+
+        .slide {
+            position: absolute;
+            left: -110px;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            padding: 2px;
+            background: #fff;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+            display: none;
+
+            .cover {
+                width: 100%;
+            }
+
+            .lead {
+                padding: 0 10px;
+                font-size: 14px;
+                line-height: 58px;
+            }
+        }
+
+        .email_item {
+            width: 200px;
+            height: 58px;
+            line-height: 58px;
+            left: -210px;
+        }
+
+        &:hover {
+            .slide {
+                display: block;
             }
         }
     }

@@ -381,9 +381,55 @@
             </div>
         </div>
     </div>
+
+    <div class="consult">
+        <div class="consult_head justify_space pointer animate">
+            <div class="box">
+                <i class="iconfont icon-zixunliuyan"></i>
+                <span>Quick inquiry</span>
+            </div>
+            <div class="clear">
+                <i class="iconfont icon-guanbi"></i>
+            </div>
+        </div>
+        <div class="form_main">
+            <form class="layui-form form">
+                <div class="item">
+                    <input type="text" name="name" lay-verify="required" lay-vertype="tips" placeholder="Company name"
+                        lay-reqtext="Company name" autocomplete="off" class="layui-input input" lay-affix="clear">
+                </div>
+                <div class="item">
+                    <input type="tel" name="mobile" lay-verify="required | phone" lay-vertype="tips"
+                        placeholder="Phone number" lay-reqtext="Phone number" autocomplete="off"
+                        class="layui-input input" lay-affix="clear">
+                </div>
+                <div class="item">
+                    <input type="email" name="email" lay-verify="required | email" lay-vertype="tips"
+                        placeholder="Email" lay-reqtext="Email" autocomplete="off" class="layui-input input"
+                        lay-affix="clear">
+                </div>
+                <div class="item">
+                    <textarea name="message" placeholder="Message content" class="layui-textarea textarea"
+                        style="resize: none;"></textarea>
+                </div>
+                <div class="btn_box">
+                    <button class="layui-btn btn text-uppercase" lay-submit lay-filter="contact_us_btn">sending</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @@include('supend.html')
+
     @@include('footer.html')
 </body>
 <script>
+    const consult_head = document.querySelector('.consult_head');
+    consult_head.addEventListener('click', function () {
+        $('.consult').stop().toggleClass('consult_active');
+        $('.consult .form_main').stop().slideToggle();
+    })
+
     const index_swiper = new Swiper('.index_swiper', {
         autoplay: {
             delay: 5000,
@@ -491,7 +537,7 @@
         var util = layui.util;
 
         util.on('lay-on', {
-            
+
             'open-photos': function () {
                 layer.photos({
                     photos: {
