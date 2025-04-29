@@ -362,7 +362,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 100px 0 0;
 }
 .search .head .title {
-  color: #000;
+  color: #fff;
 }
 .search .search_form {
   margin-top: 60px;
@@ -406,7 +406,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 10px 0;
   white-space: nowrap;
   margin-right: 20px;
-  color: #666666;
+  color: #fff;
 }
 .header {
   position: fixed;
@@ -1682,4 +1682,113 @@ body::-webkit-scrollbar-thumb:hover {
   height: 50px;
   font-size: 18px;
   padding: 0;
+}
+.consult {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: #fff;
+}
+.consult .consult_head {
+  background: #fff;
+  height: 50px;
+  padding: 0 4px 0 10px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+.consult .consult_head .iconfont {
+  margin-right: 4px;
+}
+.consult .consult_head .clear {
+  display: none;
+}
+.consult .form_main {
+  padding: 10px;
+  display: none;
+}
+.consult .form_main .item {
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+.consult .form_main .item input {
+  padding: 0 10px;
+}
+.consult .form_main .btn {
+  background: #FF8E16;
+  width: 100%;
+}
+.consult_active .consult_head {
+  justify-content: space-between;
+}
+.consult_active .consult_head .clear {
+  display: block;
+}
+.suspend {
+  position: fixed;
+  top: 40%;
+  right: 10px;
+  z-index: 20;
+  background-color: #fff;
+}
+.suspend .item {
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+.suspend .item .icon {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.suspend .item .icon .iconfont {
+  font-size: 28px;
+  color: #fff;
+}
+.suspend .item .icon img {
+  width: 28px;
+}
+.suspend .item .top {
+  height: 44px;
+  background: #000;
+  text-align: center;
+  padding-top: 3px;
+}
+.suspend .item .top .iconfont {
+  font-size: 18px;
+  color: #fff;
+}
+.suspend .item .top .tips {
+  font-size: 12px;
+  color: #fff;
+}
+.suspend .item .slide {
+  position: absolute;
+  left: -110px;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.suspend .item .slide .cover {
+  width: 100%;
+}
+.suspend .item .slide .lead {
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 58px;
+}
+.suspend .item .email_item {
+  width: 200px;
+  height: 58px;
+  line-height: 58px;
+  left: -210px;
+}
+.suspend .item:hover .slide {
+  display: block;
 }

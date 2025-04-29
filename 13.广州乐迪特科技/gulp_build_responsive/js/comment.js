@@ -13,5 +13,8 @@ layui.use(function () {
   util.fixbar({
     bars: [],
     on: {},
+    css: {
+      bottom: 64
+    }
   })
 });
