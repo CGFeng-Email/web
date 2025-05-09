@@ -1,0 +1,65 @@
+{
+  "id": "4916549",
+  "name": "栢乐科技2",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1240787",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "1998209",
+      "name": "升序",
+      "font_class": "shengxu",
+      "unicode": "e77a",
+      "unicode_decimal": 59258
+    },
+    {
+      "icon_id": "1998211",
+      "name": "降序",
+      "font_class": "jiangxu",
+      "unicode": "e77b",
+      "unicode_decimal": 59259
+    },
+    {
+      "icon_id": "2330010",
+      "name": "yc",
+      "font_class": "yachi",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "7712671",
+      "name": "date",
+      "font_class": "date",
+      "unicode": "e72a",
+      "unicode_decimal": 59178
+    },
+    {
+      "icon_id": "7762181",
+      "name": "密码",
+      "font_class": "ziyuanxhdpi",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "8949037",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "16322392",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e6d2",
+      "unicode_decimal": 59090
+    }
+  ]
+}
