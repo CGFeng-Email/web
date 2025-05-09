@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<link rel="stylesheet" href="nprogress/nprogress.css">
+<link rel="stylesheet" href="font/iconfont.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="aos/aos.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
+<link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="nprogress/nprogress.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="aos/aos.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="swiper/js/swiper.animate1.0.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="layui/layui.min.js"></script>
+<script src="js/comment.js"></script>
+</head>
+
+<body>
+    <div class="header">
+    
+</div>
+
+<script>
+    NProgress.start();
+</script>
+    <div class="login img_bg" style="background-image: url(img/login_bg.png);">
+        <h1 class="logo">
+            <a href="./index.html" class="link">
+                <img class="cover" src="img/logo.png" alt="">
+            </a>
+        </h1>
+
+        <div class="main">
+            <div class="row">
+                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                    <div class="content box">
+                        <h3 class="title">Client Login</h3>
+                        <div class="b_line"></div>
+                        <form class="layui-form form" action="">
+                            <div class="item">
+                                <div class="name">
+                                    <span class="text">USERNAME</span>
+                                    <span class="ide">*</span>
+                                </div>
+                                <div class="input_box display_flex box_radius box_shadow">
+                                    <i class="iconfont icon-yonghu"></i>
+                                    <input type="text" name="phone" lay-verify="required"
+                                        placeholder="Please enter your account number"
+                                        lay-reqtext="Please enter your account number" lay-verify="phone"
+                                        lay-vertype="tips" autocomplete="off" class="layui-input input">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <span class="text">PASSWORD</span>
+                                    <span class="ide">*</span>
+                                </div>
+                                <div class="input_box display_flex box_radius box_shadow">
+                                    <i class="iconfont icon-ziyuanxhdpi"></i>
+                                    <input type="password" name="password" lay-verify="required"
+                                        placeholder="Please enter your password"
+                                        lay-reqtext="Please enter your password" lay-vertype="tips" autocomplete="off"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                    <div class="box">
+                        <div class="cover_box">
+                            <img class="cover" src="img/login_cover.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        // 提交事件
+        form.on('submit(demo-login)', function (data) {
+            var field = data.field; // 获取表单字段值
+            // 显示填写结果，仅作演示用
+            layer.alert(JSON.stringify(field), {
+                title: '当前填写的字段值'
+            });
+            // 此处可执行 Ajax 等操作
+            // …
+            return false; // 阻止默认 form 跳转
+        });
+    });
+</script>
+
+</html>
