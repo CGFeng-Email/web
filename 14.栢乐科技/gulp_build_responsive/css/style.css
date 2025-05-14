@@ -384,12 +384,28 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100vh;
   padding: 2%;
 }
+.login .logo {
+  width: 140px;
+}
+.login .logo .cover {
+  width: 100%;
+}
 .login .main {
   width: 80%;
   margin: 50px auto;
-  padding: 50px 20px;
+  padding: 20px;
   background: #fff;
   border-radius: 14px;
+  position: relative;
+}
+.login .main::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(223, 223, 223, 0.3);
+  border-radius: 24px;
 }
 .login .main .form {
   padding-top: 50px;
@@ -424,8 +440,396 @@ body::-webkit-scrollbar-thumb:hover {
   background: none;
   border: none;
   height: 50px;
-  font-size: 14px;
+  font-size: 15px;
 }
 .login .main .box .item .input:focus {
   box-shadow: none;
+}
+.login .main .submit_btn {
+  margin: 20px 0 10px;
+  width: 100%;
+  height: 60px;
+  background: #3D86C4;
+  font-size: 18px;
+}
+.login .main .lead {
+  text-align: center;
+}
+.login .main .iconfont {
+  color: #3D86C4;
+  text-align: center;
+}
+.login .main .cover_box .cover {
+  height: 420px;
+  border-radius: 0 24px;
+}
+.login .main .swiper-pagination {
+  bottom: 30px;
+}
+.login .main .swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+}
+.login .main .swiper-pagination .swiper-pagination-bullet-active {
+  background: #3D86C4;
+  width: 20px;
+  border-radius: 12px;
+}
+.header {
+  background: #3D86C4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.header .wrap {
+  height: 76px;
+  align-items: center;
+}
+.header .wrap .logo {
+  width: 160px;
+}
+.header .wrap .logo .cover {
+  width: 100%;
+}
+.header .wrap .content {
+  height: 100%;
+}
+.header .wrap .content .to {
+  padding: 0 40px;
+}
+.header .wrap .content .to .link {
+  width: 170px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+.header .wrap .content .to .link:hover {
+  color: #3D86C4;
+}
+.header .wrap .content .user {
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+.header .wrap .content .user .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.header .wrap .content .user .info .link {
+  width: auto;
+}
+.header .wrap .content .user .cover {
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.header .wrap .content .user .iconfont {
+  color: #fff;
+  font-weight: 500;
+}
+.header .wrap .content .user .exit {
+  position: absolute;
+  top: 76px;
+  left: 0;
+  width: 100%;
+  padding: 8px 10px;
+  background: #fff;
+  display: none;
+}
+.header .wrap .content .user .exit .lead .link {
+  color: #000;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header .wrap .content .user .exit .lead .link .iconfont {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+.placeholder_header {
+  height: 76px;
+}
+.menu .box {
+  padding: 20px;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+.menu .box .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 50px;
+  flex: none;
+}
+.menu .box .icon .iconfont {
+  font-size: 24px;
+  color: #fff;
+}
+.menu .box .content {
+  padding-left: 20px;
+  color: #fff;
+  flex: 1;
+}
+.menu .box .content .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.menu .box .content .lead {
+  font-weight: 500;
+}
+.index {
+  padding: 50px 0;
+}
+.inquire {
+  width: 50%;
+  margin: auto;
+  padding: 30px 0 60px;
+}
+.inquire .name {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 6px 0;
+}
+.inquire .layui-input {
+  height: 50px;
+  background: #F8F8F8;
+}
+.inquire .layui-form-select dl {
+  top: 50px;
+}
+.inquire .layui-form-select dl dd.layui-this {
+  color: #3D86C4;
+}
+.inquire .submit_btn {
+  height: 50px;
+  width: 100%;
+  background: #3D86C4;
+}
+.search .input_box {
+  align-items: center;
+  background: #F8F8F8;
+  padding: 0 10px;
+  border: 1px solid #eee;
+}
+.search .input_box .iconfont {
+  font-size: 17px;
+  font-weight: 600;
+}
+.search .input_box .input {
+  height: 50px;
+  background: none;
+  border: none;
+}
+.search .input_box .input:focus {
+  box-shadow: none;
+}
+.search .search_btn {
+  width: 100%;
+  height: 50px;
+  background: #3D86C4;
+}
+.layui-laydate .layui-this > div {
+  background: #3D86C4 !important;
+}
+.list {
+  padding: 40px 0 10px;
+}
+.list .width_x {
+  overflow-x: auto;
+}
+.list .content {
+  margin-top: 10px;
+  width: 1570px;
+}
+.list .content .list_head {
+  background: #3D86C4;
+  color: #fff;
+}
+.list .content .list_head .li {
+  flex: 1;
+  height: 50px;
+  align-items: center;
+  padding: 0 0 0 14px;
+  border-right: 1px solid #fff;
+}
+.list .content .list_head .li .name {
+  font-size: 16px;
+}
+.list .content .list_head .li .sort {
+  padding: 10px 14px;
+}
+.list .content .list_head .li .sort .iconfont {
+  font-size: 18px;
+  margin: -6px;
+  opacity: 0.4;
+}
+.list .content .list_head .li .sort .active {
+  opacity: 1;
+}
+.list .content .list_head .li:last-child {
+  border-right: none;
+}
+.list .content .list_body {
+  background: #F1F1F1;
+}
+.list .content .list_body .item {
+  border-bottom: 1px solid #fff;
+}
+.list .content .list_body .li {
+  flex: 1;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 14px;
+  border-right: 1px solid #fff;
+}
+.list .content .list_body .li .check {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  line-height: 18px;
+  text-align: center;
+}
+.list .content .list_body .li .check .iconfont {
+  font-size: 12px;
+  color: #fff;
+}
+.list .content .list_body .li .active {
+  background: #3D86C4;
+}
+.list .content .list_body .li .val {
+  font-weight: 500;
+}
+.list .content .list_body .li:last-child {
+  border-right: none;
+}
+.list .content .bottom {
+  text-align: center;
+  padding: 30px 0 20px;
+}
+.list .content .bottom .download {
+  width: auto;
+  background: #3D86C4;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+.upload {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+.upload .main {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px 80px;
+  background: #fff;
+  border-radius: 24px;
+}
+.upload .main .title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.upload .main .item {
+  margin-bottom: 14px;
+}
+.upload .main .input_box {
+  padding: 0 20px;
+  background: #FCFCFC;
+}
+.upload .main .input_box .iconfont {
+  color: #A5A5A5;
+}
+.upload .main .input_box .input {
+  background: none;
+  border: none;
+  box-shadow: none;
+  height: 50px;
+  line-height: 50px;
+}
+.upload .main .upload_item {
+  padding: 20px;
+  background: #FCFCFC;
+}
+.upload .main .upload_item .lead {
+  color: #BFBFBF;
+  margin-bottom: 14px;
+}
+.upload .main .upload_item .box {
+  text-align: center;
+  background: #fff;
+  padding: 50px 20px;
+}
+.upload .main .upload_item .box .upload_btn {
+  padding-top: 20px;
+}
+.upload .main .upload_item .box .upload_btn .upload_list {
+  display: none;
+}
+.upload .main .upload_item .box .upload_btn .upload_list .item {
+  justify-content: center;
+}
+.upload .main .upload_item .box .upload_btn .upload_list .item .iconfont {
+  font-size: 20px;
+}
+.upload .main .upload_item .box .upload_btn .upload_list .item .file_name {
+  padding-left: 4px;
+}
+.upload .main .upload_item .box .upload_btn .common_btn {
+  background: none;
+  color: #5D5D5D;
+  height: 44px;
+  line-height: 44px;
+  position: relative;
+  width: 200px;
+  margin: auto;
+}
+.upload .main .upload_item .box .upload_btn .common_btn input {
+  width: 100%;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.upload .main .upload_item .box .upload_btn .common_btn .text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.upload .main .upload_item .box .upload_btn .common_btn:hover {
+  background: #3D86C4;
+}
+.upload .main .upload_item .box .upload_btn .common_btn:hover .text {
+  color: #fff;
+}
+.upload .main .item_btn {
+  text-align: center;
+  padding-top: 20px;
+}
+.upload .main .item_btn .submit_btn {
+  width: 180px;
+  height: 46px;
+  line-height: 46px;
+  background: #3D86C4;
 }
