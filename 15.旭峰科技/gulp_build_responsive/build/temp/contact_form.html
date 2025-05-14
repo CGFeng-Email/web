@@ -1,14 +1,21 @@
 <style>
     .contact_information {
         padding: 10px 0;
+        text-align: center;
+    }
+
+    .contact_information .form {
+        display: block;
+        margin: auto;
     }
 
     .contact_information .item {
-        border-radius: 12px;
+        border-radius: 50px;
         background: #fff;
         overflow: hidden;
         padding: 4px 6px;
         max-width: 80%;
+        margin: auto;
     }
 
     .contact_information .input {
@@ -20,9 +27,10 @@
     }
 
     .contact_information .btn {
-        background: #FF8E16;
+        background: #00398B;
         box-shadow: none;
-        border-radius: 12px;
+        border-radius: 50px;
+        padding: 0 30px;
     }
 
     @media screen and (max-width: 992px) {
@@ -39,11 +47,11 @@
 </style>
 
 <div class="contact_information">
-    <form class="layui-form" action="">
-        <div class="item justify_space">
-            <input type="text" name="email" lay-verify="required|email" placeholder="Please enter your email"
-                lay-reqtext="Please enter your email" lay-vertype="tips" autocomplete="off" class="layui-input input">
-            <button type="submit" class="layui-btn btn" lay-submit lay-filter="contactSubmit">sending</button>
+    <form class="layui-form form" action="">
+        <div class="item justify_space box_shadow">
+            <input type="text" name="email" lay-verify="required|email" placeholder="Your Email"
+                lay-reqtext="Your Email" lay-vertype="tips" autocomplete="off" class="layui-input input">
+            <button type="submit" class="layui-btn btn" lay-submit lay-filter="contactSubmit">Submit</button>
         </div>
     </form>
 </div>

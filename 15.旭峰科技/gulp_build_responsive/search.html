@@ -343,7 +343,7 @@
                     </div>
                     <div class="item circle animate">
                         <a href="search.html" class="link">
-                            <i class="iconfont icon-24gl-user2"></i>
+                            <i class="iconfont icon-yonghu"></i>
                         </a>
                     </div>
                     <div class="item contact_item animate">
@@ -794,26 +794,36 @@
         <div style="height: 100px;"></div>
     </div>
     <div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col_md col-md-5 col-sm-8 col-xs-12">
-                <h1 class="logo">
-                    <a href="" class="link">
-                        <img class="cover" src="img/footer_logo.png" alt="Reserved Shenzhen Xufeng Technology Co., Ltd">
-                    </a>
-                </h1>
-                <div class="title">Join Our Network</div>
-                <style>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col_md col-md-5 col-sm-12 col-xs-12">
+                    <div class="left_box">
+                        <h1 class="logo">
+                            <a href="" class="link">
+                                <img class="cover" src="img/footer_logo.png"
+                                    alt="Reserved Shenzhen Xufeng Technology Co., Ltd">
+                            </a>
+                        </h1>
+                        <div class="title">Join Our Network</div>
+                        <style>
     .contact_information {
         padding: 10px 0;
+        text-align: center;
+    }
+
+    .contact_information .form {
+        display: block;
+        margin: auto;
     }
 
     .contact_information .item {
-        border-radius: 12px;
+        border-radius: 50px;
         background: #fff;
         overflow: hidden;
         padding: 4px 6px;
         max-width: 80%;
+        margin: auto;
     }
 
     .contact_information .input {
@@ -825,9 +835,10 @@
     }
 
     .contact_information .btn {
-        background: #FF8E16;
+        background: #00398B;
         box-shadow: none;
-        border-radius: 12px;
+        border-radius: 50px;
+        padding: 0 30px;
     }
 
     @media screen and (max-width: 992px) {
@@ -844,11 +855,11 @@
 </style>
 
 <div class="contact_information">
-    <form class="layui-form" action="">
-        <div class="item justify_space">
-            <input type="text" name="email" lay-verify="required|email" placeholder="Please enter your email"
-                lay-reqtext="Please enter your email" lay-vertype="tips" autocomplete="off" class="layui-input input">
-            <button type="submit" class="layui-btn btn" lay-submit lay-filter="contactSubmit">sending</button>
+    <form class="layui-form form" action="">
+        <div class="item justify_space box_shadow">
+            <input type="text" name="email" lay-verify="required|email" placeholder="Your Email"
+                lay-reqtext="Your Email" lay-vertype="tips" autocomplete="off" class="layui-input input">
+            <button type="submit" class="layui-btn btn" lay-submit lay-filter="contactSubmit">Submit</button>
         </div>
     </form>
 </div>
@@ -863,11 +874,128 @@
         });
     });
 </script>
-            </div>
-            <div class="col_md col-md-7 col-sm-8 col-xs-12">
-                <div class="content">
-                    <div class="title">Contact Info</div>
+                    </div>
                 </div>
+                <div class="col_md col-md-7 col-sm-12 col-xs-12">
+                    <div class="content">
+                        <div class="title">Contact Info</div>
+                        <div class="row">
+                            <div class="col_md col-md-9 col-sm-9 col-xs-12">
+                                <ul class="ul">
+                                    <li class="li">
+                                        <a href="contact.html" class="link">
+                                            <i class="iconfont icon-dianhua"></i>
+                                            <span> Tel：+86-195-1463-0835（Leon）</span>
+                                        </a>
+                                    </li>
+                                    <li class="li">
+                                        <a href="contact.html" class="link">
+                                            <i class="iconfont icon-youxiang"></i>
+                                            <span>Email：leon.xia@arraybee.com</span>
+                                        </a>
+                                    </li>
+                                    <li class="li">
+                                        <a href="contact.html" class="link">
+                                            <i class="iconfont icon-dizhi"></i>
+                                            <span>
+                                                Address：COFCO Business Park, Xin'an Street, Bao'an District, Shenzhen
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col_md col-md-3 col-sm-3 col-xs-12">
+                                <div class="code">
+                                    <div class="cover_box">
+                                        <img class="cover" src="img/code.png" alt="code">
+                                    </div>
+                                    <div class="lead">Online Service</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="wrap justify_space">
+                <h2 class="text">Copyright &copy; All Rights Reserved Shenzhen Xufeng Technology Co., Ltd</h2>
+                <style>
+    .blogroll {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .blogroll .box {
+        padding: 0 7px;
+    }
+
+    .blogroll .box:first-child {
+        padding-left: 0;
+    }
+
+    .blogroll .link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        color: #303030;
+        text-align: center;
+        line-height: 40px;
+
+        &:hover {
+            transform: translateY(-6px);
+            background: #00398B;
+        }
+
+        &:hover .iconfont {
+            color: #fff;
+        }
+    }
+
+    .blogroll .iconfont {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .blogroll {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+
+<div class="blogroll">
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-skype"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-shejiaotubiao-14"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-youtobe"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-facebook"></i>
+        </a>
+    </div>
+    <div class="box">
+        <a href="javascript:;" class="link animate">
+            <i class="iconfont icon-instagram-fill"></i>
+        </a>
+    </div>
+</div>
             </div>
         </div>
     </div>
