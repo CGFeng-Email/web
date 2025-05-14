@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    @@include('head.html')
+</head>
+
+<body>
+    <div class="login img_bg" style="background-image: url(../../img/login_bg.png);">
+        <h1 class="logo">
+            <img class="cover" src="../../img/logo.png" alt="">
+        </h1>
+        <div class="main">
+            <div class="row">
+                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                    <div class="content box">
+                        <h3 class="title">Client Login</h3>
+                        <div class="b_line"></div>
+                        <form class="layui-form form" action="">
+                            <div class="item">
+                                <div class="name">
+                                    <span class="text">USERNAME</span>
+                                    <span class="ide">*</span>
+                                </div>
+                                <div class="input_box display_flex box_radius box_shadow">
+                                    <i class="iconfont icon-yonghu"></i>
+                                    <input type="text" name="phone" lay-verify="required"
+                                        placeholder="Please enter your account number"
+                                        lay-reqtext="Please enter your account number" lay-verify="phone"
+                                        lay-vertype="tips" autocomplete="off" class="layui-input input">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="name">
+                                    <span class="text">PASSWORD</span>
+                                    <span class="ide">*</span>
+                                </div>
+                                <div class="input_box display_flex box_radius box_shadow">
+                                    <i class="iconfont icon-ziyuanxhdpi"></i>
+                                    <input type="password" name="password" lay-verify="required"
+                                        placeholder="Please enter your password"
+                                        lay-reqtext="Please enter your password" lay-vertype="tips" autocomplete="off"
+                                        class="layui-input input">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <button class="layui-btn submit_btn" lay-submit lay-filter="submit">Submit</button>
+                            </div>
+                            <div class="lead">
+                                Created with <i class="iconfont icon-yachi"></i> Bravodent
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                    <div class="box">
+                        <div class="swiper-container _swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide item">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/login_cover1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide item">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/login_cover2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        // 提交事件
+        form.on('submit(submit_btn)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    });
+
+    const _swiper = new Swiper('._swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1000,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+    })
+
+</script>
+
+</html>

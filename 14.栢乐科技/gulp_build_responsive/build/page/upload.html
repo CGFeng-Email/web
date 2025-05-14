@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="upload img_bg" style="background-image: url(../../img/login_bg.png);">
+        <div class="main box_shadow">
+            <div class="title text-uppercase">Upload Attachment</div>
+            <form class="layui-form form" action="">
+                <div class="item" style="margin-bottom: 14px;">
+                    <div class="input_box display_flex box_radius box_shadow">
+                        <i class="iconfont icon-xinxi"></i>
+                        <input type="text" name="title" lay-verify="required" placeholder="Title" lay-reqtext="Title"
+                            lay-vertype="tips" autocomplete="off" class="layui-input input">
+                    </div>
+                </div>
+                <div class="upload_item box_radius box_shadow">
+                    <div class="lead">Upload the completed content. Supported upload files: jpg, pdf, ppt</div>
+                    <div class="box box_radius box_shadow">
+                        <img class="cover" src="../../img/upload_icon.png" alt="upload">
+                        <div class="upload_btn">
+                            <div class="upload_list">
+                                <div class="item display_flex">
+                                    <i class="iconfont icon-shangchuantupian"></i>
+                                    <span class="file_name"></span>
+                                </div>
+                            </div>
+                            <div class="common_btn animate box_radius box_shadow">
+                                <input type="file" accept="image/*" id="fileInput">
+                                <span class="text">Select a document</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item item_btn">
+                    <button class="layui-btn submit_btn box_radius" lay-submit lay-filter="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const fileInput = document.getElementById('fileInput');
+    fileInput.addEventListener('change', (event) => {
+        const files = event.target.files;
+
+        if (files.length > 0) {
+            const formData = new FormData(); // 创建 FormData 对象
+            formData.append('file', files[0]); // 添加文件到 FormData（字段名需与后端一致）
+
+            $('.file_name').text(files[0].name);
+            $('.upload_list').show()
+
+            // 可以添加其他额外数据
+            formData.append('userId', '123');
+            formData.append('description', '用户上传的文件');
+
+            for (let [key, value] of formData.entries()) {
+                console.log(key, value);
+            }
+        }
+    })
+
+
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        // 提交事件
+        form.on('submit(submit_btn)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    })
+</script>
+
+</html>

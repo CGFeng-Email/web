@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<link rel="stylesheet" href="nprogress/nprogress.css">
+<link rel="stylesheet" href="font/iconfont.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="aos/aos.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
+<link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="nprogress/nprogress.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="aos/aos.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="swiper/js/swiper.animate1.0.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="layui/layui.min.js"></script>
+<script src="js/comment.js"></script>
+</head>
+
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="wrap justify_space">
+            <h1 class="logo">
+                <a href="index.html" class="link">
+                    <img class="cover" src="img/sub_logo.png" alt="">
+                </a>
+            </h1>
+            <div class="content justify_end">
+                <div class="to">
+                    <a href="upload.html" class="link animate">Upload file</a>
+                </div>
+                <div class="user justify_center">
+                    <div class="info justify_center">
+                        <span class="name">Welcome - John</span>
+                        <a href="login.html" class="link">
+                            <img class="cover" src="img/photo.png" alt="">
+                        </a>
+                        <i class="iconfont icon-xiala"></i>
+                    </div>
+                    <div class="exit box_shadow box_radius">
+                        <div class="lead">
+                            <a href="upload.html" class="link animate text-uppercase">Upload file</a>
+                        </div>
+                        <div class="lead">
+                            <a href="" class="link">
+                                <i class="iconfont icon-exit-outlined"></i>
+                                <span>EXIT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="placeholder_header"></div>
+
+<script>
+    NProgress.start();
+
+    $('.header .user').hover(function () {
+        $(this).children('.exit').stop().slideToggle();
+    })
+</script>
+    <div class="upload img_bg" style="background-image: url(img/login_bg.png);">
+        <div class="main box_shadow">
+            <div class="title text-uppercase">Upload Attachment</div>
+            <form class="layui-form form" action="">
+                <div class="item" style="margin-bottom: 14px;">
+                    <div class="input_box display_flex box_radius box_shadow">
+                        <i class="iconfont icon-xinxi"></i>
+                        <input type="text" name="title" lay-verify="required" placeholder="Title" lay-reqtext="Title"
+                            lay-vertype="tips" autocomplete="off" class="layui-input input">
+                    </div>
+                </div>
+                <div class="upload_item box_radius box_shadow">
+                    <div class="lead">Upload the completed content. Supported upload files: jpg, pdf, ppt</div>
+                    <div class="box box_radius box_shadow">
+                        <img class="cover" src="img/upload_icon.png" alt="upload">
+                        <div class="upload_btn">
+                            <div class="upload_list">
+                                <div class="item display_flex">
+                                    <i class="iconfont icon-shangchuantupian"></i>
+                                    <span class="file_name"></span>
+                                </div>
+                            </div>
+                            <div class="common_btn animate box_radius box_shadow">
+                                <input type="file" accept="image/*" id="fileInput">
+                                <span class="text">Select a document</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item item_btn">
+                    <button class="layui-btn submit_btn box_radius" lay-submit lay-filter="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const fileInput = document.getElementById('fileInput');
+    fileInput.addEventListener('change', (event) => {
+        const files = event.target.files;
+
+        if (files.length > 0) {
+            const formData = new FormData(); // 创建 FormData 对象
+            formData.append('file', files[0]); // 添加文件到 FormData（字段名需与后端一致）
+
+            $('.file_name').text(files[0].name);
+            $('.upload_list').show()
+
+            // 可以添加其他额外数据
+            formData.append('userId', '123');
+            formData.append('description', '用户上传的文件');
+
+            for (let [key, value] of formData.entries()) {
+                console.log(key, value);
+            }
+        }
+    })
+
+
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        // 提交事件
+        form.on('submit(submit_btn)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    })
+</script>
+
+</html>
