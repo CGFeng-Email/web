@@ -208,27 +208,10 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
 }
 .line {
-  padding: 18px 0;
-  position: relative;
-}
-.line .t_l {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 88px;
-  height: 8px;
-  border-radius: 4px;
+  margin: 5px 0;
+  height: 3px;
   background: #00398B;
-}
-.line::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.1);
+  width: 100px;
 }
 .paging .nav_box {
   text-align: center;
@@ -305,19 +288,53 @@ body::-webkit-scrollbar-thumb:hover {
   color: #fff;
 }
 .more {
-  padding-top: 30px;
+  padding-top: 10px;
+}
+.more .box {
+  display: inline-block;
 }
 .more .link {
+  min-width: 156px;
   height: 50px;
   line-height: 50px;
-  padding: 0 34px;
+  padding: 0 40px;
   font-size: 16px;
   color: #fff;
   background: #00398B;
   width: auto;
+  border-radius: 50px;
+  position: relative;
 }
-.more .link .iconfont {
-  padding-left: 4px;
+.more .link .lead {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.more .link .icon {
+  position: absolute;
+  top: 50%;
+  right: -3px;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 34px;
+  background: #FF8000;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+.more .link .icon .iconfont {
+  color: #fff;
+}
+.more .link:hover .lead {
+  left: 20px;
+  transform: translate(0, -50%);
+}
+.more .link:hover .icon {
+  opacity: 1;
+  right: 7px;
 }
 .search .main {
   margin: auto;
@@ -645,4 +662,134 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .header_height {
   height: 80px;
+}
+.footer {
+  background: #EBEBEB;
+}
+.footer .main {
+  padding: 80px 0;
+}
+.footer .main .left_box .logo {
+  width: 180px;
+  margin: auto;
+}
+.footer .main .left_box .logo .cover {
+  width: 100%;
+}
+.footer .main .left_box .title {
+  font-size: 18px;
+  text-align: center;
+  padding: 14px 0 20px;
+}
+.footer .main .content .title {
+  padding: 20px 0;
+  color: #00398B;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 30px;
+}
+.footer .main .content .ul .li {
+  padding: 5px 0;
+}
+.footer .main .content .ul .li .link {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.footer .main .content .ul .li .link .iconfont {
+  font-size: 20px;
+  color: #00398B;
+}
+.footer .main .content .ul .li .link:hover {
+  color: #00398B;
+}
+.footer .main .content .code {
+  text-align: center;
+}
+.footer .main .content .code .lead {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 7px 0;
+}
+.footer .copyright {
+  border-top: 1px solid #fff;
+  padding: 20px 0;
+}
+.footer .copyright .wrap {
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer .copyright .wrap .text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  font-weight: 600;
+}
+.index_swiper {
+  overflow: hidden;
+}
+.index_swiper .item {
+  position: relative;
+}
+.index_swiper .item .cover_box .cover {
+  min-height: 500px;
+}
+.index_swiper .item .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1500px;
+}
+.index_swiper .item .content .wrap {
+  width: 800px;
+  padding: 0 10px;
+}
+.index_swiper .item .content .title {
+  font-size: 46px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.index_swiper .item .content .sub_head {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+.index_swiper .swiper-pagination {
+  bottom: 20px;
+}
+.index_swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.7;
+}
+.index_swiper .swiper-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 12px;
+  opacity: 1;
+}
+.about_introduce .title {
+  color: #00398B;
+}
+.about_introduce .cover_box {
+  margin: 20px 0;
+  border-radius: 24px;
+}
+.about_introduce .cover_box:hover .cover {
+  transform: scale(1.07);
+}
+.about_introduce .more {
+  text-align: right;
+}
+.about_introduce .content {
+  padding-left: 60px;
+}
+.about_introduce .content .lead {
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.about_introduce .content .video_box {
+  width: 100%;
 }
