@@ -1,0 +1,80 @@
+<div class="get_message container_padding img_bg" style="background-image: url(../../img/message_bg.jpg);">
+    <div class="container">
+        <div class="main">
+            <div class="row">
+                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                    <div class="content justify_center">
+                        <div class="name">Accelerate Your <br> Business Growth with <br> ArrBee</div>
+                        <div class="lead">ArrBee strengthens the value of businesses and organizations with our
+                            expansive range of cutting-edge digital solutions.</div>
+                    </div>
+                </div>
+                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                    <div class="get_form">
+                        <h3 class="title">Message</h3>
+                        <div class="line"></div>
+                        <form class="layui-form form">
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="text" name="company" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Please enter the company"
+                                            lay-reqtext="Please enter the company" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                    <div class="box two_box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="text" name="name" lay-verify="required" lay-vertype="tips"
+                                            placeholder="Please enter the contact person"
+                                            lay-reqtext="Please enter the contact person" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="tel" name="mobile" lay-verify="required | phone" lay-vertype="tips"
+                                            placeholder="Please enter your phone number"
+                                            lay-reqtext="Please enter your phone number" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                    <div class="box two_box col-md-6 col-sm-12 col-xs-12">
+                                        <input type="email" name="email" lay-verify="required | email"
+                                            lay-vertype="tips" placeholder="Please enter your email"
+                                            lay-reqtext="Please enter your email" autocomplete="off"
+                                            class="layui-input input" lay-affix="clear">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="box col-md-12 col-sm-12 col-xs-12">
+                                        <textarea name="message" placeholder="Message content"
+                                            class="layui-textarea textarea" style="resize: none;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_box">
+                                <button class="layui-btn btn" lay-submit lay-filter="contact_us_btn">Get
+                                    A Free Quote</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(contact_us_btn)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    });
+</script>

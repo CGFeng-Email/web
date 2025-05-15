@@ -16,6 +16,14 @@
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .banner {
+        .content {
+            width: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 1240px) {
     .header {
         .content {
@@ -110,6 +118,43 @@
         }
     }
 
+    .banner {
+        .content {
+            .wrap {
+                .title {
+                    font-size: 20px;
+                }
+
+                .crumbs {
+                    .list {
+                        .box {
+                            font-size: 14px;
+
+                            .link {
+                                font-size: 14px;
+
+                                .iconfont {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .page_tabs {
+                    padding-top: 20px;
+
+                    .item {
+                        .link {
+                            min-width: auto;
+                            padding: 10px 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .tabs {
         padding: 0 0 20px;
 
@@ -119,10 +164,8 @@
 
             .link {
                 width: auto;
-                height: 44px;
-                line-height: 44px;
                 font-size: 14px;
-                padding: 0 20px;
+                padding: 10px 30px;
             }
         }
     }
@@ -236,6 +279,164 @@
             padding-top: 20px;
         }
     }
+
+    .solutions {
+        .content {
+            margin-bottom: 20px;
+
+            .solution_swiper {
+                .item {
+                    .left_box {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .store {
+
+        .list {
+            .item {
+                margin-bottom: 20px;
+                background: #00398B;
+
+                .to_head {
+
+                    .ide,
+                    .num,
+                    .text {
+                        color: #fff;
+                    }
+                }
+
+                .lead {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .news {
+        .main {
+            .item {
+                margin-bottom: 20px;
+
+                .link {
+                    .cover_box {
+                        height: 230px;
+                    }
+
+                    .content {
+                        .name {
+                            font-size: 16px;
+                        }
+
+                        .lead {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .get_message {
+        .main {
+            .content {
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            .form {
+                .item {
+                    margin-bottom: 10px !important;
+
+                    .two_box {
+                        margin-top: 10px;
+                        padding-left: 0;
+                    }
+
+                    .textarea {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .company_explain {
+        .main {
+            .content {
+                .lead {
+                    font-size: 14px;
+                }
+            }
+
+            .list {
+                .item {
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
+
+    .company_list {
+
+        .item {
+            padding: 20px;
+
+            .content {
+                height: auto;
+                margin-bottom: 10px;
+
+                .name {
+                    font-size: 20px;
+                }
+
+                .lead {
+                    font-size: 16px;
+                }
+            }
+
+            .cover_box {
+                .cover {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .item:nth-child(odd) {
+            .row {
+                flex-flow: column-reverse;
+            }
+        }
+
+        .item:nth-child(even) {
+            .row {
+                flex-wrap: wrap;
+            }
+
+            .content {
+                padding: 0;
+            }
+        }
+    }
+
+    .company_info {
+        .cover_box {
+            .cover {
+                height: auto;
+                max-height: 500px;
+            }
+        }
+
+        .content {
+            height: auto;
+            padding: 20px 0;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -271,8 +472,6 @@
                 padding: 0 10px;
 
                 .link {
-                    height: 40px;
-                    line-height: 40px;
 
                     .iconfont,
                     .text {
@@ -365,6 +564,200 @@
             .cover_box {
                 .cover {
                     object-position: center;
+                }
+            }
+        }
+    }
+
+    .solutions {
+        .head {
+            flex-wrap: wrap;
+
+            .left {
+                margin-bottom: 10px;
+            }
+
+            .to_more {
+                width: 100%;
+                text-align: right;
+            }
+        }
+
+        .main {
+            .content {
+                padding: 20px 10px;
+
+                .solution_swiper {}
+            }
+        }
+    }
+
+    .goods_shelf {
+        .main {
+            .cover_box {
+                .cover {
+                    height: auto;
+                }
+            }
+
+            .content {
+                height: auto;
+                padding: 30px 10px;
+            }
+        }
+    }
+
+    .store {
+        .head {
+            width: 100%;
+        }
+
+        .list {
+            .item {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .partnerships {
+        .main {
+            .cooperative_partner {
+                padding: 20px 10px;
+
+                .swiper_list {
+                    .item {
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    .news {
+        .main {
+            .item {
+                .link {
+                    .cover_box {
+                        height: 230px;
+                    }
+
+                    .content {
+                        .name {
+                            font-size: 16px;
+                        }
+
+                        .lead {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .get_message {
+        .main {
+            .content {
+                .name {
+                    font-size: 20px;
+                }
+
+                .lead {
+                    font-size: 16px;
+                }
+            }
+
+            .get_form {
+                padding: 20px;
+
+                .form {
+                    margin-top: 10px;
+                    padding-top: 0;
+
+                    .item {
+                        margin-bottom: 20px;
+                    }
+
+                    .box {
+                        padding: 0;
+                    }
+
+                    .input_box {
+                        padding-left: 10px;
+                    }
+
+                    .input {
+                        height: 60px;
+                        font-size: 16px;
+                        padding: 0 20px;
+                    }
+
+                    .layui-form-select .layui-input {
+                        padding: 0 20px;
+                        height: 60px;
+                        font-size: 16px;
+                    }
+
+                    .textarea {
+                        padding: 20px 20px;
+                        font-size: 16px;
+                    }
+
+                    .btn_box {
+                        margin-top: 10px;
+
+                        .btn {
+                            min-width: none;
+                            width: 100%;
+                            height: 50px;
+                            font-size: 18px;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .company_explain {
+        .main {
+            .content {
+                width: 100%;
+                padding-top: 0;
+
+                .cover_box {
+                    max-width: 100%;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+    .corporate_environment {
+        .main {
+            .list {
+                padding-top: 20px;
+                width: 60%;
+            }
+        }
+    }
+
+    .company_image {
+        .main {
+            .company_image_swiper {
+                height: 300px;
+            }
+
+            .menus {
+                padding-top: 10px;
+
+                .company_image_menus {
+                    padding-left: 0;
+                    height: 180px;
+
+                    .item {
+                        font-size: 18px;
+                    }
                 }
             }
         }
