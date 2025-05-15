@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Search</title>
+    <title>News Details</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -761,36 +761,111 @@
         $(this).parents('.box').siblings('.child').stop().slideToggle();
     })
 </script>
-    <div class="search container_padding">
-        <div class="container">
-            <div class="main">
-                <div class="head center_head">
-                    <h2 class="title" data-aos="slide-up">Search</h2>
-                </div>
-                <div class="search_form">
-                    <form class="layui-form" action="">
-                        <div class="content">
-                            <div class="box">
-                                <input type="text" name="search" lay-verify="required"
-                                    placeholder="Please enter keyword" lay-reqtext="Please enter keyword"
-                                    lay-vertype="tips" autocomplete="off" class="layui-input input">
-                                <button type="submit" class="layui-btn submit_btn" lay-submit lay-filter="submit">
-                                    <i class="iconfont icon-sousuo"></i>
-                                </button>
-                            </div>
-                            <div class="note">
-                                <a href="details.html" class="link">The Summer Day</a>
-                                <a href="details.html" class="link">Leather Perfume Suit</a>
-                                <a href="details.html" class="link">Star</a>
-                                <a href="details.html" class="link">Roam</a>
-                                <a href="details.html" class="link">Amoretti</a>
-                            </div>
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="img/details_banner.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="wrap">
+                <h3 class="title ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s">
+                    News Details
+                </h3>
+                <div class="crumbs">
+                    <div class="list">
+                        <div class="box">
+                            <a href="./index.html" class="link display_flex">
+                                <i class="iconfont icon-shouye"></i>
+                                <span>Home</span>
+                            </a>
                         </div>
-                    </form>
+                        <div class="arrow">
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </div>
+                        <div class="box">
+                            <a href="./news.html" class="link">
+                                News
+                            </a>
+                        </div>
+                        <div class="arrow">
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </div>
+                        <div class="box">
+                            News Details
+                        </div>
+                    </div>
+                </div>
+                <div class="page_tabs display_flex">
+                    <div class="item active">
+                        <a href="" class="link">Product Information</a>
+                    </div>
+                    <div class="item">
+                        <a href="" class="link">Downloads</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="height: 100px;"></div>
+    </div>
+    <div class="news_details container_padding">
+        <div class="container">
+            <div class="head head_center">
+                <div class="wrap">
+                    <h2 class="title text-capitalize">
+                        NEWS title1
+                    </h2>
+                </div>
+            </div>
+            <div class="author">
+                <span class="text">Release time：2025-03-28 </span>
+                <span class="text">Source：ArrBee</span>
+            </div>
+            <div class="child_padding">
+                <div class="content">
+                    <p class="lead">
+                        Guangzhou Aurora Lighting Co., Ltd was found in 2011 by CEO Mr. Albert Zeng.
+                    </p>
+                    <div class="lead">
+                        Domestically we are one of the first teams in this market to reliably develop aftermarket lights
+                        continuously with a consumer
+                        friendly price all the time. Presently, our main products are LED Laser light, LED Work Light,
+                        LED Driving Light, LED Light Bar, LED Headlight, 4x4 acessories and quto parts,for
+                        vehicles,industrial, architectural and commerical applications.which largely satisfies the
+                        regular and basic needs from different places internationally.
+                    </div>
+                    <div class="lead">
+                        Respect of the company as Quality first,Reputation first and Customer first,we are committed to
+                        providing high-quality products and good after-sales service.Up to now,our
+                        products are exported to more than 60 countries and areas around the whole world.Such as
+                        America,Australia,Newe Zealand, Finland, Sweden, Norway, Guatemala,India, Thailand,
+                        Iceland, France, Germany and so on.And also we enjoyed high reputation at home and abroad.We
+                        Always keeping the principle of Credit,Customer,and Quality.We develop 2-3
+                        new product
+                    </div>
+                    <div class="content_cover">
+                        <img class="cover" src="img/details_cover.png" alt="">
+                        <img class="cover" src="img/details_cover.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="up">
+                    <p class="lead">
+                        <a href="" class="link">
+                            Previous post: No more!
+                        </a>
+                    </p>
+                    <p class="lead">
+                        <a href="" class="link">
+                            Next article: We are always committed to becoming the most trusted partner for our
+                            customers.
+                        </a>
+                    </p>
+                </div>
+
+                <div class="return">
+                    <a href="javascript:history.back()" class="link text-uppercase">Return</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
     <div class="main">
@@ -1002,17 +1077,5 @@
 
 <script src="js/comment.js"></script>
 </body>
-<script>
-    layui.use(function () {
-        var form = layui.form;
-        var layer = layui.layer;
-
-        form.on('submit(submit_btn)', function (data) {
-            var value = data.elem.value;
-            console.log('value', value);
-            return false;
-        });
-    })
-</script>
 
 </html>
