@@ -103,7 +103,7 @@
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <a href="about.html" class="link">
+                            <a href="case.html" class="link">
                                 <div class="head_title animate">
                                     <span class="text-uppercase">Business Cases</span>
                                     <i class="iconfont icon-down-1-copy"></i>
@@ -161,7 +161,7 @@
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <a href="product.html" class="link">
+                            <a href="about.html" class="link">
                                 <div class="head_title">
                                     <span class="text-uppercase">About Us</span>
                                     <i class="iconfont icon-down-1-copy"></i>
@@ -219,7 +219,7 @@
                     </div>
                     <div class="li animate">
                         <div class="box">
-                            <a href="news.html" class="link">
+                            <a href="resources.html" class="link">
                                 <div class="head_title animate">
                                     <span class="text-uppercase">Resources</span>
                                     <i class="iconfont icon-down-1-copy"></i>
@@ -345,8 +345,14 @@
                             <i class="iconfont icon-yonghu"></i>
                         </a>
                     </div>
+                    <!-- 已登录 -->
+                    <div class="item photo circle animate">
+                        <a href="me.html" class="link">
+                            <img class="cover" src="img/user_photo.png" alt="">
+                        </a>
+                    </div>
                     <div class="item contact_item animate">
-                        <a href="" class="link">Contact Us</a>
+                        <a href="contact.html" class="link">Contact Us</a>
                     </div>
                     <div class="menu">
                         <div class="lis"></div>
@@ -358,7 +364,7 @@
         </div>
     </div>
 </div>
-                            
+
 <div class="h5_nav">
     <div class="li active child_li animate">
         <div class="box">
@@ -433,7 +439,7 @@
     <div class="li child_li animate">
         <div class="box">
             <div class="head_title display_flex">
-                <a href="product.html" class="link">
+                <a href="case.html" class="link">
                     <span class="title">Business Cases</span>
                 </a>
                 <div class="spread">
@@ -503,7 +509,7 @@
     <div class="li child_li animate">
         <div class="box">
             <div class="head_title display_flex">
-                <a href="product.html" class="link">
+                <a href="about.html" class="link">
                     <span class="title">About Us</span>
                 </a>
                 <div class="spread">
@@ -573,7 +579,7 @@
     <div class="li child_li animate">
         <div class="box">
             <div class="head_title display_flex">
-                <a href="product.html" class="link">
+                <a href="resources.html" class="link">
                     <span class="title">Resources</span>
                 </a>
                 <div class="spread">
@@ -643,7 +649,7 @@
     <div class="li child_li animate">
         <div class="box">
             <div class="head_title display_flex">
-                <a href="product.html" class="link">
+                <a href="contact.html" class="link">
                     <span class="title">Test Platform</span>
                 </a>
                 <div class="spread">
@@ -712,7 +718,7 @@
     </div>
     <div class="li animate">
         <div class="box">
-            <a href="news.html" class="link">
+            <a href="contact.html" class="link">
                 <div class="head_title">
                     <span class="title text-uppercase">contact us</span>
                     <i class="iconfont icon-right-1-copy"></i>
@@ -884,7 +890,7 @@
                 </div>
             </div>
             <div class="cover_box">
-                <img class="cover" src="img/trend_cover.png" alt="">
+                <img class="cover" src="img/trend_cover.jpg" alt="">
             </div>
         </div>
     </div>
@@ -952,7 +958,7 @@
     </div>
     <div class="company_serve container_padding">
         <div class="container">
-            <div class="main img_bg" style="background-image: url(img/company_serve_bg1.jpg);">
+            <div class="main box_radius box_shadow img_bg" style="background-image: url(img/company_serve_bg1.jpg);">
                 <div class="row">
                     <div class="col_md col-md-7 col-sm-12 col-xs-12"></div>
                     <div class="col_md col-md-5 col-sm-12 col-xs-12">
@@ -1108,7 +1114,7 @@
                         <div class="menus">
                             <div class="swiper-container company_image_menus">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide item pointer justify_center">
+                                    <div class="swiper-slide item pointer justify_center active">
                                         <span class="name">Large scale speech</span>
                                     </div>
                                     <div class="swiper-slide item pointer justify_center">
@@ -1522,14 +1528,10 @@
     })
 
     const company_image_menus = new Swiper('.company_image_menus', {
-        loop: true,
         speed: 1200,
         direction: 'vertical',
         spaceBetween: 10,
         slidesPerView: 7,
-        loopedSlides: 7,
-        freeMode: true,
-        slideThumbActiveClass: 'my-slide-thumb-active',
         multipleActiveThumbs: false,
         on: {
             init: function () {
@@ -1538,20 +1540,28 @@
             },
             slideChangeTransitionEnd: function () {
                 swiperAnimate(this); // 每个slide切换结束时也运行当前slide动画
-            }
+            },
         }
     })
 
-
     const company_image_swiper = new Swiper('.company_image_swiper', {
-        loop: true,
         speed: 1400,
         spaceBetween: 20,
-        loopedSlides: 7,
         thumbs: {
             swiper: company_image_menus,
+            slideThumbActiveClass: 'my-slide-thumb-active',
         },
         multipleActiveThumbs: false,
+        on: {
+            slideChangeTransitionStart: function () {
+                $('.company_image_menus .item').eq(this.activeIndex).addClass('active').siblings().removeClass('active');
+            },
+        }
+    })
+
+    $('.company_image_menus .item').click(function () {
+        company_image_menus.slideTo($(this).index())
+        $(this).addClass('active').siblings().removeClass('active');
     })
 </script>
 
