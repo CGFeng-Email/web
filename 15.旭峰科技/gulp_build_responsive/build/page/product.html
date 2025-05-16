@@ -132,7 +132,7 @@
                 </div>
             </div>
             <div class="cover_box">
-                <img class="cover" src="../../img/trend_cover.png" alt="">
+                <img class="cover" src="../../img/trend_cover.jpg" alt="">
             </div>
         </div>
     </div>
@@ -200,7 +200,7 @@
     </div>
     <div class="company_serve container_padding">
         <div class="container">
-            <div class="main img_bg" style="background-image: url(../../img/company_serve_bg1.jpg);">
+            <div class="main box_radius box_shadow img_bg" style="background-image: url(../../img/company_serve_bg1.jpg);">
                 <div class="row">
                     <div class="col_md col-md-7 col-sm-12 col-xs-12"></div>
                     <div class="col_md col-md-5 col-sm-12 col-xs-12">
@@ -356,7 +356,7 @@
                         <div class="menus">
                             <div class="swiper-container company_image_menus">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide item pointer justify_center">
+                                    <div class="swiper-slide item pointer justify_center active">
                                         <span class="name">Large scale speech</span>
                                     </div>
                                     <div class="swiper-slide item pointer justify_center">
@@ -483,14 +483,10 @@
     })
 
     const company_image_menus = new Swiper('.company_image_menus', {
-        loop: true,
         speed: 1200,
         direction: 'vertical',
         spaceBetween: 10,
         slidesPerView: 7,
-        loopedSlides: 7,
-        freeMode: true,
-        slideThumbActiveClass: 'my-slide-thumb-active',
         multipleActiveThumbs: false,
         on: {
             init: function () {
@@ -499,20 +495,28 @@
             },
             slideChangeTransitionEnd: function () {
                 swiperAnimate(this); // 每个slide切换结束时也运行当前slide动画
-            }
+            },
         }
     })
 
-
     const company_image_swiper = new Swiper('.company_image_swiper', {
-        loop: true,
         speed: 1400,
         spaceBetween: 20,
-        loopedSlides: 7,
         thumbs: {
             swiper: company_image_menus,
+            slideThumbActiveClass: 'my-slide-thumb-active',
         },
         multipleActiveThumbs: false,
+        on: {
+            slideChangeTransitionStart: function () {
+                $('.company_image_menus .item').eq(this.activeIndex).addClass('active').siblings().removeClass('active');
+            },
+        }
+    })
+
+    $('.company_image_menus .item').click(function () {
+        company_image_menus.slideTo($(this).index())
+        $(this).addClass('active').siblings().removeClass('active');
     })
 </script>
 
