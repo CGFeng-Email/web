@@ -242,11 +242,17 @@ body::-webkit-scrollbar-thumb:hover {
 .crumbs .list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .crumbs .list .icon-shouye {
   font-size: 24px;
   margin-right: 4px;
   color: #fff;
+}
+.crumbs .list span,
+.crumbs .list .link,
+.crumbs .list .box {
+  line-height: 2;
 }
 .crumbs .list .arrow {
   padding: 2px 4px 0;
@@ -376,7 +382,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: inline-block;
 }
 .more .link {
-  min-width: 156px;
+  min-width: 164px;
   height: 46px;
   line-height: 46px;
   padding: 0 40px;
@@ -2134,4 +2140,69 @@ body::-webkit-scrollbar-thumb:hover {
 .map_wrap .map {
   height: 500px;
   background: #f5f5f5;
+}
+.login {
+  height: 100vh;
+}
+.login .main {
+  padding-top: 160px;
+}
+.login .main .login_box {
+  padding: 50px;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+}
+.login .main .login_box .title {
+  font-size: 28px;
+  color: #00398B;
+  margin-bottom: 10px;
+}
+.login .main .login_box .sub_head {
+  font-size: 18px;
+  color: #A4A4A4;
+  line-height: 1.5;
+}
+.login .main .login_box .form {
+  padding-top: 20px;
+}
+.login .main .login_box .form .item {
+  margin-bottom: 14px;
+  background: #F2F5FB;
+  border-radius: 50px;
+  padding: 0 20px;
+}
+.login .main .login_box .form .item .iconfont {
+  font-size: 24px;
+  color: #00398B;
+}
+.login .main .login_box .form .item .input {
+  border: none;
+  box-shadow: none;
+  background: none;
+  height: 54px;
+  padding: 0 12px;
+}
+.login .main .login_box .form .item .cover {
+  width: 100px;
+}
+.login .main .login_box .form .submit_box {
+  padding-top: 10px;
+}
+.login .main .login_box .form .submit_box .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background: #00398B;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+.login .main .login_box .form .lead {
+  padding: 24px 0 0;
+}
+.login .main .login_box .form .lead .link {
+  width: auto;
+  font-size: 16px;
+  color: #00398B;
 }

@@ -1,0 +1,62 @@
+<div class="get_quote">
+    <div class="cover_box">
+        <img class="cover" src="../../img/get_quote.jpg" alt="service">
+    </div>
+    <div class="service">
+        <img class="cover" src="../../img/service.png" alt="service">
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="head" style="width: 100%;">
+                <h3 class="title" style="text-align: left;">获取最新产品资讯</h3>
+                <h4 class="sub_head" style="text-align: left; color: #fff;">凭借在原型制造领域的强大实力，我们相信我们能为您做得很好！</h4>
+            </div>
+            <div class="form">
+                <form class="layui-form" action="">
+                    <div class="wrap">
+                        <div class="item input_item">
+                            <div class="box box_radius">
+                                <i class="iconfont icon-24gl-user2"></i>
+                                <input type="text" name="name" lay-verify="required" placeholder="您的姓名"
+                                    lay-reqtext="您的姓名" lay-vertype="tips" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="item input_item">
+                            <div class="box box_radius">
+                                <i class="iconfont icon-youxiang"></i>
+                                <input type="text" name="email" lay-verify="required|email" placeholder="E-mail"
+                                    lay-reqtext="E-mail" lay-vertype="tips" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="item input_message">
+                            <div class="box box_radius">
+                                <i class="iconfont icon-zixunliuyan"></i>
+                                <input type="text" name="name" lay-verify="required" placeholder="留言内容"
+                                    lay-reqtext="留言内容" lay-vertype="tips" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="item submit input_submit">
+                            <button class="layui-btn btn text-uppercase box_radius" lay-submit
+                                lay-filter="quote_submit">确认提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        // 提交事件
+        form.on('submit(quote_submit)', function (data) {
+            var field = data.field;
+            return false; // 阻止默认 form 跳转
+        });
+    });
+</script>
