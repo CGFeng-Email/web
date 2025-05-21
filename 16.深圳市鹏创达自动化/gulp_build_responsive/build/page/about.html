@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="../../img/about_banner.jpg" alt="">
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(submit_btn)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    })
+</script>
+
+</html>
