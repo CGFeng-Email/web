@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>企业荣誉</title>
+    @@include('head.html')
+</head>
+
+<body style="background: #F3F3F3;">
+    @@include('header.html')
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="../../img/about_banner.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3 class="title text-uppercase" data-aos="slide-right">
+                企业荣誉
+            </h3>
+            <div class="sub_head" data-aos="slide-left">
+                让世界充满前进的能量
+            </div>
+        </div>
+    </div>
+    <div class="honor container_padding">
+        <div class="container">
+            <div class="list">
+                <div class="row">
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item box_radius box_shadow pointer" lay-on="photos">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li1.png" alt="">
+                            </div>
+                            <div class="name">发明专利证书</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item box_radius box_shadow pointer" lay-on="photos">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li1.png" alt="">
+                            </div>
+                            <div class="name">发明专利证书</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item box_radius box_shadow pointer" lay-on="photos">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li2.png" alt="">
+                            </div>
+                            <div class="name">发明专利证书</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item box_radius box_shadow pointer" lay-on="photos">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li3.png" alt="">
+                            </div>
+                            <div class="name">发明专利证书</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item box_radius box_shadow pointer" lay-on="photos">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li1.png" alt="">
+                            </div>
+                            <div class="name">发明专利证书</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item box_radius box_shadow pointer" lay-on="photos">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li3.png" alt="">
+                            </div>
+                            <div class="name">发明专利证书</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item box_radius box_shadow pointer" lay-on="photos">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li1.png" alt="">
+                            </div>
+                            <div class="name">发明专利证书</div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                        <div class="item box_radius box_shadow pointer" lay-on="photos">
+                            <div class="cover_box">
+                                <img class="cover" src="../../img/honor_li2.png" alt="">
+                            </div>
+                            <div class="name">发明专利证书</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('get_quote.html')
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var layer = layui.layer;
+        var util = layui.util;
+
+        util.on('lay-on', {
+            'photos': function () {
+                layer.photos({
+                    photos: {
+                        "data": [
+                            {
+                                "src": "../../img/honor_li2.png",
+                            }
+                        ]
+                    },
+                });
+            },
+        })
+    })
+</script>
+
+</html>
