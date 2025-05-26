@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="swiper-container index_swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/index_banner1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="wrap ani" swiper-animate-effect="animate__zoomIn" swiper-animate-duration="0.5s">
+                        <h3 class="title">
+                            模块化电力装备与特种集装箱系统服务商
+                        </h3>
+                        <div class="sub_head text-uppercase">
+                            Modular power equipment and special container system service provider
+                        </div>
+                        <div class="more">
+                            <div class="box">
+                                <a href="" class="link animate display_flex">
+                                    <div class="lead animate">了解更多</div>
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-arrowRight"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide item">
+                <div class="cover_box">
+                    <img class="cover" src="../../img/index_banner2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="wrap ani" swiper-animate-effect="animate__zoomIn" swiper-animate-duration="0.5s">
+                        <h3 class="title">
+                            模块化电力装备与特种集装箱系统服务商
+                        </h3>
+                        <div class="sub_head text-uppercase">
+                            Modular power equipment and special container system service provider
+                        </div>
+                        <div class="more">
+                            <div class="box">
+                                <a href="" class="link animate display_flex">
+                                    <div class="lead animate">了解更多</div>
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-arrowRight"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="company_explain">
+        <div class="about container_padding img_bg" style="background-image: url(../../img/about_bg.jpg);">
+            <div class="container">
+                <div class="head">
+                    <h3 class="title">关于德舍</h3>
+                    <div class="sub_head">模块化电力装备与特种集装箱系统服务商</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+<script>
+    const index_swiper = new Swiper('.index_swiper', {
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        loop: true,
+        speed: 1400,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        on: {
+            init: function () {
+                swiperAnimateCache(this); // 隐藏动画元素 
+                swiperAnimate(this); // 初始化完成开始动画
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this); // 每个slide切换结束时也运行当前slide动画
+            }
+        }
+    })
+</script>
+
+</html>

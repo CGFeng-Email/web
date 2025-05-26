@@ -1,0 +1,75 @@
+.leftUp .cover {
+    animation-name: leftUp;
+}
+
+@keyframes leftUp {
+    0% {
+        transform: scale(1.1, 1.1) translate(4.545%, 4.545%);
+    }
+
+    100% {
+        transform: scale(1.1, 1.1) translate(-4.545%, -4.545%);
+    }
+}
+
+.moveRight .cover {
+    animation-name: moveRight;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: scale(1.1, 1.1) translate(-4.545%, 0);
+    }
+
+    100% {
+        transform: scale(1.1, 1.1) translate(4.545%, 0);
+    }
+}
+
+.moveDown .cover {
+    animation-name: moveDown;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: scale(1.1, 1.1) translate(0, -4.545%);
+    }
+
+    100% {
+        transform: scale(1.1, 1.1) translate(0, 4.545%);
+    }
+}
+
+.centerBig .cover {
+    animation-name: centerBig;
+}
+
+@-webkit-keyframes centerBig {
+    100% {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+@keyframes centerBig {
+    100% {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+.rightDownBig .cover {
+    animation-name: rightDownBig;
+}
+
+@keyframes rightDownBig {
+    100% {
+        transform: scale(1.1, 1.1) translate(4%, 4%);
+    }
+}
+
+.index .index_banner .swiper-slide .cover {
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
