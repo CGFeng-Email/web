@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "9341287",
+      "name": "shouye1",
+      "font_class": "shouye1",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
       "icon_id": "24258554",
       "name": "通用-方向-向左1",
       "font_class": "tongyong-fangxiang-xiangzuo1",
