@@ -1,3 +1,12 @@
+@media screen and (max-width: 1500px) {
+  .get_quote .main {
+    width: 90%;
+  }
+  .banner .content .crumbs {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
 @media screen and (max-width: 1240px) {
   .header .content {
     padding: 0;
@@ -146,6 +155,105 @@
     font-size: 16px;
     margin-bottom: 10px;
   }
+  .company_explain .about {
+    padding: 70px 0;
+  }
+  .company_explain .about_explain {
+    padding: 0;
+  }
+  .company_explain .about_explain .container {
+    padding: 0;
+  }
+  .company_explain .about_explain .container .row {
+    margin: 0;
+  }
+  .company_explain .about_explain .container .row .col_md {
+    padding: 0;
+  }
+  .company_explain .about_explain .left_box {
+    transform: translateY(0);
+  }
+  .company_explain .about_explain .left_box .video_box video {
+    height: auto;
+    margin-bottom: 0;
+  }
+  .company_explain .about_explain .left_box .content {
+    padding: 20px;
+  }
+  .company_explain .about_explain .right_box {
+    transform: translateY(0);
+  }
+  .company_explain .about_explain .right_box .cover_box .cover {
+    height: auto;
+    max-height: 700px;
+  }
+  .corporate_environment .corporate_environment_swiper .item .content .wrap {
+    width: 100%;
+  }
+  .corporate_environment .menus {
+    width: 100%;
+  }
+  .corporate_environment .menus .arrow {
+    padding: 0 20px;
+  }
+  .corporate_environment .menus .corporate_environment_menus .item .cover_box .cover {
+    height: 160px;
+  }
+  .recommend_news .recommend_news_swiper .item .link .cover_box {
+    height: 200px;
+  }
+  .recommend_news .recommend_news_swiper .item .link .name {
+    font-size: 16px;
+  }
+  .recommend_news .recommend_news_swiper .item .link .lead {
+    font-size: 14px;
+  }
+  .get_quote .main .form .wrap {
+    flex-wrap: wrap;
+  }
+  .get_quote .main .form .wrap .input_item,
+  .get_quote .main .form .wrap .input_message {
+    width: 50%;
+    margin-top: 10px;
+  }
+  .get_quote .main .form .wrap .input_item .box,
+  .get_quote .main .form .wrap .input_message .box {
+    height: 50px;
+    line-height: 50px;
+  }
+  .get_quote .main .form .wrap .input_item .box .input,
+  .get_quote .main .form .wrap .input_message .box .input {
+    height: 46px;
+    line-height: 46px;
+  }
+  .get_quote .main .form .wrap .input_message {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .get_quote .main .form .wrap .input_submit {
+    width: 100%;
+  }
+  .get_quote .main .form .wrap .input_submit .btn {
+    height: 46px;
+    line-height: 46px;
+  }
+  .company_profile .wrap {
+    padding: 20px;
+  }
+  .company_profile .wrap .cover_box {
+    transform: translate(0);
+  }
+  .product .product_menus .category {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+  .product .product_menus .recommend .recommend_wrap .recommend_product_swiper .item .link .cover_box .cover {
+    height: auto;
+  }
+  .product .list .item .link .cover_box .cover {
+    height: auto;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -260,5 +368,85 @@
   }
   .index_swiper .item .content .wrap .sub_head {
     font-size: 12px;
+  }
+  .company_explain .about_explain .left_box .content .title {
+    font-size: 20px;
+  }
+  .company_explain .about_explain .left_box .content .lead {
+    font-size: 16px;
+  }
+  .company_explain .about_explain .right_box .content {
+    width: 80%;
+  }
+  .company_explain .about_explain .right_box .content .name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .corporate_environment .menus .wrap {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .corporate_environment .menus .wrap .arrow {
+    width: 100%;
+    flex: content;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .corporate_environment .menus .wrap .arrow .icon {
+    padding: 0 10px;
+  }
+  .corporate_environment .menus .wrap .corporate_environment_menus {
+    width: 100%;
+    flex: content;
+  }
+  .get_quote .main {
+    width: 100%;
+  }
+  .get_quote .main .form {
+    margin-top: 10px;
+  }
+  .get_quote .main .form .wrap .item {
+    width: 100%;
+    padding: 0;
+  }
+  .get_quote .main .form .wrap .input_submit {
+    padding: 0;
+  }
+  .banner .content .crumbs {
+    bottom: 10px;
+  }
+  .banner .content .crumbs .list .box,
+  .banner .content .crumbs .list .link {
+    font-size: 16px;
+  }
+  .banner .content .crumbs .list .box .icon-shouye,
+  .banner .content .crumbs .list .link .icon-shouye {
+    font-size: 16px;
+  }
+  .company_profile .wrap {
+    padding: 20px;
+  }
+  .company_profile .wrap .cover_box {
+    transform: translate(0);
+  }
+  .company_profile .wrap .content {
+    padding: 10px 0;
+  }
+  .honor {
+    padding-top: 20px;
+  }
+  .honor .item {
+    margin-bottom: 0;
+  }
+  .honor .item .name {
+    font-size: 16px;
+  }
+  .product .list .title {
+    color: #01913A;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .product .list .item {
+    margin-bottom: 10px;
   }
 }
