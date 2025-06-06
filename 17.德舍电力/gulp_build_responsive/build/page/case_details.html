@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>客户案例详情</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="banner">
+        <div class="cover_box">
+            <img class="cover" src="../../img/case_banner.jpg" alt="">
+        </div>
+        <div class="content justify_center">
+            <div class="container">
+                <div class="wrap">
+                    <h3 class="title" data-aos="fade-right" data-aos-duration="4000">客户案例</h3>
+                    <div class="line" data-aos="fade" data-aos-duration="4000"></div>
+                    <div class="sub_head" data-aos="fade-left" data-aos-duration="4000">Customer Case</div>
+                </div>
+            </div>
+            <div class="crumbs">
+                <div class="list" data-aos="fade" data-aos-duration="4000">
+                    <div class="box animate">
+                        <a href="./index.html" class="link justify_center">
+                            <i class="iconfont icon-shouye1 icon-shouye"></i>
+                            <span>首页</span>
+                        </a>
+                    </div>
+                    <div class="arrow">
+                        <i class="iconfont icon-right-1-copy"></i>
+                    </div>
+                    <div class="box animate">
+                        客户案例
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news_details container_padding">
+        <div class="container">
+            <div class="cover_box">
+                <img class="img" src="../../img/case_details.png" alt="">
+            </div>
+            <div class="head head_center">
+                <div class="wrap">
+                    <h2 class="title text-capitalize">
+                        电气预制舱
+                    </h2>
+                </div>
+            </div>
+            <div class="author">
+                <span class="text">时间：2025-04-22</span>
+                <span class="text">来源：客户案例</span>
+            </div>
+            <div class="child_padding">
+                <div class="content">
+                    <p class="lead">
+                        十几年的实际制造经验专业生产预制舱类和特种集装箱类产品，包括储能集装箱、电池集装箱、储能升压一体集装箱、电池测试集装箱、PCS集装箱、SVG集装箱、GIS组合电器预制舱、35KV综合预制舱、一二次设备预制舱、单层双层多层立体预制舱、110KV
+                        220KV升压站预制舱、消防站集装箱、岸电集装箱、发电机房静音集装箱、野营方舱、石油撬装集装箱等。支持一二次设备进柜和照明系统、消防报警系统、通风系统、工业空调、视频监控系统、SF6气体泄露监测系统等设计安装。表面处理涵盖喷砂、喷锌、喷涂、喷漆等工艺，达到C3/C4/C5的行业标准。
+                    </p>
+                    <p class="lead">
+                        公司拥有各工序技术员工，全部经过培训合格上岗且有多年工作经验，用很高的敬业精神，在激烈的市场竞争中依靠优质的产品质量和服务赢得市场的认可与信任，产品涉及到输变电、储能电站、新能源光伏电站、石油、通信、航天、军工等领域，在同行中享有较高声誉。
+                    </p>
+                    <p class="lead">
+                        公司拥有完善的生产设备和技术力量，产品行业标准化程度高、结构合理、模块化拼装，符合行业使用要求，可根据客户要求开发研制新产品。
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="article">
+                <div class="up">
+                    <p class="lead">
+                        <a href="./case_details.html" class="link">
+                            上一篇：移动咖啡厅
+                        </a>
+                    </p>
+                    <p class="lead">
+                        <a href="./case_details.html" class="link">
+                            下一篇：储能箱
+                        </a>
+                    </p>
+                </div>
+
+                <div class="return">
+                    <a href="javascript:history.back()" class="link text-uppercase">返回列表</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('get_quote.html')
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(submit_btn)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    })
+</script>
+
+</html>
