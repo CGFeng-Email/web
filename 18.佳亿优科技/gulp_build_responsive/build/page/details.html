@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    @@include('footer.html')
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(submit_btn)', function (data) {
+            var value = data.elem.value;
+            console.log('value', value);
+            return false;
+        });
+    })
+</script>
+
+</html>

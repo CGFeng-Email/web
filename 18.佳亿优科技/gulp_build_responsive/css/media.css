@@ -113,8 +113,18 @@
     font-size: 18px;
     line-height: 1.6;
   }
-  .recommend_product .head {
+  .recommend_dom .head {
     margin: 0;
+  }
+  .product_solution .box .content {
+    padding: 40px 30px;
+    height: auto;
+  }
+  .product_solution .box .content .explain {
+    font-size: 16px;
+  }
+  .product_solution .box .cover_box {
+    height: auto;
   }
 }
 @media screen and (max-width: 767px) {
