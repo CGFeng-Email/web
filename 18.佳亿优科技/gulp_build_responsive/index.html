@@ -1123,7 +1123,7 @@
                 <h3 class="title">Application Instrument</h3>
             </div>
             <div class="main container_main">
-                <div class="swiper-container recommend_swiper product_list recommend_application_swiper">
+                <div class="swiper-container recommend_swiper product_list application_instrument_swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide item">
                             <a href="./details.html" class="link box_shadow box_radius">
@@ -1192,7 +1192,7 @@
             </div>
         </div>
     </div>
-    <div class="recommend_dom recommend_dom_product  container_padding" style="background: #F3F3F3;">
+    <div class="recommend_dom hot_dom_swiper container_padding" style="background: #F3F3F3;">
         <div class="container">
             <div class="head justify_space">
                 <div class="box">
@@ -1201,27 +1201,27 @@
                         after-sales service” as our tenet.</div>
                 </div>
                 <div class="arrow display_flex">
-                    <div class="icon">
+                    <div class="icon swiper_prev">
                         <i class="iconfont icon-arrowLeft"></i>
                     </div>
-                    <div class="icon">
+                    <div class="icon swiper_next">
                         <i class="iconfont icon-arrowRight"></i>
                     </div>
                 </div>
             </div>
             <div class="main container_main">
-                <div class="swiper-container recommend_swiper recommend_application_swiper">
+                <div class="swiper-container hot_product_swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide item">
-                            <a href="./details.html" class="link box_shadow box_radius">
+                            <a href="./details.html" class="link justify_space box_shadow box_radius">
                                 <div class="content">
                                     <div class="top">
-                                        <div class="name over2">Chry-RK-62</div>
+                                        <div class="name over1">Chry-RK-62</div>
                                         <div class="lead over2">SV：3689</div>
                                         <div class="price">$86.30</div>
                                     </div>
-                                    <div class="icon">
-                                        <i class="iconfont icon-arrowRight"></i>
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-you"></i>
                                     </div>
                                 </div>
                                 <div class="cover_box">
@@ -1230,15 +1230,15 @@
                             </a>
                         </div>
                         <div class="swiper-slide item">
-                            <a href="./details.html" class="link box_shadow box_radius">
+                            <a href="./details.html" class="link justify_space box_shadow box_radius">
                                 <div class="content">
                                     <div class="top">
-                                        <div class="name over2">Chry-RK-62</div>
+                                        <div class="name over1">Chry-RK-92B</div>
                                         <div class="lead over2">SV：3689</div>
                                         <div class="price">$86.30</div>
                                     </div>
-                                    <div class="icon">
-                                        <i class="iconfont icon-arrowRight"></i>
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-you"></i>
                                     </div>
                                 </div>
                                 <div class="cover_box">
@@ -1247,15 +1247,15 @@
                             </a>
                         </div>
                         <div class="swiper-slide item">
-                            <a href="./details.html" class="link box_shadow box_radius">
+                            <a href="./details.html" class="link justify_space box_shadow box_radius">
                                 <div class="content">
                                     <div class="top">
-                                        <div class="name over2">Chry-RK-62</div>
+                                        <div class="name over1">Chry-shell-247C</div>
                                         <div class="lead over2">SV：3689</div>
                                         <div class="price">$86.30</div>
                                     </div>
-                                    <div class="icon">
-                                        <i class="iconfont icon-arrowRight"></i>
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-you"></i>
                                     </div>
                                 </div>
                                 <div class="cover_box">
@@ -1264,15 +1264,15 @@
                             </a>
                         </div>
                         <div class="swiper-slide item">
-                            <a href="./details.html" class="link box_shadow box_radius">
+                            <a href="./details.html" class="link justify_space box_shadow box_radius">
                                 <div class="content">
                                     <div class="top">
-                                        <div class="name over2">Chry-RK-62</div>
+                                        <div class="name over1">Fo-RK-101</div>
                                         <div class="lead over2">SV：3689</div>
                                         <div class="price">$86.30</div>
                                     </div>
-                                    <div class="icon">
-                                        <i class="iconfont icon-arrowRight"></i>
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-you"></i>
                                     </div>
                                 </div>
                                 <div class="cover_box">
@@ -1281,6 +1281,7 @@
                             </a>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -1430,7 +1431,7 @@
         }
     })
 
-    const recommend_application_swiper = new Swiper('.recommend_application_swiper', {
+    const application_instrument_swiper = new Swiper('.application_instrument_swiper', {
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,
@@ -1454,6 +1455,40 @@
                 spaceBetween: 10,
             }
         }
+    })
+
+    const hot_product_swiper = new Swiper('.hot_product_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        preloadImages: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        }
+    })
+
+    $('.hot_dom_swiper .swiper_prev').click(function () {
+        hot_product_swiper.slidePrev();
+    })
+
+    $('.hot_dom_swiper .swiper_next').click(function () {
+        hot_product_swiper.slideNext();
     })
 </script>
 
