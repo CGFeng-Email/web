@@ -225,4 +225,18 @@
   .index_swiper .item .content .wrap .sub_head {
     margin-bottom: 14px;
   }
+  .hot_dom_swiper .hot_product_swiper .item .link .cover_box {
+    width: 50%;
+  }
+  .recommend_dom .head {
+    flex-wrap: wrap;
+  }
+  .recommend_dom .head .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .recommend_dom .head .arrow {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }

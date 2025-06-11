@@ -1218,7 +1218,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
-.recommend_dom_product {
+.hot_dom_swiper {
     .head {
         width: 100%;
 
@@ -1232,9 +1232,78 @@ body::-webkit-scrollbar-thumb:hover {
                 height: 40px;
                 line-height: 40px;
                 border-radius: 34px;
+
                 .iconfont {
                     font-size: 24px;
                 }
+            }
+        }
+    }
+
+    .hot_product_swiper {
+        padding-bottom: 60px;
+
+        .item {
+            .link {
+                background: #fff;
+                padding: 20px;
+
+                .content {
+                    width: 40%;
+
+                    .name {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #000;
+                    }
+
+                    .lead {
+                        color: #878787;
+                        padding: 10px 0;
+                    }
+
+                    .price {
+                        color: #ff0000;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .icon {
+                        padding-top: 20px;
+
+                        .iconfont {
+                            font-size: 40px;
+                            color: #DFDFDF;
+                        }
+                    }
+                }
+
+                .cover_box {
+                    width: 60%;
+                }
+
+                &:hover {
+                    .icon {
+                        .iconfont {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                width: 30px;
+                border-radius: 0;
+                height: 5px;
+                background: #fff;
+                opacity: 1;
+            }
+
+            .swiper-pagination-bullet-active {
+                width: 40px;
+                background: @primaryColor;
             }
         }
     }
