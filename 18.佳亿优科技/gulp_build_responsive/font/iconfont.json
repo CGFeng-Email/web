@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "6129344",
+      "name": "186认证、盾牌、安全、保障、质保",
+      "font_class": "renzhengdunpaianquanbaozhangzhibao",
+      "unicode": "e7f3",
+      "unicode_decimal": 59379
+    },
+    {
+      "icon_id": "4437598",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "9592596",
+      "name": "HTSCIT_选中对",
+      "font_class": "xuanzhongdui",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
       "icon_id": "12845675",
       "name": "右",
       "font_class": "you",
