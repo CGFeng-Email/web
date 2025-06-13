@@ -16,6 +16,14 @@
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .banner {
+        .content {
+            width: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 1240px) {
     .header {
         .content {
@@ -129,6 +137,49 @@
         }
     }
 
+    .banner {
+        .content {
+            .wrap {
+                width: 100%;
+
+                .title {
+                    font-size: 20px;
+                    line-height: 1.7;
+                }
+
+                .crumbs {
+                    .list {
+                        .box {
+                            font-size: 14px;
+
+                            .link {
+                                font-size: 14px;
+
+                                .iconfont {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .page_tabs {
+                    padding-top: 20px;
+                    flex-wrap: wrap;
+
+                    .item {
+                        margin-bottom: 10px;
+
+                        .link {
+                            min-width: auto;
+                            padding: 10px 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .search {
         .head {
             .title {
@@ -219,6 +270,135 @@
             }
         }
     }
+
+    .get_email {
+        padding: 10px 0 30px;
+
+        .main {
+            padding-top: 0;
+
+            .item {
+                padding: 10px;
+
+                .input {
+                    height: 40px;
+                }
+
+                .form_btn {
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 20px;
+        margin-top: 30px;
+
+        .serve {
+            transform: translateY(0);
+
+            .wrap {
+                padding: 20px 20px 0;
+            }
+
+            .item {
+                margin-bottom: 20px;
+            }
+        }
+
+        .contact_info {
+            margin-bottom: 30px;
+            padding-right: 0;
+        }
+
+        .content {
+
+            .place_box,
+            .nav_box {
+                display: none;
+            }
+
+            .nav_list {
+                margin: 0;
+            }
+
+            .tips {
+                padding: 40px 0 0;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .list_wrap {
+        padding: 10px 0;
+
+        .product_menus {
+            .category {
+                height: 50px;
+                line-height: 50px;
+                font-size: 16px;
+            }
+
+            .product_nav {
+                margin-bottom: 20px;
+            }
+        }
+
+        .product_list {
+
+            .row {
+                margin: 0;
+            }
+
+            .item {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .message_box {
+        padding: 40px 0;
+
+        .content {
+            padding-bottom: 10px;
+
+            .title {
+                font-size: 20px;
+            }
+
+        }
+
+        .form {
+            .item {
+                margin-bottom: 10px !important;
+
+                .two_box {
+                    margin-top: 10px;
+                    padding-left: 0;
+                }
+
+                .textarea {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .contact_page {
+        padding-bottom: 20px;
+
+        .list {
+            padding: 0;
+            margin: 0;
+
+            .item {
+                margin-bottom: 10px;
+                padding: 10px 20px;
+                min-height: auto;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -235,6 +415,22 @@
         font-size: 18px;
     }
 
+    .contact_btn_wrap {
+        padding: 20px 0;
+
+        .btn {
+            width: 45%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            background: #01913A;
+            color: #fff;
+        }
+
+        .btn:first-child {
+            margin-right: 20px;
+        }
+    }
 
     .head {
         padding: 10px 0;
@@ -269,6 +465,23 @@
                     }
                 }
             }
+        }
+    }
+
+    .contact_btn_wrap {
+        padding: 20px 0;
+
+        .btn {
+            width: 45%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            background: #41594C;
+            color: #fff;
+        }
+
+        .btn:first-child {
+            margin-right: 20px;
         }
     }
 
@@ -408,4 +621,280 @@
             }
         }
     }
+
+    .get_email {
+        .main {
+            width: 90%;
+
+            .item {
+                .iconfont {
+                    font-size: 18px;
+                }
+
+                .input {
+                    font-size: 14px;
+                    padding: 0 10px;
+                }
+
+                .form_btn {
+                    width: 100px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .serve {
+            padding: 0;
+
+            .wrap {
+                .item {
+                    justify-content: start;
+                }
+            }
+        }
+    }
+
+    .list_wrap {
+        .right_box {
+            padding: 0;
+        }
+
+        .product_list {
+            padding: 0 10px;
+
+            .col_md {
+                padding: 0 5px;
+            }
+
+            .item {
+                margin-bottom: 10px;
+
+                .link {
+                    padding: 10px;
+
+                    .cover_box {
+                        .cover {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+
+                    .content {
+                        padding: 10px 0 0;
+
+                        .name {
+                            font-size: 14px;
+                        }
+
+                        .lead {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .details {
+            padding: 0;
+
+            .product_swiper {
+                height: 360px;
+                padding: 10px;
+
+                .product_menu {
+                    width: 70px;
+                }
+            }
+
+            .content {
+                padding: 0 10px;
+
+                .c_title {
+                    font-size: 20px;
+                    color: #41594C;
+                }
+
+                .line {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .introduce {
+            padding: 20px 0;
+
+            .explain {
+                margin-top: 0;
+
+                .name {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .recommend_list {
+            padding: 10px 0;
+
+            .recommend_list_body {
+                padding-top: 10px;
+
+                .recommend_list_swiper {
+                    .item {
+                        .link {
+                            .cover_box {
+                                .cover {
+                                    height: 150px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        .title {
+            margin-bottom: 10px;
+        }
+
+        .lead,
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .message_box {
+
+        .head {
+            padding-bottom: 0;
+
+            .title {
+                font-size: 20px;
+            }
+
+            .sub_head {
+                font-size: 16px;
+            }
+        }
+
+        .form {
+            margin-top: 10px;
+
+            .item {
+                margin-bottom: 20px;
+            }
+
+            .box {
+                padding: 0;
+            }
+
+            .input_box {
+                padding-left: 10px;
+            }
+
+            .input {
+                height: 60px;
+                font-size: 16px;
+                padding: 0 20px;
+            }
+
+            .layui-form-select .layui-input {
+                padding: 0 20px;
+                height: 60px;
+                font-size: 16px;
+            }
+
+            .textarea {
+                padding: 20px 20px;
+                font-size: 16px;
+            }
+
+            .btn_box {
+                margin-top: 10px;
+
+                .btn {
+                    min-width: none;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 18px;
+                    padding: 0;
+                }
+            }
+        }
+
+        .left_cover {
+            padding: 0;
+            width: 100%;
+        }
+
+        .right {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .cover_box {
+                .cover {
+                    height: 180px;
+                }
+            }
+
+            .text {
+                font-size: 20px;
+                color: #000;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .map_wrap {
+        padding-bottom: 20px;
+
+        .map {
+            height: 420px;
+            background: #f5f5f5;
+        }
+    }
+
+    .contact_page {
+        padding-bottom: 0;
+
+        .head {
+            .title {
+                font-size: 20px;
+            }
+
+            .sub_title {
+                font-size: 20px;
+            }
+        }
+
+        .list {
+            padding-top: 20px;
+
+            .item {
+                padding: 10px 14px;
+                align-items: center;
+
+                .content {
+                    padding-left: 16px;
+
+                    .name {
+                        font-size: 16px;
+                    }
+
+                    .text {
+                        margin-top: 0;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
 }
