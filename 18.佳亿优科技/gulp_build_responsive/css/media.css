@@ -476,6 +476,20 @@
   .list_wrap .recommend_list .recommend_list_body .recommend_list_swiper .item .link .cover_box .cover {
     height: 150px;
   }
+  .list_wrap .tabs .tabs_head {
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
+  .list_wrap .tabs .tabs_head .tabs_item {
+    padding: 10px 30px;
+    width: 100%;
+  }
+  .list_wrap .tabs .tabs_head .active {
+    padding: 10px 20px;
+  }
+  .list_wrap .tabs .tabs_body {
+    padding: 10px;
+  }
   .about .title {
     margin-bottom: 10px;
   }

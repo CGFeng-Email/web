@@ -1505,20 +1505,6 @@ body::-webkit-scrollbar-thumb:hover {
 .list_wrap .tabs .active::before {
   opacity: 1;
 }
-.list_wrap .tabs .tabs_head {
-  flex-wrap: wrap;
-  border-bottom: none;
-}
-.list_wrap .tabs .tabs_head .tabs_item {
-  width: 100%;
-  padding: 10px 30px;
-}
-.list_wrap .tabs .tabs_head .active {
-  padding: 10px 20px;
-}
-.list_wrap .tabs .tabs_body {
-  padding: 10px;
-}
 .about .title {
   margin-bottom: 20px;
 }
