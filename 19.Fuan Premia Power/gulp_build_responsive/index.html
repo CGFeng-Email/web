@@ -22,21 +22,24 @@
 <link rel="stylesheet" href="swiper/css/swiper.min.css">
 <link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
 <link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/scrollAnimation.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/media.css">
 <script src="nprogress/nprogress.js"></script>
 <script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/count.js"></script>
 <script src="aos/aos.js"></script>
+<script src="js/lenis.min.js"></script>
 <script src="swiper/js/swiper.min.js"></script>
 <script src="swiper/js/swiper.animate1.0.3.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="layui/layui.min.js"></script>
-<script src="js/comment.js"></script>
 </head>
 
 <body>
-    <div class="header box_shadow">
-    <div class="content" data-aos="fade-in" data-aos-duration="4000">
+    <div>
+        <div class="header box_shadow">
+    <div class="content">
         <div class="wrap">
             <h1 class="logo">
                 <a href="index.html" class="link">
@@ -199,7 +202,7 @@
     </div>
 </div>
 
-<div class="h5_nav">
+<div class="h5_nav" data-scroll-section>
     <div class="li animate active">
         <div class="box">
             <div class="head_title">
@@ -365,70 +368,150 @@
 
 
 </script>
-    <div class="swiper-container index_swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide item">
-                <div class="cover_box">
-                    <img class="cover" src="img/index_banner1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <div class="wrap">
-                        <h3 class="title ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s">
-                            PMI POWER
-                        </h3>
-                        <div class="sub_head ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s">
-                            we dedicated ourselves to the production,R&D and maintenance of various Diesel generator set.
-                        </div>
-                        <div class="more ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.9s">
-                            <div class="box">
-                                <a href="./details.html" class="link animate display_flex">
-                                    <div class="lead animate">Learn More</div>
-                                    <div class="icon animate">
-                                        <i class="iconfont icon-arrowRight"></i>
-                                    </div>
-                                </a>
+        <div class="swiper-container index_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="img/index_banner1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="wrap">
+                            <h3 class="title ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s">
+                                PMI POWER
+                            </h3>
+                            <div class="sub_head ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s">
+                                we dedicated ourselves to the production,R&D and maintenance of various Diesel
+                                generator
+                                set.
+                            </div>
+                            <div class="more ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.9s">
+                                <div class="box">
+                                    <a href="./details.html" class="link animate display_flex">
+                                        <div class="lead animate">Learn More</div>
+                                        <div class="icon animate">
+                                            <i class="iconfont icon-arrowRight"></i>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide item">
-                <div class="cover_box">
-                    <img class="cover" src="img/index_banner2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <div class="wrap">
-                        <h3 class="title ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s">
-                            PMI POWER
-                        </h3>
-                        <div class="sub_head ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s">
-                            we dedicated ourselves to the production,R&D and maintenance of various Diesel generator set.
-                        </div>
-                        <div class="more ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.9s">
-                            <div class="box">
-                                <a href="./details.html" class="link animate display_flex">
-                                    <div class="lead animate">Learn More</div>
-                                    <div class="icon animate">
-                                        <i class="iconfont icon-arrowRight"></i>
-                                    </div>
-                                </a>
+                <div class="swiper-slide item">
+                    <div class="cover_box">
+                        <img class="cover" src="img/index_banner2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="wrap">
+                            <h3 class="title ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s">
+                                PMI POWER
+                            </h3>
+                            <div class="sub_head ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.7s">
+                                we dedicated ourselves to the production,R&D and maintenance of various Diesel
+                                generator
+                                set.
+                            </div>
+                            <div class="more ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.9s">
+                                <div class="box">
+                                    <a href="./details.html" class="link animate display_flex">
+                                        <div class="lead animate">Learn More</div>
+                                        <div class="icon animate">
+                                            <i class="iconfont icon-arrowRight"></i>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
-    <div class="about">
-        <div class="container">
-            <div class="row">
-                <div class=""></div>
+        <div class="about container_padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <div class="content">
+                            <div class="head">
+                                <h3 class="title text-uppercase">About Us</h3>
+                                <div class="sub_head">FUAN
+                                    PREMIA POWER CO.,LTD
+                                </div>
+                            </div>
+                            <div class="lead">FUAN PREMIA POWER CO.,LTD is one of the
+                                professional generator
+                                manufacturer in
+                                china, established in 2008 year,based factory covers an area of over 5,000 square
+                                meters. we
+                                dedicated ourselves to the production,R&D and maintenance of various Diesel
+                                generator
+                                set,.PMI POWER supplies generating sets ranging 5KVA—4,000KVA open type, soundproof
+                                type,
+                                trailer type, containerized type diesel generator sets, ATS Panel , Synchronizing
+                                Panel
+                                ,
+                                Lighting Tower, Load Bank, Also we supply Alternators. At present, there are 3
+                                Assembly
+                                Lines in PMI power to enable us to produce 500 sets for Industrial generator.</div>
+                            <div class="more">
+                                <div class="box">
+                                    <a href="./details.html" class="link animate display_flex">
+                                        <div class="lead animate">Learn More</div>
+                                        <div class="icon animate">
+                                            <i class="iconfont icon-arrowRight"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                        <div class="right_box">
+                            <div class="company_data">
+                                <div class="wrap scroll_count">
+                                    <div class="row">
+                                        <div class="col_md col-md-4 col-sm-3 col-xs-6">
+                                            <div class="box justify_column_center">
+                                                <div class="name">
+                                                    <span class="num" data-startVal="0" data-endVal="2006"
+                                                        data-speed="1" data-decimals="0" id="mumC1">0</span>
+                                                </div>
+                                                <div class="lead">Business Formation</div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-4 col-sm-3 col-xs-6">
+                                            <div class="box justify_column_center">
+                                                <div class="name">
+                                                    <span class="num" data-startVal="0" data-endVal="5000"
+                                                        data-speed="1" data-decimals="0" id="mumC2">0</span>
+                                                    <span class="ide">㎡</span>
+                                                </div>
+                                                <div class="lead">Factory Floor Area</div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-4 col-sm-3 col-xs-6">
+                                            <div class="box justify_column_center">
+                                                <div class="name">
+                                                    <span class="num" data-startVal="0" data-endVal="3660"
+                                                        data-speed="1" data-decimals="0" id="mumC3">0</span>
+                                                    <span class="ide">+</span>
+                                                </div>
+                                                <div class="lead">Serving Global Clients</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <video class="video_box box_shadow" src="video/compress1.mp4" preload="auto"
+                                playsinline muted autoplay controls loop>
+                            </video>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
+        <div class="footer">
     <div class="container">
         <div class="content">
             <div class="row">
@@ -628,7 +711,16 @@
 </div>
 
 <script src="js/comment.js"></script>
+        <div class="scroll-indicator">
+    <div class="mouse">
+        <div class="wheel"></div>
+    </div>
+</div>
+
+
+    </div>
 </body>
+
 <script>
     const index_swiper = new Swiper('.index_swiper', {
         autoplay: {
@@ -653,6 +745,39 @@
             }
         }
     })
-</script>
 
+    $(function () {
+        var countCXArr = [];
+        var countCX = function () {
+            $('.scroll_count').each(function (i, dom) {
+                if (countCXArr[i] && countCXArr[i] === true) {
+                    return;
+                }
+                var sT;
+                var ncTop;
+                sT = $(window).scrollTop();
+                ncTop = $(dom).offset().top;
+                var id, decimals, startVal, endVal, duration;
+                if (sT > ncTop - $(window).height() && sT < ncTop) {
+                    $(dom).find('.num').each(function () {
+                        id = $(this).attr('id');
+                        decimals = $(this).attr('data-decimals'),
+                            startVal = $(this).attr('data-startVal'),
+                            endVal = $(this).attr('data-endVal'),
+                            duration = $(this).attr('data-speed');
+                        new CountUp(id, startVal, endVal, decimals, duration, {
+                            useEasing: true,//效果
+                            separator: ''//数字分隔符
+                        }).start();// target：目标元素id, startVal：你想要开始的值, endVal：你想要到达的值, decimals：小数位数，默认值为0, duration：动画持续时间为秒，默认值为2, options：选项的可选对象
+                        countCXArr[i] = true;
+                    })
+                }
+            })
+        }
+        countCX();
+        $(window).on("scroll", function () {
+            countCX();
+        })
+    });
+</script>
 </html>
