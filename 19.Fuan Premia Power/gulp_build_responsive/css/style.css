@@ -52,8 +52,12 @@ li {
 html,
 body {
   overflow-x: hidden;
+  min-height: 100vh;
   color: #333;
   font: 14px / 1.6 PingFang SC, Helvetica Neue, Helvetica, PingFang SC, Tahoma, Arial, sans-serif;
+}
+[data-scroll-container] {
+  perspective: 1px;
 }
 a,
 .link {
@@ -124,6 +128,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .lead {
   font-size: 16px;
+  line-height: 1.7;
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -166,23 +171,43 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: center;
 }
+.justify_column_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .row {
   padding: 0;
+  margin: 0;
 }
 .head {
-  width: 80%;
+  width: 100%;
   margin: auto;
   padding: 10px;
   text-align: center;
 }
 .head .title {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 600;
   margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+.head .title::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(92.92deg, #fbb941 0%, #ec972c 100%);
+  z-index: -1;
 }
 .head .sub_head {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.8;
+  color: #5D5D5D;
 }
 .head .sub_title {
   font-size: 24px;
@@ -361,7 +386,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0 40px;
   font-size: 16px;
   color: #fff;
-  background: #fff;
+  background: linear-gradient(92.92deg, #fbb941 0%, #ec972c 100%);
   width: auto;
   border-radius: 50px;
   position: relative;
@@ -371,7 +396,7 @@ body::-webkit-scrollbar-thumb:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #000;
+  color: #fff;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -385,12 +410,14 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 50%;
   text-align: center;
   line-height: 34px;
-  background: linear-gradient(92.92deg, #fbb941 0%, #ec972c 100%);
+  background: #fff;
   opacity: 0;
   animation-delay: 0.5s;
 }
 .more .link .icon .iconfont {
-  color: #fff;
+  color: #FD9900;
+  font-size: 20px;
+  font-weight: 500;
 }
 .more .link:hover .lead {
   left: 20px;
@@ -944,4 +971,49 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 1.5;
   font-weight: normal;
   font-weight: 600;
+}
+.about .content {
+  padding: 100px 50px 0 0;
+}
+.about .content .head {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  padding: 10px 0;
+}
+.about .content .lead,
+.about .content p {
+  line-height: 1.8;
+  padding: 20px 0;
+}
+.about .right_box .company_data .col_md {
+  padding: 0;
+}
+.about .right_box .company_data .box {
+  height: 180px;
+  text-align: center;
+  background: #FBB841;
+  padding: 10px;
+}
+.about .right_box .company_data .box .name .num {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+.about .right_box .company_data .box .name .ide {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+.about .right_box .company_data .box .lead {
+  color: #fff;
+}
+.about .right_box .company_data .col_md:nth-child(2) .box {
+  background: #F4A937;
+}
+.about .right_box .company_data .col_md:nth-child(3) .box {
+  background: #ED992E;
+}
+.about .right_box .video_box {
+  width: 100%;
 }
