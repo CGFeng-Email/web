@@ -14,6 +14,12 @@
             }
         }
     }
+
+    .get_quote {
+        .main {
+            width: 90%;
+        }
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -53,6 +59,7 @@
                 .logo {
                     width: 150px;
                 }
+
                 .right {
                     .nav {
                         .li {
@@ -120,6 +127,14 @@
                 line-height: 40px;
                 margin-left: 14px;
             }
+        }
+    }
+
+    .title_line {
+        font-size: 24px;
+
+        &::after {
+            bottom: 1px;
         }
     }
 
@@ -282,6 +297,180 @@
             }
         }
     }
+
+    .about {
+        .content {
+            padding: 0 0 20px;
+
+            .lead {
+                padding: 0;
+            }
+        }
+
+        .right_box {
+            .company_data {
+                .box {
+                    height: auto;
+
+                    .name {
+                        .num {
+                            font-size: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .recommend_product {
+        .product_list {
+            .row {
+                margin: 0;
+            }
+
+            .item {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .choose_us {
+        .corporate_environment {
+            .corporate_environment_swiper {
+                .item {
+                    .content {
+                        .wrap {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .menus {
+                width: 100%;
+
+                .arrow {
+                    padding: 0 20px;
+                }
+
+                .corporate_environment_menus {
+                    .item {
+                        .cover_box {
+                            .cover {
+                                height: 160px;
+                            }
+                        }
+
+                        .shadow {
+                            .name {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .solutions {
+        .content {
+            .lead {
+                padding: 10px 0;
+            }
+        }
+
+        .right {
+            .recommend_solutions_swiper {
+                .item {
+                    .link {
+                        .cover_box {
+                            .cover {
+                                height: 240px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .faq {
+        .right {
+            .cover {
+                max-width: 50%;
+            }
+        }
+    }
+
+    .get_quote {
+        .main {
+            .head {
+                padding-bottom: 0;
+
+                .name {
+                    font-size: 28px;
+                }
+
+                .sub_head {
+                    font-size: 20px;
+                }
+            }
+
+            .form {
+                margin-top: 0;
+
+                .wrap {
+                    flex-wrap: wrap;
+
+                    .input_item,
+                    .input_message {
+                        width: 50%;
+                        margin-top: 10px;
+
+                        .box {
+                            height: 50px;
+                            line-height: 50px;
+
+                            .input {
+                                height: 46px;
+                                line-height: 46px;
+                            }
+                        }
+                    }
+
+                    .input_message {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+
+                    .input_submit {
+                        width: 100%;
+
+                        .btn {
+                            height: 46px;
+                            line-height: 46px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .company_about {
+        .cover_box {
+            margin-bottom: 20px;
+
+            .cover {
+                max-width: 50%;
+            }
+        }
+
+        .content {
+            .title_line {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -294,6 +483,10 @@
         padding-top: 10px;
     }
 
+    .col-xs-12 {
+        padding: 0 5px;
+    }
+
     .title {
         font-size: 18px;
     }
@@ -304,6 +497,31 @@
 
         .sub_title {
             padding: 0;
+        }
+    }
+
+    .more {
+        .box {
+            .link {
+                width: 150px;
+                min-width: auto;
+                padding: 0 10px;
+                height: 44px;
+                line-height: 44px;
+                display: flex;
+                justify-content: space-between;
+
+                .lead {
+                    position: initial;
+                    transform: translate(0);
+                }
+
+                .icon {
+                    position: initial;
+                    transform: translate(0);
+                    opacity: 1;
+                }
+            }
         }
     }
 
@@ -337,6 +555,22 @@
         .modal-dialog {
             .modal-body {
                 padding: 7px;
+            }
+        }
+    }
+
+    .crumbs {
+        .list {
+            .box {
+                font-size: 14px;
+
+                .link {
+                    font-size: 14px;
+
+                    .iconfont {
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }
@@ -417,7 +651,7 @@
 
     .footer {
         .content {
-            padding: 30px 0 0;
+            padding: 30px 5px 0;
 
             .list {
                 margin-top: 10px;
@@ -467,6 +701,234 @@
                     justify-content: center;
                     margin-bottom: 4px;
                 }
+            }
+        }
+    }
+
+    .about {
+        .content {
+            padding: 0 0 10px;
+        }
+
+        .right_box {
+            .company_data {
+                .box {
+                    .name {
+                        .num {
+                            font-size: 26px;
+                        }
+                    }
+
+                    .lead {
+                        font-size: 14px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+
+    .recommend_product {
+        .product_list {
+            padding: 0 10px;
+
+            .col_md {
+                padding: 0 5px;
+            }
+
+            .item {
+                margin-bottom: 10px;
+
+                .link {
+                    padding: 10px;
+
+                    .cover_box {
+                        .cover {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+
+                    .content {
+                        padding: 10px 0 0;
+
+                        .name {
+                            font-size: 14px;
+                        }
+
+                        .lead {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .choose_us {
+        .corporate_environment_swiper {
+            .item {
+                .content {
+                    .wrap {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+
+        .corporate_environment {
+            .menus {
+                .wrap {
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    padding: 20px;
+
+                    .arrow {
+                        width: 100%;
+                        flex: content;
+                        justify-content: flex-end;
+                        padding: 0;
+
+                        .icon {
+                            padding: 0 10px;
+                        }
+                    }
+
+                    .corporate_environment_menus {
+                        width: 100%;
+                        flex: content;
+
+                        .item {
+                            .shadow {
+                                padding: 10px;
+
+                                .name {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .solutions {
+        .content {
+            padding: 10px;
+
+            .lead {
+                padding: 10px 0;
+            }
+        }
+
+        .right {
+            .recommend_solutions_swiper {
+                .item {
+                    .link {
+                        .cover_box {
+                            .cover {
+                                height: 160px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .faq {
+        .content {
+            padding: 0;
+
+            .faq_list {
+                .item {
+                    padding: 10px;
+
+                    .top_head {
+                        .left_ {
+                            .ide {
+                                margin-top: 0;
+                            }
+
+                            .name {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .icon {
+                            .iconfont {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+
+        .right {
+            padding: 10px;
+
+            .cover_box {
+                text-align: center;
+            }
+        }
+    }
+
+    .get_quote {
+        .main {
+            width: 100%;
+            padding: 0 10px;
+
+            .head {
+                .name {
+                    font-size: 20px;
+                    line-height: 1.6;
+                }
+
+                .sub_head {
+                    font-size: 16px;
+                    line-height: 1.6;
+                }
+            }
+
+            .form {
+                margin-top: 10px;
+
+                .wrap {
+                    .item {
+                        width: 100%;
+                        padding: 0;
+                    }
+
+                    .input_submit {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .company_about {
+
+        .cover_box {
+            padding-top: 10px;
+            text-align: center;
+
+            .cover {
+                max-width: 90%;
+            }
+        }
+
+        .content {
+
+            .lead,
+            p {
+                padding: 5px 0;
             }
         }
     }

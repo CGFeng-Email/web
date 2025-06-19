@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5643541",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "7596819",
+      "name": "24gl-user2",
+      "font_class": "24gl-user2",
+      "unicode": "eb24",
+      "unicode_decimal": 60196
+    },
+    {
+      "icon_id": "19818704",
+      "name": "咨询留言",
+      "font_class": "zixunliuyan",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "24258554",
+      "name": "通用-方向-向左1",
+      "font_class": "tongyong-fangxiang-xiangzuo1",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "24258555",
+      "name": "通用-方向-向右1",
+      "font_class": "tongyong-fangxiang-xiangyou1",
+      "unicode": "e71a",
+      "unicode_decimal": 59162
+    },
+    {
       "icon_id": "6308129",
       "name": "地址管理",
       "font_class": "dizhiguanli",
