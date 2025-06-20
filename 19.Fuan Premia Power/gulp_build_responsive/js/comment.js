@@ -51,6 +51,7 @@ $(function () {
     duration: 1000,
     easing: 'ease-in-out',
     delay: 100,
+    once: true, 
   });
 
   // 3. 连接适配器

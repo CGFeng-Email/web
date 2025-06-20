@@ -200,6 +200,18 @@
   .choose_us .corporate_environment .menus .corporate_environment_menus .item .shadow .name {
     font-size: 16px;
   }
+  .choose_us .main {
+    padding-top: 0;
+  }
+  .choose_us .main .choose_menus_swiper .item {
+    padding: 20px 0;
+  }
+  .choose_us .main .choose_menus_swiper .item .name {
+    font-size: 16px;
+  }
+  .choose_us .main .choose_content_swiper .item .content {
+    margin-bottom: 20px;
+  }
   .solutions .content .lead {
     padding: 10px 0;
   }
@@ -258,6 +270,23 @@
   }
   .company_about .content .title_line {
     margin-bottom: 10px;
+  }
+  .list_wrap {
+    padding: 10px 0;
+  }
+  .list_wrap .product_menus .category {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+  .list_wrap .product_menus .product_nav {
+    margin-bottom: 20px;
+  }
+  .list_wrap .product_list .row {
+    margin: 0;
+  }
+  .list_wrap .product_list .item {
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -470,6 +499,18 @@
   .choose_us .corporate_environment .menus .wrap .corporate_environment_menus .item .shadow .name {
     font-size: 16px;
   }
+  .choose_us .main .choose_menus_swiper .item .name {
+    font-size: 14px;
+  }
+  .choose_us .main .choose_content_swiper {
+    padding: 0;
+  }
+  .choose_us .main .choose_content_swiper .item .content {
+    padding: 0;
+  }
+  .choose_us .main .choose_content_swiper .item .cover_box .cover {
+    max-width: 100%;
+  }
   .solutions .content {
     padding: 10px;
   }
@@ -535,5 +576,117 @@
   .company_about .content .lead,
   .company_about .content p {
     padding: 5px 0;
+  }
+  .honor .honor_swiper {
+    height: auto;
+    padding: 0;
+  }
+  .honor .honor_swiper .item .link .cover_box .cover {
+    height: 180px;
+  }
+  .honor .honor_swiper .item .link .content .name {
+    font-size: 16px;
+  }
+  .honor .honor_swiper .swiper-slide-active {
+    transform: translateY(0);
+  }
+  .honor .honor_swiper .swiper-slide-active .cover_box .cover {
+    height: 180px;
+  }
+  .solutions_list .item {
+    padding: 20px 0;
+  }
+  .solutions_list .item .row {
+    flex-direction: column-reverse;
+  }
+  .solutions_list .item .content {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .solutions_list .item .cover_box .cover {
+    max-width: 100%;
+  }
+  .solutions_list .item:nth-child(even) .row {
+    flex-flow: column-reverse;
+  }
+  .list_wrap .right_box {
+    padding: 0;
+  }
+  .list_wrap .product_list {
+    padding: 0 10px;
+  }
+  .list_wrap .product_list .col_md {
+    padding: 0 5px;
+  }
+  .list_wrap .product_list .item {
+    margin-bottom: 10px;
+  }
+  .list_wrap .product_list .item .link {
+    padding: 10px;
+  }
+  .list_wrap .product_list .item .link .cover_box .cover {
+    width: 150px;
+    height: 150px;
+  }
+  .list_wrap .product_list .item .link .content {
+    padding: 10px 0 0;
+  }
+  .list_wrap .product_list .item .link .content .name {
+    font-size: 14px;
+  }
+  .list_wrap .product_list .item .link .content .lead {
+    margin: 0;
+  }
+  .list_wrap .details {
+    padding: 0;
+  }
+  .list_wrap .details .product_swiper {
+    height: 360px;
+    padding: 10px;
+  }
+  .list_wrap .details .product_swiper .product_menu {
+    width: 70px;
+  }
+  .list_wrap .details .content {
+    padding: 0 10px;
+  }
+  .list_wrap .details .content .c_title {
+    font-size: 20px;
+    color: #41594C;
+  }
+  .list_wrap .details .content .line {
+    margin-bottom: 10px;
+  }
+  .list_wrap .introduce {
+    padding: 20px 0;
+  }
+  .list_wrap .introduce .explain {
+    margin-top: 0;
+  }
+  .list_wrap .introduce .explain .name {
+    font-size: 16px;
+  }
+  .list_wrap .recommend_list {
+    padding: 10px 0;
+  }
+  .list_wrap .recommend_list .recommend_list_body {
+    padding-top: 10px;
+  }
+  .list_wrap .recommend_list .recommend_list_body .recommend_list_swiper .item .link .cover_box .cover {
+    height: 150px;
+  }
+  .list_wrap .tabs .tabs_head {
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
+  .list_wrap .tabs .tabs_head .tabs_item {
+    padding: 10px 30px;
+    width: 100%;
+  }
+  .list_wrap .tabs .tabs_head .active {
+    padding: 10px 20px;
+  }
+  .list_wrap .tabs .tabs_body {
+    padding: 10px;
   }
 }

@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "14719563",
+      "name": "手动下单",
+      "font_class": "header-03",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "29522753",
+      "name": "28C点击",
+      "font_class": "a-28Cdianji",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "577340",
+      "name": "购物车-fill",
+      "font_class": "gouwuchefill",
+      "unicode": "e73c",
+      "unicode_decimal": 59196
+    },
+    {
       "icon_id": "5643541",
       "name": "邮箱",
       "font_class": "youxiang",
