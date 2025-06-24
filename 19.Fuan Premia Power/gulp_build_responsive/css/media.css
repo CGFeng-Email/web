@@ -787,6 +787,9 @@
   .product_category {
     padding-top: 0;
   }
+  .product_category .main {
+    padding-top: 0;
+  }
   .product_category .main .content {
     padding: 10px;
   }
