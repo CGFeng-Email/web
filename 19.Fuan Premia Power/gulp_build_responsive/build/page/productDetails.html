@@ -102,7 +102,7 @@
                                                 <i class="iconfont icon-jianhao"></i>
                                             </div>
                                             <div class="box">
-                                                <input type="number" name="number" value="0" min="0"
+                                                <input type="number" name="number" value="1" min="0"
                                                     lay-verify="required" autocomplete="off" lay-affix="clear"
                                                     class="layui-input input" id="quantity_number">
                                             </div>
@@ -122,7 +122,12 @@
                                                 <i class="iconfont icon-bianji"></i>
                                             </div>
                                         </a>
-                                        <div class="btn link">
+                                        <div class="btn link add_inquiry_details" data-html='{ 
+                                            "id": 6,
+                                            "title": "PMI-M Serial Powered by MITSUBISHI", 
+                                            "image": "../../img/product_li1.png",
+                                            "count": 1
+                                            }'>
                                             <div class="wrap justify_center">
                                                 <span class="text">Add to Basket</span>
                                                 <i class="iconfont icon-gouwuche"></i>
@@ -272,8 +277,7 @@
                             <div class="swiper-slide item">
                                 <a href="./details.html" class="link box_shadow box_radius">
                                     <div class="cover_box">
-                                        <img class="cover" src="../../img/product_li1.png"
-                                            alt="Super Silent Type">
+                                        <img class="cover" src="../../img/product_li1.png" alt="Super Silent Type">
                                     </div>
                                     <div class="content">
                                         <div class="name over2">PMI Power Mobile Lighting Tower</div>
@@ -303,8 +307,7 @@
                             <div class="swiper-slide item">
                                 <a href="./details.html" class="link box_shadow box_radius">
                                     <div class="cover_box">
-                                        <img class="cover" src="../../img/product_li4.png"
-                                            alt="Container Type">
+                                        <img class="cover" src="../../img/product_li4.png" alt="Container Type">
                                     </div>
                                     <div class="content">
                                         <div class="name over2">PMl-P Serial Powered by Perkins</div>
@@ -320,6 +323,7 @@
     <div class="section" data-aos="fade">
         @@include('get_quote.html')
     </div>
+    @@include('cart.html')
     @@include('footer.html')
 </body>
 <script>
@@ -385,6 +389,8 @@
             }
         }
     })
+
+
 </script>
 
 </html>
