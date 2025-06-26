@@ -6,6 +6,73 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
+@media screen and (max-width: 1510px) {
+    .index_swiper {
+        .item {
+            .content {
+                width: 94%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .banner {
+        .content {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .header {
+        .content {
+            .wrap {
+                .right {
+                    .nav {
+                        .li {
+                            .box {
+                                .link {
+                                    .head_title {
+                                        padding: 0 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        .content {
+            .wrap {
+                .logo {
+                    width: 150px;
+                }
+
+                .right {
+                    .nav {
+                        .li {
+                            .box {
+                                .link {
+                                    .head_title {
+                                        padding: 0 10px;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 992px) {
     .container_padding {
         padding: 40px 0;
@@ -33,7 +100,6 @@
 
     .head {
         width: 100%;
-        padding-bottom: 20px;
 
         .title {
             font-size: 20px;
@@ -107,6 +173,127 @@
             }
         }
     }
+
+    .header {
+        .content {
+            .right {
+                flex: none;
+                padding: 7px 0;
+                border-radius: 45px;
+                justify-content: space-between;
+
+                .nav {
+                    display: none;
+                }
+
+                .function {
+
+                    .language {
+                        margin: 0 10px;
+                    }
+
+                    .menu {
+                        display: block;
+                    }
+
+                    .search_item {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .h5_nav {
+        padding-top: 120px;
+    }
+
+    .index_swiper {
+        .item {
+            .content {
+                .wrap {
+                    width: 100%;
+
+                    .title {
+                        font-size: 26px;
+                    }
+
+                    .sub_head {
+                        font-size: 18px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .contact_info {
+            margin-bottom: 30px;
+            padding-right: 0;
+        }
+
+        .content {
+            .nav_list {
+                margin: 0;
+
+                .list {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .tips {
+                padding: 40px 0 0;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .get_quote {
+        .cover_box {
+            .cover {
+                height: auto;
+            }
+        }
+
+        .content {
+            margin-top: 20px;
+            height: auto;
+            padding: 40px 20px;
+        }
+    }
+
+    .company_serve {
+        .container {
+            padding: 0;
+        }
+
+        .item {
+            padding: 20px 0;
+
+            .content {
+                padding: 10px;
+
+                .title {
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        .item:nth-child(even) {
+            .row {
+                flex-flow: column-reverse;
+            }
+        }
+
+        .item:first-child {
+            .media {
+                .cover_box {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -119,16 +306,53 @@
         padding-top: 10px;
     }
 
+    .col-xs-12,
+    .col-xs-6 {
+        padding: 0 5px;
+    }
+
     .title {
         font-size: 18px;
     }
 
+    .title_line {
+        font-size: 20px;
+
+        &::after {
+            height: 6px;
+        }
+    }
 
     .head {
         padding: 10px 0;
 
         .sub_title {
             padding: 0;
+        }
+    }
+
+    .more {
+        .box {
+            .link {
+                width: 150px;
+                min-width: auto;
+                padding: 0 10px;
+                height: 44px;
+                line-height: 44px;
+                display: flex;
+                justify-content: space-between;
+
+                .lead {
+                    position: initial;
+                    transform: translate(0);
+                }
+
+                .icon {
+                    position: initial;
+                    transform: translate(0);
+                    opacity: 1;
+                }
+            }
         }
     }
 
@@ -182,6 +406,141 @@
                 .box {
                     .input {
                         font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        .top_height {
+            padding: 10px;
+            height: 54px;
+
+            .lead {
+                font-size: 12px;
+            }
+        }
+
+        .content {
+            .wrap {
+                height: 70px;
+
+                .logo {
+                    width: 130px;
+                }
+
+                .right {
+                    .function {
+                        .item {
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                        }
+
+                        .search_item {
+                            .link {
+                                .iconfont {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .h5_nav {
+        padding-top: 124px;
+    }
+
+    .header_height {
+        height: 124px;
+    }
+
+    .index_swiper {
+        .item {
+            .cover_box {
+                .cover {
+                    object-position: center;
+                }
+            }
+
+            .content {
+                .wrap {
+                    .title_line {
+                        font-size: 20px;
+                    }
+
+                    .sub_head {
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .content {
+            padding: 30px 0 0;
+        }
+
+        .contact_info {
+            .cover_box {
+                width: 140px;
+            }
+        }
+
+        .copyright {
+            padding: 10px;
+
+            .wrap {
+                .text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .oem {
+        .main {
+            width: 90%;
+
+            .lead {
+                padding: 10px 0;
+            }
+        }
+    }
+
+    .recommend_swiper {
+        .item {
+            .content {
+                .name {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+
+    .get_quote {
+        .content {
+
+            .form {
+                .item {
+                    .iconfont {
+                        padding-left: 0;
+                        font-size: 18px;
+                    }
+
+                    .input {
+                        padding: 0 7px;
+                        font-size: 14px;
+                    }
+
+                    .form_btn {
+                        width: 100px;
+                        font-size: 14px;
                     }
                 }
             }

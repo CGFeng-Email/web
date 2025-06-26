@@ -1,3 +1,27 @@
+@media screen and (max-width: 1510px) {
+  .index_swiper .item .content {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .banner .content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header .content .wrap .right .nav .li .box .link .head_title {
+    padding: 0 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header .content .wrap .logo {
+    width: 150px;
+  }
+  .header .content .wrap .right .nav .li .box .link .head_title {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 992px) {
   .container_padding {
     padding: 40px 0;
@@ -19,7 +43,6 @@
   }
   .head {
     width: 100%;
-    padding-bottom: 20px;
   }
   .head .title {
     font-size: 20px;
@@ -68,6 +91,77 @@
   .search .search_form .content .box .input {
     font-size: 16px;
   }
+  .header .content .right {
+    flex: none;
+    padding: 7px 0;
+    border-radius: 45px;
+    justify-content: space-between;
+  }
+  .header .content .right .nav {
+    display: none;
+  }
+  .header .content .right .function .language {
+    margin: 0 10px;
+  }
+  .header .content .right .function .menu {
+    display: block;
+  }
+  .header .content .right .function .search_item {
+    margin-left: 0;
+  }
+  .h5_nav {
+    padding-top: 120px;
+  }
+  .index_swiper .item .content .wrap {
+    width: 100%;
+  }
+  .index_swiper .item .content .wrap .title {
+    font-size: 26px;
+  }
+  .index_swiper .item .content .wrap .sub_head {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .footer .contact_info {
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+  .footer .content .nav_list {
+    margin: 0;
+  }
+  .footer .content .nav_list .list {
+    margin-bottom: 20px;
+  }
+  .footer .content .tips {
+    padding: 40px 0 0;
+    font-size: 14px;
+  }
+  .get_quote .cover_box .cover {
+    height: auto;
+  }
+  .get_quote .content {
+    margin-top: 20px;
+    height: auto;
+    padding: 40px 20px;
+  }
+  .company_serve .container {
+    padding: 0;
+  }
+  .company_serve .item {
+    padding: 20px 0;
+  }
+  .company_serve .item .content {
+    padding: 10px;
+  }
+  .company_serve .item .content .title {
+    margin: 10px 0;
+  }
+  .company_serve .item:nth-child(even) .row {
+    flex-flow: column-reverse;
+  }
+  .company_serve .item:first-child .media .cover_box {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -76,14 +170,42 @@
   .container_main {
     padding-top: 10px;
   }
+  .col-xs-12,
+  .col-xs-6 {
+    padding: 0 5px;
+  }
   .title {
     font-size: 18px;
+  }
+  .title_line {
+    font-size: 20px;
+  }
+  .title_line::after {
+    height: 6px;
   }
   .head {
     padding: 10px 0;
   }
   .head .sub_title {
     padding: 0;
+  }
+  .more .box .link {
+    width: 150px;
+    min-width: auto;
+    padding: 0 10px;
+    height: 44px;
+    line-height: 44px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .more .box .link .lead {
+    position: initial;
+    transform: translate(0);
+  }
+  .more .box .link .icon {
+    position: initial;
+    transform: translate(0);
+    opacity: 1;
   }
   .tabs {
     padding: 10px 0 0;
@@ -119,5 +241,74 @@
   }
   .search .search_form .content .box .input {
     font-size: 16px;
+  }
+  .header .top_height {
+    padding: 10px;
+    height: 54px;
+  }
+  .header .top_height .lead {
+    font-size: 12px;
+  }
+  .header .content .wrap {
+    height: 70px;
+  }
+  .header .content .wrap .logo {
+    width: 130px;
+  }
+  .header .content .wrap .right .function .item {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .header .content .wrap .right .function .search_item .link .iconfont {
+    font-size: 20px;
+  }
+  .h5_nav {
+    padding-top: 124px;
+  }
+  .header_height {
+    height: 124px;
+  }
+  .index_swiper .item .cover_box .cover {
+    object-position: center;
+  }
+  .index_swiper .item .content .wrap .title_line {
+    font-size: 20px;
+  }
+  .index_swiper .item .content .wrap .sub_head {
+    margin-bottom: 14px;
+  }
+  .footer .content {
+    padding: 30px 0 0;
+  }
+  .footer .contact_info .cover_box {
+    width: 140px;
+  }
+  .footer .copyright {
+    padding: 10px;
+  }
+  .footer .copyright .wrap .text {
+    font-size: 14px;
+  }
+  .oem .main {
+    width: 90%;
+  }
+  .oem .main .lead {
+    padding: 10px 0;
+  }
+  .recommend_swiper .item .content .name {
+    font-size: 16px !important;
+  }
+  .get_quote .content .form .item .iconfont {
+    padding-left: 0;
+    font-size: 18px;
+  }
+  .get_quote .content .form .item .input {
+    padding: 0 7px;
+    font-size: 14px;
+  }
+  .get_quote .content .form .item .form_btn {
+    width: 100px;
+    font-size: 14px;
   }
 }
