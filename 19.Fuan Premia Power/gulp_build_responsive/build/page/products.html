@@ -49,7 +49,7 @@
                                 <h3 class="category">PRODUCT CATEGORY</h3>
                                 <div class="product_nav">
                                     <div class="type">
-                                        <div class="lis active">
+                                        <div class="lis">
                                             <div class="link lis_head animate pointer justify_space">
                                                 <span class="name animate">Super Silent Type Genset</span>
                                                 <i class="iconfont arrow_icon  animate icon-right-1-copy"></i>
@@ -177,7 +177,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="lis">
+                                        <div class="lis active">
                                             <div class="link lis_head animate pointer justify_space">
                                                 <span class="name animate">Silent Type Genset</span>
                                                 <i class="iconfont arrow_icon  animate icon-right-1-copy"></i>
@@ -1028,7 +1028,12 @@
     @@include('footer.html')
 </body>
 <script>
-    $('.product_nav .lis').eq(0).children('.son').slideDown();
+    $('.product_nav .lis').each(function () {
+        if ($(this).hasClass('active')) {
+            console.log($(this).index());
+            $('.product_nav .lis').eq($(this).index()).children('.son').slideDown();
+        }
+    })
 
     $('.product_nav .lis .lis_head').click(function () {
         $(this).parent().siblings().children('.son').slideUp();
