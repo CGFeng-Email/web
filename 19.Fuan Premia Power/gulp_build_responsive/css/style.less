@@ -67,7 +67,8 @@ td {
     text-align: center;
 }
 
-th,td {
+th,
+td {
     padding: 10px;
     line-height: 1.6;
 }
@@ -994,6 +995,9 @@ body::-webkit-scrollbar-thumb:hover {
                     position: relative;
                     margin-left: 14px;
                     border-radius: 46px;
+                    min-height: 44px;
+                    display: flex;
+                    align-items: center;
                 }
 
                 .language_head {
@@ -1028,7 +1032,7 @@ body::-webkit-scrollbar-thumb:hover {
 
                 .language_list {
                     position: absolute;
-                    top: 40px;
+                    top: 44px;
                     left: 0;
                     width: 100%;
                     background: @primaryColor;
@@ -1792,10 +1796,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .factory_vr {
-    padding-top: 0;
-
-    .cover_box {
-        min-height: 450px;
+    iframe,
+    canvas {
+        min-height: 550px;
     }
 }
 
