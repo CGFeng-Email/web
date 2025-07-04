@@ -803,6 +803,9 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
   margin-left: 14px;
   border-radius: 46px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 .header .content .right .function .language_head {
   text-align: center;
@@ -832,7 +835,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .header .content .right .function .language_list {
   position: absolute;
-  top: 40px;
+  top: 44px;
   left: 0;
   width: 100%;
   background: linear-gradient(92.92deg, #fbb941 0%, #ec972c 100%);
@@ -1411,11 +1414,9 @@ body::-webkit-scrollbar-thumb:hover {
 .choose_us .choose_content_swiper .swiper-slide-active .row {
   opacity: 1;
 }
-.factory_vr {
-  padding-top: 0;
-}
-.factory_vr .cover_box {
-  min-height: 450px;
+.factory_vr iframe,
+.factory_vr canvas {
+  min-height: 550px;
 }
 .solutions .content {
   color: #fff;
