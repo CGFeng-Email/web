@@ -1,30 +1,48 @@
-<div class="section" data-aos="fade">
-    <div class="get_quote container_padding" style="background: #fff;">
+<div class="get_quote">
+    <div class="cover_box">
+        <img class="cover" src="../../img/get_quote_bg.jpg" alt="service">
+    </div>
+    <div class="main">
         <div class="container">
-            <div class="row">
-                <div class="col_md col-md-6 col-sm-12 col-xs-12">
-                    <div class="modia">
-                        <div class="cover_box" data-aos="zoom-in" data-aos-duration="4000">
-                            <img class="cover" src="../../img/get_quote1.jpg" alt="">
+            <div class="head" style="width: 100%;">
+                <h4 class="sub_head" style="text-align: left; color: #fff;" data-aos="fade-right"
+                    data-aos-duration="4000">—— Only the future and customers cannot be let down</h4>
+                <h3 class="name" style="text-align: left;" data-aos="fade-right" data-aos-duration="4000"
+                    data-aos-delay="200">We firmly believe that creators walk with the future</h3>
+            </div>
+            <div class="form">
+                <form class="layui-form" action="">
+                    <div class="wrap">
+                        <div class="item input_item">
+                            <div class="box box_radius">
+                                <i class="iconfont icon-24gl-user2"></i>
+                                <input type="text" name="name" lay-verify="required" placeholder="Your Name"
+                                    lay-reqtext="Your Name" lay-vertype="tips" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="item input_item">
+                            <div class="box box_radius">
+                                <i class="iconfont icon-youxiang"></i>
+                                <input type="text" name="email" lay-verify="required|email" placeholder="E-mail"
+                                    lay-reqtext="E-mail" lay-vertype="tips" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="item input_message">
+                            <div class="box box_radius">
+                                <i class="iconfont icon-zixunliuyan"></i>
+                                <input type="text" name="name" lay-verify="required" placeholder="Message Content"
+                                    lay-reqtext="Message Content" lay-vertype="tips" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="item submit input_submit">
+                            <button class="layui-btn btn text-uppercase box_radius" lay-submit
+                                lay-filter="quote_submit">sending</button>
                         </div>
                     </div>
-                </div>
-                <div class="col_md col-md-6 col-sm-12 col-xs-12">
-                    <div class="content justify_center img_bg" data-aos="fade-up" data-aos-duration="4000"
-                        style="background-image: url(../../img/get_quote2.jpg);">
-                        <h3 class="title">Subscribe to us for the latest product news at any time</h3>
-                        <form class="layui-form form" action="">
-                            <div class="item justify_center animate">
-                                <i class="iconfont icon-youjian1"></i>
-                                <input type="text" name="email" lay-verify="required" lay-vertype="tips"
-                                    lay-verify="email" placeholder="Please enter your Email"
-                                    lay-reqtext="Please enter your Email" autocomplete="off" class="layui-input input">
-                                <button class="layui-btn form_btn" lay-submit
-                                    lay-filter="contact_submit">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -33,11 +51,12 @@
 <script>
     layui.use(function () {
         var form = layui.form;
+        var layer = layui.layer;
 
         // 提交事件
-        form.on('submit(contact_submit)', function (data) {
+        form.on('submit(quote_submit)', function (data) {
             var field = data.field;
             return false;
         });
-    })
+    });
 </script>
