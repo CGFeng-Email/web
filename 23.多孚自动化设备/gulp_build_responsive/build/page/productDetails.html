@@ -216,18 +216,6 @@
         },
     })
 
-    const quantity_number = document.getElementById('quantity_number');
-
-    $('.decrease').click(function () {
-        if (quantity_number.value > 0) {
-            quantity_number.value = quantity_number.value - 1
-        }
-    })
-
-    $('.increase').click(function () {
-        quantity_number.value = Number(quantity_number.value) + 1
-    })
-
     $('.product_tabs_head .tabs_item').click(function () {
         let index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');

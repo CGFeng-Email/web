@@ -1,0 +1,43 @@
+<div class="section" data-aos="fade">
+    <div class="get_quote container_padding" style="background: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                    <div class="modia">
+                        <div class="cover_box" data-aos="zoom-in" data-aos-duration="4000">
+                            <img class="cover" src="../../img/get_quote1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                    <div class="content justify_center img_bg" data-aos="fade-up" data-aos-duration="4000"
+                        style="background-image: url(../../img/get_quote2.jpg);">
+                        <h3 class="title">Subscribe to us for the latest product news at any time</h3>
+                        <form class="layui-form form" action="">
+                            <div class="item justify_center animate">
+                                <i class="iconfont icon-youjian1"></i>
+                                <input type="text" name="email" lay-verify="required" lay-vertype="tips"
+                                    lay-verify="email" placeholder="Please enter your Email"
+                                    lay-reqtext="Please enter your Email" autocomplete="off" class="layui-input input">
+                                <button class="layui-btn form_btn" lay-submit
+                                    lay-filter="contact_submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+
+        // 提交事件
+        form.on('submit(contact_submit)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    })
+</script>

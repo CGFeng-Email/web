@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PinYan</title>
+    @@include('head.html')
+</head>
+
+<body style="background: #F9F9F9;">
+    @@include('header.html')
+    <div class="section" data-aos="fade">
+        <div class="banner common_banner img_bg" style="background-image: url(../../img/download_banner.png);">
+            <div class="content">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="head">
+                            <h3 class="title">Download</h3>
+                        </div>
+                        <div class="category justify_space">
+                            <div class="crumbs">
+                                <div class="list">
+                                    <div class="box">
+                                        <a href="./index.html" class="link display_flex">
+                                            <i class="iconfont icon-shouye"></i>
+                                            <span>Home</span>
+                                        </a>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="iconfont icon-right-1-copy"></i>
+                                    </div>
+                                    <div class="box">
+                                        Download
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="download container_padding">
+        <div class="container">
+           <div class="hot_search justify_space">
+                <form class="layui-form" action="">
+                    <div class="box flex">
+                        <input type="text" name="search" lay-verify="required" placeholder="Please enter keywords"
+                            lay-reqtext="Please enter keywords" lay-vertype="tips" autocomplete="off"
+                            class="layui-input input">
+                        <button class="submit pointer" lay-submit lay-filter="searchSubmit">
+                            <i class="iconfont icon-sousuo"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="history">
+                    <span class="name">Historical search：</span>
+                    <span class="li">
+                        <a href="" class="link">Calmner CR</a>
+                    </span>
+                    <span class="li">
+                        <a href="" class="link">
+                            Erythcalm SC
+                        </a>
+                    </span>
+                    <span class="li">
+                        <a href="" class="link">Comthing SGS</a>
+                    </span>
+                    <span class="li">
+                        <a href="" class="link">
+                            Scalp care
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+
+</html>
