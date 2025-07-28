@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PinYan</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<link rel="stylesheet" href="nprogress/nprogress.css">
+<link rel="stylesheet" href="font/iconfont.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="aos/aos.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
+<link rel="stylesheet" href="css/scrollAnimation.css">
+<link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="nprogress/nprogress.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="aos/aos.js"></script>
+<script src="js/count.js"></script>
+<script src="js/lenis.min.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="swiper/js/swiper.animate1.0.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="layui/layui.min.js"></script>
+</head>
+
+<body>
+    <div class="header box_shadow">
+    <div class="content">
+        <div class="wrap">
+            <h1 class="logo">
+                <a href="index.html" class="link">
+                    <img class="cover" src="img/logo.png" alt="FUAN PREMIA POWER CO.,LTD">
+                </a>
+            </h1>
+            <div class="right justify_end">
+                <div class="nav display_flex">
+                    <!-- 选中：active -->
+                    <div class="li active">
+                        <div class="box justify_center">
+                            <a href="index.html" class="link">
+                                <div class="head_title animate">
+                                    <span>Home</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="box justify_center">
+                            <a href="aboutUs.html" class="link">
+                                <div class="head_title animate">
+                                    <span>About US</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="box justify_center">
+                            <a href="products.html" class="link">
+                                <div class="head_title animate">
+                                    <span>Supplier&Product</span>
+                                    <i class="iconfont icon-down-1-copy animate"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="child_nav">
+                            <div class="container">
+                                <div class="child_wrap">
+                                    <div class="row">
+                                        <div class="col_md col-md-3 col-sm-12 col-xs-12">
+                                            <div class="box box_shadow box_radius flex active">
+                                                <img class="cover" src="img/company1.png"
+                                                    data-img="img/companyType1.jpg" alt="">
+                                                <span class="text">Agrimer</span>
+                                            </div>
+                                            <div class="box box_shadow box_radius flex">
+                                                <img class="cover" src="img/company2.png"
+                                                    data-img="img/companyType1.jpg" alt="">
+                                                <span class="text">Dingchun</span>
+                                            </div>
+                                            <div class="box box_shadow box_radius flex">
+                                                <img class="cover" src="img/company3.png"
+                                                    data-img="img/companyType1.jpg" alt="">
+                                                <span class="text">Keyichuang</span>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-9 col-sm-12 col-xs-12">
+                                            <div class="modia">
+                                                <img class="cover box_radius" src="img/companyType1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="box justify_center">
+                            <a href="news.html" class="link">
+                                <div class="head_title animate">
+                                    <span>News</span>
+                                    <i class="iconfont icon-down-1-copy animate"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="child_list">
+                            <div class="lis animate">
+                                <div class="child_head_title animate">
+                                    <a href="news.html" class="link justify_center">
+                                        <span class="child_title">Industry News</span>
+                                        <i class="iconfont icon-right-1-copy"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lis animate">
+                                <div class="child_head_title animate">
+                                    <a href="news.html" class="link justify_center">
+                                        <span class="child_title">Company Activity</span>
+                                        <i class="iconfont icon-right-1-copy"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lis animate">
+                                <div class="child_head_title animate">
+                                    <a href="news.html" class="link justify_center">
+                                        <span class="child_title">Media News</span>
+                                        <i class="iconfont icon-right-1-copy"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="box justify_center">
+                            <a href="download.html" class="link">
+                                <div class="head_title animate">
+                                    <span>Download</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div class="box justify_center">
+                            <a href="contactUs.html" class="link">
+                                <div class="head_title animate">
+                                    <span>Contact Us</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="function justify_center">
+                    <div class="search">
+                        <div class="search_box justify_center pointer">
+                            <i class="iconfont icon-sousuo"></i>
+                            <span class="text over1">Please enter keywords</span>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="lis"></div>
+                        <div class="lis"></div>
+                        <div class="lis"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="top_language justify_center">
+                <div class="icon">
+                    <img class="cover" src="img/selected.png" alt="">
+                </div>
+                <div class="language animate">
+                    <div class="language_head animate justify_center">
+                        <i class="iconfont icon-duoyuyan"></i>
+                        <span class="text text-uppercase">English</span>
+                        <i class="iconfont icon-xiala icon_bottom animate"></i>
+                    </div>
+                    <div class="language_list box_shadow">
+                        <div class="language_li">
+                            <a href="" class="link">
+                                <img class="cover" src="img/la1.png" alt="">
+                                <span class="text">简体中文</span>
+                            </a>
+                        </div>
+                        <div class="language_li">
+                            <a href="" class="link">
+                                <img class="cover" src="img/la2.png" alt="">
+                                <span class="text">English</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="h5_nav">
+    <div class="li animate active">
+        <div class="box">
+            <div class="head_title animate">
+                <a href="index.html" class="link">
+                    <span class="title">Home</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <div class="head_title animate">
+                <a href="aboutUs.html" class="link">
+                    <span class="title">About Us</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="li child_li animate">
+        <div class="box">
+            <div class="head_title animate display_flex">
+                <a href="products.html" class="link">
+                    <span class="title">Supplier&Product</span>
+                </a>
+                <div class="spread">
+                    <i class="iconfont icon-down-1-copy animate"></i>
+                </div>
+            </div>
+        </div>
+        <div class="child">
+            <div class="lis animate">
+                <a href="details.html" class="link">
+                    <div class="child_head_title animate">
+                        <span class="child_title">Agrimer</span>
+                        <i class="iconfont icon-right-1-copy"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="lis animate">
+                <a href="details.html" class="link">
+                    <div class="child_head_title animate">
+                        <span class="child_title">Dingchun</span>
+                        <i class="iconfont icon-right-1-copy"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="lis animate">
+                <a href="details.html" class="link">
+                    <div class="child_head_title animate">
+                        <span class="child_title">Keyichuang</span>
+                        <i class="iconfont icon-right-1-copy"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <div class="head_title animate">
+                <a href="news.html" class="link">
+                    <span class="title">News</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <div class="head_title animate">
+                <a href="download.html" class="link">
+                    <span class="title">Download</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="li animate">
+        <div class="box">
+            <div class="head_title animate">
+                <a href="contactUs.html" class="link">
+                    <span class="title">Contact Us</span>
+                    <i class="iconfont icon-right-1-copy"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header_height"></div>
+
+<div class="search_popup box_shadow">
+    <div class="container">
+        <div class="wrap">
+            <div class="clear">
+                <div class="icon inline_block pointer">
+                    <i class="iconfont icon-guanbi"></i>
+                </div>
+            </div>
+            <form class="layui-form" action="">
+                <div class="box flex">
+                    <input type="text" name="search" lay-verify="required" placeholder="Please enter keywords"
+                        lay-reqtext="Please enter keywords" lay-vertype="tips" autocomplete="off"
+                        class="layui-input input">
+                    <button class="submit pointer" lay-submit lay-filter="searchSubmit">
+                        <i class="iconfont icon-sousuo"></i>
+                    </button>
+                </div>
+                <div class="hot justify_center">
+                    <div class="name">hot:</div>
+                    <div class="list flex">
+                        <a href="" class="link">Calmner CR</a>
+                        <a href="" class="link">Erythcalm SC</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    NProgress.start();
+
+    let isScroll = true;
+    // 锁定滚动
+    function lockScroll() {
+        document.body.style.overflow = 'hidden';
+        // 或者同时锁定 html 和 body 以确保跨浏览器兼容
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+        isScroll = false;
+    }
+
+    // 解锁滚动
+    function unlockScroll() {
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+        isScroll = true;
+    }
+
+    // h5导航菜单栏
+    $('.header .menu').click(function () {
+        if (isScroll) {
+            lockScroll();
+        } else {
+            unlockScroll();
+        }
+        $(this).stop().toggleClass('active');
+        $('.h5_nav').stop().toggleClass('h5_nav_active');
+    })
+
+    // h5导航栏二级栏目
+    $('.h5_nav .child_li .spread').click(function () {
+        $(this).children().stop().toggleClass('rotateIcon');
+        $(this).parents('.box').siblings('.child').stop().slideToggle();
+    })
+
+    $('.header .right .function .search_box').click(function () {
+        $('.search_popup').slideToggle();
+    })
+
+    $('.search_popup .clear .icon').click(function () {
+        $('.search_popup').slideUp();
+    })
+
+    $('.child_nav .child_wrap .box').click(function () {
+        let src = $(this).children('.cover').attr('data-img');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.child_nav .modia .cover').attr('src', src);
+    })
+
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        // 提交事件
+        form.on('submit(searchSubmit)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    });
+</script>
+    <div class="section" data-aos="fade">
+        <div class="banner common_banner img_bg" style="background-image: url(img/news_banner.jpg);">
+            <div class="content">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="head">
+                            <h3 class="title">News</h3>
+                        </div>
+                        <div class="category justify_space">
+                            <div class="crumbs">
+                                <div class="list">
+                                    <div class="box">
+                                        <a href="./index.html" class="link display_flex">
+                                            <i class="iconfont icon-shouye"></i>
+                                            <span>Home</span>
+                                        </a>
+                                    </div>
+                                    <div class="arrow">
+                                        <i class="iconfont icon-right-1-copy"></i>
+                                    </div>
+                                    <div class="box">
+                                        News
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" data-aos="fade">
+        <div class="common_details container_padding">
+            <div class="container">
+                <div class="head head_center">
+                    <div class="wrap">
+                        <h2 class="title text-capitalize">
+                            The standardized organic nutraceutical active from wild chaga for immune support and
+                            wellness.
+                        </h2>
+                    </div>
+                </div>
+                <div class="author">
+                    <span class="text">Date: July 2, 2025 </span>
+                    <span class="text">Source: Pinyan</span>
+                </div>
+                <div class="share lead justify_center">
+                    <span class="text">share:</span>
+                    <style>
+  .blogroll {
+    flex: none;
+    display: flex;
+    padding: 10px 0;
+  }
+
+  .blogroll .box {
+    padding: 0 7px;
+  }
+
+  .blogroll .box:first-child {
+    padding-left: 0;
+  }
+
+  .blogroll .link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #64BB68;
+    text-align: center;
+    line-height: 40px;
+
+    &:hover {
+      transform: translateY(-6px);
+      background: #52A933;
+    }
+
+    &:hover .iconfont {
+      color: #fff;
+    }
+  }
+
+  .blogroll .iconfont {
+    font-size: 18px;
+  }
+</style>
+
+<div class="blogroll">
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-tuite"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-shejiaotubiao-14"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-youtobe"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-facebook"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-instagram-fill"></i>
+    </a>
+  </div>
+</div>
+                </div>
+                <div class="child_padding">
+                    <div class="content">
+                        <div class="lead">
+                            Guangzhou Pinyan Biotechnology Co., Ltd. is an agent for importing and selling personal care
+                            product raw materials. We specialize in representing high-quality personal care product raw
+                            materials worldwide and provide information, concepts, new raw materials, and technical
+                            services to customers in the daily chemical industry.
+                        </div>
+                        <div class="lead">
+                            We are committed to providing green and natural raw materials, comprehensive technical
+                            support, and innovative product solutions. We use reliable agency channels to select
+                            high-quality raw materials from around the world for you, ensuring the quality and stability
+                            of our products.
+                        </div>
+                        <div class="lead">
+                            Integrity in service, excellent quality, and reasonable prices are our unchanging business
+                            principles.
+                        </div>
+                        <div class="lead">
+                            Through continuous screening and integration, we mainly provide products from 5 suppliers,
+                            namely Sinerga from Italy, Agrimer from France, Ingersoll Biotech, Keyichuang from Guizhou,
+                            and Dingchun from Guangdong.
+                        </div>
+                        <div class="cover_box">
+                            <img class="cover" src="img/news_details.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="article">
+                    <div class="up">
+                        <p class="lead">
+                            <a href="./case_details.html" class="link">
+                                Previous post：No more!
+                            </a>
+                        </p>
+                        <p class="lead">
+                            <a href="./case_details.html" class="link">
+                                Next article：Provide customers with professional, safe, and efficient one-stop industry
+                                product solutions.
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="return">
+                        <a href="javascript:history.back()" class="link">Return</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" data-aos="fade">
+    <div class="footer img_bg" style="background-image: url(img/footer_bg.jpg);">
+        <div class="container">
+            <div class="contact_us">
+                <h3 class="title">
+                    <span class="text">Contact Us</span>
+                </h3>
+                <div class="lead">If you need to inquire about our products, please leave your email and we will contact you within 24 hours.</div>
+                <div class="more">
+                    <div class="box">
+                        <a href="contactUs.html" class="link animate display_flex">
+                            <div class="lead animate">Consult Now</div>
+                            <div class="icon animate">
+                                <i class="iconfont icon-arrowRight"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col_md col-md-9 col-sm-12 col-xs-12">
+                        <div class="row nav_list">
+                            <div class="col_md col-md-4 col-sm-6 col-xs-6">
+                                <div class="list">
+                                    <h3 class="title text-uppercase">supplier</h3>
+                                    <ul class="ul">
+                                        <li class="li">
+                                            <a href="index.html" class="link">Agrimer</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="index.html" class="link">Dingchun</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="index.html" class="link">Keyichuang</a>
+                                        </li>
+                                        <li class="li">...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col_md col-md-8 col-sm-6 col-xs-12">
+                                <div class="list">
+                                    <h3 class="title text-uppercase">Contact Us</h3>
+                                    <ul class="ul">
+                                        <li class="li">
+                                            <a href="contact.html" class="link">
+                                                <i class="iconfont icon-dianhua01"></i>
+                                                <span>TEL：020-29833359</span>
+                                            </a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="contact.html" class="link">
+                                                <i class="iconfont icon-youjian1"></i>
+                                                <span>Email：marketing@gzpinyan.com</span>
+                                            </a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="contact.html" class="link">
+                                                <i class="iconfont icon-dizhiguanli"></i>
+                                                <span>
+                                                    Address：Unit 704-1, Building 1, Zhongheng Commercial Center Phase
+                                                    II, Qinglian Road, Xinhua
+                                                    Street, Huadu District, Guangzhou
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-12 col-xs-12">
+                        <div class="right justify_center">
+                            <div class="code_box">
+                                <div class="cover_box">
+                                    <img class="cover" src="img/code.png" alt="code">
+                                </div>
+                                <p class="lead">
+                                    Online Service 
+                                </p>
+                            </div>
+                            <div class="code_box">
+                                <div class="cover_box">
+                                    <img class="cover" src="img/code.png" alt="code">
+                                </div>
+                                <p class="lead">
+                                    follow us
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="wrap justify_space">
+                    <div class="box justify_center">
+                        <h2 class="text">Copyright &copy; 2025 All Rights Reserved Guangzhou PinYan biological technology CO.. LTD</h2>
+                    </div>
+                    <style>
+  .blogroll {
+    flex: none;
+    display: flex;
+    padding: 10px 0;
+  }
+
+  .blogroll .box {
+    padding: 0 7px;
+  }
+
+  .blogroll .box:first-child {
+    padding-left: 0;
+  }
+
+  .blogroll .link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #64BB68;
+    text-align: center;
+    line-height: 40px;
+
+    &:hover {
+      transform: translateY(-6px);
+      background: #52A933;
+    }
+
+    &:hover .iconfont {
+      color: #fff;
+    }
+  }
+
+  .blogroll .iconfont {
+    font-size: 18px;
+  }
+</style>
+
+<div class="blogroll">
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-tuite"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-shejiaotubiao-14"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-youtobe"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-facebook"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-instagram-fill"></i>
+    </a>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="scroll-indicator">
+    <div class="mouse">
+        <div class="wheel"></div>
+    </div>
+</div>
+
+
+<script src="js/comment.js"></script>
+</body>
+
+</html>

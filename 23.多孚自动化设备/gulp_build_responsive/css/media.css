@@ -324,6 +324,12 @@
     padding: 10px 20px;
     min-height: auto;
   }
+  .solutions_list2 {
+    padding-bottom: 0;
+  }
+  .solutions_list2 .item {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -874,5 +880,18 @@
     color: #000;
     text-align: center;
     margin-top: 20px;
+  }
+  .solutions_list2 .item {
+    margin-bottom: 10px;
+  }
+  .solutions_list2 .item .link .title_line {
+    font-size: 18px;
+  }
+  .solutions_list2 .item .link .lead {
+    font-size: 14px;
+  }
+  .solutions_list2 .item .link .cover_box {
+    width: 350px;
+    height: 350px;
   }
 }
