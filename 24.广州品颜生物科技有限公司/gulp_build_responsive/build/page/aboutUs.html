@@ -90,7 +90,7 @@
             </div>
         </div>
     </div>
-    <div class="section" data-aos="date">
+    <div class="section" data-aos="fade">
         <div class="corporate_culture container_padding" style="background: #F9F9F9;">
             <div class="container">
                 <div class="head">
@@ -99,7 +99,7 @@
                 <div class="list container_main">
                     <div class="row">
                         <div class="col_md col-md-4 col-sm-6 col-xs-12">
-                            <div class="item box_radius">
+                            <div class="item box_radius" data-aos="fade-up" data-aos-duration="4000">
                                 <div class="icon">
                                     <img class="cover" src="../../img/icon_li1.png" alt="">
                                 </div>
@@ -108,7 +108,7 @@
                             </div>
                         </div>
                         <div class="col_md col-md-4 col-sm-6 col-xs-12">
-                            <div class="item box_radius">
+                            <div class="item box_radius" data-aos="fade-up" data-aos-duration="5000">
                                 <div class="icon">
                                     <img class="cover" src="../../img/icon_li2.png" alt="">
                                 </div>
@@ -117,13 +117,121 @@
                             </div>
                         </div>
                         <div class="col_md col-md-4 col-sm-6 col-xs-12">
-                            <div class="item box_radius">
+                            <div class="item box_radius" data-aos="fade-up" data-aos-duration="6000">
                                 <div class="icon">
                                     <img class="cover" src="../../img/icon_li3.png" alt="">
                                 </div>
                                 <div class="name">Values</div>
                                 <div class="lead">Integrity and win-win, innovation and efficiency, pursuit of
                                     excellence</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" data-aos="fade">
+        <div class="history img container_padding" style="background-image: url(../../img/history_bg.jpg);">
+            <div class="head">
+                <h3 class="title">Company History</h3>
+            </div>
+            <div class="main container_main">
+                <div class="swiper-container company_history">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item">
+                            <div class="content box_radius flex">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li1.jpg" alt="">
+                                </div>
+                                <div class="explain">
+                                    <div class="lead over6">
+                                        The company was established and launched its first independently
+                                        innovative research and development product, Comics sGs, which was successfully
+                                        created as the top ranked Shumin product in the industry.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center">
+                                <div class="top_date">2014</div>
+                                <div class="circle"></div>
+                                <div class="bottom_date">1014</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <div class="content box_radius flex">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li2.png" alt="">
+                                </div>
+                                <div class="explain">
+                                    <div class="lead over6">
+                                        The company was established and launched its first independently
+                                        innovative research and development product, Comics sGs, which was successfully
+                                        created as the top ranked Shumin product in the industry.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center">
+                                <div class="top_date">2014</div>
+                                <div class="circle"></div>
+                                <div class="bottom_date">1014</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <div class="content box_radius flex">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li3.png" alt="">
+                                </div>
+                                <div class="explain">
+                                    <div class="lead over6">
+                                        The company was established and launched its first independently
+                                        innovative research and development product, Comics sGs, which was successfully
+                                        created as the top ranked Shumin product in the industry.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center">
+                                <div class="top_date">2014</div>
+                                <div class="circle"></div>
+                                <div class="bottom_date">1014</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <div class="content box_radius flex">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li4.png" alt="">
+                                </div>
+                                <div class="explain">
+                                    <div class="lead over6">
+                                        The company was established and launched its first independently
+                                        innovative research and development product, Comics sGs, which was successfully
+                                        created as the top ranked Shumin product in the industry.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center">
+                                <div class="top_date">2014</div>
+                                <div class="circle"></div>
+                                <div class="bottom_date">1014</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item">
+                            <div class="content box_radius flex">
+                                <div class="cover_box">
+                                    <img class="cover" src="../../img/product_li5.png" alt="">
+                                </div>
+                                <div class="explain">
+                                    <div class="lead over6">
+                                        The company was established and launched its first independently
+                                        innovative research and development product, Comics sGs, which was successfully
+                                        created as the top ranked Shumin product in the industry.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center">
+                                <div class="top_date">2014</div>
+                                <div class="circle"></div>
+                                <div class="bottom_date">1014</div>
                             </div>
                         </div>
                     </div>
@@ -196,6 +304,36 @@
     @@include('footer.html')
 </body>
 <script>
+    const company_history = new Swiper('.company_history', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        preloadImages: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            }
+        }
+    })
+
     const h_pref = document.getElementById('h_pref');
     const h_next = document.getElementById('h_next');
 
