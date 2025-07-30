@@ -214,6 +214,14 @@
     padding: 10px 20px;
     min-height: auto;
   }
+  .download .hot_search {
+    flex-wrap: wrap;
+    padding: 20px 20px 10px;
+    margin-bottom: 20px;
+  }
+  .download .hot_search .form {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -359,6 +367,19 @@
   }
   .footer .content {
     padding: 30px 0;
+  }
+  .footer .copyright .wrap .box {
+    flex-wrap: wrap;
+  }
+  .footer .copyright .wrap .box .text {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer .copyright .wrap .box .link {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
   }
   .banner .content .wrap {
     padding: 30px 5px;
@@ -566,5 +587,48 @@
   .common_details .content p {
     padding: 5px 0;
     font-size: 14px;
+  }
+  .download .hot_search {
+    padding: 10px;
+  }
+  .download .hot_search .form {
+    margin-bottom: 10px;
+  }
+  .download .hot_search .history {
+    padding: 0 10px;
+  }
+  .download .hot_search .history .li .link {
+    font-size: 14px;
+  }
+  .download .list .item {
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-items: start;
+    margin-bottom: 10px;
+  }
+  .download .list .item .cover_box {
+    width: 50px;
+  }
+  .download .list .item .content {
+    padding: 0 10px;
+  }
+  .download .list .item .content .name {
+    font-size: 16px;
+  }
+  .download .list .item .content .lead {
+    font-size: 14px;
+  }
+  .download .list .item .download_btn {
+    width: 100%;
+    margin-top: 10px;
+    height: 44px;
+    line-height: 44px;
+  }
+  .history .main .company_history {
+    padding: 0 10px;
+    height: 380px;
+  }
+  .history .main .company_history .item .content {
+    width: 100%;
   }
 }
