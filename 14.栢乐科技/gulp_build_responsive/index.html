@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<link rel="stylesheet" href="nprogress/nprogress.css">
+<link rel="stylesheet" href="font/iconfont.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="aos/aos.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="swiper/css/swiper.min.css">
+<link rel="stylesheet" href="swiper/css/swipet-animate.min.css">
+<link rel="stylesheet" href="layui/layui.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<script src="nprogress/nprogress.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="aos/aos.js"></script>
+<script src="swiper/js/swiper.min.js"></script>
+<script src="swiper/js/swiper.animate1.0.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="layui/layui.min.js"></script>
+<script src="js/comment.js"></script>
+</head>
+
+<body style="min-height: 100vh;">
+    <div class="header">
+    <div class="container">
+        <div class="wrap justify_space">
+            <h1 class="logo">
+                <a href="index.html" class="link">
+                    <img class="cover" src="img/sub_logo.png" alt="">
+                </a>
+            </h1>
+            <div class="content justify_end">
+                <div class="to">
+                    <a href="upload.html" class="link animate">Upload file</a>
+                </div>
+                <div class="user justify_center">
+                    <div class="info justify_center">
+                        <span class="name">Welcome - John</span>
+                        <a href="login.html" class="link">
+                            <img class="cover" src="img/photo.png" alt="">
+                        </a>
+                        <i class="iconfont icon-xiala"></i>
+                    </div>
+                    <div class="exit box_shadow box_radius">
+                        <div class="lead">
+                            <a href="upload.html" class="link animate text-uppercase">Upload file</a>
+                        </div>
+                        <div class="lead">
+                            <a href="" class="link">
+                                <i class="iconfont icon-exit-outlined"></i>
+                                <span>EXIT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="placeholder_header"></div>
+
+<script>
+    NProgress.start();
+
+    $('.header .user').hover(function () {
+        $(this).children('.exit').stop().slideToggle();
+    })
+</script>
+    <div class="index">
+        <div class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                        <div class="box justify_center box_shadow box_radius img_bg"
+                            style="background-image: url(img/menu_li1.png);">
+                            <div class="icon">
+                                <i class="iconfont icon-duigou"></i>
+                            </div>
+                            <div class="content">
+                                <div class="name">21</div>
+                                <div class="lead">Case to Finish</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                        <div class="box justify_center box_shadow box_radius img_bg"
+                            style="background-image: url(img/menu_li2.png);">
+                            <div class="icon">
+                                <i class="iconfont icon-yachi"></i>
+                            </div>
+                            <div class="content">
+                                <div class="name">21</div>
+                                <div class="lead">Case design only</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                        <div class="box justify_center box_shadow box_radius img_bg"
+                            style="background-image: url(img/menu_li3.png);">
+                            <div class="icon">
+                                <i class="iconfont icon-biaochi"></i>
+                            </div>
+                            <div class="content">
+                                <div class="name">21</div>
+                                <div class="lead">Designed case</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                        <div class="box justify_center box_shadow box_radius img_bg"
+                            style="background-image: url(img/menu_li4.png);">
+                            <div class="icon">
+                                <i class="iconfont icon-suoyoushangpin_"></i>
+                            </div>
+                            <div class="content">
+                                <div class="name">3336</div>
+                                <div class="lead">All cases</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container inquire_wrap">
+            <div class="inquire">
+                <form class="layui-form form">
+                    <div class="row">
+                        <div class="col_md col-md-8 col-sm-8 col-xs-7">
+                            <div class="name">Donwload</div>
+                            <select name="file" lay-verify="required" lay-vertype="tips" lay-reqtext="Choose File Type">
+                                <option value="">Choose File Type</option>
+                                <option value="AAA">选项 A</option>
+                                <option value="BBB">选项 B</option>
+                                <option value="CCC">选项 C</option>
+                            </select>
+                        </div>
+                        <div class="col_md col-md-4 col-sm-4 col-xs-5">
+                            <div class="name">Action</div>
+                            <button class="layui-btn submit_btn" lay-submit lay-filter="submit">Donwload Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="search">
+            <div class="container">
+                <form class="layui-form form">
+                    <div class="row">
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="input_box box_radius justify_space">
+                                <i class="iconfont icon-sousuo"></i>
+                                <input type="text" name="keyword" placeholder="Enter keywords" lay-vertype="tips"
+                                    lay-reqtext="Enter keywords" lay-verify="required" autocomplete="off"
+                                    class="layui-input input">
+                            </div>
+                        </div>
+                        <div class="col_md col-md-3 col-sm-4 col-xs-6">
+                            <div class="input_box box_radius justify_space">
+                                <i class="iconfont icon-date"></i>
+                                <input type="text" name="date" placeholder="Enter Date" lay-vertype="tips"
+                                    lay-reqtext="Enter Date" lay-verify="required" autocomplete="off"
+                                    class="layui-input input" id="ID-laydate-demo-en">
+                            </div>
+                        </div>
+                        <div class="col_md col-md-2 col-sm-2 col-xs-12">
+                            <button class="layui-btn search_btn" lay-submit lay-filter="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="list">
+            <div class="container">
+                <div class="title">Data list</div>
+                <div class="width_x">
+                    <div class="content">
+                        <div class="list_head display_flex">
+                            <div class="li justify_space">
+                                <span class="name">Sort</span>
+                                <div class="sort pointer display_flex">
+                                    <i class="iconfont icon-shengxu active"></i>
+                                    <i class="iconfont icon-jiangxu"></i>
+                                </div>
+                            </div>
+                            <div class="li justify_space">
+                                <span class="name">Name</span>
+                                <div class="sort pointer display_flex">
+                                    <i class="iconfont icon-shengxu active"></i>
+                                    <i class="iconfont icon-jiangxu"></i>
+                                </div>
+                            </div>
+                            <div class="li justify_space">
+                                <span class="name">TAT</span>
+                                <div class="sort pointer display_flex">
+                                    <i class="iconfont icon-shengxu active"></i>
+                                    <i class="iconfont icon-jiangxu"></i>
+                                </div>
+                            </div>
+                            <div class="li justify_space">
+                                <span class="name">Status</span>
+                                <div class="sort pointer display_flex">
+                                    <i class="iconfont icon-shengxu active"></i>
+                                    <i class="iconfont icon-jiangxu"></i>
+                                </div>
+                            </div>
+                            <div class="li justify_space">
+                                <span class="name">Unit</span>
+                                <div class="sort pointer display_flex">
+                                    <i class="iconfont icon-shengxu active"></i>
+                                    <i class="iconfont icon-jiangxu"></i>
+                                </div>
+                            </div>
+                            <div class="li justify_space">
+                                <span class="name">Tooth</span>
+                                <div class="sort pointer display_flex">
+                                    <i class="iconfont icon-shengxu active"></i>
+                                    <i class="iconfont icon-jiangxu"></i>
+                                </div>
+                            </div>
+                            <div class="li justify_space">
+                                <span class="name">Lab Name</span>
+                                <div class="sort pointer display_flex">
+                                    <i class="iconfont icon-shengxu active"></i>
+                                    <i class="iconfont icon-jiangxu"></i>
+                                </div>
+                            </div>
+                            <div class="li justify_space">
+                                <span class="name">Date</span>
+                                <div class="sort pointer display_flex">
+                                    <i class="iconfont icon-shengxu active"></i>
+                                    <i class="iconfont icon-jiangxu"></i>
+                                </div>
+                            </div>
+                            <div class="li justify_space">
+                                <span class="name">Message</span>
+                                <div class="sort pointer display_flex">
+                                    <i class="iconfont icon-shengxu active"></i>
+                                    <i class="iconfont icon-jiangxu"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_body">
+                            <div class="item display_flex">
+                                <div class="li display_flex">
+                                    <a href="" class="link">
+                                        <div class="check active">
+                                            <i class="iconfont icon-duigou"></i>
+                                        </div>
+                                    </a>
+                                    <div class="val">1</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">Material scheme</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">Case to Finish</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">2025-05-08 9:30</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                            </div>
+                            <div class="item display_flex">
+                                <div class="li display_flex">
+                                    <a href="" class="link">
+                                        <div class="check">
+                                            <i class="iconfont icon-duigou"></i>
+                                        </div>
+                                    </a>
+                                    <div class="val">2</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">Material scheme</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">Case to Finish</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">2025-05-08 9:30</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                            </div>
+                            <div class="item display_flex">
+                                <div class="li display_flex">
+                                    <a href="" class="link">
+                                        <div class="check">
+                                            <i class="iconfont icon-duigou"></i>
+                                        </div>
+                                    </a>
+                                    <div class="val">3</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">Material scheme</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">Case to Finish</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">2025-05-08 9:30</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                            </div>
+                            <div class="item display_flex">
+                                <div class="li display_flex">
+                                    <a href="" class="link">
+                                        <div class="check">
+                                            <i class="iconfont icon-duigou"></i>
+                                        </div>
+                                    </a>
+                                    <div class="val">4</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">Material scheme</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">Case to Finish</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">2025-05-08 9:30</div>
+                                </div>
+                                <div class="li">
+                                    <div class="val over1">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <a href="" class="download">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var laydate = layui.laydate;
+
+        // 提交事件
+        form.on('submit(submit_btn)', function (data) {
+            var field = data.field;
+            return false;
+        });
+
+        laydate.render({
+            elem: '#ID-laydate-demo-en',
+            lang: 'en'
+        });
+
+        // 提交事件
+        form.on('submit(search_btn)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    });
+</script>
+
+</html>

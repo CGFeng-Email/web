@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="section" data-aos="fade">
+        <div class="banner">
+            <div class="cover_box">
+                <img class="cover" src="../../img/product_banner.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="wrap">
+                    <h3 class="title" data-aos="slide-right" data-aos-duration="6000" data-aos-delay="200">
+                        Products
+                    </h3>
+                    <div class="crumbs">
+                        <div class="list" data-aos="slide-right" data-aos-duration="4000">
+                            <div class="box">
+                                <a href="./index.html" class="link display_flex">
+                                    <i class="iconfont icon-shouye"></i>
+                                    <span>Home</span>
+                                </a>
+                            </div>
+                            <div class="arrow">
+                                <i class="iconfont icon-right-1-copy"></i>
+                            </div>
+                            <div class="box">
+                                <a href="./products.html" class="link display_flex">
+                                    <span>Products</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" data-aos="fade">
+        <div class="container">
+            <div class="list_wrap">
+                <div class="details">
+                    <div class="product_details">
+                        <div class="row">
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="product_swiper display_flex box_radius">
+                                    <div class="swiper-container product_demo">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide item box_radius">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/product_li2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item box_radius">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/product_li1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item box_radius">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/product_li3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-container product_menu">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide item box_shadow pointer">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/product_li2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item box_shadow pointer active">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/product_li1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item box_shadow pointer">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/product_li3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                <div class="content">
+                                    <div class="c_title">PMI-DS Serial Powered by DOOSAN </div>
+                                    <div class="lead">
+                                        SKU: MC12201
+                                    </div>
+                                    <div class="quantity share justify_center">
+                                        <span class="text">Quantity：</span>
+                                        <div class="number justify_center">
+                                            <div class="num_btn decrease animate pointer">
+                                                <i class="iconfont icon-jianhao"></i>
+                                            </div>
+                                            <div class="box">
+                                                <input type="number" name="number" value="1" min="0"
+                                                    lay-verify="required" autocomplete="off" lay-affix="clear"
+                                                    class="layui-input input" id="quantity_number">
+                                            </div>
+                                            <div class="num_btn increase animate pointer">
+                                                <i class="iconfont icon-jiahao"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="share justify_center">
+                                        <span class="text">Share：</span>
+                                        @@include('blogroll.html')
+                                    </div>
+                                    <div class="contact_btn_wrap">
+                                        <a href="./inquire.html" class="btn link">
+                                            <div class="wrap justify_center">
+                                                <span class="text">Inguire</span>
+                                                <i class="iconfont icon-bianji"></i>
+                                            </div>
+                                        </a>
+                                        <div class="btn link add_inquiry_details" data-html='{ 
+                                            "id": 6,
+                                            "title": "PMI-M Serial Powered by MITSUBISHI", 
+                                            "image": "../../img/product_li1.png",
+                                            "count": 1
+                                            }'>
+                                            <div class="wrap justify_center">
+                                                <span class="text">Add to Basket</span>
+                                                <i class="iconfont icon-gouwuche"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_details_tabs">
+                        <div class="product_tabs_head justify_center">
+                            <div class="tabs_item pointer active">20HZ</div>
+                            <div class="tabs_item pointer">60HZ</div>
+                        </div>
+                        <div class="product_tabs_body">
+                            <div class="body_item active">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>GENSET MODEL</td>
+                                            <td>GENSET MODEL</td>
+                                            <td>GENSET MODEL</td>
+                                            <td>GENSET MODEL</td>
+                                            <td>GENSET MODEL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PR5DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PR5DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PR5DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PR5DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PR5DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="body_item">
+                                <table border="1">
+                                    <tbody>
+                                        <tr>
+                                            <td>GENSET MODEL</td>
+                                            <td>GENSET MODEL</td>
+                                            <td>GENSET MODEL</td>
+                                            <td>GENSET MODEL</td>
+                                            <td>GENSET MODEL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PD23DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PD23DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PD23DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PD23DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PD23DS</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                            <td>3123</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="up">
+                            <p class="lead">
+                                <a href="./case_details.html" class="link">
+                                    Previous：PMl-M Serial Powered by MITSUBISH
+                                </a>
+                            </p>
+                            <p class="lead">
+                                <a href="./case_details.html" class="link">
+                                    Next：PMl-YTO Serial Powered by YTO
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="return">
+                            <a href="javascript:history.back()" class="link">Return</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" data-aos="fade">
+        <div class="recommend_product container_padding" style="background: #F5F5F5;">
+            <div class="container">
+                <div class="head">
+                    <h3 class="title text-uppercase" data-aos="fade-right" data-aos-duration="4000"
+                        data-aos-delay="100">Related Products</h3>
+                </div>
+                <div class="main container_main">
+                    <div class="swiper-container recommend_swiper product_list recommend_product_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item">
+                                <a href="./details.html" class="link box_shadow box_radius">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/product_li1.png" alt="Super Silent Type">
+                                    </div>
+                                    <div class="content">
+                                        <div class="name over2">PMI Power Mobile Lighting Tower</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide item">
+                                <a href="./details.html" class="link box_shadow box_radius">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/product_li2.jpg" alt="Silent Type">
+                                    </div>
+                                    <div class="content">
+                                        <div class="name over2">PMI-D Serial Powered by DEUTZ</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide item">
+                                <a href="./details.html" class="link box_shadow box_radius">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/product_li3.png" alt="Open Type">
+                                    </div>
+                                    <div class="content">
+                                        <div class="name over2">PM-B Serial Powered by Baudouin</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide item">
+                                <a href="./details.html" class="link box_shadow box_radius">
+                                    <div class="cover_box">
+                                        <img class="cover" src="../../img/product_li4.png" alt="Container Type">
+                                    </div>
+                                    <div class="content">
+                                        <div class="name over2">PMl-P Serial Powered by Perkins</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" data-aos="fade">
+        @@include('get_quote.html')
+    </div>
+    @@include('cart.html')
+    @@include('footer.html')
+</body>
+<script>
+    var product_menu = new Swiper('.product_menu', {
+        direction: 'vertical',
+        spaceBetween: 10,
+        slidesPerView: 5,
+        watchSlidesVisibility: true,//防止不可点击
+        slideThumbActiveClass: 'swiper-slide-thumb-active',
+    })
+    var product_demo = new Swiper('.product_demo', {
+        spaceBetween: 10,
+        thumbs: {
+            swiper: {
+                el: '.product_menu',
+                slidesPerView: 10,
+            },
+            slideThumbActiveClass: 'swiper-slide-thumb-active',
+        },
+        on: {
+            slideChangeTransitionStart: function () {
+                $('.product_menu .item').eq(this.activeIndex).addClass('active').siblings().removeClass('active');
+            },
+        },
+    })
+
+    const quantity_number = document.getElementById('quantity_number');
+
+    $('.decrease').click(function () {
+        if (quantity_number.value > 0) {
+            quantity_number.value = quantity_number.value - 1
+        }
+    })
+
+    $('.increase').click(function () {
+        quantity_number.value = Number(quantity_number.value) + 1
+    })
+
+    $('.product_tabs_head .tabs_item').click(function () {
+        let index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.product_details_tabs .product_tabs_body .body_item').eq(index).addClass('active').siblings().removeClass('active')
+    })
+
+    const recommend_product_swiper = new Swiper('.recommend_product_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        preloadImages: true,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        breakpoints: {
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        }
+    })
+
+
+</script>
+
+</html>

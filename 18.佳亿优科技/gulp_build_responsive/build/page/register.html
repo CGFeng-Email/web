@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="login img_bg" style="background-image: url(../../img/login_bg.jpg);">
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col_md col-md-7 col-sm-4 col-xs-12"></div>
+                    <div class="col_md col-md-5 col-sm-8 col-xs-12">
+                        <div class="login_box">
+                            <h3 class="title">Register an account</h3>
+                            <div class="sub_head">We have very secure confidentiality measures, please feel free to fill
+                                them out</div>
+                            <div class="form">
+                                <form class="layui-form" action="">
+                                    <div class="item display_flex">
+                                        <i class="iconfont icon-youjian"></i>
+                                        <input type="tel" name="phone" lay-verify="required|phone"
+                                            lay-reqtext="Enter your phone" lay-vertype="tips"
+                                            placeholder="Enter your phone" autocomplete="off" class="layui-input input">
+                                    </div>
+                                    <div class="item display_flex">
+                                        <i class="iconfont icon-mima"></i>
+                                        <input type="password" name="password" lay-verify="required"
+                                            lay-reqtext="Enter your Password" lay-vertype="tips"
+                                            placeholder="Enter your Password" autocomplete="off" class="layui-input input">
+                                    </div>
+                                    <div class="item display_flex">
+                                        <i class="iconfont icon-renzhengdunpaianquanbaozhangzhibao"></i>
+                                        <input type="tel" name="code" lay-verify="required"
+                                            lay-reqtext="Enter your Verification code" lay-vertype="tips"
+                                            placeholder="Enter your Verification code" autocomplete="off"
+                                            class="layui-input input">
+                                        <img class="cover" src="../../img/captcha.gif" alt="">
+                                    </div>
+                                    <div class="submit_box">
+                                        <button class="layui-btn btn" lay-submit lay-filter="submit_login">Confirm</button>
+                                    </div>
+                                    <div class="lead">
+                                        <a href="./login.html" class="link">I already have an account, go log in</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        // 提交事件
+        form.on('submit(submit_login)', function (data) {
+            var field = data.field; // 获取表单字段值
+            return false; // 阻止默认 form 跳转
+        });
+    });
+
+    NProgress.done();
+</script>
+
+</html>

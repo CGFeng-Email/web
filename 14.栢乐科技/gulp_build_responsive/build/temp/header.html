@@ -1,0 +1,46 @@
+<div class="header">
+    <div class="container">
+        <div class="wrap justify_space">
+            <h1 class="logo">
+                <a href="../../index.html" class="link">
+                    <img class="cover" src="../../img/sub_logo.png" alt="">
+                </a>
+            </h1>
+            <div class="content justify_end">
+                <div class="to">
+                    <a href="../../upload.html" class="link animate">Upload file</a>
+                </div>
+                <div class="user justify_center">
+                    <div class="info justify_center">
+                        <span class="name">Welcome - John</span>
+                        <a href="../../login.html" class="link">
+                            <img class="cover" src="../../img/photo.png" alt="">
+                        </a>
+                        <i class="iconfont icon-xiala"></i>
+                    </div>
+                    <div class="exit box_shadow box_radius">
+                        <div class="lead">
+                            <a href="../../upload.html" class="link animate text-uppercase">Upload file</a>
+                        </div>
+                        <div class="lead">
+                            <a href="" class="link">
+                                <i class="iconfont icon-exit-outlined"></i>
+                                <span>EXIT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="placeholder_header"></div>
+
+<script>
+    NProgress.start();
+
+    $('.header .user').hover(function () {
+        $(this).children('.exit').stop().slideToggle();
+    })
+</script>

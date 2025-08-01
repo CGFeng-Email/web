@@ -1,0 +1,107 @@
+{
+  "id": "4916549",
+  "name": "栢乐科技2",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11810524",
+      "name": "上传图片",
+      "font_class": "shangchuantupian",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "6204084",
+      "name": "对勾",
+      "font_class": "duigou",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "10880091",
+      "name": "所有商品_1",
+      "font_class": "suoyoushangpin_",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "38383360",
+      "name": "标尺",
+      "font_class": "biaochi",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "37147593",
+      "name": "exit-outlined",
+      "font_class": "exit-outlined",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "630083",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "1240787",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "1998209",
+      "name": "升序",
+      "font_class": "shengxu",
+      "unicode": "e77a",
+      "unicode_decimal": 59258
+    },
+    {
+      "icon_id": "1998211",
+      "name": "降序",
+      "font_class": "jiangxu",
+      "unicode": "e77b",
+      "unicode_decimal": 59259
+    },
+    {
+      "icon_id": "2330010",
+      "name": "yc",
+      "font_class": "yachi",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "7712671",
+      "name": "date",
+      "font_class": "date",
+      "unicode": "e72a",
+      "unicode_decimal": 59178
+    },
+    {
+      "icon_id": "7762181",
+      "name": "密码",
+      "font_class": "ziyuanxhdpi",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "8949037",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "16322392",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e6d2",
+      "unicode_decimal": 59090
+    }
+  ]
+}
