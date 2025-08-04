@@ -92,6 +92,12 @@
   .modal .modal-dialog .modal-body .pad_bottom {
     padding-bottom: 10px;
   }
+  .contact_btn_wrap {
+    padding: 14px 0;
+  }
+  .contact_btn_wrap .btn {
+    margin-bottom: 10px;
+  }
   .banner .content .team_title {
     font-size: 16px;
     max-width: 100%;
@@ -273,6 +279,43 @@
   }
   .company .main .company_data .wrap .col_md:nth-child(even) .box::before {
     display: none;
+  }
+  .solutions .content {
+    padding: 0;
+    text-align: center;
+  }
+  .solutions .content .sub_title {
+    margin-bottom: 10px;
+  }
+  .solutions .content .lead {
+    padding: 10px 0;
+    text-align: left;
+  }
+  .solutions .content .more {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  .solutions .right .recommend_solutions_swiper .item .link .cover_box .cover {
+    height: 200px;
+  }
+  .solutions .right .recommend_solutions_swiper .item .link .name {
+    font-size: 14px;
+  }
+  .product_details {
+    padding-bottom: 0;
+  }
+  .product_details .product_swiper {
+    margin-bottom: 20px;
+  }
+  .product_details .content {
+    padding: 0;
+  }
+  .product_list_details .product_list_explain .head {
+    margin-bottom: 0;
+  }
+  .product_list_details .recommend_list .head {
+    text-align: left;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -556,5 +599,17 @@
   }
   .company .main .company_data .wrap .box .lead {
     font-size: 14px;
+  }
+  .cooperative_partner .main .item {
+    margin-bottom: 10px;
+  }
+  .product_details {
+    padding-bottom: 0;
+  }
+  .product_list_details {
+    padding-bottom: 20px;
+  }
+  .product_list_details .recommend_list .list .item {
+    margin-bottom: 10px;
   }
 }
