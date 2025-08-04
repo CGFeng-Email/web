@@ -9,7 +9,6 @@
 
 <body>
     @@include('header.html')
-<<<<<<< HEAD
     <div class="section" data-aos="fade">
         <div class="banner">
             <div class="cover_box">
@@ -134,18 +133,19 @@
         </div>
     </div>
     <div class="section" data-aos="fade">
-        <div class="solutions container_padding img_bg" style="background-image: url(../../img/solutions_bg.jpg);">
+        <div class="solutions container_padding img_bg" style="background-image: url(../../img/missing_bg.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col_md col-md-5 col-sm-12 col-xs-12">
                         <div class="content">
                             <h3 class="title_line" data-aos="fade-right" data-aos-duration="4000" data-aos-delay="100">
-                                SOLUTIONS</h3>
+                                mission</h3>
+                            <h4 class="sub_title">公司使命</h4>
                             <div class="lead" data-aos="fade-right" data-aos-duration="4000" data-aos-delay="70">
-                                Each generator set must undergo stability test and instantaneous test, on various
-                                functions of power, current, insulation, sudden unloading, sudden loading,
-                                self-protection and automatic control etc. in order to ensure that the ultimate
-                                delivered product is of perfect quality.
+                                我们致力于传承千年手工编织技艺，将自然之美与人文温度融入每一寸经纬。以匠心守护濒临失传的传统工艺，坚持选用天然羊毛、真丝及植物染料，经由匠人双手完成逾多道工序，打造可传世的艺术地毯。
+                            </div>
+                            <div class="lead">
+                                我们相信，手工地毯不仅是地面的装饰，更是承载文化的活态遗产。通过公平贸易支持全球匠人社区，让古老技艺在现代空间获得新生——从智能家居到艺术场馆，每一件作品都讲述着手工的温度与土地的馈赠。
                             </div>
                             <div class="more ani" data-aos="fade-right" data-aos-duration="4000">
                                 <div class="box">
@@ -176,22 +176,21 @@
                                     <div class="swiper-slide item">
                                         <a href="./solutionDetails.html" class="link box_shadow box_radius">
                                             <div class="cover_box">
-                                                <img class="cover" src="../../img/recommend_solutions_li1.jpg"
+                                                <img class="cover" src="../../img/mission_li1.jpg"
                                                     alt="Super Silent Type">
                                             </div>
                                             <div class="content">
-                                                <div class="name over2">Application Case</div>
+                                                <div class="name over2">公司使命</div>
                                             </div>
                                         </a>
                                     </div>
                                     <div class="swiper-slide item">
                                         <a href="./solutionDetails.html" class="link box_shadow box_radius">
                                             <div class="cover_box">
-                                                <img class="cover" src="../../img/recommend_solutions_li2.jpg"
-                                                    alt="Silent Type">
+                                                <img class="cover" src="../../img/mission_li2.jpg" alt="Silent Type">
                                             </div>
                                             <div class="content">
-                                                <div class="name over2">Application Case</div>
+                                                <div class="name over2">企业愿景</div>
                                             </div>
                                         </a>
                                     </div>
@@ -233,11 +232,38 @@
             },
         }
     })
+
+    const solution_prev = document.getElementById('solution_prev');
+    const solution_next = document.getElementById('solution_next');
+    const recommend_solutions_swiper = new Swiper('.recommend_solutions_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1400,
+        preloadImages: true,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        breakpoints: {
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        }
+    })
+
+    solution_prev.addEventListener('click', function () {
+        recommend_solutions_swiper.slidePrev();
+    })
+
+    solution_next.addEventListener('click', function () {
+        recommend_solutions_swiper.slideNext();
+    })
 </script>
 
-=======
-   
-    @@include('footer.html')
-</body>
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
 </html>

@@ -309,7 +309,6 @@ body::-webkit-scrollbar-thumb:hover {
   border-color: #D6C039;
   color: #fff;
 }
-<<<<<<< HEAD
 .swiper_navigation .swiper_prev {
   background: none;
   margin: 0;
@@ -350,8 +349,6 @@ body::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(73.29deg, #fffc5d 0%, #aa7e11 100%);
   right: 0;
 }
-=======
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
 .banner {
   position: relative;
 }
@@ -370,17 +367,10 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0 10px;
 }
 .banner .content .title {
-<<<<<<< HEAD
   font-size: 38px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
-=======
-  font-size: 46px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 20px;
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
 }
 .banner .content .team_title {
   text-align: center;
@@ -1629,7 +1619,6 @@ body::-webkit-scrollbar-thumb:hover {
 .footer .content .contact {
   padding: 0;
 }
-<<<<<<< HEAD
 .footer .content .footer_list {
   text-align: left;
 }
@@ -1645,16 +1634,6 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 10px;
   font-size: 14px;
   color: #C2C2C2;
-=======
-.footer .content .footer_list .title {
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  color: #fff;
-}
-.footer .content .footer_list .lead {
-  color: #fff;
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
 }
 .footer .content .footer_list .ul {
   margin-top: 10px;
@@ -1666,10 +1645,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.3s ease-out;
   display: flex;
   line-height: 1.8;
-<<<<<<< HEAD
   color: #fff;
-=======
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
 }
 .footer .content .footer_list .ul .li .link .iconfont {
   padding-right: 10px;
@@ -1689,7 +1665,6 @@ body::-webkit-scrollbar-thumb:hover {
   width: 30px;
   height: 30px;
 }
-<<<<<<< HEAD
 .footer .content .right .code_box {
   width: 80%;
   margin: auto;
@@ -1700,11 +1675,6 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
   color: #fff;
   font-weight: 500;
-=======
-.footer .content .right .lead {
-  padding: 10px 0;
-  font-size: 14px;
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
 }
 .footer .copyright {
   padding: 24px 0;
@@ -1717,7 +1687,6 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 24px;
   font-weight: 500;
   padding: 0 20px;
-<<<<<<< HEAD
   color: #fff;
 }
 .company .main .lead,
@@ -1765,6 +1734,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .company .main .company_swiper .item .cover_box:hover .cover {
   transform: scale(1.07);
-=======
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
+}
+.solutions .content {
+  color: #fff;
+  padding-right: 50px;
+}
+.solutions .content .lead {
+  padding: 20px 0;
+}
+.solutions .recommend_solutions_swiper .item .cover_box .cover {
+  height: 350px;
 }

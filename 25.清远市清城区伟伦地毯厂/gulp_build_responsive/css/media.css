@@ -150,7 +150,6 @@
     margin-left: 10px;
     display: block;
   }
-<<<<<<< HEAD
   .footer .content {
     padding: 40px 0;
   }
@@ -177,8 +176,6 @@
     flex: content;
     justify-content: center;
   }
-=======
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
   .index_swiper .content .title_line {
     font-size: 24px;
   }
@@ -271,15 +268,12 @@
     height: 46px;
     line-height: 46px;
   }
-<<<<<<< HEAD
   .company .main .company_data .wrap .col_md:nth-child(even) .box {
     margin-bottom: 10px;
   }
   .company .main .company_data .wrap .col_md:nth-child(even) .box::before {
     display: none;
   }
-=======
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -309,7 +303,6 @@
   }
   .head .sub_title {
     padding: 0;
-<<<<<<< HEAD
     margin-top: 0;
     font-size: 16px;
   }
@@ -336,8 +329,6 @@
     width: 100%;
     font-size: 14px;
     text-align: center;
-=======
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
   }
   .contact_btn_wrap {
     padding: 20px 0;
@@ -509,17 +500,10 @@
     padding: 0 0 10px;
   }
   .about .right_box .company_data .box .name .num {
-<<<<<<< HEAD
     font-size: 20px;
   }
   .about .right_box .company_data .box .lead {
     font-size: 12px;
-=======
-    font-size: 26px;
-  }
-  .about .right_box .company_data .box .lead {
-    font-size: 14px;
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
     line-height: 1.6;
   }
   .news_recommend .head {
@@ -561,7 +545,6 @@
   .get_quote .main .form .wrap .input_submit {
     padding: 0;
   }
-<<<<<<< HEAD
   .company .main .company_data {
     padding-top: 10px;
   }
@@ -574,6 +557,4 @@
   .company .main .company_data .wrap .box .lead {
     font-size: 14px;
   }
-=======
->>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
 }
