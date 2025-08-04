@@ -14,7 +14,11 @@
 .mouse {
     width: 30px;
     height: 50px;
+<<<<<<< HEAD
     border: 2px solid #D6C039;
+=======
+    border: 2px solid #5B6168;
+>>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
     border-radius: 15px;
     position: relative;
 }
@@ -22,7 +26,11 @@
 .wheel {
     width: 6px;
     height: 10px;
+<<<<<<< HEAD
     background: #D6C039;
+=======
+    background: #5B6168;
+>>>>>>> b774639e28c2df2650bd971a2d3d41b1a80317bd
     border-radius: 3px;
     position: absolute;
     top: 10px;
