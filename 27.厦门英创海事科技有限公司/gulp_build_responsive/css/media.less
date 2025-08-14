@@ -15,12 +15,40 @@
             }
         }
     }
+
+    .get_quote {
+        .main {
+            width: 90%;
+        }
+    }
 }
 
 @media screen and (max-width: 1400px) {
     .banner {
         .content {
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        .content {
+            .wrap {
+                .right {
+                    .nav {
+                        .li {
+                            .box {
+                                .link {
+                                    .head_title {
+                                        padding: 0 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -174,6 +202,194 @@
             }
         }
     }
+
+    .header {
+        .content {
+            .wrap {
+                .right {
+                    .nav {
+                        display: none;
+                    }
+
+                    .function {
+                        align-items: center;
+
+                        .search {
+                            margin-top: 10px;
+                        }
+
+                        .menu {
+                            margin-top: 10px;
+                            margin-left: 10px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .index_swiper {
+        .item {
+            .content {
+                .wrap {
+                    width: 100%;
+
+                    .title_line {
+                        font-size: 26px;
+                    }
+
+                    .sub_head {
+                        font-size: 18px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        .content {
+            padding: 0 0 20px;
+
+            .lead {
+                padding: 0;
+            }
+        }
+
+        .right_box {
+            .company_data {
+                .box {
+                    height: auto;
+
+                    .name {
+                        .num {
+                            font-size: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .get_quote {
+        .cover_box {
+            .cover {
+                height: 450px;
+            }
+        }
+
+        .main {
+            .head {
+                padding-bottom: 0;
+
+                .title {
+                    font-size: 28px;
+                }
+
+                .sub_head {
+                    font-size: 16px;
+                }
+            }
+
+            .form {
+                margin-top: 0;
+
+                .wrap {
+                    flex-wrap: wrap;
+
+                    .input_item,
+                    .input_message {
+                        width: 50%;
+                        margin-top: 20px;
+
+                        .box {
+                            height: 50px;
+                            line-height: 50px;
+
+                            .input {
+                                height: 46px;
+                                line-height: 46px;
+                            }
+                        }
+                    }
+
+                    .input_message {
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                    .input_submit {
+                        width: 100%;
+
+                        .btn {
+                            height: 46px;
+                            line-height: 46px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .content {
+            padding: 40px 0;
+
+            .footer_list {
+                margin-bottom: 20px;
+            }
+
+            .contact_us {
+                padding: 40px 0 20px;
+
+                .title {
+                    font-size: 26px;
+                }
+
+                .lead {
+                    font-size: 16px;
+                }
+            }
+
+            .nav_list {
+                .list {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .copyright {
+            padding: 20px 10px;
+
+            .wrap {
+
+                .box {
+                    width: 100%;
+                    flex: content;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .tabs_main {
+        .tabs-header {
+            justify-content: start;
+            margin-bottom: 0;
+
+            .tab-btn {
+                width: 47%;
+                margin: 0 10px 20px;
+            }
+        }
+    }
+
+    .company {
+        .content {
+            padding: 20px 0 0;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -187,7 +403,7 @@
     }
 
     .row {
-        margin: 0 -5px;
+        margin: 0;
     }
 
     .col-xs-12,
@@ -243,7 +459,7 @@
                 display: flex;
                 justify-content: space-between;
 
-                .lead {
+                .name {
                     position: initial;
                     transform: translate(0);
                 }
@@ -345,6 +561,173 @@
                         font-size: 16px;
                     }
                 }
+            }
+        }
+    }
+
+    .index_swiper {
+        .item {
+            .cover_box {
+                .cover {
+                    object-position: center;
+                }
+            }
+
+            .content {
+                .wrap {
+                    .title {
+                        font-size: 20px;
+                    }
+
+                    .sub_head {
+                        font-size: 14px;
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about {
+        .content {
+            padding: 0 0 10px;
+        }
+
+        .right_box {
+            .company_data {
+                .box {
+                    .name {
+                        .num {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .lead {
+                        font-size: 12px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+
+    .get_quote {
+        .main {
+            width: 100%;
+            padding: 0 10px;
+
+            .head {
+                .title {
+                    font-size: 20px;
+                    line-height: 1.6;
+                    margin-bottom: 0;
+                }
+
+                .sub_head {
+                    font-size: 16px;
+                    line-height: 1.6;
+                }
+            }
+
+            .form {
+                margin-top: 10px;
+
+                .wrap {
+                    .item {
+                        width: 100%;
+                        padding: 0;
+                        margin-top: 10px;
+                    }
+
+                    .input_message {
+                        margin-bottom: 0;
+                    }
+
+                    .input_submit {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .content {
+            padding: 30px 10px 10px;
+
+            .contact_us {
+                .more {
+                    .box {
+                        .link {
+                            width: 170px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            padding: 20px 5px;
+
+            .wrap {
+                flex-wrap: wrap;
+
+                .copyright_text {
+                    width: 100%;
+                    padding: 0;
+                    text-align: center;
+                    font-size: 14px;
+                    margin-bottom: 6px;
+                }
+
+                .link {
+                    width: 100%;
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .tabs_main {
+        margin-top: 0;
+        padding: 0 0 10px;
+
+        .tabs-header {
+            padding: 10px 0 0;
+
+            .tab-btn {
+                width: 100%;
+                margin-bottom: 10px;
+                min-width: auto;
+                margin: 0 0 10px;
+            }
+        }
+
+        .tabs-content {
+            padding: 0;
+        }
+    }
+
+    .company {
+        .content {
+            .line_cover {
+                margin: 10px 0;
+            }
+
+            .lead {
+                line-height: 1.9;
+            }
+        }
+    }
+
+    .company_history {
+        padding: 0 10px;
+        height: 380px;
+
+        .item {
+            .content {
+                width: 100%;
             }
         }
     }
