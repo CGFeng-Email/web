@@ -362,6 +362,58 @@ body::-webkit-scrollbar-thumb:hover {
   border-color: #fff;
   background: #5B6168;
 }
+.banner .search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner .search .box {
+  overflow: hidden;
+}
+.banner .search .input {
+  height: 56px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #000;
+}
+.banner .search .input:focus {
+  box-shadow: none;
+}
+.banner .search .submit {
+  width: 100px;
+  height: 56px;
+  text-align: center;
+  line-height: 56px;
+  background: #FA3F08;
+  border: none;
+}
+.banner .search .submit .iconfont {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+.banner .search .hot {
+  padding: 20px 0 0;
+  color: #fff;
+}
+.banner .search .hot .name {
+  font-size: 18px;
+  font-weight: 500;
+  flex: none;
+}
+.banner .search .hot .list {
+  flex: 1;
+  padding-left: 10px;
+}
+.banner .search .hot .list .link {
+  width: auto;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 10px;
+  color: #fff;
+}
 .crumbs .list {
   display: flex;
   align-items: center;
@@ -1516,4 +1568,155 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .honor .item:hover .name {
   color: #FA3F08;
+}
+.product .head .title_line {
+  margin-bottom: 20px;
+}
+.product .main .list .item {
+  background: #fff;
+  margin-bottom: 30px;
+}
+.product .main .list .item .link {
+  padding: 10px 10px 20px;
+  position: relative;
+}
+.product .main .list .item .link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #FA3F08;
+  transition: all 0.5s ease;
+}
+.product .main .list .item .link .name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.product .main .list .item .link .lead {
+  margin-bottom: 10px;
+  color: #949494;
+}
+.product .main .list .item .link .cover_box {
+  margin-bottom: 10px;
+}
+.product .main .list .item .link .text {
+  color: #949494;
+}
+.product .main .list .item .link:hover .cover {
+  transform: scale(1.07);
+}
+.product .main .list .item .link:hover .text {
+  color: #FA3F08;
+}
+.product .main .list .item .link:hover::after {
+  width: 100%;
+}
+.product_details .main .content .name {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.product_details .main .content .sub_title {
+  font-size: 20px;
+}
+.product_details .main .content .series {
+  padding: 20px 0;
+}
+.product_details .main .content .series .text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 30px;
+  position: relative;
+  padding-left: 16px;
+}
+.product_details .main .content .series .text::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #FA3F08;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.product_details .main .content .lead {
+  line-height: 1.8;
+}
+.download .download_head {
+  background: #E2E2E2;
+}
+.download .download_head .hd {
+  padding: 20px 0;
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.download .download_head .download_btn {
+  flex: none;
+  width: 170px;
+}
+.download .list .item {
+  background: #fff;
+  padding: 20px 0;
+}
+.download .list .item .text {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.download .list .item .download_btn {
+  flex: none;
+  width: 170px;
+  height: 44px;
+  background: #FA3F08;
+  text-align: center;
+  line-height: 44px;
+}
+.download .list .item .download_btn .link {
+  height: 100%;
+}
+.download .list .item .download_btn .text,
+.download .list .item .download_btn .iconfont {
+  font-size: 14px;
+  color: #fff;
+}
+.download .list .item:last-child {
+  margin-bottom: 0;
+}
+.system .head .title_line {
+  margin-bottom: 20px;
+}
+.corporate_culture .list .item {
+  background: #fff;
+  padding: 50px 30px;
+  text-align: center;
+  min-height: 300px;
+}
+.corporate_culture .list .item .name {
+  font-size: 20px;
+  color: #000;
+  margin: 20px 0;
+}
+.corporate_culture .list .item .lead {
+  color: #949494;
+  line-height: 1.8;
+}
+.corporate_culture .list .item .more {
+  padding-top: 30px;
+  text-align: center;
+}
+.corporate_culture .list .item .more .link {
+  font-size: 14px;
+  background: #FA3F08;
+  height: 40px;
+  line-height: 40px;
+}
+.corporate_culture .list .item:hover {
+  transform: translateY(-10px);
 }

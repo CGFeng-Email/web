@@ -448,6 +448,68 @@ body::-webkit-scrollbar-thumb:hover {
             }
         }
     }
+
+    .search {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        transform: translate(-50%, -50%);
+
+        .box {
+            overflow: hidden;
+        }
+
+        .input {
+            height: 56px;
+            padding: 0 20px;
+            font-size: 16px;
+            color: #000;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .submit {
+            width: 100px;
+            height: 56px;
+            text-align: center;
+            line-height: 56px;
+            background: @primaryColor;
+            border: none;
+
+            .iconfont {
+                font-size: 24px;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+
+        .hot {
+            padding: 20px 0 0;
+            color: #fff;
+
+            .name {
+                font-size: 18px;
+                font-weight: 500;
+                flex: none;
+            }
+
+            .list {
+                flex: 1;
+                padding-left: 10px;
+
+                .link {
+                    width: auto;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 0 10px;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
 
 .crumbs {
@@ -1895,6 +1957,219 @@ body::-webkit-scrollbar-thumb:hover {
 
             .name {
                 color: @primaryColor;
+            }
+        }
+    }
+}
+
+.product {
+    .head {
+        .title_line {
+            margin-bottom: 20px;
+        }
+    }
+
+    .main {
+        .list {
+            .item {
+                background: #fff;
+                margin-bottom: 30px;
+
+                .link {
+                    padding: 10px 10px 20px;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 3px;
+                        background: @primaryColor;
+                        transition: all .5s ease;
+                    }
+
+                    .name {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #000;
+                    }
+
+                    .lead {
+                        margin-bottom: 10px;
+                        color: #949494;
+                    }
+
+                    .cover_box {
+                        margin-bottom: 10px;
+                    }
+
+                    .text {
+                        color: #949494;
+                    }
+
+                    &:hover {
+                        .cover {
+                            transform: scale(1.07);
+                        }
+
+                        .text {
+                            color: @primaryColor;
+                        }
+
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.product_details {
+    .main {
+        .content {
+            .name {
+                font-size: 26px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+
+            .sub_title {
+                font-size: 20px;
+            }
+
+            .series {
+                padding: 20px 0;
+
+                .text {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-right: 30px;
+                    position: relative;
+                    padding-left: 16px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        background: @primaryColor;
+                        border-radius: 50%;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            .lead {
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+.download {
+    .download_head {
+        background: #E2E2E2;
+
+        .hd {
+            padding: 20px 0;
+            flex: 1;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .download_btn {
+            flex: none;
+            width: 170px;
+        }
+    }
+
+    .list {
+        .item {
+            background: #fff;
+            padding: 20px 0;
+
+            .text {
+                flex: 1;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .download_btn {
+                flex: none;
+                width: 170px;
+                height: 44px;
+                background: @primaryColor;
+                text-align: center;
+                line-height: 44px;
+
+                .link {
+                    height: 100%;
+                }
+
+                .text,
+                .iconfont {
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.system {
+    .head {
+        .title_line {
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+.corporate_culture {
+    .list {
+        .item {
+            background: #fff;
+            padding: 50px 30px;
+            text-align: center;
+            min-height: 300px;
+
+            .name {
+                font-size: 20px;
+                color: #000;
+                margin: 20px 0;
+            }
+
+            .lead {
+                color: #949494;
+                line-height: 1.8;
+            }
+
+            .more {
+                padding-top: 30px;
+                text-align: center;
+
+                .link {
+                    font-size: 14px;
+                    background: @primaryColor;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-10px);
             }
         }
     }

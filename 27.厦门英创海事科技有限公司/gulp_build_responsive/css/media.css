@@ -105,6 +105,12 @@
     min-width: auto;
     padding: 10px 30px;
   }
+  .banner .search {
+    width: 80%;
+  }
+  .banner .search .hot {
+    align-items: start;
+  }
   .search .head .title {
     font-size: 38px;
   }
@@ -234,6 +240,12 @@
   .company .content {
     padding: 20px 0 0;
   }
+  .download .download_head .hd {
+    font-size: 14px;
+  }
+  .download .list .item .text {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -263,6 +275,24 @@
   }
   .head .sub_title {
     padding: 0;
+  }
+  .banner .cover_box .cover {
+    height: 40vh;
+  }
+  .banner .search .form .box .input {
+    height: 44px;
+    font-size: 14px;
+  }
+  .banner .search .form .box .submit {
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+  }
+  .banner .search .hot .name {
+    font-size: 16px;
+  }
+  .banner .search .hot .list .link {
+    font-size: 14px;
   }
   .contact_btn_wrap {
     padding: 20px 0;
@@ -459,6 +489,13 @@
     height: 380px;
   }
   .company_history .item .content {
+    width: 100%;
+  }
+  .download {
+    overflow-x: auto;
+  }
+  .download .download_x {
+    min-width: 767px;
     width: 100%;
   }
 }
