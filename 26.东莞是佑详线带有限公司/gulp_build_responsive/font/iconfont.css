@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4942378 */
-  src: url('iconfont.woff2?t=1751023335360') format('woff2'),
-       url('iconfont.woff?t=1751023335360') format('woff'),
-       url('iconfont.ttf?t=1751023335360') format('truetype');
+  src: url('iconfont.woff2?t=1755748114160') format('woff2'),
+       url('iconfont.woff?t=1755748114160') format('woff'),
+       url('iconfont.ttf?t=1755748114160') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,62 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-test:before {
+  content: "\e646";
+}
+
+.icon-mti-chuanzhen:before {
+  content: "\e9d0";
+}
+
+.icon-24gf-playCircle:before {
+  content: "\ea82";
+}
+
+.icon-alibaba:before {
+  content: "\e68f";
+}
+
+.icon-douyin:before {
+  content: "\e8db";
+}
+
+.icon-xiazai:before {
+  content: "\e648";
+}
+
+.icon-guanbi:before {
+  content: "\e650";
+}
+
+.icon-kefu1:before {
+  content: "\e63c";
+}
+
+.icon-chicun:before {
+  content: "\e68c";
+}
+
+.icon-earth-full:before {
+  content: "\e9ee";
+}
+
+.icon--yuangong:before {
+  content: "\e605";
+}
+
+.icon-jianzhu4:before {
+  content: "\e69c";
+}
+
+.icon-zhuceziben:before {
+  content: "\e6c2";
+}
+
+.icon-qiye:before {
+  content: "\e611";
 }
 
 .icon-yanjing:before {

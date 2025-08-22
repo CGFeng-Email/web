@@ -1078,6 +1078,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .search_popup .wrap .hot {
   padding: 20px 10px 0;
+  align-items: start;
 }
 .search_popup .wrap .hot .name {
   font-size: 18px;
@@ -1093,6 +1094,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 14px;
   font-weight: 500;
   padding: 0 10px;
+  margin-bottom: 10px;
 }
 .header_height {
   height: 80px;
@@ -1615,7 +1617,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
 }
 .product_details .main .content .name {
-  font-size: 26px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -1719,4 +1721,202 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .corporate_culture .list .item:hover {
   transform: translateY(-10px);
+}
+.news_list {
+  margin-bottom: 50px;
+}
+.news_list .item {
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.news_list .item .link .cover_box {
+  width: 30%;
+}
+.news_list .item .link .content {
+  flex: 1;
+  padding-left: 40px;
+}
+.news_list .item .link .content .name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+.news_list .item .link .content .lead {
+  line-height: 1.8;
+  margin: 12px 0;
+  color: #919191;
+}
+.news_list .item .link .content .date {
+  width: 80px;
+  height: 90px;
+  background: #EEEEEE;
+  flex-direction: column;
+}
+.news_list .item .link .content .date .day {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+}
+.news_list .item .link .content .date .year {
+  font-size: 14px;
+  color: #919191;
+}
+.news_list .item .link:hover .cover {
+  transform: scale(1.07);
+}
+.news_list .item .link:hover .date {
+  background: #FA3F08;
+}
+.news_list .item .link:hover .date .day {
+  color: #fff;
+}
+.news_list .item .link:hover .date .year {
+  color: #fff;
+}
+.common_details .cover_box {
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.common_details .cover_box .cover {
+  max-width: 48%;
+  object-fit: contain;
+  height: auto;
+  max-width: 45%;
+  margin: 0 10px;
+}
+.common_details .share .text {
+  padding-right: 20px;
+  font-size: 18px;
+}
+.common_details .share .blogroll .link {
+  background: #E6E6E6;
+}
+.common_details .share .blogroll .link:hover {
+  background: #FA3F08;
+}
+.common_details .share .blogroll .link:hover .iconfont {
+  color: #fff;
+}
+.common_details .child_padding {
+  padding: 30px 0;
+}
+.common_details .content .lead,
+.common_details .content p {
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 10px 0;
+  font-weight: 500;
+}
+.contact_us {
+  padding-bottom: 0;
+}
+.contact_us .head .title {
+  color: #FA3F08;
+}
+.contact_us .head .sub_title {
+  color: #FA3F08;
+}
+.contact_us .list .item {
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 30px;
+  min-height: 134px;
+  display: flex;
+  align-items: start;
+  transition: 0.7s ease-in-out;
+}
+.contact_us .list .item .icon {
+  line-height: 1.2;
+}
+.contact_us .list .item .icon .iconfont {
+  font-size: 56px;
+  color: #FA3F08;
+}
+.contact_us .list .item .content {
+  padding-left: 20px;
+}
+.contact_us .list .item .content .name {
+  font-size: 26px;
+  color: #000;
+  font-weight: 600;
+}
+.contact_us .list .item .content .text {
+  font-size: 18px;
+  color: #787878;
+  line-height: 26px;
+}
+.message_box {
+  background: #F5F5F5;
+}
+.message_box .head .title {
+  color: #FA3F08;
+}
+.message_box .head .sub_head {
+  color: #6E6E6E;
+  font-weight: 500;
+}
+.message_box .form .item {
+  margin-bottom: 20px;
+}
+.message_box .form .item .row {
+  margin: 0;
+}
+.message_box .form .box {
+  padding: 0 20px;
+}
+.message_box .form .two_box {
+  padding-left: 10px;
+}
+.message_box .form .input_box {
+  padding-left: 10px;
+}
+.message_box .form .name {
+  font-weight: 600;
+  padding: 7px 0;
+  font-size: 16px;
+}
+.message_box .form .input {
+  height: 60px;
+  font-size: 16px;
+  padding: 0 20px;
+}
+.message_box .form .layui-form-select .layui-input {
+  padding: 0 20px;
+  height: 60px;
+  font-size: 16px;
+}
+.message_box .form .textarea {
+  padding: 20px 20px;
+  font-size: 16px;
+}
+.message_box .form .btn_box {
+  margin-top: 40px;
+  text-align: center;
+}
+.message_box .form .btn_box .btn {
+  background: #FA3F08;
+  min-width: 240px;
+  height: 50px;
+  font-size: 18px;
+  padding: 0;
+}
+.system_details .content .sub_head {
+  margin-bottom: 10px;
+}
+.system_details .content .download_btn {
+  width: auto;
+  background: #FA3F08;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 30px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: 500;
+}
+.system_download .download_x .list .item {
+  background: none;
 }

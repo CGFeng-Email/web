@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>东莞市佑祥线带股份有限公司 </title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="section" data-aos="fade">
+        <div class="banner">
+            <div class="cover_box">
+                <img class="cover" src="../../img/message_banner.jpg">
+            </div>
+            <div class=" content">
+                <div class="wrap" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50">
+                    <h3 class="title uppercase" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
+                        在线留言
+                    </h3>
+                    <p class="lead" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">
+                        我们专一，品质保证，交期准时，产品已销往国内外。我们将不断的创新，加强管理，以质量求生存，以服务求信誉。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" data-aos="fade">
+        <div class="message_box img_bg container_padding" style="background-image: url(../../img/recommend_news_bg.png);">
+            <div class="container">
+                <div class="head">
+                    <h3 class="title">在线留言</h3>
+                    <h4 class="sub_head">
+                        您可以在此处向我们发送询问，我们将在12小时内为您提供专业回复
+                    </h4>
+                </div>
+                <div class="main container_main">
+                    <form class="layui-form form">
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" name="company" lay-verify="required" lay-vertype="tips"
+                                        placeholder="*请输入公司/单位名称" lay-reqtext="请输入公司/单位名称" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                                <div class="box two_box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="text" name="name" lay-verify="required" lay-vertype="tips"
+                                        placeholder="*请输入您的姓名" lay-reqtext="请输入您的姓名" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="tel" name="mobile" lay-verify="required | phone" lay-vertype="tips"
+                                        placeholder="*请输入您的电话" lay-reqtext="请输入您的电话" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                                <div class="box two_box col-md-6 col-sm-12 col-xs-12">
+                                    <input type="email" name="email" lay-verify="required | email" lay-vertype="tips"
+                                        placeholder="*请输入您的邮箱" lay-reqtext="请输入您的邮箱" autocomplete="off"
+                                        class="layui-input input" lay-affix="clear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="box col-md-12 col-sm-12 col-xs-12">
+                                    <textarea name="message" placeholder="请输入留言内容" class="layui-textarea textarea"
+                                        style="resize: none;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_box">
+                            <button class="layui-btn btn box_radius text-uppercase" lay-submit
+                                lay-filter="contact_us_btn">确认提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+</body>
+
+</html>

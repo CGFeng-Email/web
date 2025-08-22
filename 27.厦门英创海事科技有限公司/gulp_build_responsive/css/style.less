@@ -1332,6 +1332,7 @@ body::-webkit-scrollbar-thumb:hover {
 
         .hot {
             padding: 20px 10px 0;
+            align-items: start;
 
             .name {
                 font-size: 18px;
@@ -1348,6 +1349,7 @@ body::-webkit-scrollbar-thumb:hover {
                     font-size: 14px;
                     font-weight: 500;
                     padding: 0 10px;
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -2032,7 +2034,7 @@ body::-webkit-scrollbar-thumb:hover {
     .main {
         .content {
             .name {
-                font-size: 26px;
+                font-size: 16px;
                 font-weight: 600;
                 margin-bottom: 10px;
             }
@@ -2170,6 +2172,282 @@ body::-webkit-scrollbar-thumb:hover {
 
             &:hover {
                 transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+.news_list {
+    margin-bottom: 50px;
+
+    .item {
+        padding: 40px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+        .link {
+            .cover_box {
+                width: 30%;
+            }
+
+            .content {
+                flex: 1;
+                padding-left: 40px;
+
+                .name {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #000;
+                }
+
+                .lead {
+                    line-height: 1.8;
+                    margin: 12px 0;
+                    color: #919191;
+                }
+
+                .date {
+                    width: 80px;
+                    height: 90px;
+                    background: #EEEEEE;
+                    flex-direction: column;
+
+                    .day {
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: #000;
+                    }
+
+                    .year {
+                        font-size: 14px;
+                        color: #919191;
+                    }
+                }
+            }
+
+            &:hover {
+                .cover {
+                    transform: scale(1.07);
+                }
+
+                .date {
+                    background: @primaryColor;
+
+                    .day {
+                        color: #fff;
+                    }
+
+                    .year {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.common_details {
+    .cover_box {
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        justify-content: center;
+
+        .cover {
+            max-width: 48%;
+            object-fit: contain;
+            height: auto;
+            max-width: 45%;
+            margin: 0 10px;
+        }
+    }
+
+    .share {
+        .text {
+            padding-right: 20px;
+            font-size: 18px;
+        }
+
+        .blogroll {
+            .link {
+                background: #E6E6E6;
+
+                &:hover {
+                    background: @primaryColor;
+
+                    .iconfont {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .child_padding {
+        padding: 30px 0;
+    }
+
+    .content {
+
+        .lead,
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            padding: 10px 0;
+            font-weight: 500;
+        }
+    }
+}
+
+.contact_us {
+    padding-bottom: 0;
+
+    .head {
+        .title {
+            color: @primaryColor;
+        }
+
+        .sub_title {
+            color: @primaryColor;
+        }
+    }
+
+    .list {
+        .item {
+            border: 1px solid #dcdcdc;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 30px;
+            min-height: 134px;
+            display: flex;
+            align-items: start;
+            transition: .7s ease-in-out;
+
+            .icon {
+                line-height: 1.2;
+
+                .iconfont {
+                    font-size: 56px;
+                    color: @primaryColor;
+                }
+            }
+
+            .content {
+                padding-left: 20px;
+
+                .name {
+                    font-size: 26px;
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                .text {
+                    font-size: 18px;
+                    color: #787878;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}
+
+.message_box {
+    background: #F5F5F5;
+
+    .head {
+        .title {
+            color: @primaryColor;
+        }
+
+        .sub_head {
+            color: #6E6E6E;
+            font-weight: 500;
+        }
+    }
+
+    .form {
+        .item {
+            margin-bottom: 20px;
+
+            .row {
+                margin: 0;
+            }
+        }
+
+        .box {
+            padding: 0 20px;
+        }
+
+        .two_box {
+            padding-left: 10px;
+        }
+
+        .input_box {
+            padding-left: 10px;
+        }
+
+        .name {
+            font-weight: 600;
+            padding: 7px 0;
+            font-size: 16px;
+        }
+
+        .input {
+            height: 60px;
+            font-size: 16px;
+            padding: 0 20px;
+        }
+
+        .layui-form-select .layui-input {
+            padding: 0 20px;
+            height: 60px;
+            font-size: 16px;
+        }
+
+        .textarea {
+            padding: 20px 20px;
+            font-size: 16px;
+        }
+
+        .btn_box {
+            margin-top: 40px;
+            text-align: center;
+
+            .btn {
+                background: @primaryColor;
+                min-width: 240px;
+                height: 50px;
+                font-size: 18px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.system_details {
+    .content {
+        .sub_head {
+            margin-bottom: 10px;
+        }
+
+        .download_btn {
+            width: auto;
+            background: @primaryColor;
+            height: 44px;
+            line-height: 44px;
+            padding: 0 30px;
+            color: #fff;
+            font-size: 16px;
+            margin-top: 30px;
+            font-weight: 500;
+        }
+    }
+}
+
+.system_download {
+    .download_x {
+        .list {
+            .item {
+                background: none;
             }
         }
     }

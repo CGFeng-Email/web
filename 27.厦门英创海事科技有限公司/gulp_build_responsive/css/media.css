@@ -498,4 +498,11 @@
     min-width: 767px;
     width: 100%;
   }
+  .system_details .main .content {
+    padding-bottom: 20px;
+  }
+  .system_details .main .content .sub_title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
