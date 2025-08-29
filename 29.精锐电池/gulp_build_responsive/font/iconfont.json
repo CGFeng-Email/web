@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "11834360",
+      "name": "使命",
+      "font_class": "shiming",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "12856469",
+      "name": "0公司愿景",
+      "font_class": "gongsiyuanjing",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "39904022",
+      "name": "方针",
+      "font_class": "fangzhen",
+      "unicode": "ea88",
+      "unicode_decimal": 60040
+    },
+    {
+      "icon_id": "883901",
+      "name": "灯泡",
+      "font_class": "dengpao",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
       "icon_id": "10233704",
       "name": "砖石",
       "font_class": "zhuanshi",
