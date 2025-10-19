@@ -1,0 +1,212 @@
+<div class="header">
+    <div class="content">
+        <div class="wrap box_shadow box_radius">
+            <h1 class="logo">
+                <a href="../../index.html" class="link">
+                    <img class="cover" src="../../img/logo.png" alt="赤兔技术">
+                </a>
+            </h1>
+            <div class="right justify_end">
+                <div class="nav display_flex">
+                    <!-- 选中：active -->
+                    <div class="li animate active">
+                        <div class="box">
+                            <a href="../../index.html" class="link">
+                                <div class="head_title">
+                                    <span>首页</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../energySavingServices.html" class="link">
+                                <div class="head_title animate">
+                                    <span>节能服务</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../waterSavingServices.html" class="link">
+                                <div class="head_title animate">
+                                    <span>节水服务</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../case.html" class="link">
+                                <div class="head_title">
+                                    <span>行业案例</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../figure.html" class="link">
+                                <div class="head_title">
+                                    <span>数字碳索</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../aboutUs.html" class="link">
+                                <div class="head_title">
+                                    <span>关于我们</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../contactUs.html" class="link">
+                                <div class="head_title">
+                                    <span>联系我们</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="function">
+                    <div class="language animate">
+                        <div class="language_head animate justify_center">
+                            <i class="iconfont icon-duoyuyan"></i>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="lis"></div>
+                        <div class="lis"></div>
+                        <div class="lis"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h5_nav box_shadow box_radius" data-scroll-section>
+            <div class="li animate active">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../index.html" class="link">
+                            <span class="title">首页</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../energySavingServices.html" class="link">
+                            <span class="title">节能服务</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../waterSavingServices.html" class="link">
+                            <span class="title">节水服务</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../case.html" class="link">
+                            <span class="title">行业案例</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../figure.html" class="link">
+                            <span class="title">数字碳索</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../aboutUs.html" class="link">
+                            <span class="title">关于我们</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../aboutUs.html" class="link">
+                            <span class="title">联系我们</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header_height"></div>
+
+<script>
+    NProgress.start();
+
+    let isScroll = true;
+    // 锁定滚动
+    function lockScroll() {
+        document.body.style.overflow = 'hidden';
+        // 或者同时锁定 html 和 body 以确保跨浏览器兼容
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+        isScroll = false;
+    }
+
+    // 解锁滚动
+    function unlockScroll() {
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+        isScroll = true;
+    }
+
+    // h5导航菜单栏
+    $('.header .menu').click(function () {
+        if (isScroll) {
+            lockScroll();
+        } else {
+            unlockScroll();
+        }
+        $(this).stop().toggleClass('active');
+        $('.h5_nav').stop().slideToggle();
+    })
+
+    $('.search_popup .clear .icon').click(function () {
+        $('.search_popup').slideUp();
+    })
+
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        // 提交事件
+        form.on('submit(searchSubmit)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    });
+</script>
