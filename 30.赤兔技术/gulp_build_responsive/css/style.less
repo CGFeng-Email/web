@@ -1,4 +1,4 @@
-@primaryColor: #1E2E71;
+@primaryColor: #1FACEB;
 @minorColor: #D14280;
 @borderColor: #C9266D;
 
@@ -1116,7 +1116,7 @@ body::-webkit-scrollbar-thumb:hover {
             .title_line {
                 font-size: 46px;
                 font-weight: 500;
-                color: @primaryColor;
+                color: #1D2E71;
                 margin-bottom: 20px;
 
                 &::after {
@@ -1348,4 +1348,304 @@ body::-webkit-scrollbar-thumb:hover {
     color: #fff;
     min-height: 400px;
     overflow: hidden;
+}
+
+.footer {
+    background: #2D2D2D;
+
+    .footer_head {
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        align-items: center;
+        padding: 80px 0 40px 0;
+
+        .wrap {
+            .title {
+                color: #969696;
+
+                .text {
+                    color: @primaryColor;
+                }
+            }
+
+            .lead {
+                font-size: 14px;
+                color: #969696;
+            }
+        }
+    }
+
+    .main {
+        padding: 50px 0;
+
+        .nav_wrap {
+            color: #fff;
+
+            .name {
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            .list {
+                .li {
+                    .link {
+                        width: auto;
+                        color: #C2C2C2;
+                        padding: 6px 0;
+                        font-size: 13px;
+
+                        &:hover {
+                            color: @primaryColor;
+                        }
+                    }
+                }
+            }
+
+            .company_info {
+                .li {
+                    padding: 6px 0;
+                    font-size: 13px;
+                    color: #C2C2C2;
+                    display: flex;
+                    align-items: center;
+
+                    .text {
+                        padding-left: 5px;
+                    }
+
+                    .iconfont {
+                        color: @primaryColor;
+                    }
+                }
+            }
+        }
+
+        .code {
+            .box {
+                .lead {
+                    font-size: 14px;
+                    color: #C2C2C2;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 30px 0;
+        background: #252525;
+
+        .text,
+        .link {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #fff;
+            width: auto;
+            display: inline-block;
+        }
+
+        .link {
+            margin-left: 30px;
+        }
+    }
+}
+
+.company_about {
+
+    .space_between {
+        height: 40px;
+    }
+
+    .company {
+
+        .content {
+            .title_line {
+                margin-bottom: 30px;
+            }
+
+            .lead,
+            p {
+                line-height: 1.8;
+            }
+        }
+
+        .cover_box {
+            &:hover {
+                .cover {
+                    transform: scale(1.07);
+                }
+            }
+        }
+    }
+
+    .company_data {
+        padding: 40px 0 0;
+
+        .wrap {
+            .col_md:last-child {
+                .box {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            .box {
+                text-align: center;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%) skew(-20deg);
+                    right: 0;
+                    width: 1.4px;
+                    height: 60%;
+                    background: #B4B4B4;
+                }
+
+
+
+                .name {
+                    .num {
+                        font-size: 54px;
+                        font-weight: 600;
+                        color: @primaryColor;
+                    }
+
+                    .ide {
+                        font-size: 28px;
+                        color: #000;
+                    }
+                }
+
+                .lead {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .company_swiper {
+
+        .item {
+            .cover_box {
+                &:hover {
+                    .cover {
+                        transform: scale(1.07);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.honor {
+    .content {
+        text-align: center;
+        padding-right: 50px;
+
+        .title {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .cover {
+            width: 100%;
+        }
+    }
+
+    .right {
+        padding-top: 30px;
+
+        .name {
+            font-size: 22px;
+            padding: 10px 0;
+        }
+
+        .honor_swiper {
+            .item {
+                cursor: pointer;
+                padding: 0 5px;
+
+                .cover {
+                    object-fit: contain;
+                }
+
+                .lead {
+                    padding: 8px 10px 4px;
+                    text-align: center;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.prand_value {
+    text-align: center;
+
+    .wrap {
+        display: inline-block;
+        position: relative;
+
+        .cover_box {
+            max-width: 660px;
+        }
+
+        .box {
+            position: absolute;
+            // width: 300px;
+
+            .icon {
+                .iconfont {
+                    font-size: 28px;
+                    color: @primaryColor;
+                }
+            }
+
+            .name {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            .lead {
+                color: #8F8F8F;
+                font-size: 15px;
+            }
+        }
+
+        .box:nth-child(even) {
+            left: -50%;
+            text-align: right;
+        }
+
+        .box:nth-child(odd) {
+            right: -50%;
+            text-align: left;
+        }
+
+        .box1 {
+            top: 10%;
+        }
+
+        .box2 {
+            top: 10%;
+        }
+
+        .box3 {
+            bottom: 10%;
+        }
+
+        .box4 {
+            bottom: 10%;
+        }
+    }
 }

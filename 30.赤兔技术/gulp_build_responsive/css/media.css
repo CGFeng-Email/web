@@ -27,6 +27,15 @@
   .achievement .main .list .item .wrap .lead {
     font-size: 14px;
   }
+  .contact_us {
+    min-height: auto;
+  }
+  .contact_us .head .title {
+    font-size: 20px;
+  }
+  .contact_us .head .lead {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 992px) {
   .container_padding {
@@ -172,6 +181,33 @@
   .case_share_swiper .item .link .content .date,
   .case_share_swiper .item .link .content .lead {
     font-size: 14px;
+  }
+  .footer .footer_head {
+    padding: 30px 10px;
+  }
+  .footer .main {
+    padding: 20px 0;
+  }
+  .footer .main .nav_wrap .col_md {
+    margin-bottom: 20px;
+  }
+  .company_about .company .content .space_between {
+    height: 10px;
+  }
+  .company_about .company .cover_box {
+    margin-top: 10px;
+  }
+  .company_about .company_data .wrap .col_md:nth-child(even) .box {
+    margin-bottom: 10px;
+  }
+  .company_about .company_data .wrap .col_md:nth-child(even) .box::before {
+    display: none;
+  }
+  .honor .content {
+    display: none;
+  }
+  .honor .right {
+    padding: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -371,5 +407,65 @@
   }
   .cooperative_partner .main .common_cooperative_partner_swiper {
     margin-bottom: 10px;
+  }
+  .contact_us .head .lead {
+    font-size: 13px;
+  }
+  .footer {
+    padding: 0 10px;
+  }
+  .footer .footer_head {
+    flex-wrap: wrap;
+  }
+  .footer .footer_head .wrap {
+    width: 100%;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+  .footer .footer_head .logo {
+    margin: auto;
+    width: 180px;
+  }
+  .footer .footer_head .logo .cover {
+    width: 100%;
+  }
+  .footer .copyright {
+    padding: 20px 0;
+  }
+  .footer .copyright .text {
+    width: 100%;
+    font-size: 13px;
+  }
+  .footer .copyright .link {
+    margin: 10px 0 0 0;
+    font-size: 13px;
+  }
+  .company_about {
+    padding-bottom: 10px;
+  }
+  .company_about .company .content .lead {
+    font-size: 13px;
+    line-height: 2;
+  }
+  .company_about .company_data {
+    padding-top: 10px;
+  }
+  .company_about .company_data .wrap .col_md {
+    margin-bottom: 20px;
+  }
+  .company_about .company_data .wrap .box .name .num {
+    font-size: 24px;
+  }
+  .company_about .company_data .wrap .box .name .ide {
+    font-size: 16px;
+  }
+  .company_about .company_data .wrap .box .lead {
+    font-size: 14px;
+  }
+  .company_about .space_between {
+    height: 0;
+  }
+  .honor .right .name {
+    font-size: 18px;
   }
 }

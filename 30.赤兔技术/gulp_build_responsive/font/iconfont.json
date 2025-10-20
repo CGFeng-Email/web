@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1719303",
+      "name": "产品管理",
+      "font_class": "chanpinguanli",
+      "unicode": "e7b6",
+      "unicode_decimal": 59318
+    },
+    {
+      "icon_id": "7905546",
+      "name": "产品管理",
+      "font_class": "chanpinguanli1",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "12842823",
+      "name": "w_云端",
+      "font_class": "w_yunduan",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "36157597",
+      "name": "产品 (1)",
+      "font_class": "a-chanpin1",
+      "unicode": "ebcc",
+      "unicode_decimal": 60364
+    },
+    {
+      "icon_id": "12503720",
+      "name": "地址",
+      "font_class": "dizhi2",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
       "icon_id": "9901529",
       "name": "CO2",
       "font_class": "CO",

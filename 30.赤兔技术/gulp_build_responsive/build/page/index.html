@@ -351,7 +351,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-container common_cooperative_partner_swiper cooperative_partner_swiper1">
+                    <div class="swiper-container common_cooperative_partner_swiper cooperative_partner_swiper3">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide item">
                                 <div class="cover_box">
@@ -405,7 +405,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-container common_cooperative_partner_swiper cooperative_partner_swiper2">
+                    <div class="swiper-container common_cooperative_partner_swiper cooperative_partner_swiper4">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide item">
                                 <div class="cover_box">
@@ -524,7 +524,62 @@
 
     var cooperative_partner_swiper2 = new Swiper('.cooperative_partner_swiper2', {
         autoplay: {
-            delay: 100,
+            delay: 200,
+            disableOnInteraction: false,
+            waitForTransition: true,
+            reverseDirection: true,
+        },
+        loop: true,
+        speed: 2000,
+        slidesPerView: 7,
+        spaceBetween: 20,
+        reverse: true,
+        breakpoints: {
+            1400: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            968: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        },
+    })
+
+    var cooperative_partner_swiper2 = new Swiper('.cooperative_partner_swiper3', {
+        autoplay: {
+            delay: 300,
+            disableOnInteraction: false,
+            waitForTransition: true,
+        },
+        loop: true,
+        speed: 2000,
+        slidesPerView: 7,
+        spaceBetween: 20,
+        reverse: true,
+        breakpoints: {
+            1400: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            968: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            }
+        },
+    })
+
+    var cooperative_partner_swiper2 = new Swiper('.cooperative_partner_swiper4', {
+        autoplay: {
+            delay: 400,
             disableOnInteraction: false,
             waitForTransition: true,
             reverseDirection: true,

@@ -79,6 +79,20 @@
             }
         }
     }
+
+    .contact_us {
+        min-height: auto;
+
+        .head {
+            .title {
+                font-size: 20px;
+            }
+
+            .lead {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 
@@ -315,6 +329,60 @@
                     }
                 }
             }
+        }
+    }
+
+    .footer {
+        .footer_head {
+            padding: 30px 10px;
+        }
+
+        .main {
+            padding: 20px 0;
+
+            .nav_wrap {
+                .col_md {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .company_about {
+        .company {
+            .content {
+                .space_between {
+                    height: 10px;
+                }
+            }
+
+            .cover_box {
+                margin-top: 10px;
+            }
+        }
+
+        .company_data {
+            .wrap {
+                .col_md:nth-child(even) {
+                    .box {
+                        &::before {
+                            display: none;
+                        }
+
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .honor {
+        .content {
+            display: none;
+        }
+
+        .right {
+            padding: 0;
         }
     }
 }
@@ -641,6 +709,102 @@
         .main {
             .common_cooperative_partner_swiper {
                 margin-bottom: 10px;
+            }
+        }
+    }
+
+    .contact_us {
+        .head {
+            .lead {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .footer {
+        padding: 0 10px;
+
+        .footer_head {
+            flex-wrap: wrap;
+
+            .wrap {
+                width: 100%;
+                margin-bottom: 14px;
+                text-align: center;
+            }
+
+            .logo {
+                margin: auto;
+                width: 180px;
+
+                .cover {
+                    width: 100%;
+                }
+            }
+        }
+
+        .copyright {
+            padding: 20px 0;
+
+            .text {
+                width: 100%;
+                font-size: 13px;
+            }
+
+            .link {
+                margin: 10px 0 0 0;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .company_about {
+        padding-bottom: 10px;
+
+        .company {
+            .content {
+                .lead {
+                    font-size: 13px;
+                    line-height: 2;
+                }
+            }
+        }
+
+        .company_data {
+            padding-top: 10px;
+
+            .wrap {
+                .col_md {
+                    margin-bottom: 20px;
+                }
+
+                .box {
+                    .name {
+                        .num {
+                            font-size: 24px;
+                        }
+
+                        .ide {
+                            font-size: 16px;
+                        }
+                    }
+
+                    .lead {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .space_between {
+            height: 0;
+        }
+    }
+
+    .honor {
+        .right {
+            .name {
+                font-size: 18px;
             }
         }
     }
