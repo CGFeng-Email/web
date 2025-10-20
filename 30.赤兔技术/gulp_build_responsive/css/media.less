@@ -55,9 +55,32 @@
     }
 }
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .achievement {
+        .main {
+            .list {
+                .item {
+                    .wrap {
+                        .icon {
+                            .iconfont {
+                                font-size: 26px;
+                            }
+                        }
 
-@media screen and (max-width: 1040px) {}
+                        .number {
+                            font-size: 26px;
+                        }
+
+                        .lead {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 992px) {
     .container_padding {
@@ -263,6 +286,37 @@
             }
         }
     }
+
+    .achievement {
+        .main {
+            .list {
+                flex-wrap: wrap;
+                justify-content: start;
+
+                .item {
+                    width: 33.33%;
+                    padding: 0 10px 20px;
+                }
+            }
+        }
+    }
+
+    .case_share_swiper {
+        .item {
+            .link {
+                .content {
+                    .name {
+                        font-size: 16px;
+                    }
+
+                    .date,
+                    .lead {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -301,6 +355,7 @@
 
         .sub_title {
             padding: 0;
+            font-size: 14px;
         }
     }
 
@@ -523,5 +578,70 @@
         }
     }
 
-   
+    .achievement {
+
+        .main {
+            padding-top: 20px;
+
+            .list {
+                .item {
+                    width: 50%;
+
+                    .wrap {
+                        padding: 20px 10px 10px;
+                        min-height: 180px;
+                    }
+                }
+            }
+        }
+    }
+
+    .case_share {
+        .head {
+            flex-wrap: wrap;
+
+            .head_wrap {
+                .about_title {
+                    .sub_title {
+                        margin: 0 0 5px 0;
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            .head_more {
+                width: 100%;
+                text-align: right;
+            }
+        }
+
+        .case_share_swiper {
+
+            .item {
+                .link {
+                    .cover_box {
+                        .cover {
+                            height: 300px;
+                        }
+                    }
+
+                    .content {
+                        padding: 10px;
+
+                        .lead {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cooperative_partner {
+        .main {
+            .common_cooperative_partner_swiper {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
