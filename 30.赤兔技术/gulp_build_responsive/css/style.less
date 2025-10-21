@@ -1270,6 +1270,8 @@ body::-webkit-scrollbar-thumb:hover {
             border-radius: 4px;
             text-align: center;
             line-height: 44px;
+            transition: .3s ease;
+            opacity: .5;
 
             .iconfont {
                 font-size: 22px;
@@ -1283,6 +1285,24 @@ body::-webkit-scrollbar-thumb:hover {
                 .iconfont {
                     color: #fff;
                 }
+            }
+        }
+
+    }
+
+    &:hover {
+
+        .swiper-button-next {
+            .icon {
+                opacity: 1;
+                transform: translateX(10px);
+            }
+        }
+
+        .swiper-button-prev {
+            .icon {
+                opacity: 1;
+                transform: translateX(-10px);
             }
         }
     }
@@ -1596,16 +1616,16 @@ body::-webkit-scrollbar-thumb:hover {
         position: relative;
 
         .cover_box {
-            max-width: 660px;
+            max-width: 620px;
         }
 
         .box {
             position: absolute;
-            // width: 300px;
+            width: 300px;
 
             .icon {
                 .iconfont {
-                    font-size: 28px;
+                    font-size: 32px;
                     color: @primaryColor;
                 }
             }
@@ -1646,6 +1666,158 @@ body::-webkit-scrollbar-thumb:hover {
 
         .box4 {
             bottom: 10%;
+        }
+    }
+}
+
+.business {
+    padding: 200px 0;
+
+    .head {
+        text-align: left;
+    }
+
+    .main {
+        .business_swiper {
+            .item {
+                background: #fff;
+                padding: 14px;
+
+                .content {
+                    padding: 14px 0 0;
+                    min-height: 180px;
+
+                    .name {
+                        font-size: 22px;
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
+                    .lead {
+                        font-size: 14px;
+                        line-height: 1.8;
+                    }
+                }
+
+                &:hover {
+                    .cover {
+                        transform: scale(1.07);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.info {
+    .item {
+        background: #F5F5F5;
+        padding: 0 20px 30px;
+        text-align: center;
+        min-height: 162px;
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            border-radius: 50%;
+            background: #fff;
+            border: 2px solid #fff;
+            margin: auto;
+            transform: translateY(-50%);
+
+            .iconfont {
+                font-size: 30px;
+                color: @primaryColor;
+            }
+        }
+
+        .lead,
+        p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        &:hover {
+            background: @primaryColor;
+            color: #fff;
+
+            .icon {
+                background: @primaryColor;
+
+                .iconfont {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.message_box {
+    background: #F5F5F5;
+
+    .head {
+        .sub_head {
+            font-weight: 500;
+        }
+    }
+
+    .form {
+        .item {
+            margin-bottom: 20px;
+
+            .row {
+                margin: 0;
+            }
+        }
+
+        .box {
+            padding: 0 20px;
+        }
+
+        .two_box {
+            padding-left: 10px;
+        }
+
+        .input_box {
+            padding-left: 10px;
+        }
+
+        .name {
+            font-weight: 600;
+            padding: 7px 0;
+            font-size: 16px;
+        }
+
+        .input {
+            height: 60px;
+            font-size: 16px;
+            padding: 0 20px;
+        }
+
+        .layui-form-select .layui-input {
+            padding: 0 20px;
+            height: 60px;
+            font-size: 16px;
+        }
+
+        .textarea {
+            padding: 20px 20px;
+            font-size: 16px;
+        }
+
+        .btn_box {
+            margin-top: 40px;
+            text-align: center;
+
+            .btn {
+                background: @primaryColor;
+                min-width: 240px;
+                height: 50px;
+                font-size: 18px;
+                padding: 0;
+            }
         }
     }
 }

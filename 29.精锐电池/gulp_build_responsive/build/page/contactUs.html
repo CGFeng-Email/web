@@ -174,5 +174,15 @@
     </div>
     @@include('footer.html')
 </body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        form.on('submit(contact_us_btn)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    });
+</script>
 
 </html>

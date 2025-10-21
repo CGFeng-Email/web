@@ -211,39 +211,88 @@
                         <div class="cover_box">
                             <img class="cover" src="../../img/value.jpg" alt="brand value">
                         </div>
-                        <div class="box box1">
+                        <div class="box box1" data-aos="fade-right" data-aos-duration="4000">
                             <div class="icon">
                                 <i class="iconfont icon-chanpinguanli1"></i>
                             </div>
                             <div class="name">客户之上、专业赋能</div>
                             <div class="lead">客户第一，服务创造价值，专业行业 解决方案</div>
                         </div>
-                        <div class="box box2">
+                        <div class="box box2" data-aos="fade-left" data-aos-duration="6000">
                             <div class="icon">
-                                <i class="iconfont icon-chanpinguanli1"></i>
+                                <i class="iconfont icon-a-chanpin1"></i>
                             </div>
                             <div class="name">产品标准化</div>
-                            <div class="lead">客户第一，服务创造价值，专业行业 解决方案</div>
+                            <div class="lead">产品标准化、分层化、全周期应用型</div>
                         </div>
-                        <div class="box box3">
+                        <div class="box box3" data-aos="fade-right" data-aos-duration="8000">
                             <div class="icon">
-                                <i class="iconfont icon-chanpinguanli1"></i>
+                                <i class="iconfont icon-w_yunduan"></i>
                             </div>
                             <div class="name">零投零维、智领未来</div>
-                            <div class="lead">客户第一，服务创造价值，专业行业 解决方案</div>
+                            <div class="lead">零投入，零维护的优势，智能化、数字化 的发展前景</div>
                         </div>
-                        <div class="box box4">
+                        <div class="box box4" data-aos="fade-left" data-aos-duration="10000">
                             <div class="icon">
-                                <i class="iconfont icon-chanpinguanli1"></i>
+                                <i class="iconfont icon-chanpinguanli"></i>
                             </div>
                             <div class="name">市场多元化</div>
-                            <div class="lead">客户第一，服务创造价值，专业行业 解决方案</div>
+                            <div class="lead">仓储物流、食品医药、芯片半导体、制造工厂 冷冻冷链、地下车库</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="section" data-aos="fade">
+        <div class="business container_padding img_bg" style="background-image: url(../../img/business_bg.jpg);">
+            <div class="container">
+                <div class="head">
+                    <h3 class="title_line">业务模式</h3>
+                </div>
+                <div class="space_between"></div>
+                <div class="main">
+                    <div class="row">
+                        <div class="col_md col-md-7 col-sm-10 col-xs-8">
+                            <div class="swiper-container recommend_common_swiper business_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide item box_radius">
+                                        <div class="cover_box">
+                                            <img class="cover" src="../../img/business_li1.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <div class="name">设计·方案</div>
+                                            <div class="lead">根据现场环境，照度要求，合理规划灯具布局；根据不同方案需求，提供合理布灯方案。</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide item box_radius">
+                                        <div class="cover_box">
+                                            <img class="cover" src="../../img/business_li2.jpg" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <div class="name">供货·改造施工</div>
+                                            <div class="lead">与世界知名品牌：Panasonic、PHILIPS等长期合作，为客户提供节能有效的灯具；LED节能灯具替换原有灯具，并提供专业的电路工程师，现场施工装配灯具</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev" data-aos="slide-right" data-aos-duration="4000">
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-arrowLeft"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next" data-aos="slide-left" data-aos-duration="4000">
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-arrowRight"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('to_contact.html')
     @@include('footer.html')
 </body>
 <script src="../../js/countNumber.js"></script>
@@ -328,6 +377,26 @@
             }
         })
     });
+
+    const business_swiper = new Swiper('.business_swiper', {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1000,
+        spaceBetween: 20,
+        slidesPerView: 2,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+            },
+        }
+    })
 </script>
 
 </html>

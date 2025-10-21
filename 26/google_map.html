@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>公司位置 - 谷歌地图</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        /* 地图容器样式 */
+        #map {
+            height: 500px;
+            /* 地图高度 */
+            width: 100%;
+            /* 地图宽度 */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>公司位置</h3>
+    <!-- 地图容器 -->
+    <div id="map"></div>
+
+    <!-- 引入谷歌地图API（替换YOUR_API_KEY为你的密钥） -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+    <script>
+        // 初始化地图函数
+        function initMap() {
+            // 1. 设置公司坐标（替换为实际经纬度）
+            const companyLocation = { lat: 39.9042, lng: 116.4074 }; // 示例：北京天安门坐标
+
+            // 2. 创建地图实例，绑定到#map容器
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15, // 缩放级别（1-20，数字越大越近）
+                center: companyLocation, // 地图中心点设为公司位置
+                mapTypeId: 'roadmap' // 地图类型（roadmap/hybrid/satellite/terrain）
+            });
+
+            // 3. 在地图上添加标记（Marker）
+            const marker = new google.maps.Marker({
+                position: companyLocation, // 标记位置
+                map: map, // 绑定到当前地图
+                title: '我们的公司' // 鼠标悬停时显示的文字
+            });
+
+            // 4. 可选：添加信息窗口（点击标记时显示）
+            const infoWindow = new google.maps.InfoWindow({
+                content: '<h3>公司名称</h3><p>详细地址：XX市XX区XX路XX号</p>' // 窗口内容
+            });
+
+            // 点击标记时打开信息窗口
+            marker.addListener('click', () => {
+                infoWindow.open(map, marker);
+            });
+        }
+    </script>
+</body>
+
+</html>
