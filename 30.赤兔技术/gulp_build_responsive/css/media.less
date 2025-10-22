@@ -490,6 +490,22 @@
             }
         }
     }
+
+    .characteristic {
+        .item {
+            margin-bottom: 20px;
+        }
+    }
+
+    .scene {
+        .item {
+            margin-bottom: 20px;
+
+            .name {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -819,6 +835,8 @@
     }
 
     .contact_us {
+        padding: 20px 40px;
+
         .head {
             .lead {
                 font-size: 13px;
@@ -1111,18 +1129,83 @@
         padding: 0 0 10px;
 
         .tabs-header {
-            padding: 10px 0 0;
+            padding: 10px 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
 
             .tab-btn {
-                width: 100%;
+                width: 48%;
                 margin-bottom: 10px;
                 min-width: auto;
                 margin: 0 0 10px;
+            }
+
+            .tab-btn:nth-child(odd) {
+                margin-right: 10px;
             }
         }
 
         .tabs-content {
             padding: 0;
+        }
+    }
+
+    .energySaving_services_content {
+        .title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .list {
+            .li {
+                flex-wrap: wrap;
+                padding: 14px;
+                margin-bottom: 5px;
+
+                .cover_box {
+                    width: 100%;
+                    max-width: 54px;
+                    margin-bottom: 10px;
+                }
+
+                .li_content {
+                    width: 100%;
+                    flex: none;
+                    padding: 0;
+
+                    .name {
+                        font-size: 15px;
+                    }
+
+                    .lead {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .title_btn {
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            min-width: 160px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .characteristic {
+        padding: 10px 0;
+
+        .item {
+            margin-bottom: 10px;
+            min-height: auto;
+        }
+    }
+
+    .scene {
+        .item {
+            margin-bottom: 10px;
         }
     }
 }

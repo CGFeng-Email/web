@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "8039597",
+      "name": "水",
+      "font_class": "shui",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "26192899",
+      "name": "jl节水器具",
+      "font_class": "jljieshuiqiju",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "11891814",
+      "name": "data",
+      "font_class": "data",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "24825044",
+      "name": "一网调控",
+      "font_class": "yiwangtiaokong",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "26182306",
+      "name": "巴内协同",
+      "font_class": "baneixietong",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "40421458",
+      "name": "能源-04",
+      "font_class": "nengyuan-04",
+      "unicode": "ecbb",
+      "unicode_decimal": 60603
+    },
+    {
       "icon_id": "1164480",
       "name": "咨询1",
       "font_class": "zixun1",

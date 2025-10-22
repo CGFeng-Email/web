@@ -270,6 +270,15 @@
     width: 47%;
     margin: 0 10px 20px;
   }
+  .characteristic .item {
+    margin-bottom: 20px;
+  }
+  .scene .item {
+    margin-bottom: 20px;
+  }
+  .scene .item .name {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -468,6 +477,9 @@
   }
   .cooperative_partner .main .common_cooperative_partner_swiper {
     margin-bottom: 10px;
+  }
+  .contact_us {
+    padding: 20px 40px;
   }
   .contact_us .head .lead {
     font-size: 13px;
@@ -671,15 +683,63 @@
     padding: 0 0 10px;
   }
   .tabs_main .tabs-header {
-    padding: 10px 0 0;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
   .tabs_main .tabs-header .tab-btn {
-    width: 100%;
+    width: 48%;
     margin-bottom: 10px;
     min-width: auto;
     margin: 0 0 10px;
   }
+  .tabs_main .tabs-header .tab-btn:nth-child(odd) {
+    margin-right: 10px;
+  }
   .tabs_main .tabs-content {
     padding: 0;
+  }
+  .energySaving_services_content .title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .energySaving_services_content .list .li {
+    flex-wrap: wrap;
+    padding: 14px;
+    margin-bottom: 5px;
+  }
+  .energySaving_services_content .list .li .cover_box {
+    width: 100%;
+    max-width: 54px;
+    margin-bottom: 10px;
+  }
+  .energySaving_services_content .list .li .li_content {
+    width: 100%;
+    flex: none;
+    padding: 0;
+  }
+  .energySaving_services_content .list .li .li_content .name {
+    font-size: 15px;
+  }
+  .energySaving_services_content .list .li .li_content .lead {
+    font-size: 13px;
+  }
+  .energySaving_services_content .title_btn {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    min-width: 160px;
+    margin-bottom: 10px;
+  }
+  .characteristic {
+    padding: 10px 0;
+  }
+  .characteristic .item {
+    margin-bottom: 10px;
+    min-height: auto;
+  }
+  .scene .item {
+    margin-bottom: 10px;
   }
 }

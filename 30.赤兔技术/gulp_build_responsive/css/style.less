@@ -1844,7 +1844,7 @@ body::-webkit-scrollbar-thumb:hover {
             }
 
             .name {
-                font-size: 16px;
+                font-size: 20px;
                 font-weight: 600;
             }
         }
@@ -1956,7 +1956,6 @@ body::-webkit-scrollbar-thumb:hover {
         position: relative;
         overflow: hidden;
         transition: height 0.4s ease;
-        padding: 20px 0 10px;
         z-index: 1;
     }
 
@@ -2015,7 +2014,7 @@ body::-webkit-scrollbar-thumb:hover {
                 }
 
                 .lead {
-                    line-height: 1.8;
+                    line-height: 2;
                     color: #303030;
                     font-size: 14px;
                 }
@@ -2024,6 +2023,100 @@ body::-webkit-scrollbar-thumb:hover {
             &:hover {
                 background: #ddd;
             }
+        }
+    }
+
+    .data {
+        padding: 14px 0;
+    }
+
+    .lead {
+        margin-bottom: 10px;
+    }
+
+    .title_btn {
+        display: inline-block;
+        min-width: 220px;
+        padding: 0 20px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 45px;
+        background: @primaryColor;
+        margin-bottom: 20px;
+    }
+
+}
+
+.characteristic {
+    padding: 20px 0;
+
+    .item {
+        border: 1px solid rgba(0, 0, 0, .1);
+        border-radius: 8px;
+        padding: 30px 14px;
+        text-align: center;
+        min-height: 270px;
+        transition: .4s ease;
+
+        .icon {
+            .iconfont {
+                font-size: 34px;
+                color: @primaryColor;
+            }
+        }
+
+        .name {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            padding: 4px 0;
+        }
+
+        .lead {
+            text-align: left;
+            font-size: 14px;
+            color: #464646;
+            line-height: 1.8;
+        }
+
+        &:hover {
+            background: #F5F5F5;
+        }
+    }
+}
+
+.scene {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        border: 1px solid rgba(0, 0, 0, .1);
+        padding: 14px;
+        margin-bottom: 40px;
+
+        .name {
+            font-size: 20px;
+            padding: 10px 0;
+        }
+
+        .line {
+            padding: 0;
+            margin-bottom: 10px;
+
+            &::before {
+                height: 2px;
+                background: @primaryColor;
+                width: 20%;
+            }
+        }
+
+        .lead {
+            line-height: 1.8;
         }
     }
 }
