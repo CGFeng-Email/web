@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1164480",
+      "name": "咨询1",
+      "font_class": "zixun1",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "2945792",
+      "name": "认证配置",
+      "font_class": "renzhengpeizhi",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "9744790",
+      "name": "能耗 (2)",
+      "font_class": "nenghao",
+      "unicode": "e74f",
+      "unicode_decimal": 59215
+    },
+    {
+      "icon_id": "10409334",
+      "name": "节能环保",
+      "font_class": "jienenghuanbao",
+      "unicode": "e7b4",
+      "unicode_decimal": 59316
+    },
+    {
+      "icon_id": "13243236",
+      "name": "审核",
+      "font_class": "shenhe",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "35064633",
+      "name": "节能",
+      "font_class": "jieneng",
+      "unicode": "e7a7",
+      "unicode_decimal": 59303
+    },
+    {
       "icon_id": "1719303",
       "name": "产品管理",
       "font_class": "chanpinguanli",

@@ -259,6 +259,17 @@
   .message_box .form .item .textarea {
     margin-bottom: 10px;
   }
+  .energySaving_services .item {
+    margin-bottom: 20px;
+  }
+  .tabs_main .tabs-header {
+    justify-content: start;
+    margin-bottom: 0;
+  }
+  .tabs_main .tabs-header .tab-btn {
+    width: 47%;
+    margin: 0 10px 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -539,7 +550,7 @@
     font-size: 12px;
   }
   .info .item {
-    padding: 20px  10px;
+    padding: 20px 10px;
     min-height: auto;
     margin-bottom: 5px;
   }
@@ -625,5 +636,50 @@
     color: #000;
     text-align: center;
     margin-top: 20px;
+  }
+  .energySaving_services {
+    padding: 0;
+  }
+  .energySaving_services .space_between {
+    height: 0;
+  }
+  .energySaving_services .item {
+    padding: 20px;
+    min-height: auto;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border-bottom: 1px solid #1FACEB;
+    background: #fff;
+  }
+  .energySaving_services .item .head_title {
+    padding-bottom: 0;
+  }
+  .energySaving_services .item .more {
+    margin-top: 10px;
+  }
+  .energySaving_services .item .item_logo {
+    bottom: 0;
+  }
+  .energySaving_services .item .item_logo .cover {
+    width: 120px;
+  }
+  .energySaving_services .item:last-child {
+    margin-bottom: 0;
+  }
+  .tabs_main {
+    margin-top: 0;
+    padding: 0 0 10px;
+  }
+  .tabs_main .tabs-header {
+    padding: 10px 0 0;
+  }
+  .tabs_main .tabs-header .tab-btn {
+    width: 100%;
+    margin-bottom: 10px;
+    min-width: auto;
+    margin: 0 0 10px;
+  }
+  .tabs_main .tabs-content {
+    padding: 0;
   }
 }

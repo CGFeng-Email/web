@@ -472,6 +472,24 @@
             }
         }
     }
+
+    .energySaving_services {
+        .item {
+            margin-bottom: 20px;
+        }
+    }
+
+    .tabs_main {
+        .tabs-header {
+            justify-content: start;
+            margin-bottom: 0;
+
+            .tab-btn {
+                width: 47%;
+                margin: 0 10px 20px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -910,12 +928,15 @@
 
     .business {
         background-position-x: 62%;
+
         .main {
             .business_swiper {
                 .item {
                     padding: 5px;
+
                     .content {
                         padding: 5px 0;
+
                         .name {
                             font-size: 16px;
                         }
@@ -931,7 +952,7 @@
 
     .info {
         .item {
-            padding: 20px  10px;
+            padding: 20px 10px;
             min-height: auto;
             margin-bottom: 5px;
 
@@ -985,7 +1006,7 @@
                 padding: 0;
             }
 
-           
+
 
             .input_box {
                 padding-left: 10px;
@@ -1045,6 +1066,63 @@
                 text-align: center;
                 margin-top: 20px;
             }
+        }
+    }
+
+    .energySaving_services {
+        padding: 0;
+
+        .space_between {
+            height: 0;
+        }
+
+        .item {
+            padding: 20px;
+            min-height: auto;
+            margin-bottom: 10px;
+            border-radius: 0;
+            border-bottom: 1px solid #1FACEB;
+            background: #fff;
+
+            .head_title {
+                padding-bottom: 0;
+            }
+
+            .more {
+                margin-top: 10px;
+            }
+
+            .item_logo {
+                bottom: 0;
+
+                .cover {
+                    width: 120px;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .tabs_main {
+        margin-top: 0;
+        padding: 0 0 10px;
+
+        .tabs-header {
+            padding: 10px 0 0;
+
+            .tab-btn {
+                width: 100%;
+                margin-bottom: 10px;
+                min-width: auto;
+                margin: 0 0 10px;
+            }
+        }
+
+        .tabs-content {
+            padding: 0;
         }
     }
 }

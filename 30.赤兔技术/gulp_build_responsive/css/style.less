@@ -1821,3 +1821,209 @@ body::-webkit-scrollbar-thumb:hover {
         }
     }
 }
+
+.energySaving_services {
+
+    .item {
+        position: relative;
+        border-radius: 10px;
+        background: #F3F3F3;
+        padding: 30px 24px;
+        overflow: hidden;
+        margin-bottom: 50px;
+        min-height: 300px;
+
+        .head_title {
+            justify-content: start;
+            padding-bottom: 12px;
+
+            .iconfont {
+                font-size: 32px;
+                color: @primaryColor;
+                margin-right: 7px;
+            }
+
+            .name {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        .lead {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #636363;
+        }
+
+        .more {
+            .box {
+                .link {
+                    background: #DBDBDB;
+                    border-color: #DBDBDB;
+                    color: #6B6B6B;
+                    height: 40px;
+                    line-height: 40px;
+                    padding: 0 26px;
+                    font-size: 15px;
+
+                    .icon {
+                        .iconfont {
+                            color: #6B6B6B;
+                        }
+                    }
+
+                    &:hover {
+                        background: @minorColor;
+                        border-color: @minorColor;
+                        color: #fff;
+
+                        .icon {
+                            .iconfont {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .item_logo {
+            position: absolute;
+            bottom: -100%;
+            right: 0;
+            transition: .6s ease;
+        }
+
+        &:hover {
+            background: #fff;
+
+            .item_logo {
+                bottom: 0;
+                padding: 10px 0;
+
+                .cover {
+                    max-width: 160px;
+                }
+            }
+        }
+    }
+}
+
+.service_introduction {
+    padding-top: 80px;
+
+    .lead {
+        color: #434343;
+        line-height: 1.9;
+        font-size: 15px;
+    }
+}
+
+.tabs_main {
+    overflow: hidden;
+
+    .tabs-header {
+        position: relative;
+        padding: 10px 0;
+
+        .tab-btn {
+            min-width: 200px;
+            width: auto;
+            height: 54px;
+            line-height: 54px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            color: #000;
+            background: #f6f6f6;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+            z-index: 1;
+            overflow: hidden;
+            margin-right: 20px;
+            border-radius: 4px;
+        }
+
+        .active {
+            background: @primaryColor;
+            color: #fff;
+        }
+    }
+
+    .tabs-content {
+        position: relative;
+        overflow: hidden;
+        transition: height 0.4s ease;
+        padding: 20px 0 10px;
+        z-index: 1;
+    }
+
+    .tab-panel {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        pointer-events: none;
+        padding: 10px 0;
+    }
+
+    .tab-panel.active {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: all;
+        transition-delay: 0.2s;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.energySaving_services_content {
+    .title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .list {
+        .li {
+            background: #F2F2F2;
+            padding: 30px;
+            display: flex;
+            margin-bottom: 10px;
+            transition: .4s ease;
+
+            .cover_box {
+                width: 60px;
+                flex: none;
+
+                .cover {
+                    width: 100%;
+                }
+            }
+
+            .li_content {
+                flex: 1;
+                padding-left: 30px;
+
+                .name {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .lead {
+                    line-height: 1.8;
+                    color: #303030;
+                    font-size: 14px;
+                }
+            }
+
+            &:hover {
+                background: #ddd;
+            }
+        }
+    }
+}
