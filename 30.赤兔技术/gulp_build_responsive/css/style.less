@@ -2118,5 +2118,189 @@ body::-webkit-scrollbar-thumb:hover {
         .lead {
             line-height: 1.8;
         }
+
+        &:hover {
+            .cover_box {
+                .cover {
+                    transform: scale(1.07);
+                }
+            }
+        }
+    }
+}
+
+.case_tabs_main {
+    .tabs-header {
+        text-align: center;
+    }
+}
+
+.case_list {
+    padding: 50px 0 0;
+
+    .item {
+        margin-bottom: 40px;
+
+        .link {
+            overflow: hidden;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180.00deg, #00000000 0%, #000 100%);
+                opacity: .6;
+                transition: .4s ease;
+                z-index: 1;
+            }
+
+            .content {
+                position: absolute;
+                bottom: 30px;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                z-index: 2;
+                color: #fff;
+
+                .name {
+                    font-size: 20px;
+                }
+
+                .name_line {
+                    width: 80px;
+                    height: 3px;
+                    border-radius: 1.5px;
+                    background: @primaryColor;
+                    margin: 10px 0;
+                }
+
+                .date {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                .lead {
+                    line-height: 1.8;
+                }
+            }
+
+            &:hover {
+                .cover {
+                    transform: scale(1.07);
+                }
+            }
+        }
+    }
+}
+
+.case_category {
+    .case_category_swiper {
+        height: 500px;
+
+        .item {
+            overflow: hidden;
+            position: relative;
+
+            .video {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .menus {
+        justify-content: space-between;
+
+        .arrow {
+            flex: none;
+
+            .content {
+                flex-direction: column;
+
+                .icon {
+                    padding: 20px;
+
+                    .iconfont {
+                        font-size: 24px;
+                        font-weight: 500;
+                        opacity: .3;
+                    }
+
+                    &:hover {
+                        .iconfont {
+                            opacity: 1;
+                            color: @primaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .case_category_menu_swiper {
+        flex: 1;
+        height: 500px;
+
+        .item {
+            overflow: hidden;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .7);
+            }
+
+            .video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .my-slide-thumb-active {
+            &::after {
+                background: none;
+            }
+        }
+    }
+}
+
+.case_concept {
+    .name {
+        font-size: 28px;
+    }
+
+    .content {
+        .spread {
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+            .spread_head {
+                font-size: 22px;
+                padding: 12px 10px;
+                transition: .4s ease;
+                &:hover {
+                    background: #F5F5F5;
+                }
+            }
+
+            .lead {
+                padding: 0 10px;
+                font-size: 15px;
+                line-height: 1.8;
+                padding-bottom: 20px;
+                color: #646464;
+                display: none;
+            }
+        }
     }
 }

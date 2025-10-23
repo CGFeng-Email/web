@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "11891806",
+      "name": "up",
+      "font_class": "up",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "11891844",
+      "name": "down",
+      "font_class": "down",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
       "icon_id": "8039597",
       "name": "水",
       "font_class": "shui",
