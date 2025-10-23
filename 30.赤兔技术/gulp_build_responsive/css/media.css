@@ -294,6 +294,27 @@
   .case_category .main .menus .arrow {
     display: none;
   }
+  .case_concept {
+    padding: 20px 0;
+  }
+  .case_concept .content .spread .spread_head {
+    font-size: 16px;
+  }
+  .case_concept .content .spread .lead {
+    font-size: 13px;
+  }
+  .case_introduction .main .title {
+    font-size: 16px;
+  }
+  .case_introduction .main .lead {
+    font-size: 13px;
+  }
+  .earnings .main .item {
+    margin-bottom: 30px;
+  }
+  .energy_saving .form .input_box {
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -762,5 +783,60 @@
   }
   .case_list .item .link .content {
     padding: 10px;
+  }
+  .earnings .main {
+    padding: 30px 10px 0;
+  }
+  .earnings .main .item .icon .iconfont {
+    font-size: 34px;
+  }
+  .earnings .main .item .content .x_head .num {
+    font-size: 22px;
+  }
+  .energy_saving .main .data .content {
+    padding: 50px 30px;
+  }
+  .energy_saving .main .data .content .name {
+    font-size: 20px;
+  }
+  .energy_saving .main .data .content .per .num {
+    font-size: 38px;
+  }
+  .energy_saving .main .data .content .per .ide {
+    font-size: 22px;
+  }
+  .energy_saving .main .data .content .lead {
+    font-size: 22px;
+  }
+  .energy_saving .form .input_box {
+    margin-bottom: 10px;
+  }
+  .energy_saving .form .input_box .name {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .energy_saving .form .input_box .input_text {
+    height: auto;
+  }
+  .energy_saving .form .input_box .input_text .iconfont {
+    font-size: 22px;
+  }
+  .energy_saving .form .input_box .input_text .text {
+    font-size: 16px;
+  }
+  .energy_saving .form .input_box .input_wrap .unit {
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+  }
+  .energy_saving .form .input_box .input_wrap .input {
+    height: 46px;
+    line-height: 46px;
+  }
+  .energy_saving .form .submit_btn .btn {
+    width: 100%;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
   }
 }

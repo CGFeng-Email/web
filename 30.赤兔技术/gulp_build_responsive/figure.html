@@ -248,7 +248,318 @@
         });
     });
 </script>
-
+    <div class="section" data-aos="fade">
+        <div class="banner">
+            <div class="cover_box">
+                <img class="cover" src="img/figure_banner.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="wrap">
+                    <h3 class="title" data-aos="slide-right" data-aos-duration="6000" data-aos-delay="200">
+                        数字碳索
+                    </h3>
+                    <div class="crumbs">
+                        <div class="list" data-aos="slide-right" data-aos-duration="4000">
+                            <div class="box">
+                                <a href="./index.html" class="link display_flex">
+                                    <i class="iconfont icon-shouye"></i>
+                                    <span>首页</span>
+                                </a>
+                            </div>
+                            <div class="arrow">
+                                <i class="iconfont icon-right-1-copy"></i>
+                            </div>
+                            <div class="box">
+                                数字碳索
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" data-aos="fade">
+        <div class="tabs_main case_tabs_main container_padding">
+            <div class="container">
+                <div class="tabs-header flex_wrap">
+                    <button class="tab-btn active" data-tab="tab1">节能测算</button>
+                    <button class="tab-btn" data-tab="tab2">节水测算</button>
+                </div>
+                <div class="tabs-content" id="tabsContent">
+                    <div class="tab-panel" id="tab1">
+                        <div class="energy_saving container_main">
+                            <div class="head">
+                                <h3 class="title_line">节能测算</h3>
+                                <div class="sub_head">Energy saving calculation</div>
+                            </div>
+                            <div class="main container_main">
+                                <div class="data">
+                                    <div class="row">
+                                        <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                            <div class="content">
+                                                <div class="name">综合节能率：</div>
+                                                <div class="per">
+                                                    <span class="num">0</span>
+                                                    <span class="ide">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                            <div class="content">
+                                                <div class="lead">年节约电费：0元</div>
+                                                <div class="lead">减少碳排放量：0吨</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form container_main">
+                                <form class="layui-form">
+                                    <div class="row">
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">灯具数量<span class="ide">*</span> </div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">个</div>
+                                                    <input type="text" name="number" lay-verify="required"
+                                                        lay-reqtext="必填项不能为空" lay-vertype="tips" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">传统功率<span class="ide">*</span> </div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">W</div>
+                                                    <input type="text" name="w" lay-verify="required"
+                                                        lay-reqtext="必填项不能为空" lay-vertype="tips" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">电费<span class="ide">*</span> </div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">元</div>
+                                                    <input type="text" name="money" lay-verify="required"
+                                                        lay-reqtext="必填项不能为空" lay-vertype="tips" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">开灯时长<span class="ide">*</span> </div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">小时/天</div>
+                                                    <input type="text" name="date" lay-verify="required"
+                                                        lay-reqtext="必填项不能为空" lay-vertype="tips" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">节能设备<span class="ide">*</span> </div>
+                                                <div class="input_text">
+                                                    <i class="iconfont icon-icradioture"></i>
+                                                    <span class="text">灯具</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">照度要求</div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">lux</div>
+                                                    <input type="text" name="lux" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">面积</div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">m²</div>
+                                                    <input type="text" name="m²" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">工厂类型</div>
+                                                <div class="input_wrap box_radius">
+                                                    <input type="text" name="type" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="space_between"></div>
+                                    <div class="submit_btn">
+                                        <button class="layui-btn btn" lay-submit
+                                            lay-filter="submit_id">点击免费领取节能测算费用</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel active" id="tab2">
+                        <div class="energy_saving container_main">
+                            <div class="head">
+                                <h3 class="title_line">节水测算</h3>
+                                <div class="sub_head">Water saving calculation</div>
+                            </div>
+                            <div class="main container_main">
+                                <div class="data">
+                                    <div class="row">
+                                        <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                            <div class="content">
+                                                <div class="name">综合节水率：</div>
+                                                <div class="per">
+                                                    <span class="num">0</span>
+                                                    <span class="ide">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                            <div class="content">
+                                                <div class="lead">年节约水费：0元</div>
+                                                <div class="lead">减少碳排放量：0吨</div>
+                                                <div class="lead">综合节水量：0%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form container_main">
+                                <form class="layui-form">
+                                    <div class="row">
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">工艺产品产量<span class="ide">*</span> </div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">G</div>
+                                                    <input type="text" name="G" lay-verify="required"
+                                                        lay-reqtext="必填项不能为空" lay-vertype="tips" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">单段单位产品用水量<span class="ide">*</span> </div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">q1</div>
+                                                    <input type="text" name="q1" lay-verify="required"
+                                                        lay-reqtext="必填项不能为空" lay-vertype="tips" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">逆流工艺段数<span class="ide">*</span> </div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">n</div>
+                                                    <input type="text" name="n" lay-verify="required"
+                                                        lay-reqtext="必填项不能为空" lay-vertype="tips" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">水费（RMB/吨)<span class="ide">*</span> </div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">元</div>
+                                                    <input type="text" name="money" lay-verify="required"
+                                                        lay-reqtext="必填项不能为空" lay-vertype="tips" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">用水场景<span class="ide">*</span> </div>
+                                                <div class="input_text">
+                                                    <i class="iconfont icon-icradioture"></i>
+                                                    <span class="text">工艺用水</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">计算区间</div>
+                                                <div class="input_wrap box_radius">
+                                                    <input type="text" name="year" class="layui-input input" id="yearId" placeholder="年">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">工厂类型</div>
+                                                <div class="input_wrap box_radius">
+                                                    <input type="text" name="type" lay-reqtext="必填项不能为空"
+                                                        lay-vertype="tips" autocomplete="off"
+                                                        class="layui-input input" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col_md col-md-3 col-sm-6 col-xs-12">
+                                            <div class="input_box">
+                                                <div class="name">多段单位产品用水量</div>
+                                                <div class="input_wrap box_radius">
+                                                    <div class="unit">q2</div>
+                                                    <input type="text" name="q2" lay-verify="required"
+                                                        placeholder="填了q1自动显示" lay-reqtext="必填项不能为空" lay-vertype="tips"
+                                                        autocomplete="off" class="layui-input input" disabled />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="space_between"></div>
+                                    <div class="submit_btn">
+                                        <button class="layui-btn btn" lay-submit
+                                            lay-filter="submit_id">点击免费领取节能测算费用</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact_us container_padding img_bg" style="background-image: url(img/contactUs_bg.jpg);">
+    <div class="container">
+        <div class="head">
+            <div class="space_between"></div>
+            <h3 class="title uppercase" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                立即获取定制化解决方案
+            </h3>
+            <div style="height: 10px;"></div>
+            <div class="lead" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+                为客户提供操作简单、性能优越的设备和强有力的技术支持。期待与您合作！
+            </div>
+            <div class="space_between"></div>
+            <div class="more" data-aos="fade-right" data-aos-duration="4000" data-aos-delay="200">
+                <div class="box">
+                    <a href="./contactUs.html" class="link animate display_flex">
+                        <div class="name animate">联系我们</div>
+                        <div class="icon animate">
+                            <i class="iconfont icon-arrowRight"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="footer">
     <div class="container">
         <div class="footer_head justify_space">
@@ -369,5 +680,25 @@
 <script src="js/comment.js"></script>
 <script src="js/headerScroll.js"></script>
 </body>
+<script src="js/tabs_content.js"></script>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        var laydate = layui.laydate;
+
+        // 年选择器
+        laydate.render({
+            elem: '#yearId',
+            type: 'year'
+        });
+
+        form.on('submit(submit_id)', function (data) {
+            var field = data.field;
+            console.log(field);
+            return false;
+        });
+    });
+</script>
 
 </html>

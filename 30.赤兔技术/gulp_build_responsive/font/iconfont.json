@@ -6,6 +6,41 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "659161",
+      "name": "ic_radio_ture",
+      "font_class": "icradioture",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "845830",
+      "name": "投资理财",
+      "font_class": "touzilicai",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "3352035",
+      "name": "低碳资讯",
+      "font_class": "ditanzixun",
+      "unicode": "ea20",
+      "unicode_decimal": 59936
+    },
+    {
+      "icon_id": "11218579",
+      "name": "健康-绿叶-节能",
+      "font_class": "jiankang-lvye-jieneng",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "44302602",
+      "name": "灯泡",
+      "font_class": "a-ziyuan112",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
       "icon_id": "11891806",
       "name": "up",
       "font_class": "up",
