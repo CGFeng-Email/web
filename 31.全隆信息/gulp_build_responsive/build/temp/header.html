@@ -1,0 +1,215 @@
+<div class="header">
+    <div class="content container">
+        <div class="wrap box_radius">
+            <h1 class="logo">
+                <a href="../../index.html" class="link">
+                    <img class="cover" src="../../img/logo.png" alt="Vic Market Research Co.,Ltd">
+                </a>
+            </h1>
+
+            <div class="right justify_end">
+                <div class="nav display_flex">
+                    <!-- 选中：active -->
+                    <div class="li animate active">
+                        <div class="box">
+                            <a href="../../index.html" class="link">
+                                <div class="head_title">
+                                    <span>Home</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../categories.html" class="link">
+                                <div class="head_title animate">
+                                    <span>Categories</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../customResearch.html" class="link">
+                                <div class="head_title animate">
+                                    <span>Custom Research</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../media.html" class="link">
+                                <div class="head_title">
+                                    <span>Media</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="li animate">
+                        <div class="box">
+                            <a href="../../aboutUs.html" class="link">
+                                <div class="head_title">
+                                    <span>About us</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="layui-form form display_flex">
+                        <select>
+                            <option value="">Report</option>
+                            <option value="AAA">选项 A</option>
+                            <option value="BBB">选项 B</option>
+                            <option value="CCC">选项 C</option>
+                        </select>
+                        <input type="text" name="" placeholder="Please enter keywords..." class="layui-input">
+                        <button type="submit" class="layui-btn" lay-submit lay-filter="searchSubmit">
+                            <i class="iconfont icon-sousuo"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="function display_flex">
+                    <div class="item animate">
+                        <a href="" class="link">
+                            <i class="iconfont icon-yonghu"></i>
+                        </a>
+                    </div>
+                    <div class="item animate">
+                        <a href="" class="link">
+                            <i class="iconfont icon-duoyuyan"></i>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <div class="lis"></div>
+                        <div class="lis"></div>
+                        <div class="lis"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h5_nav box_shadow box_radius" data-scroll-section>
+            <div class="li animate active">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../index.html" class="link">
+                            <span class="title">首页</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../energySavingServices.html" class="link">
+                            <span class="title">节能服务</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../waterSavingServices.html" class="link">
+                            <span class="title">节水服务</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../case.html" class="link">
+                            <span class="title">行业案例</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../figure.html" class="link">
+                            <span class="title">数字碳索</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../aboutUs.html" class="link">
+                            <span class="title">关于我们</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="li animate">
+                <div class="box">
+                    <div class="head_title">
+                        <a href="../../aboutUs.html" class="link">
+                            <span class="title">联系我们</span>
+                            <i class="iconfont icon-right-1-copy"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="header_height"></div>
+
+<script>
+    NProgress.start();
+
+    let isScroll = true;
+    // 锁定滚动
+    function lockScroll() {
+        document.body.style.overflow = 'hidden';
+        // 或者同时锁定 html 和 body 以确保跨浏览器兼容
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+        isScroll = false;
+    }
+
+    // 解锁滚动
+    function unlockScroll() {
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+        isScroll = true;
+    }
+
+    // h5导航菜单栏
+    $('.header .menu').click(function () {
+        if (isScroll) {
+            lockScroll();
+        } else {
+            unlockScroll();
+        }
+        $(this).stop().toggleClass('active');
+        $('.h5_nav').stop().slideToggle();
+    })
+
+    $('.search_popup .clear .icon').click(function () {
+        $('.search_popup').slideUp();
+    })
+
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        // 提交事件
+        form.on('submit(searchSubmit)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    });
+</script>
