@@ -95,17 +95,23 @@
                     </div>
                 </div>
                 <div class="search">
-                    <div class="layui-form form display_flex">
-                        <select>
-                            <option value="">Report</option>
-                            <option value="AAA">选项 A</option>
-                            <option value="BBB">选项 B</option>
-                            <option value="CCC">选项 C</option>
-                        </select>
-                        <input type="text" name="" placeholder="Please enter keywords..." class="layui-input">
-                        <button type="submit" class="layui-btn" lay-submit lay-filter="searchSubmit">
-                            <i class="iconfont icon-sousuo"></i>
-                        </button>
+                    <div class="layui-form form display_flex box_radius">
+                        <div class="select_box">
+                            <select>
+                                <option value="">Report</option>
+                                <option value="AAA">选项 A</option>
+                                <option value="BBB">选项 B</option>
+                                <option value="CCC">选项 C</option>
+                            </select>
+                        </div>
+                        <div class="input_wrap display_flex">
+                            <div class="input_box">
+                                <input type="text" name="" placeholder="Please enter keywords..." class="layui-input input">
+                            </div>
+                            <button type="submit" class="layui-btn submit_btn" lay-submit lay-filter="searchSubmit">
+                                <i class="iconfont icon-sousuo"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="function display_flex">

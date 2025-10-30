@@ -127,7 +127,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #999;
 }
 .container {
-  max-width: 1500px;
+  max-width: 1580px;
   width: 100%;
   margin: auto;
   padding: 0 5px;
@@ -138,15 +138,24 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .layui-input:focus {
   border-color: #eee !important;
-  box-shadow: 0 0 0 1px rgba(233, 47, 47, 0.6);
+  box-shadow: none;
 }
 .layui-textarea:focus {
   border-color: #eee !important;
-  box-shadow: 0 0 0 1px rgba(233, 47, 47, 0.6);
+  box-shadow: none;
 }
 .btn:focus {
   border: none !important;
   outline: none !important;
+}
+.layui-form-select dl {
+  padding: 0;
+}
+.layui-form-select dd {
+  color: #000;
+}
+.layui-form-select dd.layui-this {
+  color: #1534BD !important;
 }
 .title {
   font-size: 28px;
@@ -613,24 +622,19 @@ body::-webkit-scrollbar-thumb:hover {
   left: 0;
   width: 100%;
   z-index: 100;
-}
-.header .top_height {
-  height: 10px;
-  background: #1534BD;
+  background: #fff;
 }
 .header .content {
   width: 100%;
-  padding: 0;
+  padding: 0 5px;
   position: relative;
 }
 .header .content .wrap {
-  background: #fff;
   margin: auto;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
 }
 .header .content .wrap .logo {
   width: 115px;
@@ -688,6 +692,59 @@ body::-webkit-scrollbar-thumb:hover {
 .header .content .wrap .right .nav .active .head_title span::before {
   background: #1534BD;
   opacity: 1;
+}
+.header .content .wrap .right .search {
+  margin-left: 30px;
+}
+.header .content .wrap .right .search .form .select_box {
+  width: 108px;
+  flex: none;
+}
+.header .content .wrap .right .search .form .select_box .layui-form-select {
+  color: #fff;
+}
+.header .content .wrap .right .search .form .select_box .layui-input {
+  height: 42px;
+  background: linear-gradient(103.78deg, #1a82da 0%, #1627a9 100%);
+  box-shadow: none;
+  border: none;
+  padding: 0 10px;
+  border-radius: 4px 0 0 4px;
+  color: #fff;
+}
+.header .content .wrap .right .search .form .select_box .layui-input::placeholder {
+  color: #fff;
+}
+.header .content .wrap .right .search .form .select_box .layui-edge {
+  border-top-color: #fff;
+}
+.header .content .wrap .right .search .form .input_wrap {
+  min-width: 180px;
+  flex: 1;
+  border: 2px solid #1534BD;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+.header .content .wrap .right .search .form .input_wrap .input_box {
+  flex: 1;
+}
+.header .content .wrap .right .search .form .input_wrap .input_box .input {
+  padding: 0 12px;
+  border: none;
+  box-shadow: none;
+}
+.header .content .wrap .right .search .form .input_wrap .input_box .input::placeholder {
+  color: #CECECE;
+}
+.header .content .wrap .right .search .form .input_wrap .submit_btn {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0 10px;
+}
+.header .content .wrap .right .search .form .input_wrap .submit_btn .iconfont {
+  font-size: 22px;
+  color: #1534BD;
 }
 .header .content .wrap .right .function {
   margin-left: 10px;

@@ -159,7 +159,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .container {
-    max-width: 1500px;
+    max-width: 1580px;
     width: 100%;
     margin: auto;
     padding: 0 5px;
@@ -172,17 +172,31 @@ body::-webkit-scrollbar-thumb:hover {
 
 .layui-input:focus {
     border-color: #eee !important;
-    box-shadow: 0 0 0 1px rgba(233, 47, 47, .6);
+    box-shadow: none;
 }
 
 .layui-textarea:focus {
     border-color: #eee !important;
-    box-shadow: 0 0 0 1px rgba(233, 47, 47, .6);
+    box-shadow: none;
 }
 
 .btn:focus {
     border: none !important;
     outline: none !important;
+}
+
+.layui-form-select {
+    dl {
+        padding: 0;
+    }
+
+    dd {
+        color: #000;
+    }
+
+    dd.layui-this {
+        color: @primaryColor !important;
+    }
 }
 
 .title {
@@ -764,25 +778,19 @@ body::-webkit-scrollbar-thumb:hover {
     left: 0;
     width: 100%;
     z-index: 100;
-
-    .top_height {
-        height: 10px;
-        background: @primaryColor;
-    }
+    background: #fff;
 
     .content {
         width: 100%;
-        padding: 0;
+        padding: 0 5px;
         position: relative;
 
         .wrap {
-            background: #fff;
             margin: auto;
             height: 100px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 100px;
 
             .logo {
                 width: 115px;
@@ -850,6 +858,74 @@ body::-webkit-scrollbar-thumb:hover {
                                 &::before {
                                     background: @primaryColor;
                                     opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .search {
+                    margin-left: 30px;
+
+                    .form {
+
+                        .select_box {
+                            width: 108px;
+                            flex: none;
+
+                            .layui-form-select {
+                                color: #fff;
+                            }
+
+                            .layui-input {
+                                height: 42px;
+                                background: @minorBg;
+                                box-shadow: none;
+                                border: none;
+                                padding: 0 10px;
+                                border-radius: 4px 0 0 4px;
+                                color: #fff;
+
+                                &::placeholder {
+                                    color: #fff;
+                                }
+                            }
+
+                            .layui-edge {
+                                border-top-color: #fff;
+                            }
+                        }
+
+                        .input_wrap {
+                            min-width: 180px;
+                            flex: 1;
+                            border: 2px solid @primaryColor;
+                            border-left: none;
+                            border-radius: 0 4px 4px 0;
+
+                            .input_box {
+                                flex: 1;
+
+                                .input {
+                                    padding: 0 12px;
+                                    border: none;
+                                    box-shadow: none;
+
+                                    &::placeholder {
+                                        color: #CECECE;
+                                    }
+                                }
+                            }
+
+                            .submit_btn {
+                                background: none;
+                                border: none;
+                                box-shadow: none;
+                                padding: 0 10px;
+
+                                .iconfont {
+                                    font-size: 22px;
+                                    color: @primaryColor;
                                 }
                             }
                         }
