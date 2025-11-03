@@ -826,6 +826,7 @@ body::-webkit-scrollbar-thumb:hover {
                             font-size: 16px;
                             font-weight: 600;
                             white-space: nowrap;
+                            letter-spacing: 0.1px;
                             color: #000;
 
                             span {
@@ -889,20 +890,19 @@ body::-webkit-scrollbar-thumb:hover {
                             left: 0;
                             width: 100%;
                             background: rgba(255, 255, 255, .8);
+                            display: none;
 
                             .category_list {
-                                padding: 40px 140px 10px 50px;
-                                display: flex;
-                                flex-wrap: wrap;
+                                padding: 30px 100px 20px;
 
                                 .category_li {
                                     padding: 10px;
-                                    margin-right: 40px;
 
                                     .link {
                                         font-size: 14px;
                                         font-weight: 600;
                                         color: #000;
+                                        letter-spacing: 0.2px;
                                     }
                                 }
                             }
@@ -910,6 +910,10 @@ body::-webkit-scrollbar-thumb:hover {
 
                         &:hover {
                             .child_nav {
+                                display: block;
+                            }
+
+                            .category_nav {
                                 display: block;
                             }
                         }
@@ -1090,6 +1094,9 @@ body::-webkit-scrollbar-thumb:hover {
             display: none;
 
             .li {
+                max-height: 400px;
+                overflow-y: auto;
+
                 .head_title {
                     padding: 14px 20px;
                     border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -1105,6 +1112,52 @@ body::-webkit-scrollbar-thumb:hover {
 
                 .box {
                     text-align: right;
+                }
+
+                .child {
+                    display: none;
+
+                    .lis {
+                        text-align: right;
+
+                        .child_head_title {
+                            padding: 14px 10px 14px 0;
+                            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+                            .child_title,
+                            .iconfont {
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: #616161;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .child_li {
+                .link {
+                    flex: 1;
+                    padding: 0 10px;
+                }
+
+                .spread {
+                    flex: none;
+                    width: 50px;
+                    height: 34px;
+                    text-align: center;
+                    line-height: 34px;
+                    background: @minorBg;
+                    border-radius: 3px;
+                    user-select: none;
+
+                    .iconfont {
+                        color: #fff;
+                    }
+                }
+
+                .rotateIcon {
+                    transform: rotate(-180deg);
                 }
             }
 

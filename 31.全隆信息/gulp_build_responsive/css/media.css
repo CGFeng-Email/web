@@ -17,6 +17,9 @@
   .header .content .wrap .right .nav .li .box .link .head_title {
     font-size: 14px;
   }
+  .header .content .wrap .right .nav .li .category_nav .category_list {
+    padding: 20px;
+  }
   .header .content .wrap .right .search {
     margin-left: 10px;
   }

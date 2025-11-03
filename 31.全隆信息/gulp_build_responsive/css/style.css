@@ -667,6 +667,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 16px;
   font-weight: 600;
   white-space: nowrap;
+  letter-spacing: 0.1px;
   color: #000;
 }
 .header .content .wrap .right .nav .li .head_title span {
@@ -720,22 +721,24 @@ body::-webkit-scrollbar-thumb:hover {
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
+  display: none;
 }
 .header .content .wrap .right .nav .li .category_nav .category_list {
-  padding: 40px 140px 10px 50px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 30px 100px 20px;
 }
 .header .content .wrap .right .nav .li .category_nav .category_list .category_li {
   padding: 10px;
-  margin-right: 40px;
 }
 .header .content .wrap .right .nav .li .category_nav .category_list .category_li .link {
   font-size: 14px;
   font-weight: 600;
   color: #000;
+  letter-spacing: 0.2px;
 }
 .header .content .wrap .right .nav .li:hover .child_nav {
+  display: block;
+}
+.header .content .wrap .right .nav .li:hover .category_nav {
   display: block;
 }
 .header .content .wrap .right .nav .active .head_title {
@@ -873,6 +876,10 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 99;
   display: none;
 }
+.header .content .h5_nav .li {
+  max-height: 400px;
+  overflow-y: auto;
+}
 .header .content .h5_nav .li .head_title {
   padding: 14px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -886,6 +893,42 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .header .content .h5_nav .li .box {
   text-align: right;
+}
+.header .content .h5_nav .li .child {
+  display: none;
+}
+.header .content .h5_nav .li .child .lis {
+  text-align: right;
+}
+.header .content .h5_nav .li .child .lis .child_head_title {
+  padding: 14px 10px 14px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header .content .h5_nav .li .child .lis .child_head_title .child_title,
+.header .content .h5_nav .li .child .lis .child_head_title .iconfont {
+  font-size: 16px;
+  font-weight: 500;
+  color: #616161;
+}
+.header .content .h5_nav .child_li .link {
+  flex: 1;
+  padding: 0 10px;
+}
+.header .content .h5_nav .child_li .spread {
+  flex: none;
+  width: 50px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  background: linear-gradient(103.78deg, #1a82da 0%, #1627a9 100%);
+  border-radius: 3px;
+  user-select: none;
+}
+.header .content .h5_nav .child_li .spread .iconfont {
+  color: #fff;
+}
+.header .content .h5_nav .child_li .rotateIcon {
+  transform: rotate(-180deg);
 }
 .header .content .h5_nav .li:last-child .head_title {
   border-bottom: none;
