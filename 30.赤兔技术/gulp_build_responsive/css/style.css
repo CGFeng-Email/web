@@ -127,7 +127,7 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #999;
 }
 .container {
-  max-width: 1500px;
+  max-width: 1400px;
   width: 100%;
   margin: auto;
   padding: 0 5px;
@@ -558,10 +558,9 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 54px;
   background: #fff;
   border-radius: 45px;
-  color: #1FACEB;
   font-size: 16px;
   text-align: center;
-  color: #D14280;
+  color: #1FACEB;
 }
 .search .main {
   margin: auto;
@@ -1606,6 +1605,7 @@ body::-webkit-scrollbar-thumb:hover {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 14px;
   margin-bottom: 40px;
+  min-height: 490px;
 }
 .scene .item .name {
   font-size: 20px;
@@ -1622,6 +1622,20 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .scene .item .lead {
   line-height: 1.8;
+}
+.scene .item .more {
+  text-align: right;
+}
+.scene .item .more .link {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+.scene .item .more .link .name {
+  font-size: 14px;
+}
+.scene .item .more .link .icon {
+  padding-left: 4px;
 }
 .scene .item:hover .cover_box .cover {
   transform: scale(1.07);
@@ -1902,4 +1916,36 @@ body::-webkit-scrollbar-thumb:hover {
 .layui-laydate .layui-this,
 .layui-laydate .layui-this > div {
   background-color: #1FACEB !important;
+}
+.scene_details {
+  position: relative;
+  padding: 20px 0;
+}
+.scene_details .title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.scene_details .clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding: 10px 15px 10px 10px;
+}
+.scene_details .clear .icon {
+  display: inline-block;
+}
+.scene_details .clear .icon .iconfont {
+  font-size: 22px;
+}
+.scene_details .main {
+  padding: 10px;
+}
+.scene_details .main .lead {
+  line-height: 2;
+  font-size: 14px;
+}
+.scene_details .main .content {
+  padding-bottom: 20px;
 }

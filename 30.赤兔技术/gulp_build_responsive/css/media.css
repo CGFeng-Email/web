@@ -92,7 +92,7 @@
     padding: 0 20px;
   }
   .modal .modal-dialog {
-    margin-top: 100px;
+    margin-top: 70px;
   }
   .modal .modal-dialog .modal-body .pad_bottom {
     padding-bottom: 10px;
@@ -314,6 +314,9 @@
   }
   .energy_saving .form .input_box {
     margin-bottom: 15px;
+  }
+  .scene .item {
+    min-height: 540px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -838,5 +841,14 @@
     font-size: 16px;
     height: 50px;
     line-height: 50px;
+  }
+  .scene .item {
+    min-height: auto;
+  }
+  .scene_details .title {
+    font-size: 16px;
+  }
+  .scene_details .cover_box {
+    margin-bottom: 10px;
   }
 }

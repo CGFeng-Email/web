@@ -815,8 +815,11 @@ body::-webkit-scrollbar-thumb:hover {
                     justify-content: center;
 
                     .li {
+                        height: 100px;
                         cursor: pointer;
                         position: relative;
+                        display: flex;
+                        align-items: center;
 
                         .head_title {
                             padding: 10px 24px;
@@ -846,6 +849,68 @@ body::-webkit-scrollbar-thumb:hover {
 
                             .iconfont {
                                 display: inline-block;
+                            }
+                        }
+
+                        .child_nav {
+                            position: absolute;
+                            top: 100px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            min-width: 120px;
+                            width: auto;
+                            padding: 10px 24px;
+                            display: none;
+                            background: rgba(255, 255, 255, .8);
+
+                            .lis {
+                                .link {
+                                    padding: 14px 0;
+                                    font-size: 14px;
+                                    line-height: normal;
+                                    font-weight: 600;
+                                    white-space: nowrap;
+                                    justify-content: start;
+
+                                    &:hover {
+                                        color: #000;
+                                    }
+                                }
+                            }
+
+                            .lis:last-child {
+                                border-bottom: none;
+                            }
+                        }
+
+                        .category_nav {
+                            position: fixed;
+                            top: 100px;
+                            left: 0;
+                            width: 100%;
+                            background: rgba(255, 255, 255, .8);
+
+                            .category_list {
+                                padding: 40px 140px 10px 50px;
+                                display: flex;
+                                flex-wrap: wrap;
+
+                                .category_li {
+                                    padding: 10px;
+                                    margin-right: 40px;
+
+                                    .link {
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .child_nav {
+                                display: block;
                             }
                         }
                     }
@@ -950,7 +1015,7 @@ body::-webkit-scrollbar-thumb:hover {
                         }
 
                         .iconfont {
-                            font-size: 22px;
+                            font-size: 20px;
                         }
 
                         &:hover {
@@ -1015,10 +1080,9 @@ body::-webkit-scrollbar-thumb:hover {
 
         .h5_nav {
             position: absolute;
-            top: 84px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 96%;
+            top: 100px;
+            left: 0;
+            width: 100%;
             background: #fff;
             overflow: hidden;
             overflow-y: auto;
