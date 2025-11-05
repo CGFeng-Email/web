@@ -1922,9 +1922,11 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 20px 0;
 }
 .scene_details .title {
-  text-align: center;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.scene_details .cover_box .cover {
+  width: auto;
 }
 .scene_details .clear {
   position: absolute;

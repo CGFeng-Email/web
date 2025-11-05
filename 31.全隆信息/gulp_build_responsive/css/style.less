@@ -598,52 +598,13 @@ body::-webkit-scrollbar-thumb:hover {
         padding: 0 40px;
         font-size: 16px;
         color: #fff;
-        background: @primaryColor;
+        background: @minorBg;
         width: auto;
         border-radius: 50px;
-        position: relative;
 
-        .lead {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-
-        .icon {
-            position: absolute;
-            top: 50%;
-            right: -3px;
-            transform: translateY(-50%);
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 34px;
-            background: #fff;
-            opacity: 0;
-            animation-delay: .5s;
-
-            .iconfont {
-                color: @minorColor;
-                font-size: 20px;
-                font-weight: 500;
-            }
-        }
-
-        &:hover {
-            .lead {
-                left: 20px;
-                transform: translate(0, -50%);
-            }
-
-            .icon {
-                opacity: 1;
-                right: 7px;
-            }
+        .iconfont {
+            margin-left: 10px;
+            font-size: 20px;
         }
     }
 }
@@ -1170,3 +1131,88 @@ body::-webkit-scrollbar-thumb:hover {
         }
     }
 }
+
+.header_height {
+    height: 100px;
+}
+
+.index_swiper {
+    overflow: hidden;
+
+    .item {
+        position: relative;
+
+        .cover_box {
+            .cover {
+                min-height: 500px;
+            }
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1500px;
+
+            .wrap {
+                width: 890px;
+                padding: 40px 0;
+                position: relative;
+            }
+
+            .title {
+                font-size: 100px;
+                font-weight: 600;
+                color: #fff;
+                margin-bottom: 20px;
+                justify-content: start;
+
+                .ide {
+                    font-size: 54px;
+                    margin-left: 10px;
+                }
+            }
+
+            .sub_head {
+                font-size: 28px;
+                line-height: 1.5;
+                color: #fff;
+                letter-spacing: 1px;
+                margin-bottom: 44px;
+
+                span {
+                    opacity: .8;
+                }
+            }
+
+            .shadow_text {
+                position: absolute;
+                top: -80px;
+                left: 0;
+                font-weight: 900;
+                font-size: 210px;
+                line-height: 250px;
+                color: #fff;
+                opacity: .1;
+                z-index: -1;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 20px;
+
+        .swiper-pagination-bullet {
+            background: #fff;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 30px;
+            border-radius: 12px;
+            background: @primaryColor;
+        }
+    }
+}
+

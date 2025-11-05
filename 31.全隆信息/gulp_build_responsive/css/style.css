@@ -477,46 +477,13 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0 40px;
   font-size: 16px;
   color: #fff;
-  background: #1534BD;
+  background: linear-gradient(103.78deg, #1a82da 0%, #1627a9 100%);
   width: auto;
   border-radius: 50px;
-  position: relative;
 }
-.more .link .lead {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-weight: 600;
-  white-space: nowrap;
-}
-.more .link .icon {
-  position: absolute;
-  top: 50%;
-  right: -3px;
-  transform: translateY(-50%);
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 34px;
-  background: #fff;
-  opacity: 0;
-  animation-delay: 0.5s;
-}
-.more .link .icon .iconfont {
-  color: #B7B7B7;
+.more .link .iconfont {
+  margin-left: 10px;
   font-size: 20px;
-  font-weight: 500;
-}
-.more .link:hover .lead {
-  left: 20px;
-  transform: translate(0, -50%);
-}
-.more .link:hover .icon {
-  opacity: 1;
-  right: 7px;
 }
 .author {
   padding: 20px 0;
@@ -932,4 +899,72 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .header .content .h5_nav .li:last-child .head_title {
   border-bottom: none;
+}
+.header_height {
+  height: 100px;
+}
+.index_swiper {
+  overflow: hidden;
+}
+.index_swiper .item {
+  position: relative;
+}
+.index_swiper .item .cover_box .cover {
+  min-height: 500px;
+}
+.index_swiper .item .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1500px;
+}
+.index_swiper .item .content .wrap {
+  width: 890px;
+  padding: 40px 0;
+  position: relative;
+}
+.index_swiper .item .content .title {
+  font-size: 100px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  justify-content: start;
+}
+.index_swiper .item .content .title .ide {
+  font-size: 54px;
+  margin-left: 10px;
+}
+.index_swiper .item .content .sub_head {
+  font-size: 28px;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 44px;
+}
+.index_swiper .item .content .sub_head span {
+  opacity: 0.8;
+}
+.index_swiper .item .content .shadow_text {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  font-weight: 900;
+  font-size: 210px;
+  line-height: 250px;
+  color: #fff;
+  opacity: 0.1;
+  z-index: -1;
+}
+.index_swiper .swiper-pagination {
+  bottom: 20px;
+}
+.index_swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+}
+.index_swiper .swiper-pagination .swiper-pagination-bullet-active {
+  width: 30px;
+  border-radius: 12px;
+  background: #1534BD;
 }
