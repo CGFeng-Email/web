@@ -1923,7 +1923,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .scene_details .title {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 0 20px;
 }
 .scene_details .cover_box .cover {
   width: auto;

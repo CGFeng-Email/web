@@ -280,4 +280,10 @@
   .header .content .h5_nav {
     top: 88px;
   }
+  .service_introduction {
+    padding: 20px 0;
+  }
+  .line {
+    padding: 10px 0;
+  }
 }
