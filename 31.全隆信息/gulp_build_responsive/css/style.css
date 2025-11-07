@@ -971,6 +971,21 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 12px;
   background: #1534BD;
 }
+.more_wrap .more_line {
+  flex: 1;
+  background: #dcdcdc;
+  height: 2px;
+  opacity: 0.8;
+}
+.more_wrap .more {
+  flex: none;
+}
+.more_wrap .more .link {
+  background: none;
+}
+.about_us .row {
+  position: relative;
+}
 .about_us .content .title {
   font-size: 36px;
   margin-bottom: 10px;
