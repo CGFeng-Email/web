@@ -1221,27 +1221,53 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .more_wrap {
+    
+    .wrap {
+        padding: 20px 0;
+        width: 80%;
+    }
+
     .more_line {
         flex: 1;
         background: #dcdcdc;
-        height: 2px;
+        height: 1px;
         opacity: .8;
+        margin-right: 30px;
     }
 
-    .more {
-        flex: none;
+}
 
-        .link {
-            background: none;
+.learn_more {
+    flex: none;
+
+    .a_link {
+        background: none;
+
+        .text {
+            font-size: 18px;
+        }
+
+        .icon {
+            width: 34px;
+            height: 34px;
+            background: linear-gradient(96.87deg, #1a82da 0%, #1627a9 100%);
+            filter: drop-shadow(-2px 2px 6px #185dc669);
+            border-radius: 50%;
+            font-size: 28px;
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        &:hover {
+            .text {
+                color: @primaryColor;
+            }
         }
     }
+
 }
 
 .about_us {
-    .row {
-        position: relative;
-    }
-
     .content {
         .title {
             font-size: 36px;

@@ -971,20 +971,38 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 12px;
   background: #1534BD;
 }
+.more_wrap .wrap {
+  padding: 20px 0;
+  width: 80%;
+}
 .more_wrap .more_line {
   flex: 1;
   background: #dcdcdc;
-  height: 2px;
+  height: 1px;
   opacity: 0.8;
+  margin-right: 30px;
 }
-.more_wrap .more {
+.learn_more {
   flex: none;
 }
-.more_wrap .more .link {
+.learn_more .a_link {
   background: none;
 }
-.about_us .row {
-  position: relative;
+.learn_more .a_link .text {
+  font-size: 18px;
+}
+.learn_more .a_link .icon {
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(96.87deg, #1a82da 0%, #1627a9 100%);
+  filter: drop-shadow(-2px 2px 6px #185dc669);
+  border-radius: 50%;
+  font-size: 28px;
+  color: #fff;
+  margin-left: 10px;
+}
+.learn_more .a_link:hover .text {
+  color: #1534BD;
 }
 .about_us .content .title {
   font-size: 36px;
