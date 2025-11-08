@@ -65,10 +65,9 @@
                             .category_nav {
                                 .category_list {
                                     padding: 20px;
-                                    .category_li {
-                                        .link {
 
-                                        }
+                                    .category_li {
+                                        .link {}
                                     }
                                 }
                             }
@@ -262,6 +261,55 @@
             }
         }
     }
+
+    .index_swiper {
+        .item {
+            .content {
+                .wrap {
+                    .title {
+                        font-size: 58px;
+                    }
+
+                    .sub_head {
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about_us {
+        .title_bg {
+            top: -3%;
+            right: -30px;
+            font-size: 110px;
+        }
+
+        .col_md {
+            padding: 0 10px;
+        }
+
+        .space_between {
+            height: 4px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .cover_box {
+            margin-bottom: 20px;
+
+            .play {
+                opacity: 1;
+            }
+        }
+
+        .col_md:last-child {
+            min-height: 62px;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -323,9 +371,9 @@
     .more {
         .box {
             .link {
-                width: 150px;
+                width: 170px;
                 min-width: auto;
-                padding: 0 10px;
+                padding: 0 20px;
                 height: 44px;
                 line-height: 44px;
                 display: flex;
@@ -459,11 +507,74 @@
         }
     }
 
+    .header_height {
+        height: 88px;
+    }
+
     .service_introduction {
         padding: 20px 0;
     }
 
     .line {
         padding: 10px 0;
+    }
+
+    .index_swiper {
+        .item {
+            .content {
+                .wrap {
+                    width: 100%;
+
+                    .title {
+                        font-size: 48px;
+                        margin-bottom: 10px;
+
+                        .ide {
+                            font-size: 34px;
+                        }
+                    }
+
+                    .sub_head {
+                        font-size: 16px;
+                    }
+
+                    .shadow_text {
+                        width: 100%;
+                        font-size: 140px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about_us {
+        .title_bg {
+            top: 0;
+            font-size: 64px;
+        }
+
+        .cover_box {
+            margin-bottom: 10px;
+        }
+
+        .content {
+            width: 100%;
+
+            .title {
+                font-size: 24px;
+            }
+
+            .sub_head {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .col_md:last-child {
+            .more_wrap {
+                right: 10px;
+                width: 100%;
+            }
+        }
     }
 }

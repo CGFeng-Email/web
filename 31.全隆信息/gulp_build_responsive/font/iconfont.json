@@ -6,6 +6,90 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "902747",
+      "name": "左左",
+      "font_class": "zuozuo",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "975631",
+      "name": "右",
+      "font_class": "you1",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "5143",
+      "name": "汽车配件",
+      "font_class": "qichepeijian",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "2044428",
+      "name": "扳手_Line",
+      "font_class": "banshou_Line",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "2468469",
+      "name": "1类化学原料x16",
+      "font_class": "leihuaxueyuanliaox",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "8922367",
+      "name": "医药箱",
+      "font_class": "yiyaoxiang",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "10178829",
+      "name": "胶囊",
+      "font_class": "jiaonang",
+      "unicode": "e7ea",
+      "unicode_decimal": 59370
+    },
+    {
+      "icon_id": "26661672",
+      "name": "芯片",
+      "font_class": "xinpian",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "3458658",
+      "name": "上升",
+      "font_class": "shangsheng",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "4386858",
+      "name": "时代优势",
+      "font_class": "shidaiyoushi",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "10079556",
+      "name": "多选选中",
+      "font_class": "duoxuanxuanzhong",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "25473331",
+      "name": "优势产品",
+      "font_class": "youshichanpin",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
       "icon_id": "659161",
       "name": "ic_radio_ture",
       "font_class": "icradioture",

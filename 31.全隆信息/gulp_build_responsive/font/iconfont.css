@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4942378 */
-  src: url('iconfont.woff2?t=1761731478809') format('woff2'),
-       url('iconfont.woff?t=1761731478809') format('woff'),
-       url('iconfont.ttf?t=1761731478809') format('truetype');
+  src: url('iconfont.woff2?t=1762595775198') format('woff2'),
+       url('iconfont.woff?t=1762595775198') format('woff'),
+       url('iconfont.ttf?t=1762595775198') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,54 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zuozuo:before {
+  content: "\e649";
+}
+
+.icon-you1:before {
+  content: "\e640";
+}
+
+.icon-qichepeijian:before {
+  content: "\e608";
+}
+
+.icon-banshou_Line:before {
+  content: "\e64e";
+}
+
+.icon-leihuaxueyuanliaox:before {
+  content: "\e689";
+}
+
+.icon-yiyaoxiang:before {
+  content: "\e615";
+}
+
+.icon-jiaonang:before {
+  content: "\e7ea";
+}
+
+.icon-xinpian:before {
+  content: "\e652";
+}
+
+.icon-shangsheng:before {
+  content: "\e637";
+}
+
+.icon-shidaiyoushi:before {
+  content: "\e625";
+}
+
+.icon-duoxuanxuanzhong:before {
+  content: "\e62c";
+}
+
+.icon-youshichanpin:before {
+  content: "\e614";
 }
 
 .icon-icradioture:before {
