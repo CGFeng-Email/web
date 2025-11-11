@@ -1211,6 +1211,15 @@ body::-webkit-scrollbar-thumb:hover {
 .choose_us .choose_menus_swiper .item .name {
   color: #fff;
 }
+.choose_us .choose_menus_swiper .item:hover .icon {
+  background: #fff;
+}
+.choose_us .choose_menus_swiper .item:hover .icon .iconfont {
+  color: #000;
+}
+.choose_us .choose_menus_swiper .item:hover .name {
+  transform: translateY(10px);
+}
 .choose_us .choose_menus_swiper .my-slide-thumb-active .icon {
   background: #fff;
 }

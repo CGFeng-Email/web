@@ -1926,6 +1926,10 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 10px;
   padding: 0 20px;
 }
+.scene_details .name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .scene_details .cover_box .cover {
   width: auto;
 }

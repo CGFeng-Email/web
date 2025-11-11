@@ -164,51 +164,69 @@
                     <div class="swiper-container choose_menus_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide item pointer">
-                                <div class="icon">
-                                    <i class="iconfont icon-yiyaoxiang"></i>
-                                </div>
-                                <div class="name over2">Medical Devices
-                                    <br> &Consumables
-                                </div>
+                                <a href="" class="link">
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-yiyaoxiang"></i>
+                                    </div>
+                                    <div class="name animate over2">Medical Devices
+                                        <br> &Consumables
+                                    </div>
+                                </a>
                             </div>
                             <div class="swiper-slide item pointer">
-                                <div class="icon">
-                                    <i class="iconfont icon-leihuaxueyuanliaox"></i>
-                                </div>
-                                <div class="name over2">Chemical & <br> Material
-                                </div>
+                                <a href="" class="link">
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-leihuaxueyuanliaox"></i>
+                                    </div>
+                                    <div class="name animate over2">Chemical & <br> Material
+                                    </div>
+                                </a>
                             </div>
                             <div class="swiper-slide item pointer">
-                                <div class="icon">
-                                    <i class="iconfont icon-banshou_Line"></i>
-                                </div>
-                                <div class="name over2">Machinery & <br> Equipment
-                                </div>
+                                <a href="" class="link">
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-banshou_Line"></i>
+                                    </div>
+                                    <div class="name animate over2">Machinery & <br> Equipment
+                                    </div>
+                                </a>
                             </div>
                             <div class="swiper-slide item pointer">
-                                <div class="icon">
-                                    <i class="iconfont icon-qichepeijian"></i>
-                                </div>
-                                <div class="name over2">Automobile & <br> Transportation
-                                </div>
+                                <a href="" class="link">
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-qichepeijian"></i>
+                                    </div>
+                                    <div class="name animate over2">Automobile & <br> Transportation
+                                    </div>
+                                </a>
                             </div>
                             <div class="swiper-slide item pointer">
-                                <div class="icon">
-                                    <i class="iconfont icon-xinpian"></i>
-                                </div>
-                                <div class="name over2">Electronics & <br> Semiconductor
-                                </div>
+                                <a href="" class="link">
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-xinpian"></i>
+                                    </div>
+                                    <div class="name animate over2">Electronics & <br> Semiconductor
+                                    </div>
+                                </a>
                             </div>
                             <div class="swiper-slide item pointer">
-                                <div class="icon">
-                                    <i class="iconfont icon-jiaonang"></i>
-                                </div>
-                                <div class="name over2">Pharma & <br> Healthcare
-                                </div>
+                                <a href="" class="link">
+                                    <div class="icon animate">
+                                        <i class="iconfont icon-jiaonang"></i>
+                                    </div>
+                                    <div class="name animate over2">Pharma & <br> Healthcare
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="space_between"></div>
+                    <div class="new_product">
+                        <div class="row">
+                            <div class="col_md col-md-10 col-sm-12 col-xs-12"></div>
+                            <div class="col_md col-md-2 col-sm-12 col-xs-12"></div>
+                        </div>
+                    </div>
                     <div class="swiper-container choose_content_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide item">
@@ -292,7 +310,6 @@
         });
     })
 
-    var corporate_environment_swiper = null;
     const choose_menus_swiper = new Swiper('.choose_menus_swiper', {
         loop: true,
         speed: 1000,
@@ -310,16 +327,9 @@
                 slidesPerView: 3,
             }
         },
-        on: {
-            slideChangeTransitionStart: function () {
-                if (corporate_environment_swiper) {
-                    corporate_environment_swiper.slideToLoop(this.realIndex)
-                }
-            },
-        }
     })
 
-    choose_content_swiper = new Swiper('.choose_content_swiper', {
+    const choose_content_swiper = new Swiper('.choose_content_swiper', {
         autoplay: {
             delay: 6000000,
             disableOnInteraction: false,
