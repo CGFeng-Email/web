@@ -222,47 +222,83 @@
                     </div>
                     <div class="space_between"></div>
                     <div class="new_product">
-                        <div class="row">
-                            <div class="col_md col-md-10 col-sm-12 col-xs-12"></div>
-                            <div class="col_md col-md-2 col-sm-12 col-xs-12"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-container choose_content_swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide item">
-                                <div class="row animate">
-                                    <div class="col_md col-md-6 col-sm-12 col-xs-12">
-                                        <div class="space_between"></div>
-                                        <div class="space_between"></div>
-                                        <div class="content">
-                                            <h3 class="title ani" swiper-animate-effect="fadeInLeft"
-                                                swiper-animate-duration="0.5s">
-                                                Global 2019-nCoV Test Suite Market Insights, Forecast to 2031
-                                            </h3>
-                                            <div class="lead ani" swiper-animate-effect="fadeInLeft"
-                                                swiper-animate-duration="0.7s">
-                                                OVERVIEWVic Market Research Co., Ltd. is pleased to announce the release
-                                                of the “Global and Chinese 2019-nCoV Test Suite Market Insight Report
-                                                2025–2031.” This compr...
-                                            </div>
-                                            <div class="space_between"></div>
-                                            <div class="common_more">
-                                                <div class="box">
-                                                    <a href="./details.html" class="link animate justify_center">
-                                                        <div class="name">Learn More</div>
-                                                        <div class="icon justify_center">
-                                                            <i class="iconfont icon-arrowRight"></i>
-                                                        </div>
-                                                    </a>
+                        <div class="row animate">
+                            <div class="col_md col-md-5 col-sm-12 col-xs-12">
+                                <div class="space_between"></div>
+                                <div class="space_between"></div>
+                                <div class="swiper-container new_product_content">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide item">
+                                            <div class="content">
+                                                <h3 class="title ani" swiper-animate-effect="fadeInLeft"
+                                                    swiper-animate-duration="0.5s">
+                                                    Global 2019-nCoV Test Suite Market Insights, Forecast to
+                                                    2031
+                                                </h3>
+                                                <div class="space_between"></div>
+                                                <div class="lead ani" swiper-animate-effect="fadeInLeft"
+                                                    swiper-animate-duration="0.7s">
+                                                    OVERVIEWVic Market Research Co., Ltd. is pleased to
+                                                    announce the release
+                                                    of the “Global and Chinese 2019-nCoV Test Suite Market
+                                                    Insight Report
+                                                    2025–2031.” This compr...
+                                                </div>
+                                                <div class="space_between"></div>
+                                                <div class="common_more ani" swiper-animate-effect="fadeInLeft"
+                                                    swiper-animate-duration="1.2s">
+                                                    <div class="box">
+                                                        <a href="./details.html" class="link animate justify_center">
+                                                            <div class="name">Learn More</div>
+                                                            <div class="icon justify_center">
+                                                                <i class="iconfont icon-arrowRight"></i>
+                                                            </div>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col_md col-md-5 col-sm-12 col-xs-12">
-                                        <div class="cover_box ani" swiper-animate-effect="fadeInRight"
-                                            swiper-animate-duration="1s">
-                                            <img class="cover" src="../../img/choose_cover.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col_md col-md-7 col-sm-12 col-xs-12">
+                                <div class="news_right">
+                                    <div class="swiper-container new_product_cover">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/choose_cover.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/choose_cover.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/choose_cover.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/choose_cover.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide item">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/choose_cover.jpg" alt="">
+                                                </div>
+                                            </div>
                                         </div>
+                                    </div>
+
+                                    <div class="direction justify_column">
+                                        <div class="target pointer"></div>
+                                        <div class="target pointer"></div>
+                                        <div class="target pointer"></div>
+                                        <div class="target pointer"></div>
+                                        <div class="target pointer"></div>
                                     </div>
                                 </div>
                             </div>
@@ -318,10 +354,6 @@
         multipleActiveThumbs: false,
         slideToClickedSlide: true,
         watchSlidesVisibility: true, // 防止不可點擊
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
         breakpoints: {
             1200: {
                 slidesPerView: 3,
@@ -329,19 +361,29 @@
         },
     })
 
-    const choose_content_swiper = new Swiper('.choose_content_swiper', {
+    const new_product_content = new Swiper('.new_product_content', {
+        loop: true,
+        speed: 1000,
+        effect: 'fade',
+        on: {
+            init: function () {
+                swiperAnimateCache(this); // 隐藏动画元素 
+                swiperAnimate(this); // 初始化完成开始动画
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this); // 每个slide切换结束时也运行当前slide动画
+            },
+        }
+    })
+
+    const new_product_cover = new Swiper('.new_product_cover', {
         autoplay: {
-            delay: 6000000,
+            delay: 5000,
             disableOnInteraction: false,
         },
         loop: true,
         speed: 1000,
-        effect: 'fade',
-        thumbs: {
-            swiper: choose_menus_swiper,
-            slideThumbActiveClass: 'my-slide-thumb-active',
-        },
-        multipleActiveThumbs: false,
+        spaceBetween: 10,
         on: {
             init: function () {
                 swiperAnimateCache(this); // 隐藏动画元素 

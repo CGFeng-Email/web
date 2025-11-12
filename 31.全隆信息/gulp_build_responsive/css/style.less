@@ -1529,6 +1529,7 @@ body::-webkit-scrollbar-thumb:hover {
             &:hover {
                 .icon {
                     background: #fff;
+
                     .iconfont {
                         color: #000;
                     }
@@ -1551,18 +1552,15 @@ body::-webkit-scrollbar-thumb:hover {
         }
     }
 
-    .choose_content_swiper {
+    .new_product_content {
         padding-top: 30px;
 
         .item {
-            .row {
-                opacity: 0;
-            }
-
             .content {
                 padding-right: 50px;
 
                 .title {
+                    font-weight: 500;
                     font-size: 26px;
                     margin-bottom: 10px;
                     line-height: 1.8;
@@ -1584,19 +1582,40 @@ body::-webkit-scrollbar-thumb:hover {
                     }
                 }
             }
+        }
+    }
 
-            .cover_box {
+    .news_right {
+        padding: 0 12% 0 6%;
+        position: relative;
+
+        .new_product_cover {
+            .item {
                 .cover {
-                    max-width: 80%;
-                    border-radius: 24px;
+                    border-radius: 40px;
                 }
             }
         }
 
-        .swiper-slide-active {
-            .row {
-                opacity: 1;
+        .direction {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background: pink;
+            width: 74px;
+            height: 72%;
+            border-radius: 45px;
+            overflow: hidden;
+            padding: 10px 6px 0;
+
+            .target {
+                height: 22%;
+                background: #1a82da;
+                border-radius: 50%;
+                margin-bottom: 10px;
             }
         }
     }
+
 }
