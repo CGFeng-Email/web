@@ -1482,15 +1482,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .choose_us {
-    background: #F5F5F5;
-
-    .main {
-        padding-top: 30px;
-    }
 
     .choose_menus_swiper {
-        display: flex;
-        align-items: center;
 
         .item {
             text-align: center;
@@ -1541,7 +1534,7 @@ body::-webkit-scrollbar-thumb:hover {
             }
         }
 
-        .my-slide-thumb-active {
+        .swiper-slide-active {
             .icon {
                 background: #fff;
 
@@ -1553,10 +1546,10 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
     .new_product_content {
-        padding-top: 30px;
-
         .item {
+            
             .content {
+                opacity: 0;
                 padding-right: 50px;
 
                 .title {
@@ -1583,17 +1576,22 @@ body::-webkit-scrollbar-thumb:hover {
                 }
             }
         }
+
+        .swiper-slide-active {
+            .content {
+                opacity: 1;
+            }
+        }
     }
 
     .news_right {
-        padding: 0 12% 0 6%;
+        padding: 0 20% 0 0;
         position: relative;
 
         .new_product_cover {
+
             .item {
-                .cover {
-                    border-radius: 40px;
-                }
+                border-radius: 40px;
             }
         }
 
@@ -1602,18 +1600,31 @@ body::-webkit-scrollbar-thumb:hover {
             top: 50%;
             right: 0;
             transform: translateY(-50%);
-            background: pink;
+            background: #fff;
             width: 74px;
-            height: 72%;
+            height: 80%;
             border-radius: 45px;
             overflow: hidden;
             padding: 10px 6px 0;
 
             .target {
                 height: 22%;
-                background: #1a82da;
+                background: @minorBg;
                 border-radius: 50%;
                 margin-bottom: 10px;
+                opacity: 0;
+                transition: .4s ease-in;
+                transform: scale(0.7);
+
+                &:hover {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .active {
+                opacity: 1;
+                transform: scale(1);
             }
         }
     }

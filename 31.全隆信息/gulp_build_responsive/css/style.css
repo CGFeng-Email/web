@@ -1171,16 +1171,6 @@ body::-webkit-scrollbar-thumb:hover {
   right: 0;
   width: 148px;
 }
-.choose_us {
-  background: #F5F5F5;
-}
-.choose_us .main {
-  padding-top: 30px;
-}
-.choose_us .choose_menus_swiper {
-  display: flex;
-  align-items: center;
-}
 .choose_us .choose_menus_swiper .item {
   text-align: center;
   padding: 40px 0;
@@ -1220,16 +1210,14 @@ body::-webkit-scrollbar-thumb:hover {
 .choose_us .choose_menus_swiper .item:hover .name {
   transform: translateY(10px);
 }
-.choose_us .choose_menus_swiper .my-slide-thumb-active .icon {
+.choose_us .choose_menus_swiper .swiper-slide-active .icon {
   background: #fff;
 }
-.choose_us .choose_menus_swiper .my-slide-thumb-active .icon .iconfont {
+.choose_us .choose_menus_swiper .swiper-slide-active .icon .iconfont {
   color: #000;
 }
-.choose_us .new_product_content {
-  padding-top: 30px;
-}
 .choose_us .new_product_content .item .content {
+  opacity: 0;
   padding-right: 50px;
 }
 .choose_us .new_product_content .item .content .title {
@@ -1248,11 +1236,14 @@ body::-webkit-scrollbar-thumb:hover {
 .choose_us .new_product_content .item .content .common_more .box .link {
   padding-left: 0;
 }
+.choose_us .new_product_content .swiper-slide-active .content {
+  opacity: 1;
+}
 .choose_us .news_right {
-  padding: 0 12% 0 6%;
+  padding: 0 20% 0 0;
   position: relative;
 }
-.choose_us .news_right .new_product_cover .item .cover {
+.choose_us .news_right .new_product_cover .item {
   border-radius: 40px;
 }
 .choose_us .news_right .direction {
@@ -1260,16 +1251,27 @@ body::-webkit-scrollbar-thumb:hover {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  background: pink;
+  background: #fff;
   width: 74px;
-  height: 72%;
+  height: 80%;
   border-radius: 45px;
   overflow: hidden;
   padding: 10px 6px 0;
 }
 .choose_us .news_right .direction .target {
   height: 22%;
-  background: #1a82da;
+  background: linear-gradient(103.78deg, #1a82da 0%, #1627a9 100%);
   border-radius: 50%;
   margin-bottom: 10px;
+  opacity: 0;
+  transition: 0.4s ease-in;
+  transform: scale(0.7);
+}
+.choose_us .news_right .direction .target:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+.choose_us .news_right .direction .active {
+  opacity: 1;
+  transform: scale(1);
 }
