@@ -224,8 +224,8 @@
                     <div class="new_product">
                         <div class="row animate">
                             <div class="col_md col-md-5 col-sm-12 col-xs-12">
-                                <div class="space_between"></div>
-                                <div class="space_between"></div>
+                                <div class="space_between animate"></div>
+                                <div class="space_between animate"></div>
                                 <div class="swiper new_product_content">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide item">
@@ -415,6 +415,74 @@
             </div>
         </div>
     </div>
+    <div class="section" data-aos="fade">
+        <div class="custom_research container_padding">
+            <div class="container">
+                <div class="main">
+                    <div class="head">
+                        <h3 class="title">custom research</h3>
+                        <h4 class="sub_head">One of the world's leading providers of customized market research
+                            solutions</h4>
+                    </div>
+                    <div class="wrap container_main">
+                        <div class="box">
+                            <div class="row">
+                                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                    <div class="swiper custom_research_cover">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/custom_research_li1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/banenr1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/banner2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="cover_box">
+                                                    <img class="cover" src="../../img/choose_cover.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_md col-md-6 col-sm-12 col-xs-12">
+                                    <div class="swiper custom_research_content">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="content justify_column">
+                                                    <div class="name">Request & Define</div>
+                                                    <div class="name_line"></div>
+                                                    <div class="lead">
+                                                        Send us your detailed requirements list, and our
+                                                        professional team will assist you in precisely defining the
+                                                        scope of your research needs, ensuring alignment with your
+                                                        business goals.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="title_bg">
+                        <span class="text text-uppercase" data-aos="slide-right"
+                            data-aos-duration="2000">customized</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     @@include('footer.html')
 </body>
 <script>
@@ -460,15 +528,15 @@
         },
         loop: true,
         speed: 1000,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
         thumbs: {
             slideThumbActiveClass: 'my-slide-thumb-active',
         },
         breakpoints: {
-            640: {
-                slidesPerView: 2,
-            },
             768: {
-                slidesPerView: 4,
+                slidesPerView: 3,
+                spaceBetween: 10,
             },
             1024: {
                 slidesPerView: 5,
@@ -480,7 +548,6 @@
     })
 
     const new_product_content = new Swiper('.new_product_content', {
-        loop: true,
         speed: 1000,
         effect: 'creative',
         creativeEffect: {
@@ -498,7 +565,6 @@
     })
 
     const new_product_cover = new Swiper('.new_product_cover', {
-        loop: true,
         speed: 1000,
         spaceBetween: 20,
         centeredSlides: true,
@@ -520,6 +586,36 @@
         let index = $(this).index();
         new_product_cover.slideTo(index, 1000, false);
         new_product_content.slideTo(index, 1000, false);
+    })
+
+    const custom_research_cover = new Swiper('.custom_research_cover', {
+        loop: true,
+        speed: 1000,
+        spaceBetween: 10,
+        on: {
+            init: function () {
+                swiperAnimateCache(this);
+                swiperAnimate(this);
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this);
+            }
+        }
+    })
+
+    const custom_research_content = new Swiper('.custom_research_content', {
+        loop: true,
+        speed: 1000,
+        spaceBetween: 10,
+        on: {
+            init: function () {
+                swiperAnimateCache(this);
+                swiperAnimate(this);
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this);
+            }
+        }
     })
 </script>
 
