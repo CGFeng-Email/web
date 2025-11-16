@@ -216,10 +216,6 @@ body::-webkit-scrollbar-thumb:hover {
     background-repeat: no-repeat;
 }
 
-.animate {
-    transition: .4s ease;
-}
-
 .pointer {
     cursor: pointer;
 }
@@ -229,7 +225,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .animate {
-    transition: .4s ease;
+    transition: .6s ease;
 }
 
 .justify_space {
@@ -318,14 +314,22 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+.common_head {
+    .sub_head {
+        color: #B7B7B7;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
 .recommend_common_swiper {
 
     .swiper-button-prev {
-        left: 0;
+        left: 8px;
     }
 
     .swiper-button-next {
-        right: 0;
+        right: 8px;
     }
 
     .swiper-button-prev,
@@ -333,10 +337,13 @@ body::-webkit-scrollbar-thumb:hover {
         background: none;
         width: auto;
 
+        &::after {
+            display: none;
+        }
+
         .icon {
             width: 44px;
             height: 44px;
-            background: #DBDBDB;
             border-radius: 4px;
             text-align: center;
             line-height: 44px;
@@ -346,11 +353,11 @@ body::-webkit-scrollbar-thumb:hover {
             .iconfont {
                 font-size: 22px;
                 font-weight: 600;
-                color: #000;
+                color: #E2E2E2;
             }
 
             &:hover {
-                background: @minorColor;
+                background: @minorBg;
 
                 .iconfont {
                     color: #fff;
@@ -1639,7 +1646,8 @@ body::-webkit-scrollbar-thumb:hover {
 
         .sub_head {
             color: #B7B7B7;
-            font-size: 20px;
+            font-size: 24px;
+            font-weight: 500;
         }
     }
 
@@ -1656,6 +1664,7 @@ body::-webkit-scrollbar-thumb:hover {
             padding: 0 20px;
 
             .text {
+                letter-spacing: 2px;
                 display: inline-block;
             }
         }
@@ -1665,14 +1674,26 @@ body::-webkit-scrollbar-thumb:hover {
             border-radius: 30px;
             background: #fff;
             box-shadow: 0 0 90px #4a4a4a30;
-            // height: 480px;
+            position: relative;
 
             .custom_research_cover {
                 border-radius: 30px;
 
-                .cover {
-                    height: 440px;
-                    border-radius: 30px;
+                .custom_research_cover_item {
+                    .cover {
+                        height: 440px;
+                        border-radius: 30px;
+                        transform: scale(1.1);
+                        opacity: 0;
+                        transition: opacity 0.5s ease-in-out, transform 1.6s ease-in-out;
+                    }
+                }
+
+                .swiper-slide-active {
+                    .cover {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
                 }
             }
 
@@ -1682,7 +1703,7 @@ body::-webkit-scrollbar-thumb:hover {
                 .content {
                     height: 440px;
                     justify-content: center;
-                    padding-left: 120px;
+                    padding: 0 10px;
 
                     .name {
                         font-size: 22px;
@@ -1695,9 +1716,236 @@ body::-webkit-scrollbar-thumb:hover {
                         background: @minorBg;
                         height: 4px;
                         margin: 4px 0 10px;
+                        border-radius: 6px;
+                    }
+
+                    .lead {
+                        margin-top: 10px;
+                        line-height: 1.8;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .serial_number_swiper {
+                height: 360px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 2px;
+                    height: 80%;
+                    background: #E9E9E9;
+                }
+
+                .serial_number {
+                    width: 50px;
+                    height: 50px;
+                    background: #B3C6D6;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 50px;
+                    margin: auto;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #fff;
+                }
+
+                .active {
+                    .serial_number {
+                        background: @minorBg;
+                    }
+                }
+            }
+
+            .custom_journey {
+                position: absolute;
+                bottom: -30px;
+                right: 50px;
+                width: 420px;
+                height: 74px;
+                border-radius: 36.5px;
+                background: linear-gradient(103.78deg, #1a82da 0%, #1627a9 100%);
+                box-shadow: 0 0 15px #0000004f;
+
+                .link {
+                    text-align: center;
+                    line-height: 74px;
+                    color: #fff;
+                    font-size: 22px;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+.stories {
+    position: relative;
+
+    .title_bg {
+        position: absolute;
+        top: 2%;
+        right: 0;
+        font-size: 170px;
+        color: #f7f7f7;
+        font-weight: 800;
+        z-index: -1;
+        padding: 0 20px;
+
+        .text {
+            letter-spacing: 2px;
+            display: inline-block;
+        }
+    }
+}
+
+.recommend_news {
+    position: relative;
+
+    .title_bg {
+        position: absolute;
+        bottom: 2%;
+        left: 0;
+        font-size: 170px;
+        color: #f7f7f7;
+        font-weight: 800;
+        z-index: -1;
+        padding: 0 20px;
+
+        .text {
+            letter-spacing: 2px;
+            display: inline-block;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(180.00deg, #196acd 0%, #196acd00 100%);
+        opacity: .1;
+    }
+
+    .head {
+        .sub_head {
+            color: #B7B7B7;
+        }
+    }
+
+    .comment_news_swiper {
+        padding: 4px 0;
+
+        .item {
+            .link {
+                background: #fff;
+                padding: 40px;
+                border-radius: 24px;
+                box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+                position: relative;
+
+                .ide {
+                    justify-content: start;
+                    transform: translateX(-12px);
+
+                    .iconfont {
+                        color: @primaryColor;
+                        font-size: 38px;
+                    }
+
+                    .text {
+                        font-size: 18px;
+                        color: #000;
+                        transform: translateX(-8px);
+                    }
+                }
+
+                .name {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.6;
+                    color: #000;
+                    margin-bottom: 14px;
+                }
+
+                .lead {
+                    font-size: 16px;
+                    color: #737373;
+                    line-height: 1.8;
+                    margin-bottom: 14px;
+                }
+
+                .date {
+                    font-size: 16px;
+                    color: #737373;
+                    line-height: 1.8;
+                }
+
+                .cover {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    width: 180px;
+                }
+
+                &:hover {
+                    background: linear-gradient(166.97deg, #173cb4 0%, #1a80d9 100%);
+
+                    .ide {
+
+                        .iconfont,
+                        .text {
+                            color: #fff;
+                        }
+                    }
+
+                    .name {
+                        color: #fff;
+                    }
+
+                    .lead {
+                        color: #fff;
+                    }
+
+                    .date {
+                        color: #fff;
                     }
                 }
             }
         }
+    }
+
+    .more {
+        text-align: center;
+
+        .link {
+            min-width: 230px;
+        }
+    }
+}
+
+.our_clients {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(180.00deg, #196acd 0%, #196acd00 100%);
+        opacity: .1;
     }
 }

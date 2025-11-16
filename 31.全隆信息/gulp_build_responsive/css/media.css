@@ -64,6 +64,9 @@
     line-height: 40px;
     margin-left: 14px;
   }
+  .common_head .sub_head {
+    font-size: 18px;
+  }
   .tabs {
     padding: 0 0 20px;
   }
@@ -186,6 +189,18 @@
   .choose_us .new_product .new_product_content .item .content .title {
     margin-bottom: 0;
   }
+  .custom_research .main .head .title {
+    font-size: 24px;
+  }
+  .custom_research .main .head .sub_head {
+    font-size: 14px;
+  }
+  .custom_research .main .wrap {
+    padding: 0;
+  }
+  .custom_research .main .wrap .box {
+    padding: 20px 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -215,6 +230,9 @@
   }
   .head .sub_title {
     padding: 0;
+  }
+  .common_head .sub_head {
+    font-size: 16px;
   }
   .contact_btn_wrap {
     padding: 20px 0;
@@ -393,5 +411,84 @@
   }
   .choose_us .new_product .news_right .direction {
     display: none;
+  }
+  .custom_research .main .wrap .box {
+    padding: 5px 10px;
+  }
+  .custom_research .main .wrap .box .custom_research_cover {
+    margin-bottom: 20px;
+  }
+  .custom_research .main .wrap .box .custom_research_cover .custom_research_cover_item .cover {
+    height: auto;
+    min-height: 220PX;
+  }
+  .custom_research .main .wrap .box .space_between {
+    display: none;
+  }
+  .custom_research .main .wrap .box .col_md {
+    padding: 0;
+  }
+  .custom_research .main .wrap .box .serial_number_swiper {
+    height: 280px;
+  }
+  .custom_research .main .wrap .box .serial_number_swiper .serial_item .serial_number {
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+  }
+  .custom_research .main .wrap .box .custom_research_content {
+    height: auto;
+  }
+  .custom_research .main .wrap .box .custom_research_content .content {
+    padding-top: 10px;
+    height: auto;
+  }
+  .custom_research .main .wrap .box .custom_research_content .content .name {
+    font-size: 18px;
+  }
+  .custom_research .main .wrap .box .custom_research_content .content .name_line {
+    width: 60%;
+  }
+  .custom_research .main .wrap .box .custom_research_content .content .lead {
+    font-size: 14px;
+    margin: 0;
+  }
+  .custom_research .main .wrap .box .custom_journey {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+  }
+  .custom_research .main .wrap .box .custom_journey .link {
+    font-size: 16px;
+    line-height: 50px;
+  }
+  .stories .head .title {
+    font-size: 16px;
+  }
+  .stories .head .sub_head {
+    font-size: 14px;
+  }
+  .stories .title_bg {
+    top: 2%;
+    font-size: 80px;
+  }
+  .recommend_news .space_between {
+    display: none;
+  }
+  .recommend_news .main .comment_news_swiper .item .link {
+    padding: 20px;
+  }
+  .recommend_news .main .comment_news_swiper .item .link .name {
+    font-size: 18px;
+  }
+  .recommend_news .main .more .box {
+    width: 100%;
+  }
+  .recommend_news .main .more .box .link {
+    width: 100%;
+    justify-content: center;
   }
 }
