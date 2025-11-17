@@ -1529,14 +1529,67 @@ body::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #196acd 0%, #196acd00 100%);
   opacity: 0.1;
 }
+.footer {
+  position: relative;
+  margin-top: 120px;
+}
 .footer .wrap {
+  padding-top: 128px;
+}
+.footer .to_wrap {
   background: #242236;
 }
-.footer .content {
-  padding: 80px 0 40px;
+.footer .help {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-.footer .content .contact {
-  padding: 0;
+.footer .help .help_wrap {
+  border-radius: 31px;
+  background: linear-gradient(27.29deg, #3f31a8 0%, #156fc5 100%);
+}
+.footer .help .help_wrap .help_content {
+  padding: 60px;
+}
+.footer .help .help_wrap .help_content .name {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.footer .help .help_wrap .help_content .to_register {
+  position: relative;
+}
+.footer .help .help_wrap .help_content .to_register .iconfont {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  font-size: 28px;
+  color: #fff;
+}
+.footer .help .help_wrap .help_content .to_register .link {
+  width: 400px;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(139.13deg, #81c5ff 0%, #4292ff 100%);
+}
+.footer .help .help_wrap .help_content .to_register:hover {
+  transform: scale(1.02);
+}
+.footer .help .cover_box {
+  position: absolute;
+  top: -110px;
+  right: 0;
+  max-width: 650px;
+}
+.footer .content {
+  padding: 280px 0 40px;
 }
 .footer .content .footer_list {
   text-align: left;
@@ -1549,7 +1602,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 10px;
 }
 .footer .content .footer_list .lead {
-  color: #fff;
+  color: #B9B9B9;
   margin-bottom: 10px;
   font-size: 14px;
 }
@@ -1563,11 +1616,11 @@ body::-webkit-scrollbar-thumb:hover {
   transition: 0.3s ease-out;
   display: flex;
   line-height: 1.8;
-  color: #fff;
+  color: #B9B9B9;
 }
 .footer .content .footer_list .ul .li .link .iconfont {
   padding-right: 10px;
-  color: #fff;
+  color: #74BBFF;
 }
 .footer .content .footer_list .ul .li .link:hover {
   transform: skew(6deg) translateX(10px);
@@ -1595,16 +1648,18 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 500;
 }
 .footer .copyright {
-  padding: 24px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 30px 0;
   background: #05012B;
 }
-.footer .copyright span,
+.footer .copyright .text,
 .footer .copyright .link {
-  width: auto;
   font-size: 14px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 20px;
+  line-height: 1.8;
   color: #fff;
+  width: auto;
+  display: inline-block;
+}
+.footer .copyright .link {
+  margin-left: 30px;
 }

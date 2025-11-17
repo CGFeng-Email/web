@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "16512327",
+      "name": "抖音号-01",
+      "font_class": "douyinhao-01",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
       "icon_id": "7239557",
       "name": "skype",
       "font_class": "skype",

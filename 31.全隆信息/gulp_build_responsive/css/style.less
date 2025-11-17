@@ -1951,16 +1951,77 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .footer {
+    position: relative;
+    margin-top: 120px;
+
     .wrap {
+        padding-top: 128px;
+    }
+
+    .to_wrap {
         background: #242236;
     }
 
-    .content {
-        padding: 80px 0 40px;
+    .help {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
 
-        .contact {
-            padding: 0;
+        .help_wrap {
+            border-radius: 31px;
+            background: linear-gradient(27.29deg, #3f31a8 0%, #156fc5 100%);
+
+            .help_content {
+                padding: 60px;
+
+                .name {
+                    font-size: 30px;
+                    color: #fff;
+                    font-weight: 600;
+                    line-height: 1.7;
+                }
+
+                .to_register {
+                    position: relative;
+
+                    .iconfont {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 20px;
+                        font-size: 28px;
+                        color: #fff;
+                    }
+
+                    .link {
+                        width: 400px;
+                        text-align: center;
+                        height: 60px;
+                        line-height: 60px;
+                        border-radius: 10px;
+                        font-size: 18px;
+                        color: #fff;
+                        background: linear-gradient(139.13deg, #81c5ff 0%, #4292ff 100%);
+                    }
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
         }
+
+        .cover_box {
+            position: absolute;
+            top: -110px;
+            right: 0;
+            max-width: 650px;
+        }
+    }
+
+    .content {
+        padding: 280px 0 40px;
 
         .footer_list {
             text-align: left;
@@ -1974,7 +2035,7 @@ body::-webkit-scrollbar-thumb:hover {
             }
 
             .lead {
-                color: #fff;
+                color: #B9B9B9;
                 margin-bottom: 10px;
                 font-size: 14px;
             }
@@ -1990,11 +2051,11 @@ body::-webkit-scrollbar-thumb:hover {
                         transition: .3s ease-out;
                         display: flex;
                         line-height: 1.8;
-                        color: #fff;
+                        color: #B9B9B9;
 
                         .iconfont {
                             padding-right: 10px;
-                            color: #fff;
+                            color: #74BBFF;
                         }
 
                         &:hover {
@@ -2037,18 +2098,21 @@ body::-webkit-scrollbar-thumb:hover {
     }
 
     .copyright {
-        padding: 24px 0;
-        border-top: 1px solid rgba(255, 255, 255, .3);
+        text-align: center;
+        padding: 30px 0;
         background: #05012B;
 
-        span,
+        .text,
         .link {
-            width: auto;
             font-size: 14px;
-            line-height: 24px;
-            font-weight: 500;
-            padding: 0 20px;
+            line-height: 1.8;
             color: #fff;
+            width: auto;
+            display: inline-block;
+        }
+
+        .link {
+            margin-left: 30px;
         }
     }
 }

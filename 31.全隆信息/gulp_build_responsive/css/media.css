@@ -26,6 +26,21 @@
   .header .content .wrap .right .search .input_wrap {
     min-width: 120px;
   }
+  .footer .wrap .help .cover_box {
+    top: -28px;
+  }
+  .footer .wrap .help .help_content .name {
+    font-size: 20px;
+  }
+  .footer .wrap .help .help_content .to_register .link {
+    width: 330px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
+  .footer .wrap .help .help_content .to_register .iconfont {
+    font-size: 22px;
+  }
 }
 @media screen and (max-width: 992px) {
   .container_padding {
@@ -200,6 +215,36 @@
   }
   .custom_research .main .wrap .box {
     padding: 20px 10px;
+  }
+  .footer {
+    margin-top: 40px;
+  }
+  .footer .wrap {
+    padding: 0;
+  }
+  .footer .wrap .help {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .footer .content {
+    padding: 40px 0;
+  }
+  .footer .content .footer_list {
+    margin-bottom: 20px;
+  }
+  .footer .content .advantage {
+    display: none;
+  }
+  .footer .content .nav_list .list {
+    margin-bottom: 20px;
+  }
+  .footer .copyright {
+    padding: 20px 10px;
+  }
+  .footer .copyright .wrap .box {
+    width: 100%;
+    flex: content;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -490,5 +535,47 @@
   .recommend_news .main .more .box .link {
     width: 100%;
     justify-content: center;
+  }
+  .footer .wrap .help {
+    margin-bottom: 10px;
+  }
+  .footer .wrap .help .help_wrap .row {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+  .footer .wrap .help .help_content {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .footer .wrap .help .help_content .name {
+    font-size: 17px;
+  }
+  .footer .wrap .help .help_content .space_between {
+    height: 12px;
+  }
+  .footer .wrap .help .cover_box {
+    position: relative;
+    padding: 10px 10px 0;
+  }
+  .footer .content {
+    padding: 30px 10px 10px;
+  }
+  .footer .content .footer_list {
+    margin-bottom: 14px;
+  }
+  .footer .content .footer_list .title {
+    font-size: 15px;
+  }
+  .footer .content .footer_list .ul .li .link {
+    font-size: 13px;
+  }
+  .footer .copyright {
+    padding: 10px;
+  }
+  .footer .copyright .text {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
   }
 }
