@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "7239557",
+      "name": "skype",
+      "font_class": "skype",
+      "unicode": "e707",
+      "unicode_decimal": 59143
+    },
+    {
       "icon_id": "712404",
       "name": "左",
       "font_class": "icon-arrow-left2",

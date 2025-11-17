@@ -1529,3 +1529,82 @@ body::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #196acd 0%, #196acd00 100%);
   opacity: 0.1;
 }
+.footer .wrap {
+  background: #242236;
+}
+.footer .content {
+  padding: 80px 0 40px;
+}
+.footer .content .contact {
+  padding: 0;
+}
+.footer .content .footer_list {
+  text-align: left;
+}
+.footer .content .footer_list .title {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.footer .content .footer_list .lead {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.footer .content .footer_list .ul {
+  margin-top: 10px;
+}
+.footer .content .footer_list .ul .li .link {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 0;
+  transition: 0.3s ease-out;
+  display: flex;
+  line-height: 1.8;
+  color: #fff;
+}
+.footer .content .footer_list .ul .li .link .iconfont {
+  padding-right: 10px;
+  color: #fff;
+}
+.footer .content .footer_list .ul .li .link:hover {
+  transform: skew(6deg) translateX(10px);
+}
+.footer .content .blogroll_list {
+  padding-top: 14px;
+  display: flex;
+}
+.footer .content .blogroll_list .b_li {
+  margin-right: 10px;
+}
+.footer .content .blogroll_list .cover_box {
+  width: 30px;
+  height: 30px;
+}
+.footer .content .right .code_box {
+  width: 80%;
+  margin: auto;
+  padding: 0 10px;
+}
+.footer .content .right .lead {
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+.footer .copyright {
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  background: #05012B;
+}
+.footer .copyright span,
+.footer .copyright .link {
+  width: auto;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 20px;
+  color: #fff;
+}

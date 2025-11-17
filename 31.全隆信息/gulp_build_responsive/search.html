@@ -539,7 +539,240 @@
         </div>
         <div style="height: 100px;"></div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+    <div class="wrap">
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="col_md col-md-9 col-sm-12 col-xs-12">
+                        <div class="row flex_wrap">
+                            <div class="col_md service col-md-3 col-sm-6 col-xs-6">
+                                <div class="footer_list">
+                                    <h3 class="title text-uppercase">QUICK LINKS</h3>
+                                    <ul class="ul">
+                                        <li class="li">
+                                            <a href="index.html" class="link">Home</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="aboutUs.html" class="link">Categories</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="applicationScenarios.html" class="link">Custom Research</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="product.html" class="link">Media</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="news.html" class="link">About us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col_md service col-md-3 col-sm-6 col-xs-6">
+                                <div class="footer_list">
+                                    <h3 class="title text-uppercase">ADVANTAGE</h3>
+                                    <ul class="ul">
+                                        <li class="li">
+                                            <a href="product.html" class="link">Company Profile</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="product.html" class="link">Qualification</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="product.html" class="link">Data Sources</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="product.html" class="link">Authority Citations</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="product.html" class="link">Our Team</a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="product.html" class="link">Our Clients</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col_md contact col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer_list">
+                                    <h3 class="title text-uppercase">Contact Us</h3>
+                                    <ul class="ul">
+                                        <li class="li">
+                                            <a href="contact.html" class="link">
+                                                <i class="iconfont icon-dianhua01"></i>
+                                                <span>TEL：020-31521856 / +86-15323335301</span>
+                                            </a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="contact.html" class="link">
+                                                <i class="iconfont icon-youxiang"></i>
+                                                <span>Email：market@vicmarketresearch.com /
+                                                    abby@vicmarketresearch.com</span>
+                                            </a>
+                                        </li>
+                                        <li class="li">
+                                            <a href="contact.html" class="link">
+                                                <i class="iconfont icon-dizhi"></i>
+                                                <span>
+                                                    ADD：805A. Hongyue Building. Xinkai Technology Innovation Park.Baiyun
+                                                    District.Guangzhou.Guangdong.
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_md col-md-3 col-sm-12 col-xs-12">
+                        <div class="footer_list">
+                            <h3 class="title text-uppercase">Subscribe to us</h3>
+                            <div class="lead">By subscribing to us, you can receive the latest news in a timely manner.</div>
+                            <style>
+    .contact_information {
+        padding: 20px 0;
+    }
+
+    .contact_information .item {
+        border-radius: 4px;
+        background: #fff;
+        overflow: hidden;
+        padding: 4px 6px;
+        max-width: 80%;
+    }
+
+    .contact_information .input {
+        background: none;
+        box-shadow: none;
+        border: none;
+        flex: 1;
+        padding-right: 10px;
+    }
+
+    .contact_information .btn {
+        background: linear-gradient(103.78deg, #1a82da 0%, #1627a9 100%);
+        box-shadow: none;
+        border-radius: 4px;
+        width: 50px;
+        border: none;
+    }
+
+    @media screen and (max-width: 992px) {
+        .contact_information .item {
+            max-width: 40%;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .contact_information .item {
+            max-width: none;
+        }
+    }
+</style>
+
+<div class="contact_information">
+    <form class="layui-form" action="">
+        <div class="item justify_space">
+            <input type="text" name="email" lay-verify="required|email" placeholder="Please enter your email"
+                lay-reqtext="Please enter your email" lay-vertype="tips" autocomplete="off" class="layui-input input">
+            <button type="submit" class="layui-btn text-uppercase btn" lay-submit lay-filter="contactSubmit">
+                <i class="iconfont icon-arrowRight"></i>
+            </button>
+        </div>
+    </form>
+</div>
+
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+        form.on('submit(contactSubmit)', function (data) {
+            var field = data.field;
+            return false;
+        });
+    });
+</script>
+                            <style>
+  .blogroll {
+    flex: none;
+    display: flex;
+    padding: 10px 0;
+  }
+
+  .blogroll .box {
+    padding: 0 7px;
+  }
+
+  .blogroll .box:first-child {
+    padding-left: 0;
+  }
+
+  .blogroll .link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+
+    &:hover {
+      background: linear-gradient(103.78deg, #1a82da 0%, #1627a9 100%);
+    }
+
+    &:hover .iconfont {
+      color: #fff;
+    }
+  }
+
+  .blogroll .iconfont {
+    font-size: 18px;
+  }
+</style>
+
+<div class="blogroll">
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-skype"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-shejiaotubiao-14"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-youtobe"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-facebook"></i>
+    </a>
+  </div>
+  <div class="box">
+    <a href="javascript:;" class="link animate">
+      <i class="iconfont icon-instagram-fill"></i>
+    </a>
+  </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="justify_space">
+                    <span class="copyright_text">Copyright &copy; 2025 All Rights Reserved 东莞市佑祥线带股份有限公司</span>
+                    <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery" class="link">粤ICP备16053114号-2</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="scroll-indicator">
     <div class="mouse">
         <div class="wheel"></div>
