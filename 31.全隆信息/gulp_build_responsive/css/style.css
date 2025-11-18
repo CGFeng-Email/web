@@ -1663,3 +1663,111 @@ body::-webkit-scrollbar-thumb:hover {
 .footer .copyright .link {
   margin-left: 30px;
 }
+.categories .wrap {
+  align-items: center;
+  position: relative;
+}
+.categories .wrap .name {
+  flex: none;
+}
+.categories .wrap .name .text {
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 14px;
+}
+.categories .wrap .categories_line {
+  flex: 1;
+  height: 1px;
+  background: #707070;
+  margin: 0 50px;
+}
+.categories .wrap .qualification {
+  padding: 80px 0;
+}
+.categories .wrap .qualification .text {
+  font-size: 24px;
+  font-weight: 700;
+}
+.categories .wrap .qualification .icon {
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: linear-gradient(96.87deg, #1a82da 0%, #1627a9 100%);
+  filter: drop-shadow(-2px 2px 6px #185dc669);
+  border-radius: 50%;
+}
+.categories .wrap .qualification .icon .iconfont {
+  font-size: 22px;
+  color: #fff;
+}
+.categories .wrap .up_list {
+  position: absolute;
+  top: 180px;
+  right: 8px;
+  z-index: 2;
+  width: 240px;
+  min-height: 200px;
+  background: #fff;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 99px rgba(29, 56, 75, 0.4);
+  pointer-events: none;
+  opacity: 0;
+  padding-bottom: 10px;
+}
+.categories .wrap .up_list .list_wrap {
+  height: 320px;
+  overflow-y: auto;
+  padding: 20px 14px 20px 20px;
+}
+.categories .wrap .up_list .list_wrap a {
+  text-align: left;
+  display: block;
+  color: #999999;
+  line-height: 62px;
+  border-bottom: 1px solid #e1e1e1;
+  transition: all 0.5s ease;
+  position: relative;
+  font-size: 16px;
+}
+.categories .wrap .up_list .list_wrap a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: #1534BD;
+  height: 1px;
+  width: 0;
+  transition: width 0.5s ease;
+}
+.categories .wrap .up_list .list_wrap a:hover::after {
+  width: 100%;
+}
+.categories .wrap .up_list .list_wrap .on {
+  color: #1534BD;
+}
+.categories .wrap .up_list .list_wrap .on::after {
+  background-color: #1534BD;
+}
+.categories .wrap .up_list .list_wrap::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+  top: -8px;
+  right: 60px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%) rotate(45deg);
+}
+.categories .wrap:hover .up_list {
+  opacity: 1;
+  top: 140px;
+  pointer-events: auto;
+}

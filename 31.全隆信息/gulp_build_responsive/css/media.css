@@ -41,6 +41,20 @@
   .footer .wrap .help .help_content .to_register .iconfont {
     font-size: 22px;
   }
+  .categories .wrap {
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .categories .wrap .qualification {
+    padding: 40px 0;
+    width: 100%;
+    flex: none;
+    justify-content: end;
+  }
+  .categories .wrap .qualification .up_list {
+    top: 200px;
+  }
 }
 @media screen and (max-width: 992px) {
   .container_padding {
@@ -577,5 +591,42 @@
     width: 100%;
     font-size: 13px;
     text-align: center;
+  }
+  .categories .wrap {
+    padding: 20px 4px;
+  }
+  .categories .wrap .name .text {
+    font-size: 16px;
+    padding-left: 8px;
+  }
+  .categories .wrap .categories_line {
+    margin: 0 20px;
+  }
+  .categories .wrap .qualification {
+    padding: 10px 0;
+  }
+  .categories .wrap .qualification .icon {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    margin-left: 14px;
+  }
+  .categories .wrap .qualification .icon .iconfont {
+    font-size: 16px;
+  }
+  .categories .wrap .qualification .up_list {
+    top: 140px;
+  }
+  .categories .wrap .qualification .up_list .list_wrap {
+    padding: 10px 14px;
+  }
+  .categories .wrap .qualification .up_list .list_wrap a {
+    line-height: 46px;
+    font-size: 15px;
+  }
+  .categories .wrap:hover .up_list {
+    opacity: 1;
+    top: 124px;
+    pointer-events: auto;
   }
 }
