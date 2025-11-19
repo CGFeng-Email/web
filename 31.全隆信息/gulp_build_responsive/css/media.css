@@ -260,6 +260,12 @@
     flex: content;
     justify-content: center;
   }
+  .qualification {
+    padding: 0;
+  }
+  .qualification .main .wrap .col-md-3 {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -669,5 +675,23 @@
   .company_data .main .box .lead {
     font-size: 18px;
     line-height: 1.8;
+  }
+  .qualification {
+    padding: 0;
+  }
+  .qualification .main .qualification_tabs .item {
+    margin-bottom: 10px;
+  }
+  .qualification .main .qualification_tabs .item .number {
+    font-size: 28px;
+  }
+  .qualification .main .qualification_tabs .item .name {
+    font-size: 16px;
+  }
+  .qualification .main .wrap .qualification_content {
+    padding: 0;
+  }
+  .qualification .main .wrap .qualification_content .slide .name {
+    font-size: 16px;
   }
 }

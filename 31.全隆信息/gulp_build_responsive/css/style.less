@@ -2331,3 +2331,150 @@ body::-webkit-scrollbar-thumb:hover {
         }
     }
 }
+
+.qualification {
+    .main {
+        .qualification_tabs {
+            .item {
+                margin-bottom: 24px;
+                font-weight: 600;
+
+                .number {
+                    font-size: 52px;
+                    font-weight: 600;
+                    color: #c3c3c6;
+                    transition: all .6s ease;
+                }
+
+                .name {
+                    font-size: 20px;
+                    color: #c3c3c6;
+                    margin-bottom: 7px;
+                    position: relative;
+                    display: inline-block;
+                    transition: all .6s ease;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                        width: 0;
+                        height: 4px;
+                        background: @primaryColor;
+                        transition: all .6s ease;
+                    }
+                }
+
+                &:hover {
+                    .number {
+                        color: @primaryColor;
+                    }
+
+                    .name {
+                        color: @primaryColor;
+
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .active {
+                .number {
+                    color: @primaryColor;
+                }
+
+                .name {
+                    color: @primaryColor;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .qualification_content {
+            padding: 0 40px;
+        }
+
+        .qualification_swiper {
+            perspective: 800px;
+            /* 减小透视距离，增强3D感 */
+            transform-style: preserve-3d;
+            /* 关键：保持子元素3D变换 */
+
+            .swiper-wrapper {
+                transform-style: preserve-3d;
+                /* 子元素继承3D空间 */
+            }
+
+            .slide {
+                width: 70%;
+                opacity: .7;
+                transition: all .5s ease-in;
+
+                .name {
+                    padding-top: 12px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+
+            .swiper-slide-active {
+                opacity: 1;
+            }
+        }
+
+        .qualification_menus {
+
+            .icon {
+                text-align: center;
+
+                .iconfont {
+                    font-size: 26px;
+                    color: #ACACAC;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: @primaryColor;
+                    }
+                }
+            }
+
+            .qualification_menus_swiper {
+                height: 260px;
+                margin: 10px 0 0;
+                padding: 3px 0;
+
+                .slide {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    overflow: hidden;
+                    text-align: center;
+                }
+
+                .swiper-slide-active {
+                    border-radius: 28px;
+                    background: @minorBg;
+                    color: #fff;
+                }
+            }
+        }
+
+        .wrap {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    }
+}
