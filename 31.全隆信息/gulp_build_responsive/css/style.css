@@ -155,7 +155,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #000;
 }
 .layui-form-select dd.layui-this {
-  color: #1534BD !important;
+  color: #0C377B !important;
 }
 .title {
   font-size: 28px;
@@ -307,7 +307,7 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 4px;
 }
 .recommend_common_swiper .swiper-pagination .swiper-pagination-bullet-active {
-  background: #1534BD;
+  background: #0C377B;
 }
 .title_line {
   font-size: 40px;
@@ -340,7 +340,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 88px;
   height: 8px;
   border-radius: 4px;
-  background: #1534BD;
+  background: #0C377B;
 }
 .line::before {
   content: '';
@@ -363,11 +363,11 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 3px;
 }
 .paging .nav_box .pagination li a {
-  color: #1534BD;
+  color: #0C377B;
 }
 .paging .nav_box .pagination .active a {
-  background-color: #1534BD;
-  border-color: #1534BD;
+  background-color: #0C377B;
+  border-color: #0C377B;
   color: #fff;
 }
 .banner {
@@ -466,7 +466,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0 4px;
 }
 .contact_btn_wrap .btn:hover {
-  background: #1534BD;
+  background: #0C377B;
   color: #fff;
 }
 .contact_btn_wrap .btn:first-child {
@@ -538,7 +538,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 24px;
 }
 .tabs .active .link {
-  background: #1534BD;
+  background: #0C377B;
 }
 .tabs .active .link .iconfont,
 .tabs .active .link .text {
@@ -583,7 +583,7 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   border-radius: 12px;
   padding: 20px;
-  background: #1534BD;
+  background: #0C377B;
 }
 .article .up {
   flex: 1;
@@ -607,7 +607,7 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 54px;
   background: #fff;
   border-radius: 45px;
-  color: #1534BD;
+  color: #0C377B;
   font-size: 16px;
   text-align: center;
   color: #B7B7B7;
@@ -641,7 +641,7 @@ body::-webkit-scrollbar-thumb:hover {
 .search .search_form .content .submit_btn {
   width: 100px;
   height: 60px;
-  background: #1534BD;
+  background: #0C377B;
   color: #fff;
   font-size: 24px;
   padding: 0;
@@ -661,7 +661,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 10px 0;
   white-space: nowrap;
   margin-right: 20px;
-  color: #1534BD;
+  color: #0C377B;
 }
 .header {
   position: fixed;
@@ -789,10 +789,10 @@ body::-webkit-scrollbar-thumb:hover {
   display: block;
 }
 .header .content .wrap .right .nav .active .head_title {
-  color: #1534BD;
+  color: #0C377B;
 }
 .header .content .wrap .right .nav .active .head_title span::before {
-  background: #1534BD;
+  background: #0C377B;
   opacity: 1;
 }
 .header .content .wrap .right .search {
@@ -823,7 +823,7 @@ body::-webkit-scrollbar-thumb:hover {
 .header .content .wrap .right .search .form .input_wrap {
   min-width: 180px;
   flex: 1;
-  border: 2px solid #1534BD;
+  border: 2px solid #0C377B;
   border-left: none;
   border-radius: 0 4px 4px 0;
 }
@@ -846,7 +846,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .header .content .wrap .right .search .form .input_wrap .submit_btn .iconfont {
   font-size: 22px;
-  color: #1534BD;
+  color: #0C377B;
 }
 .header .content .wrap .right .function {
   margin-left: 10px;
@@ -886,7 +886,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 2px;
   transition: all 0.3s ease;
   border-radius: 2px;
-  background: #1534BD;
+  background: #0C377B;
   transform-origin: 50% 50%;
 }
 .header .content .wrap .right .function .menu .lis:nth-child(1) {
@@ -1046,7 +1046,7 @@ body::-webkit-scrollbar-thumb:hover {
 .index_swiper .swiper-pagination .swiper-pagination-bullet-active {
   width: 30px;
   border-radius: 12px;
-  background: #1534BD;
+  background: #0C377B;
 }
 .more_wrap .wrap {
   padding: 20px 0;
@@ -1106,7 +1106,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin-left: 10px;
 }
 .learn_more .a_link:hover .text {
-  color: #1534BD;
+  color: #0C377B;
 }
 .about_us {
   position: relative;
@@ -1461,7 +1461,7 @@ body::-webkit-scrollbar-thumb:hover {
   transform: translateX(-12px);
 }
 .recommend_news .comment_news_swiper .item .link .ide .iconfont {
-  color: #1534BD;
+  color: #0C377B;
   font-size: 38px;
 }
 .recommend_news .comment_news_swiper .item .link .ide .text {
@@ -1738,7 +1738,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   left: 0;
   bottom: -1px;
-  background-color: #1534BD;
+  background-color: #0C377B;
   height: 1px;
   width: 0;
   transition: width 0.5s ease;
@@ -1747,10 +1747,10 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
 }
 .categories .wrap .up_list .list_wrap .on {
-  color: #1534BD;
+  color: #0C377B;
 }
 .categories .wrap .up_list .list_wrap .on::after {
-  background-color: #1534BD;
+  background-color: #0C377B;
 }
 .categories .wrap .up_list .list_wrap::after {
   content: '';
@@ -1770,4 +1770,71 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   top: 140px;
   pointer-events: auto;
+}
+.company_profile .company_profile_swiper {
+  padding-right: 140px;
+  user-select: none;
+}
+.company_profile .company_profile_swiper .company_arrow {
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.company_profile .company_profile_swiper .company_arrow .icon {
+  margin: 24px 0;
+}
+.company_profile .company_profile_swiper .company_arrow .icon .iconfont {
+  font-size: 24px;
+  font-weight: 600;
+  color: #B4B4B4;
+}
+.company_profile .company_profile_swiper .company_arrow .icon .iconfont:hover {
+  color: #0C377B;
+}
+.company_content {
+  padding: 60px 0;
+}
+.company_content .lead,
+.company_content div,
+.company_content span,
+.company_content p {
+  line-height: 1.9;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.company_content .name {
+  font-size: 22px;
+  color: #0C377B;
+  padding: 4px 0;
+  font-weight: 600;
+}
+.company_data {
+  padding-bottom: 80px;
+}
+.company_data .box {
+  padding: 50px 20px 20px;
+  box-shadow: 0 0 45px #0000001f;
+  border-radius: 36px;
+  min-height: 240px;
+  text-align: center;
+  background: #fff;
+}
+.company_data .box .name {
+  color: #0C377B;
+  font-size: 24px;
+  font-weight: 600;
+}
+.company_data .box .name .number {
+  font-size: 38px;
+}
+.company_data .box .lead {
+  color: #434343;
+  line-height: 1.8;
+  font-size: 18px;
+}
+.company_data .box:hover {
+  transform: translateY(-10px);
+  transition: all 0.6s ease-out;
 }

@@ -629,4 +629,45 @@
     top: 124px;
     pointer-events: auto;
   }
+  .company_profile .company_profile_swiper {
+    padding-right: 40px;
+  }
+  .company_profile .company_profile_swiper .cover_box .cover {
+    min-height: 300px;
+  }
+  .company_profile .company_profile_swiper .company_arrow {
+    right: 6px;
+  }
+  .company_profile .company_profile_swiper .company_arrow .icon {
+    margin: 20px 0;
+  }
+  .company_profile .company_profile_swiper .company_arrow .icon .iconfont {
+    font-size: 18px;
+  }
+  .company_content {
+    padding: 20px 0;
+  }
+  .company_content .lead {
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 1.8;
+  }
+  .company_content .name {
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 1.8;
+  }
+  .company_data .main .box {
+    margin-bottom: 10px;
+    min-height: auto;
+    padding: 30px 40px 20px;
+    border-radius: 14px;
+  }
+  .company_data .main .box .name .number {
+    font-size: 24px;
+  }
+  .company_data .main .box .lead {
+    font-size: 18px;
+    line-height: 1.8;
+  }
 }

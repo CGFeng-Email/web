@@ -1,4 +1,4 @@
-@primaryColor: #1534BD;
+@primaryColor: #0C377B;
 @minorColor: #B7B7B7;
 @minorBg: linear-gradient(103.78deg, #1a82da 0%, #1627a9 100%);
 
@@ -2244,6 +2244,90 @@ body::-webkit-scrollbar-thumb:hover {
                 top: 140px;
                 pointer-events: auto;
             }
+        }
+    }
+}
+
+.company_profile {
+    .company_profile_swiper {
+        padding-right: 140px;
+        user-select: none;
+
+        .company_arrow {
+            position: absolute;
+            top: 50%;
+            right: 80px;
+            transform: translateY(-50%);
+            z-index: 2;
+
+            .icon {
+                margin: 24px 0;
+
+                .iconfont {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #B4B4B4;
+
+                    &:hover {
+                        color: @primaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.company_content {
+    padding: 60px 0;
+
+    .lead,
+    div,
+    span,
+    p {
+        line-height: 1.9;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .name {
+        font-size: 22px;
+        color: @primaryColor;
+        padding: 4px 0;
+        font-weight: 600;
+    }
+}
+
+.company_data {
+    padding-bottom: 80px;
+
+    .box {
+        padding: 50px 20px 20px;
+        box-shadow: 0 0 45px #0000001f;
+        border-radius: 36px;
+        min-height: 240px;
+        text-align: center;
+        background: #fff;
+
+        .name {
+            color: @primaryColor;
+            font-size: 24px;
+            font-weight: 600;
+
+            .number {
+                font-size: 38px;
+            }
+        }
+
+        .lead {
+            color: #434343;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+            transition: all .6s ease-out;
         }
     }
 }

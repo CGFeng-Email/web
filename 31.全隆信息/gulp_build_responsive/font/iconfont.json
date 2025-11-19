@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "649315",
+      "name": "上",
+      "font_class": "shang",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "1518190",
+      "name": "下",
+      "font_class": "xia",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
       "icon_id": "16512327",
       "name": "抖音号-01",
       "font_class": "douyinhao-01",
