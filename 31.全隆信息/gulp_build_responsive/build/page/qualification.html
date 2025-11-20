@@ -97,11 +97,11 @@
                             </div>
                         </div>
                         <div class="col_md col-md-10 col-sm-12 col-xs-12">
-                            <div class="wrap qualification_li1 active">
+                            <div class="wrap active">
                                 <div class="row">
                                     <div class="col_md col-md-9 col-sm-12 col-xs-12">
                                         <div class="qualification_content">
-                                            <div class="swiper qualification_swiper qualification_swiper1">
+                                            <div class="swiper qualification_swiper">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide slide">
                                                         <div class="cover_box">
@@ -141,7 +141,7 @@
                                             <div class="icon">
                                                 <i class="iconfont qualification_prev pointer icon-shang"></i>
                                             </div>
-                                            <div class="swiper qualification_menus_swiper qualification_menus_swiper1">
+                                            <div class="swiper qualification_menus_swiper">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide slide pointer">
                                                         <span>National Level 1</span>
@@ -153,10 +153,7 @@
                                                         <span>National Level 2</span>
                                                     </div>
                                                     <div class="swiper-slide slide pointer">
-                                                        <span>
-                                                            Level 3 Quality Service Integrity
-                                                            Unit
-                                                        </span>
+                                                        <span>Level 3 Quality Service IntegrityUnit </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -167,11 +164,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="wrap qualification_li2">
+
+                            <div class="wrap">
                                 <div class="row">
                                     <div class="col_md col-md-9 col-sm-12 col-xs-12">
                                         <div class="qualification_content">
-                                            <div class="swiper qualification_swiper qualification_swiper2">
+                                            <div class="swiper qualification_swiper">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide slide">
                                                         <div class="cover_box">
@@ -211,7 +209,7 @@
                                             <div class="icon">
                                                 <i class="iconfont qualification_prev pointer icon-shang"></i>
                                             </div>
-                                            <div class="swiper qualification_menus_swiper qualification_menus_swiper2">
+                                            <div class="swiper qualification_menus_swiper">
                                                 <div class="swiper-wrapper">
                                                     <div class="swiper-slide slide pointer">
                                                         <span>National Level 1</span>
@@ -246,18 +244,12 @@
     @@include('footer.html')
 </body>
 <script>
-    let qualification_index = 0;
-    let qualification_menus_swiper1 = null;
-    let qualification_menus_swiper2 = null;
+    var tabsIndex = 0;
 
-    if (qualification_index == 0) {
-        const qualification_swiper1 = new Swiper('.qualification_swiper1', {
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
+    function qualification_swiper_init() {
+        return new Swiper('.qualification_swiper', {
             loop: true,
-            speed: 1200,
+            speed: 1000,
             slidesPerView: 'auto',
             centeredSlides: true,
             watchSlidesProgress: true, // 强制监测滑块状态，确保类名正确添加
@@ -272,134 +264,66 @@
                 slideShadows: false // 关闭阴影（避免干扰宽度视觉）
             },
             spaceBetween: 0, // 取消额外间距
-            on: {
-                init: function () {
-                    swiperAnimateCache(this);
-                    swiperAnimate(this);
-                },
-                slideChangeTransitionStart: function () {
-                    if (qualification_menus_swiper1) {
-                        qualification_menus_swiper1.slideToLoop(this.realIndex, 1000, false);
-                    }
-                },
-                slideChangeTransitionEnd: function () {
-                    swiperAnimate(this);
-                    // 滑动结束后强制刷新样式（解决偶发样式未更新问题）
-                    this.update();
-                }
-            }
         })
+    }
 
-        qualification_menus_swiper1 = new Swiper('.qualification_menus_swiper1', {
+    function menus_swiper_init() {
+        return new Swiper('.qualification_menus_swiper', {
             autoplay: {
-                delay: 5000,
+                delay: 7000,
                 disableOnInteraction: false,
             },
             loop: true,
-            speed: 1200,
+            speed: 1000,
             direction: 'vertical',
             slidesPerView: 4,
             slideToClickedSlide: true,
             on: {
-                init: function () {
-                    swiperAnimateCache(this);
-                    swiperAnimate(this);
-                },
                 slideChangeTransitionStart: function () {
-                    qualification_swiper1.slideToLoop(this.realIndex, 1000, false);
-                },
-                slideChangeTransitionEnd: function () {
-                    swiperAnimate(this);
-                }
-            }
-        })
-    } else {
-        const qualification_swiper2 = new Swiper('.qualification_swiper2', {
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            speed: 1200,
-            slidesPerView: 'auto',
-            centeredSlides: true,
-            watchSlidesProgress: true, // 强制监测滑块状态，确保类名正确添加
-            watchSlidesVisibility: true, // 额外监测可见性，增强类名稳定性
-            slideToClickedSlide: true,
-            effect: 'coverflow',
-            coverflowEffect: {
-                rotate: 50, // 关闭旋转（避免宽度变形）
-                stretch: 60, // 关键：负值让slide收缩靠近（数值需根据实际调整）
-                depth: 100, // 轻微Z轴深度（增强立体感）
-                modifier: 1, // 基础缩放比例（中间slide为100%）
-                slideShadows: false // 关闭阴影（避免干扰宽度视觉）
-            },
-            spaceBetween: 0, // 取消额外间距
-            on: {
-                init: function () {
-                    swiperAnimateCache(this);
-                    swiperAnimate(this);
-                },
-                slideChangeTransitionStart: function () {
-                    if (qualification_menus_swiper2) {
-                        qualification_menus_swiper2.slideToLoop(this.realIndex, 1000, false);
+                    if (qualificationInit) {
+                        qualificationInit[tabsIndex].slideToLoop(this.realIndex, 1000, false);
                     }
-                },
-                slideChangeTransitionEnd: function () {
-                    swiperAnimate(this);
-                    // 滑动结束后强制刷新样式（解决偶发样式未更新问题）
-                    this.update();
-                }
-            }
-        })
-
-        qualification_menus_swiper2 = new Swiper('.qualification_menus_swiper2', {
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            speed: 1200,
-            direction: 'vertical',
-            slidesPerView: 4,
-            slideToClickedSlide: true,
-            on: {
-                init: function () {
-                    swiperAnimateCache(this);
-                    swiperAnimate(this);
-                },
-                slideChangeTransitionStart: function () {
-                    qualification_swiper2.slideToLoop(this.realIndex, 1000, false);
-                },
-                slideChangeTransitionEnd: function () {
-                    swiperAnimate(this);
                 }
             }
         })
     }
 
+    var qualificationInit = qualification_swiper_init();
+    var menusInit = menus_swiper_init();
+
     $('.qualification_prev').click(function () {
-        qualification_menus_swiper1.slidePrev();
-        qualification_menus_swiper2.slidePrev();
+        console.log(123);
+
+        menusInit[tabsIndex].slidePrev();
     })
 
     $('.qualification_next').click(function () {
-        qualification_menus_swiper1.slideNext();
-        qualification_menus_swiper2.slideNext();
+        console.log(456);
+
+        menusInit[tabsIndex].slideNext();
     })
 
     $('.qualification_tabs .item').click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
+        tabsIndex = $(this).index();
 
-        if(qualification_index == 0) {
-            qualification_index = 1;
-            $('.qualification_li1').removeClass('active');
-            $('.qualification_li2').addClass('active');
-        } else {
-            qualification_index = 0;
-            $('.qualification_li2').removeClass('active');
-            $('.qualification_li1').addClass('active');
+        for (var key in menusInit) {
+            menusInit[key].init();
         }
+
+        qualificationInit = qualification_swiper_init();
+        menusInit = menus_swiper_init();
+
+        // 显示/隐藏
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.qualification .wrap').hide().animate({
+            opacity: 0,
+            transform: 'translateY(10px)'
+        });
+
+        $('.qualification .wrap').eq($(this).index()).show().animate({
+            opacity: 1,
+            transform: 'translateY(0)'
+        })
     })
 </script>
 
