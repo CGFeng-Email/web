@@ -299,6 +299,10 @@
   .data_sources .data_list .item:nth-child(even) .content {
     padding: 20px 20px 0 0;
   }
+  .authority_citations .item {
+    margin-bottom: 30px;
+    padding: 14px;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -727,13 +731,58 @@
   .qualification .main .wrap .qualification_content .slide .name {
     font-size: 16px;
   }
+  .data_sources .title {
+    font-size: 18px;
+  }
   .data_sources .data_list .item {
     padding: 10px;
+    margin-top: 10px;
+  }
+  .data_sources .data_list .item .row {
+    margin: 0;
+  }
+  .data_sources .data_list .item .cover_box {
+    overflow: hidden;
+  }
+  .data_sources .data_list .item .cover_box .cover {
+    border-radius: 34px;
+  }
+  .data_sources .data_list .item .content {
+    padding: 20px 5px 0 !important;
+  }
+  .data_sources .data_list .item .content .name {
+    font-size: 16px;
+  }
+  .data_sources .data_list .item .content .lead {
+    font-size: 15px;
   }
   .data_sources .data_list .item:nth-child(even) .row {
     flex-wrap: wrap;
   }
   .data_sources .data_list .item:nth-child(even) .content {
     padding: 20px 0;
+  }
+  .secondary_sources .main .item {
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    min-height: auto;
+  }
+  .secondary_sources .main .item .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .secondary_sources .main .item .icon .iconfont {
+    font-size: 28px;
+  }
+  .secondary_sources .main .item .name {
+    padding: 10px 0;
+    font-size: 17px;
+  }
+  .authority_citations .item {
+    margin-bottom: 10px;
+  }
+  .authority_citations .item .content .lead {
+    font-size: 14px;
   }
 }

@@ -523,6 +523,13 @@
             }
         }
     }
+
+    .authority_citations {
+        .item {
+            margin-bottom: 30px;
+            padding: 14px;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1174,9 +1181,38 @@
     }
 
     .data_sources {
+        .title {
+            font-size: 18px;
+        }
+
         .data_list {
             .item {
                 padding: 10px;
+                margin-top: 10px;
+
+                .row {
+                    margin: 0;
+                }
+
+                .cover_box {
+                    overflow: hidden;
+
+                    .cover {
+                        border-radius: 34px;
+                    }
+                }
+
+                .content {
+                    padding: 20px 5px 0 !important;
+
+                    .name {
+                        font-size: 16px;
+                    }
+
+                    .lead {
+                        font-size: 15px;
+                    }
+                }
             }
 
             .item:nth-child(even) {
@@ -1186,6 +1222,43 @@
 
                 .content {
                     padding: 20px 0;
+                }
+            }
+        }
+    }
+
+    .secondary_sources {
+        .main {
+            .item {
+                margin-bottom: 20px;
+                padding: 20px 10px;
+                min-height: auto;
+
+                .icon {
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+
+                    .iconfont {
+                        font-size: 28px;
+                    }
+                }
+
+                .name {
+                    padding: 10px 0;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    .authority_citations {
+        .item {
+            margin-bottom: 10px;
+
+            .content {
+                .lead {
+                    font-size: 14px;
                 }
             }
         }

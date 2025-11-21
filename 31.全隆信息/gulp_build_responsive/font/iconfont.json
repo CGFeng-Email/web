@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "42198806",
+      "name": "book-open-fill",
+      "font_class": "book-open-fill",
+      "unicode": "e789",
+      "unicode_decimal": 59273
+    },
+    {
       "icon_id": "649315",
       "name": "上",
       "font_class": "shang",
