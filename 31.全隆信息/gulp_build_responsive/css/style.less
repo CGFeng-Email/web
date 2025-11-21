@@ -2479,3 +2479,66 @@ body::-webkit-scrollbar-thumb:hover {
         }
     }
 }
+
+.data_sources {
+    .title {
+        font-size: 28px;
+        font-weight: 600;
+        transform: translateY(40px);
+    }
+
+    .data_list {
+        .col_md {
+            padding: 0;
+        }
+
+        .item {
+            background: #fff;
+            margin-top: 160px;
+            border-radius: 34px;
+
+            .row {
+                flex-wrap: wrap;
+            }
+
+            .cover_box {
+                border-radius: 24px;
+                overflow: hidden;
+                transform: scale(1.2);
+            }
+
+            .content {
+                padding: 80px 100px 20px;
+                position: relative;
+
+                .name {
+                    font-size: 26px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                .lead {
+                    font-size: 17px;
+                    line-height: 1.8;
+                }
+
+                .comma {
+                    position: absolute;
+                    top: -30px;
+                }
+            }
+        }
+
+        .item:nth-child(odd) {
+            .comma {
+                right: 30px;
+            }
+        }
+
+        .item:nth-child(even) {
+            .row {
+                flex-flow: row-reverse;
+            }
+        }
+    }
+}

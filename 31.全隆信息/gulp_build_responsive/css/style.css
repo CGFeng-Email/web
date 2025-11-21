@@ -1949,3 +1949,47 @@ body::-webkit-scrollbar-thumb:hover {
 .qualification .main .active {
   display: block;
 }
+.data_sources .title {
+  font-size: 28px;
+  font-weight: 600;
+  transform: translateY(40px);
+}
+.data_sources .data_list .col_md {
+  padding: 0;
+}
+.data_sources .data_list .item {
+  background: #fff;
+  margin-top: 160px;
+  border-radius: 34px;
+}
+.data_sources .data_list .item .row {
+  flex-wrap: wrap;
+}
+.data_sources .data_list .item .cover_box {
+  border-radius: 24px;
+  overflow: hidden;
+  transform: scale(1.2);
+}
+.data_sources .data_list .item .content {
+  padding: 80px 100px 20px;
+  position: relative;
+}
+.data_sources .data_list .item .content .name {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.data_sources .data_list .item .content .lead {
+  font-size: 17px;
+  line-height: 1.8;
+}
+.data_sources .data_list .item .content .comma {
+  position: absolute;
+  top: -30px;
+}
+.data_sources .data_list .item:nth-child(odd) .comma {
+  right: 30px;
+}
+.data_sources .data_list .item:nth-child(even) .row {
+  flex-flow: row-reverse;
+}
