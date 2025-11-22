@@ -530,6 +530,41 @@
             padding: 14px;
         }
     }
+
+    .our_team {
+        .item {
+            padding: 10px;
+            margin-bottom: 30px;
+
+            .content {
+                padding: 10px 20px 10px 0;
+
+                .icon {
+                    width: 44px;
+                    height: 44px;
+                    line-height: 44px;
+
+                    .iconfont {
+                        font-size: 24px;
+                    }
+                }
+
+                .wrap {
+                    padding-left: 20px;
+
+                    .line {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+
+        .item:nth-child(even) {
+            .content {
+                padding: 10px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1261,6 +1296,39 @@
                     font-size: 14px;
                 }
             }
+        }
+    }
+
+    .our_team {
+        .item {
+            padding: 5px 10px;
+            margin-bottom: 20px;
+
+            .row {
+                flex-wrap: wrap-reverse;
+            }
+
+            .content {
+                padding: 20px 10px 10px;
+
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        .item:nth-child(even) {
+            .row {
+                flex-flow: column-reverse;
+            }
+        }
+    }
+
+    .our_clients_list {
+        .cover_box {
+            margin-bottom: 10px;
         }
     }
 }
