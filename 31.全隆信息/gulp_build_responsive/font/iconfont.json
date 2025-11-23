@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "961420",
+      "name": "table",
+      "font_class": "biao",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "7594859",
+      "name": "24gf-clipboardText",
+      "font_class": "24gf-clipboardText",
+      "unicode": "eac2",
+      "unicode_decimal": 60098
+    },
+    {
       "icon_id": "1369166",
       "name": "引号",
       "font_class": "icon-copy",
