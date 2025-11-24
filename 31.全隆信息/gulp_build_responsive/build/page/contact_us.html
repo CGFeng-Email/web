@@ -193,8 +193,10 @@
                                     <div class="item">
                                         <div class="row">
                                             <div class="col_md col-md-12 col-sm-12 col-xs-12">
-                                                <select name="type" lay-verify="required" lay-vertype="tips" lay-reqtext="Query type: Air/Sea/Warehouse Services/E-commerce/Amazon FBA Forwarding/Other">
-                                                    <option value="">*Query type: Air/Sea/Warehouse Services/E-commerce/Amazon FBA Forwarding/Other</option>
+                                                <select name="type" lay-verify="required" lay-vertype="tips"
+                                                    lay-reqtext="Query type: Air/Sea/Warehouse Services/E-commerce/Amazon FBA Forwarding/Other">
+                                                    <option value="">*Query type: Air/Sea/Warehouse
+                                                        Services/E-commerce/Amazon FBA Forwarding/Other</option>
                                                     <option value="A-1">选项 A-1</option>
                                                     <option value="A-2">选项 A-2</option>
                                                     <option value="A-3">选项 A-3</option>
@@ -261,7 +263,8 @@
                                     <div class="item">
                                         <div class="row">
                                             <div class="col_md col-md-12 col-sm-12 col-xs-12">
-                                                <button class="layui-btn btn text-uppercase" lay-submit>send</button>
+                                                <button class="layui-btn btn text-uppercase" lay-submit
+                                                    lay-filter="submit">send</button>
                                             </div>
                                         </div>
                                     </div>
@@ -275,5 +278,18 @@
     </div>
     @@include('footer.html')
 </body>
+<script>
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        // 提交事件
+        form.on('submit(submit)', function (data) {
+            var field = data.field;
+            console.log(field);
+            return false;
+        });
+    });
+</script>
 
 </html>

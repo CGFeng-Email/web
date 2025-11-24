@@ -675,6 +675,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   padding: 0 5px;
   position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header .content .wrap {
   margin: auto;
@@ -746,7 +747,8 @@ body::-webkit-scrollbar-thumb:hover {
   width: auto;
   padding: 10px 24px;
   display: none;
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header .content .wrap .right .nav .li .child_nav .lis .link {
   padding: 14px 0;
@@ -757,7 +759,7 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: start;
 }
 .header .content .wrap .right .nav .li .child_nav .lis .link:hover {
-  color: #000;
+  color: #0C377B;
 }
 .header .content .wrap .right .nav .li .child_nav .lis:last-child {
   border-bottom: none;
@@ -767,11 +769,12 @@ body::-webkit-scrollbar-thumb:hover {
   top: 100px;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff;
   display: none;
 }
 .header .content .wrap .right .nav .li .category_nav .category_list {
   padding: 30px 100px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header .content .wrap .right .nav .li .category_nav .category_list .category_li {
   padding: 10px;
@@ -781,6 +784,9 @@ body::-webkit-scrollbar-thumb:hover {
   font-weight: 600;
   color: #000;
   letter-spacing: 0.2px;
+}
+.header .content .wrap .right .nav .li .category_nav .category_list .category_li .link:hover {
+  color: #0C377B;
 }
 .header .content .wrap .right .nav .li:hover .child_nav {
   display: block;
@@ -2746,4 +2752,140 @@ body::-webkit-scrollbar-thumb:hover {
   transition-delay: 0.2s;
   position: relative;
   z-index: 10;
+}
+.custom_reports .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.custom_reports .item {
+  margin-bottom: 40px;
+  min-height: 400px;
+  opacity: 0.6;
+}
+.custom_reports .item .icon {
+  background: #E9F5FF;
+}
+.custom_reports .item:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+.custom_reports .item:hover .icon .iconfont {
+  transform: scale(1.07);
+}
+.consult {
+  padding: 40px 0;
+}
+.consult .main {
+  background: #fff;
+  border-radius: 12px;
+  filter: drop-shadow(-2px 2px 6px #185dc669);
+  padding: 40px 30px;
+}
+.consult .main .lead {
+  font-size: 18px;
+  color: #000;
+  line-height: 1.8;
+  padding: 0 25px;
+  margin-bottom: 10px;
+}
+.consult .main .contact_us {
+  padding: 20px 0;
+}
+.consult .main .contact_us .form .item .btn {
+  font-size: 16px;
+}
+.consult .main .contact_us .form .item_btn {
+  text-align: center;
+}
+.methods .methods_list {
+  background: #fff;
+  border-radius: 12px;
+  filter: drop-shadow(-2px 2px 6px #185dc669);
+  padding: 40px 30px;
+}
+.methods .methods_list .title {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.methods .methods_list .main {
+  position: relative;
+  padding: 40px 0 10px;
+}
+.methods .methods_list .main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 2px;
+  height: 100%;
+  background: #dfdedd;
+}
+.methods .methods_list .main .item {
+  margin-left: 60px;
+  position: relative;
+  margin-bottom: 80px;
+}
+.methods .methods_list .main .item .circle {
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccd6e1;
+}
+.methods .methods_list .main .item .circle .fill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background: #0C377B;
+  border-radius: 50%;
+}
+.methods .methods_list .main .item .content {
+  background: #eaedf2;
+  padding: 30px 20px;
+  border-radius: 16px;
+  position: relative;
+}
+.methods .methods_list .main .item .content .serial {
+  position: absolute;
+  top: -28px;
+  left: 28px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  background: #0C377B;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+}
+.methods .methods_list .main .item .content .cover_box {
+  border-radius: 16px;
+}
+.methods .methods_list .main .item .content .wrap {
+  padding: 10px;
+}
+.methods .methods_list .main .item .content .wrap .name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 14px;
+}
+.methods .methods_list .main .item .content .wrap .lead {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #000;
+}
+.methods .methods_list .main .item:hover .content .cover {
+  transform: scale(1.07);
+}
+.methods .methods_list .main .item:hover .content .wrap .name {
+  color: #0C377B;
 }

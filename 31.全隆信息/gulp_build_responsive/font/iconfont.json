@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1167174",
+      "name": "品质供应商",
+      "font_class": "pinzhigongyingshang",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "5838780",
+      "name": "意见",
+      "font_class": "yijian",
+      "unicode": "e86f",
+      "unicode_decimal": 59503
+    },
+    {
+      "icon_id": "17832790",
+      "name": "客户",
+      "font_class": "kehu",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "25513287",
+      "name": "shop",
+      "font_class": "shop",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "36096120",
+      "name": "渠道",
+      "font_class": "qudao",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "43414639",
+      "name": "客户",
+      "font_class": "kehu1",
+      "unicode": "e7e1",
+      "unicode_decimal": 59361
+    },
+    {
       "icon_id": "961420",
       "name": "table",
       "font_class": "biao",
