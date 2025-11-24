@@ -622,6 +622,38 @@
             }
         }
     }
+
+    .categoryes_content {
+        margin-bottom: 20px;
+
+        .categories_main {
+            .item {
+                padding: 20px 10px;
+
+                ._content {
+                    padding: 20px 0 0;
+                }
+            }
+        }
+    }
+
+    .tabs_main {
+        .tabs-header {
+            justify-content: start;
+            margin-bottom: 0;
+
+            .tab-btn {
+                width: 47%;
+                margin: 0 10px 20px;
+            }
+        }
+    }
+
+    .case_tabs_main {
+        .tabs-header {
+            display: flex;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1560,6 +1592,100 @@
 
         .item:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    .tabs_main {
+        margin-top: 0;
+        padding: 0 0 10px;
+
+        .tabs-header {
+            padding: 10px 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .tab-btn {
+                width: 48%;
+                margin-bottom: 10px;
+                min-width: auto;
+                margin: 0 0 10px;
+            }
+
+            .tab-btn:nth-child(odd) {
+                margin-right: 10px;
+            }
+        }
+
+        .tabs-content {
+            padding: 0;
+        }
+    }
+
+    .categoryes_content {
+        .categories_main {
+            .item {
+                padding: 10px 10px;
+
+                ._content {
+                    .name {
+                        font-size: 16px;
+                    }
+
+                    .lead {
+                        font-size: 14px;
+                    }
+
+                    .data {
+                        padding: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .box {
+                            width: 50%;
+                            padding: 0;
+                        }
+                    }
+
+                    .download_box {
+                        .d_ {
+                            flex-wrap: wrap;
+                            justify-content: start;
+
+                            .li {
+                                margin-bottom: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .categories_tabs {
+        .tabs_main {
+            padding: 5px;
+
+            .line {
+                padding: 5px 0;
+            }
+
+            .tab-panel {
+                .name {
+                    font-size: 16px;
+                }
+
+                .lead {
+                    font-size: 14px;
+                    padding: 2px 0;
+                }
+
+                .page_turning {
+                    .link {
+                        min-height: auto;
+                    }
+                }
+            }
         }
     }
 }

@@ -353,6 +353,26 @@
   .categories_list .item ._content {
     padding: 30px 30px 30px 14%;
   }
+  .categoryes_content {
+    margin-bottom: 20px;
+  }
+  .categoryes_content .categories_main .item {
+    padding: 20px 10px;
+  }
+  .categoryes_content .categories_main .item ._content {
+    padding: 20px 0 0;
+  }
+  .tabs_main .tabs-header {
+    justify-content: start;
+    margin-bottom: 0;
+  }
+  .tabs_main .tabs-header .tab-btn {
+    width: 47%;
+    margin: 0 10px 20px;
+  }
+  .case_tabs_main .tabs-header {
+    display: flex;
+  }
 }
 @media screen and (max-width: 767px) {
   .container_padding {
@@ -977,5 +997,68 @@
   }
   .categories_list .item:last-child {
     margin-bottom: 0;
+  }
+  .tabs_main {
+    margin-top: 0;
+    padding: 0 0 10px;
+  }
+  .tabs_main .tabs-header {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tabs_main .tabs-header .tab-btn {
+    width: 48%;
+    margin-bottom: 10px;
+    min-width: auto;
+    margin: 0 0 10px;
+  }
+  .tabs_main .tabs-header .tab-btn:nth-child(odd) {
+    margin-right: 10px;
+  }
+  .tabs_main .tabs-content {
+    padding: 0;
+  }
+  .categoryes_content .categories_main .item {
+    padding: 10px 10px;
+  }
+  .categoryes_content .categories_main .item ._content .name {
+    font-size: 16px;
+  }
+  .categoryes_content .categories_main .item ._content .lead {
+    font-size: 14px;
+  }
+  .categoryes_content .categories_main .item ._content .data {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categoryes_content .categories_main .item ._content .data .box {
+    width: 50%;
+    padding: 0;
+  }
+  .categoryes_content .categories_main .item ._content .download_box .d_ {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .categoryes_content .categories_main .item ._content .download_box .d_ .li {
+    margin-bottom: 6px;
+  }
+  .categories_tabs .tabs_main {
+    padding: 5px;
+  }
+  .categories_tabs .tabs_main .line {
+    padding: 5px 0;
+  }
+  .categories_tabs .tabs_main .tab-panel .name {
+    font-size: 16px;
+  }
+  .categories_tabs .tabs_main .tab-panel .lead {
+    font-size: 14px;
+    padding: 2px 0;
+  }
+  .categories_tabs .tabs_main .tab-panel .page_turning .link {
+    min-height: auto;
   }
 }

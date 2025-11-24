@@ -2609,3 +2609,141 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 60px #0c377b3d;
   border-radius: 14px;
 }
+.categoryes_content {
+  margin-bottom: 40px;
+}
+.categoryes_content .item {
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 60px #0c377b3d;
+  background: #fff;
+}
+.categoryes_content .item .cover_box {
+  overflow: hidden;
+  border-radius: 12px;
+}
+.categoryes_content .item ._content {
+  padding-left: 30px;
+}
+.categoryes_content .item ._content .name {
+  font-size: 20px;
+  color: #0C377B;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+.categoryes_content .item ._content .lead {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #38393B;
+  margin-bottom: 10px;
+}
+.categoryes_content .item ._content .data {
+  padding-top: 10px;
+  font-size: 15px;
+  color: #737373;
+  font-weight: 500;
+}
+.categoryes_content .item ._content .data .box {
+  padding-right: 20px;
+}
+.categoryes_content .item ._content .data .box .b_val {
+  color: #BE0000;
+}
+.categoryes_content .item ._content .download_box .d_ .li {
+  padding-right: 40px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+.categoryes_content .item ._content .download_box .d_ .li .link {
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+.categoryes_content .item ._content .download_box .d_ .li .link .text {
+  padding-left: 4px;
+}
+.categoryes_content .item:hover .cover {
+  transform: scale(1.07);
+}
+.categories_tabs .tabs_main {
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 60px #0c377b3d;
+  background: #fff;
+}
+.categories_tabs .tabs_main .tab-panel .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.categories_tabs .tabs_main .tab-panel .lead,
+.categories_tabs .tabs_main .tab-panel p,
+.categories_tabs .tabs_main .tab-panel span,
+.categories_tabs .tabs_main .tab-panel div {
+  line-height: 1.8;
+  font-size: 16px;
+  padding: 4px 0;
+}
+.categories_tabs .tabs_main .tab-panel .line {
+  margin-top: 20px;
+}
+.categories_tabs .tabs_main .tab-panel .page_turning {
+  margin-top: 20px;
+}
+.tabs_main {
+  overflow: hidden;
+}
+.tabs_main .tabs-header {
+  position: relative;
+  padding: 10px 0;
+}
+.tabs_main .tabs-header .tab-btn {
+  min-width: 200px;
+  width: auto;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  background: #f6f6f6;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+.tabs_main .tabs-header .active {
+  background: linear-gradient(103.78deg, #1a82da 0%, #1627a9 100%);
+  color: #fff;
+}
+.tabs_main .tabs-content {
+  position: relative;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 1;
+}
+.tabs_main .tab-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+  padding: 10px 0;
+}
+.tabs_main .tab-panel.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: all;
+  transition-delay: 0.2s;
+  position: relative;
+  z-index: 10;
+}
