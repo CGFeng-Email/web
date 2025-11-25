@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reserved Vic Market Research Co.,Ltd</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+    <div class="section" data-aos="fade">
+        <div class="login img_bg" style="background-image: url(../../img/login.jpg);">
+            <div class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col_md col-md-7 col-sm-4 col-xs-12"></div>
+                        <div class="col_md col-md-5 col-sm-8 col-xs-12">
+                            <div class="login_box">
+                                <h3 class="title text-uppercase">Register an account</h3>
+                                <div class="sub_head">We have very secure confidentiality measures, please feel free to
+                                    fill
+                                    them out</div>
+                                <div class="form">
+                                    <form class="layui-form" action="">
+                                        <div class="item display_flex">
+                                            <i class="iconfont icon-youjian"></i>
+                                            <input type="tel" name="phone" lay-verify="required|phone"
+                                                lay-reqtext="Enter your phone" lay-vertype="tips"
+                                                placeholder="Enter your phone" autocomplete="off"
+                                                class="layui-input input">
+                                        </div>
+                                        <div class="item display_flex">
+                                            <i class="iconfont icon-mima"></i>
+                                            <input type="password" name="password" lay-verify="required"
+                                                lay-reqtext="Enter your Password" lay-vertype="tips"
+                                                placeholder="Enter your Password" autocomplete="off"
+                                                class="layui-input input">
+                                        </div>
+                                        <div class="submit_box">
+                                            <button class="layui-btn btn text-uppercase" lay-submit
+                                                lay-filter="submit">Confirm</button>
+                                        </div>
+                                        <div class="lead">
+                                            <a href="./register.html" class="link">I already have an account, go log
+                                                in</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    NProgress.done();
+
+    layui.use(function () {
+        var form = layui.form;
+        var layer = layui.layer;
+
+        form.on('submit(submit)', function (data) {
+            var field = data.field; 
+            console.log(field);
+            return false; 
+        });
+    });
+</script>
+@@include('scrollIndicator.html')
+<script src="../../js/comment.js"></script>
+
+</html>

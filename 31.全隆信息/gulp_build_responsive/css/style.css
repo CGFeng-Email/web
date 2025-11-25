@@ -928,6 +928,7 @@ body::-webkit-scrollbar-thumb:hover {
   overflow-y: auto;
   z-index: 99;
   display: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .header .content .h5_nav .li {
   max-height: 400px;
@@ -984,6 +985,9 @@ body::-webkit-scrollbar-thumb:hover {
   transform: rotate(-180deg);
 }
 .header .content .h5_nav .li:last-child .head_title {
+  border-bottom: none;
+}
+.header .content .h5_nav .li:last-child .child .lis:last-child .link .child_head_title {
   border-bottom: none;
 }
 .header_height {
@@ -1741,6 +1745,7 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 0.5s ease;
   position: relative;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.7;
   padding: 10px 0;
 }
@@ -1751,7 +1756,7 @@ body::-webkit-scrollbar-thumb:hover {
   left: 0;
   bottom: -1px;
   background-color: #0C377B;
-  height: 1px;
+  height: 2px;
   width: 0;
   transition: width 0.5s ease;
 }
@@ -1777,6 +1782,12 @@ body::-webkit-scrollbar-thumb:hover {
   left: 50%;
   right: auto;
   transform: translateX(-50%) rotate(45deg);
+}
+.categories .wrap .small_list {
+  min-height: auto;
+}
+.categories .wrap .small_list .list_wrap {
+  height: auto;
 }
 .company_profile .company_profile_swiper {
   padding-right: 140px;
@@ -2888,4 +2899,147 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .methods .methods_list .main .item:hover .content .wrap .name {
   color: #0C377B;
+}
+.login {
+  height: 100vh;
+}
+.login .main {
+  padding-top: 160px;
+}
+.login .main .login_box {
+  padding: 50px;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+}
+.login .main .login_box .title {
+  font-size: 24px;
+  color: #0C377B;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.login .main .login_box .sub_head {
+  font-size: 16px;
+  color: #A4A4A4;
+  line-height: 1.6;
+}
+.login .main .login_box .form {
+  padding-top: 20px;
+}
+.login .main .login_box .form .item {
+  margin-bottom: 14px;
+  background: #F2F5FB;
+  border-radius: 50px;
+  padding: 0 20px;
+}
+.login .main .login_box .form .item .iconfont {
+  font-size: 24px;
+  color: #0C377B;
+}
+.login .main .login_box .form .item .input {
+  border: none;
+  box-shadow: none;
+  background: none;
+  height: 54px;
+  padding: 0 12px;
+}
+.login .main .login_box .form .item .cover {
+  width: 100px;
+}
+.login .main .login_box .form .submit_box {
+  padding-top: 10px;
+}
+.login .main .login_box .form .submit_box .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background: #0C377B;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.login .main .login_box .form .lead {
+  padding: 24px 0 0;
+}
+.login .main .login_box .form .lead .link {
+  width: auto;
+  font-size: 16px;
+  color: #0C377B;
+  font-weight: 500;
+}
+.suspend {
+  position: fixed;
+  top: 40%;
+  right: 10px;
+  z-index: 20;
+}
+.suspend .item {
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+  background: #0C377B;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  transition: all 0.5s ease-out;
+}
+.suspend .item .icon {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.suspend .item .icon .iconfont {
+  font-size: 28px;
+  color: #fff;
+}
+.suspend .item .icon img {
+  width: 28px;
+}
+.suspend .item .top {
+  height: 44px;
+  background: #000;
+  text-align: center;
+  padding-top: 3px;
+}
+.suspend .item .top .iconfont {
+  font-size: 18px;
+  color: #fff;
+}
+.suspend .item .top .tips {
+  font-size: 12px;
+  color: #fff;
+}
+.suspend .item .slide {
+  position: absolute;
+  left: -210px;
+  top: 0;
+  width: 200px;
+  height: auto;
+  padding: 2px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.suspend .item .slide .cover {
+  width: 100%;
+}
+.suspend .item .slide .lead {
+  padding: 10px;
+  font-size: 14px;
+  overflow-wrap: break-word;
+}
+.suspend .item .email_item {
+  width: 200px;
+  height: 58px;
+  left: -210px;
+}
+.suspend .item .email_item .lead {
+  padding: 0 10px;
+  line-height: 58px;
+}
+.suspend .item:hover {
+  background: #74BBFF;
+}
+.suspend .item:hover .slide {
+  display: block;
 }

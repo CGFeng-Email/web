@@ -1107,4 +1107,22 @@
   .methods .methods_list .main .item .content .wrap .lead {
     font-size: 14px;
   }
+  .login .main {
+    padding: 100px 10px 0;
+  }
+  .login .main .login_box {
+    padding: 30px 20px;
+  }
+  .login .main .login_box .title {
+    font-size: 20px;
+  }
+  .login .main .login_box .sub_head {
+    font-size: 16px;
+  }
+  .login .main .login_box .submit_box .btn {
+    font-size: 18px;
+  }
+  .suspend {
+    display: none;
+  }
 }

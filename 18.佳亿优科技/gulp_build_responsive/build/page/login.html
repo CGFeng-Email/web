@@ -54,14 +54,12 @@
     layui.use(function () {
         var form = layui.form;
         var layer = layui.layer;
-        // 提交事件
+
         form.on('submit(submit_login)', function (data) {
-            var field = data.field; // 获取表单字段值
-            return false; // 阻止默认 form 跳转
+            var field = data.field;
+            return false;
         });
     });
-
-    NProgress.done();
 </script>
 
 </html>
