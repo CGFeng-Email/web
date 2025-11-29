@@ -1347,6 +1347,7 @@ body::-webkit-scrollbar-thumb:hover {
 .custom_research .main .box .custom_research_content .content .name {
   font-size: 22px;
   font-weight: 600;
+  margin-bottom: 6px;
 }
 .custom_research .main .box .custom_research_content .content .name_line {
   display: inline-block;

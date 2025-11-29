@@ -810,7 +810,8 @@
                                                 <div class="space_between"></div>
                                                 <div class="common_more">
                                                     <div class="box">
-                                                        <a href="./categories_details.html" class="link animate justify_center">
+                                                        <a href="./categories_details.html"
+                                                            class="link animate justify_center">
                                                             <div class="name">Learn More</div>
                                                             <div class="icon justify_center">
                                                                 <i class="iconfont icon-arrowRight"></i>
@@ -1055,7 +1056,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="content justify_column">
-                                                    <div class="name">Request & Define2</div>
+                                                    <div class="name">Research & Analysis</div>
                                                     <div class="name_line"></div>
                                                     <div class="lead">
                                                         Send us your detailed requirements list, and our
@@ -1067,7 +1068,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="content justify_column">
-                                                    <div class="name">Request & Define3</div>
+                                                    <div class="name">Draft & Refine</div>
                                                     <div class="name_line"></div>
                                                     <div class="lead">
                                                         Send us your detailed requirements list, and our
@@ -1079,7 +1080,7 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="content justify_column">
-                                                    <div class="name">Request & Define4</div>
+                                                    <div class="name">Delivery & Support</div>
                                                     <div class="name_line"></div>
                                                     <div class="lead">
                                                         Send us your detailed requirements list, and our
@@ -1668,7 +1669,8 @@
         new_product_content.slideTo(index, 1000, false);
     })
 
-    const custom_research_cover = new Swiper('.custom_research_cover', {
+    let custom_research_content = null;
+    let custom_research_cover = new Swiper('.custom_research_cover', {
         speed: 1000,
         spaceBetween: 10,
         effect: 'fade',
@@ -1677,19 +1679,31 @@
                 swiperAnimateCache(this);
                 swiperAnimate(this);
             },
+            slideChangeTransitionStart: function () {
+                if (custom_research_content) {
+                    $('.serial_number_swiper .serial_item').eq(this.activeIndex).addClass('active').siblings().removeClass('active');
+                    custom_research_content.slideTo(this.activeIndex, 1000, false);
+                }
+            },
             slideChangeTransitionEnd: function () {
                 swiperAnimate(this);
             }
         }
     })
 
-    const custom_research_content = new Swiper('.custom_research_content', {
+    custom_research_content = new Swiper('.custom_research_content', {
         speed: 1000,
         spaceBetween: 10,
         on: {
             init: function () {
                 swiperAnimateCache(this);
                 swiperAnimate(this);
+            },
+            slideChangeTransitionStart: function () {
+                if (custom_research_cover) {
+                    $('.serial_number_swiper .serial_item').eq(this.activeIndex).addClass('active').siblings().removeClass('active');
+                    custom_research_cover.slideTo(this.activeIndex, 1000, false);
+                }
             },
             slideChangeTransitionEnd: function () {
                 swiperAnimate(this);
@@ -1712,6 +1726,9 @@
             },
             768: {
                 slidesPerView: 3,
+            },
+            968: {
+                slidesPerView: 4,
             },
         },
         on: {
@@ -1763,7 +1780,7 @@
             },
             slideChangeTransitionEnd: function () {
                 swiperAnimate(this);
-            }
+            },
         }
     })
 
@@ -1827,7 +1844,7 @@
             },
             968: {
                 slidesPerView: 4,
-            }, 
+            },
             1200: {
                 slidesPerView: 6,
             }
